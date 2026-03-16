@@ -39,12 +39,20 @@
             </a>
           </div>
           <div class="mg-page-header__block">
-            <label class="mg-u-sr-only" for="lang-select">Language</label>
-            <select id="lang-select" class="mg-page-header__select" onchange="window.location.href = '{{ '/' | url }}' + this.value + '/{{ langPath or '' }}'">
-              {%- for l in languages %}
-              <option value="{{ l.code }}" {% if l.code === lang %}selected{% endif %}>{{ l.name }}</option>
-              {%- endfor %}
-            </select>
+            <div class="mg-page-header__form-item form-item form-type-select form-no-label">
+              <label for="lang-dropdown-select" class="mg-u-sr-only">Select your language</label>
+              <div class="mg-page-header__select-wrapper">
+                <select style="width: 165px;"
+                  class="mg-page-header__select lang-dropdown-select-element form-select"
+                  id="lang-dropdown-select"
+                  name="lang_dropdown_select"
+                  onchange="window.location.href = '{{ '/' | url }}' + this.value + '/{{ langPath or '' }}'">
+                  {%- for l in languages %}
+                  <option value="{{ l.code }}" {% if l.code === lang %}selected{% endif %}>{{ l.name }}</option>
+                  {%- endfor %}
+                </select>
+              </div>
+            </div>
           </div>
         </div>
       </div>
