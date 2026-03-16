@@ -90,6 +90,12 @@ export default function (eleventyConfig) {
     { code: "es", name: "Español", dir: "ltr" },
   ]);
 
+  // Load CONTRIBUTING.md as global data
+  eleventyConfig.addGlobalData("contributing", () => {
+    const filePath = path.resolve(import.meta.dirname, "..", "CONTRIBUTING.md");
+    return fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "";
+  });
+
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/assets");
 

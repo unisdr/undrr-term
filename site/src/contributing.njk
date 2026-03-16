@@ -1,0 +1,21 @@
+---js
+{
+  pagination: {
+    data: "languages",
+    size: 1,
+    alias: "currentLang"
+  },
+  permalink: function(data) {
+    return `/${data.currentLang.code}/contributing/`;
+  },
+  layout: "layouts/base.njk",
+  eleventyComputed: {
+    lang: (data) => data.currentLang.code,
+    dir: (data) => data.currentLang.dir,
+    pageTitle: () => "Contributing",
+    langPath: "contributing/"
+  }
+}
+---
+
+{{ contributing | md | safe }}

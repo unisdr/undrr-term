@@ -11,11 +11,51 @@
   {%- endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/{{ langPath or '' }}">
   {%- endif %}
+  <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="https://assets.undrr.org/static/mangrove/1.3.3/css/style-preventionweb.css">
   <link rel="stylesheet" href="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent.css">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}">
 </head>
 <body>
+
+  {# -- PIN gate: soft blocker for pre-launch access -- #}
+  <div id="pin-gate">
+    <div class="pin-gate__box">
+      <h2>This site is under construction</h2>
+      <p>Not yet available for public preview. If you have a preview PIN, enter it below.</p>
+      <div class="pin-gate__input-row">
+        <input type="text" id="pin-input" maxlength="4" inputmode="numeric" pattern="[0-9]*" placeholder="PIN" autocomplete="off">
+        <button id="pin-submit" type="button">Enter</button>
+      </div>
+      <p id="pin-error" hidden>Incorrect PIN.</p>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var KEY = 'pw_term_preview';
+      var PIN = '5498';
+      var gate = document.getElementById('pin-gate');
+      if (sessionStorage.getItem(KEY) === 'granted') {
+        gate.remove();
+        return;
+      }
+      document.documentElement.style.overflow = 'hidden';
+      function attempt() {
+        var val = document.getElementById('pin-input').value.trim();
+        if (val === PIN) {
+          sessionStorage.setItem(KEY, 'granted');
+          gate.remove();
+          document.documentElement.style.overflow = '';
+        } else {
+          document.getElementById('pin-error').hidden = false;
+        }
+      }
+      document.getElementById('pin-submit').addEventListener('click', attempt);
+      document.getElementById('pin-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') attempt();
+      });
+    })();
+  </script>
 
   {# -- UNDRR global page header -- #}
   <header id="header" class="mg-page-header">
@@ -189,6 +229,13 @@
   <main class="mg-container mg-container--padded mg-container--spacer">
     {{ content | safe }}
   </main>
+
+  {# -- Site footer with GitHub link -- #}
+  <div class="site-footer-links">
+    <div class="mg-container">
+      <a href="https://github.com/unisdr/undrr-term">View the project on GitHub</a>
+    </div>
+  </div>
 
   {# -- Footer with UNDRR syndicated global footer -- #}
   <footer class="mg-footer">
