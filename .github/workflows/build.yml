@@ -11,8 +11,12 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  compile:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,10 +26,11 @@ jobs:
           node-version: 20
           cache: yarn
 
-      - run: yarn install --frozen-lockfile
+      - name: Install root dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Compile markdown to Weblate JSON
-        run: npm run compile
+        run: yarn run compile
 
       - name: Check for JSON changes
         id: json-check
@@ -44,3 +49,27 @@ jobs:
           git add weblate/
           git commit -m "Update Weblate JSON from markdown changes"
           git push
+
+      - name: Install site dependencies
+        run: cd site && yarn install --frozen-lockfile
+
+      - name: Build site
+        run: cd site && yarn run build
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/_site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
