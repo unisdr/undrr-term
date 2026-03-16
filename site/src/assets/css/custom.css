@@ -37,35 +37,141 @@
   margin-top: 0.25rem;
 }
 
-/* Term detail page sections */
-.term-detail-section {
+/* Term detail page: two-column layout (sidebar + content) */
+.term-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .term-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left sidebar */
+.term-sidebar {
+  border-right: 1px solid #e0e0e0;
+  padding-right: 1.5rem;
+}
+
+[dir="rtl"] .term-sidebar {
+  border-right: none;
+  border-left: 1px solid #e0e0e0;
+  padding-right: 0;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .term-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+  [dir="rtl"] .term-sidebar {
+    border-left: none;
+  }
+}
+
+.term-sidebar__section {
   margin-bottom: 1.5rem;
 }
 
-.term-detail-section h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #666;
-  margin-bottom: 0.5rem;
+.term-sidebar__section h3 {
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
 }
 
-/* Language translation cards (inside mg-grid) */
-.language-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  padding: 1rem;
+.term-sidebar__section p,
+.term-sidebar__section ul {
+  margin: 0;
+  color: #555;
 }
 
-.language-card h4 {
+.term-sidebar__section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.term-sidebar__section li {
+  padding: 0.25rem 0;
+  border-left: 3px solid #e0e0e0;
+  padding-left: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+[dir="rtl"] .term-sidebar__section li {
+  border-left: none;
+  border-right: 3px solid #e0e0e0;
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+
+/* Right content: language sections */
+.term-content {
+  min-width: 0;
+}
+
+.term-lang-section {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.term-lang-section:last-child {
+  border-bottom: none;
+}
+
+.term-lang-heading {
+  color: #999;
+  font-weight: 300;
   margin: 0 0 0.5rem 0;
+}
+
+.term-lang-heading a {
+  color: #999;
+  text-decoration: none;
+}
+
+.term-lang-heading a:hover {
   color: #0468b1;
 }
 
-/* Edit on GitHub link */
-.term-edit-link {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #eee;
+.term-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.term-pos {
+  font-weight: 400;
+  color: #999;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .term-pos {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.term-aliases {
+  color: #666;
+  font-style: italic;
+  margin: 0 0 0.5rem 0;
+}
+
+.term-lang-section h3 {
+  font-weight: 700;
+  margin: 1rem 0 0.25rem 0;
+}
+
+/* Term detail sections (used for description blocks) */
+.term-detail-section {
+  margin-bottom: 1.5rem;
 }
 
 /* Search input */

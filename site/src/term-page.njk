@@ -43,96 +43,148 @@
 
 <h1>{{ t.term }}</h1>
 
-{%- if t.part_of_speech or (term.domain and i18n.domain[term.domain]) %}
-<div class="mg-tag-container">
-  {%- if t.part_of_speech %}
-    <span>{{ t.part_of_speech }}</span>
-  {%- endif %}
-  {%- if term.domain and i18n.domain[term.domain] %}
-    <span>{{ i18n.domain[term.domain][lang] or i18n.domain[term.domain].en }}</span>
-  {%- endif %}
-  <span>{{ term.code }}</span>
-</div>
-{%- endif %}
+<div class="term-layout">
 
-<div class="term-detail-section">
-  <h3>{{ i18n.definition[lang] }}</h3>
-  {{ t.definition | md | safe }}
-</div>
+  {# -- Left sidebar: metadata -- #}
+  <aside class="term-sidebar">
 
-{%- if t.context %}
-<div class="term-detail-section">
-  <h3>{{ i18n.context[lang] }}</h3>
-  <p>{{ t.context | mdInline | safe }}</p>
-</div>
-{%- endif %}
+    {%- if term.domain and i18n.domain[term.domain] %}
+    <div class="term-sidebar__section">
+      <h3>{{ i18n.domain_label[lang] or "Domain" }}</h3>
+      <p>{{ i18n.domain[term.domain][lang] or i18n.domain[term.domain].en }}</p>
+    </div>
+    {%- endif %}
 
-{%- if t.aliases and t.aliases.length %}
-<div class="term-detail-section">
-  <h3>{{ i18n.aliases[lang] }}</h3>
-  <p>{{ t.aliases | join(", ") }}</p>
-</div>
-{%- endif %}
+    {%- if term.category %}
+    <div class="term-sidebar__section">
+      <h3>{{ i18n.category_label[lang] or "Category" }}</h3>
+      <p>{{ term.category }}</p>
+    </div>
+    {%- endif %}
 
-{%- if t.source %}
-<div class="term-detail-section">
-  <h3>{{ i18n.source[lang] }}</h3>
-  <p>{{ t.source }}</p>
-</div>
-{%- endif %}
+    <div class="term-sidebar__section">
+      <h3>{{ i18n.source[lang] }}</h3>
+      <p>{{ t.source or "—" }}</p>
+    </div>
 
-{%- if term.related and term.related.length %}
-<div class="term-detail-section">
-  <h3>{{ i18n.related_terms[lang] }}</h3>
-  <ul>
-    {%- for relId in term.related %}
-      {%- set relTerm = false %}
-      {%- for t2 in terms %}
-        {%- if t2.id === relId %}
-          {%- set relTerm = t2 %}
+    <div class="term-sidebar__section">
+      <h3>Code</h3>
+      <p>{{ term.code }}</p>
+    </div>
+
+    {%- if term.related and term.related.length %}
+    <div class="term-sidebar__section">
+      <h3>{{ i18n.related_terms[lang] }}</h3>
+      <ul>
+        {%- for relId in term.related %}
+          {%- set relTerm = false %}
+          {%- for t2 in terms %}
+            {%- if t2.id === relId %}
+              {%- set relTerm = t2 %}
+            {%- endif %}
+          {%- endfor %}
+          {%- if relTerm %}
+            <li><a href="{{ ('/' + lang + '/' + relTerm.project + '/' + relTerm.code + '/') | url }}">{{ relTerm | termName(lang) }}</a></li>
+          {%- else %}
+            <li>{{ relId }}</li>
+          {%- endif %}
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+
+    <div class="term-sidebar__section">
+      <h3>Status</h3>
+      <p>{{ term.status or "published" }}</p>
+    </div>
+
+    <div class="term-sidebar__section">
+      <a href="https://github.com/unisdr/undrr-term/edit/main/terms/{{ term.project }}/{{ term.code }}.md"
+         class="mg-button mg-button-primary">
+        {{ i18n.edit_on_github[lang] }}
+      </a>
+    </div>
+
+  </aside>
+
+  {# -- Right: language sections (UNTerm style: each language as a block) -- #}
+  <div class="term-content">
+
+    {# Current language first #}
+    <section class="term-lang-section">
+      {%- for thisLang in languages %}
+        {%- if thisLang.code === lang %}
+      <h2 class="term-lang-heading">{{ thisLang.name }}</h2>
         {%- endif %}
       {%- endfor %}
-      {%- if relTerm %}
-        <li><a href="{{ ('/' + lang + '/' + relTerm.project + '/' + relTerm.code + '/') | url }}">{{ relTerm | termName(lang) }}</a></li>
-      {%- else %}
-        <li>{{ relId }}</li>
+
+      <p class="term-name">
+        {{ t.term }}
+        {%- if t.part_of_speech %}
+          <span class="term-pos">{{ t.part_of_speech }}</span>
+        {%- endif %}
+      </p>
+
+      {%- if t.aliases and t.aliases.length %}
+      <p class="term-aliases">{{ i18n.aliases[lang] }}: {{ t.aliases | join(", ") }}</p>
       {%- endif %}
-    {%- endfor %}
-  </ul>
-</div>
-{%- endif %}
 
-{%- if t.description %}
-<div class="term-detail-section">
-  {{ t.description | md | safe }}
-</div>
-{%- endif %}
+      {%- if t.context %}
+      <p><strong>{{ i18n.context[lang] }}:</strong> {{ t.context | mdInline | safe }}</p>
+      {%- endif %}
 
-<div class="term-detail-section">
-  <h3>{{ i18n.languages_label[lang] }}</h3>
+      <h3>{{ i18n.definition[lang] }}</h3>
+      {{ t.definition | md | safe }}
+    </section>
+
+    {%- if t.description %}
+    <div class="term-detail-section">
+      {{ t.description | md | safe }}
+    </div>
+    {%- endif %}
+
+    {# Other languages #}
     {%- for l in languages %}
       {%- if l.code !== lang and term.translations[l.code] %}
         {%- set lt = term.translations[l.code] %}
-        <article class="mg-card mg-card__vc">
-          <div class="mg-card__content">
-            <div class="mg-card__meta">
-              <span class="mg-card__label mg-card__label--active">{{ l.name }}</span>
-            </div>
-            <header class="mg-card__title">
-              <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}">{{ lt.term }}</a>
-            </header>
-            {%- if lt.definition %}
-              <p class="mg-card__summary">{{ lt.definition | truncate(200) | mdInline | safe }}</p>
+        <section class="term-lang-section">
+          <h2 class="term-lang-heading">
+            <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}">{{ l.name }}</a>
+          </h2>
+
+          <p class="term-name">
+            {{ lt.term }}
+            {%- if lt.part_of_speech %}
+              <span class="term-pos">{{ lt.part_of_speech }}</span>
             {%- endif %}
-          </div>
-        </article>
+          </p>
+
+          {%- if lt.aliases and lt.aliases.length %}
+          <p class="term-aliases">{{ i18n.aliases[lang] }}: {{ lt.aliases | join(", ") }}</p>
+          {%- endif %}
+
+          <h3>{{ i18n.definition[lang] }}</h3>
+          {{ lt.definition | md | safe }}
+        </section>
       {%- endif %}
     {%- endfor %}
+
+  </div>
 </div>
 
-<div class="term-edit-link">
-  <a href="https://github.com/undrr/undrr-term/edit/main/terms/{{ term.project }}/{{ term.code }}.md"
-     class="mg-button mg-button-primary">
-    {{ i18n.edit_on_github[lang] }}
-  </a>
-</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": {{ t.term | dump | safe }},
+  "description": {{ t.definition | dump | safe }},
+  "termCode": {{ term.code | dump | safe }},
+  "inLanguage": {{ lang | dump | safe }},
+  "url": {{ (site.url + '/' + lang + '/' + term.project + '/' + term.code + '/') | dump | safe }},
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": {{ term.projectConfig.name | dump | safe }},
+    "url": {{ (site.url + '/' + lang + '/' + term.project + '/') | dump | safe }}
+  }
+}
+</script>

@@ -65,6 +65,27 @@
 {%- endfor %}
 </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": {{ project.name | dump | safe }},
+  "description": {{ project.description | dump | safe }},
+  "inLanguage": {{ lang | dump | safe }},
+  "url": {{ (site.url + '/' + lang + '/' + project.slug + '/') | dump | safe }},
+  "hasDefinedTerm": [
+    {%- for term in projectTerms %}
+    {
+      "@type": "DefinedTerm",
+      "name": {{ term | termName(lang) | dump | safe }},
+      "termCode": {{ term.code | dump | safe }},
+      "url": {{ (site.url + '/' + lang + '/' + project.slug + '/' + term.code + '/') | dump | safe }}
+    }{{ "," if not loop.last }}
+    {%- endfor %}
+  ]
+}
+</script>
+
 <script>
   const searchInput = document.getElementById('project-search');
   const termList = document.getElementById('term-list');

@@ -175,6 +175,22 @@
     "ru": "Другие языки",
     "es": "Otros idiomas"
   },
+  "domain_label": {
+    "en": "Domain",
+    "ar": "المجال",
+    "zh": "领域",
+    "fr": "Domaine",
+    "ru": "Область",
+    "es": "Dominio"
+  },
+  "category_label": {
+    "en": "Category",
+    "ar": "الفئة",
+    "zh": "类别",
+    "fr": "Catégorie",
+    "ru": "Категория",
+    "es": "Categoría"
+  },
   "domain": {
     "natural-hazards/meteorological": {
       "en": "Meteorological hazards",

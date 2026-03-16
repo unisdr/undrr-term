@@ -12,7 +12,8 @@
   eleventyComputed: {
     lang: (data) => data.currentLang.code,
     dir: (data) => data.currentLang.dir,
-    pageTitle: (data) => data.i18n.site_subtitle[data.currentLang.code]
+    pageTitle: (data) => data.i18n.site_subtitle[data.currentLang.code],
+    langPath: () => ""
   }
 }
 ---
@@ -57,4 +58,21 @@
     </div>
   </article>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PreventionWeb Term",
+  "description": {{ i18n.site_subtitle[lang] | dump | safe }},
+  "url": {{ (site.url + '/' + lang + '/') | dump | safe }},
+  "inLanguage": {{ lang | dump | safe }},
+  "publisher": {
+    "@type": "Organization",
+    "name": "United Nations Office for Disaster Risk Reduction",
+    "alternateName": "UNDRR",
+    "url": "https://www.undrr.org"
+  }
+}
+</script>
 

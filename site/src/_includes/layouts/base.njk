@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ pageTitle }} - {{ i18n.site_title[lang] }}</title>
+  <link rel="canonical" href="{{ site.url }}/{{ lang }}/{{ langPath or '' }}">
+  {%- if lang %}
+  {%- for l in languages %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ site.url }}/{{ l.code }}/{{ langPath or '' }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/{{ langPath or '' }}">
+  {%- endif %}
   <link rel="stylesheet" href="https://assets.undrr.org/static/mangrove/1.3.3/css/style-preventionweb.css">
   <link rel="stylesheet" href="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent.css">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}">
