@@ -77,7 +77,7 @@ terms/hips/gh0001/
   fault-mechanics.svg   # diagram referenced in descriptions
 ```
 
-See [PRD.md](PRD.md) for the full data model and [METHODOLOGY.md](METHODOLOGY.md) for design rationale.
+See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the Weblate sync workflow.
 
 ## Repository layout
 
