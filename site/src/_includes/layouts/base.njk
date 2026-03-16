@@ -9,35 +9,41 @@
 </head>
 <body>
 
-  {# -- UNDRR global page header (black bar with logo + language selector) -- #}
-  <header id="header" class="mg-page-header mg-page-header--default">
-    <div class="mg-page-header__decoration"></div>
-    <div class="mg-page-header__toolbar-wrapper">
-      <div class="mg-page-header__container mg-container">
+  {# -- UNDRR global page header -- #}
+  <header id="header" class="mg-page-header">
+    <div class="mg-page-header__decoration">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="mg-page-header__toolbar-wrapper" data-vf-google-analytics-region="undrr-black-bar">
+      <div class="mg-page-header__container | mg-container">
         <div class="mg-page-header__region mg-page-header__region--toolbar">
-          <div class="mg-page-header__block mg-page-header__block--logo">
-            <a href="{{ ('/' + lang + '/') | url }}">
-              <img class="mg-page-header__logo-img"
-                   src="https://assets.undrr.org/static/logos/undrr/undrr-logo-horizontal.svg"
-                   alt="UNDRR" />
+          <section id="block-undrrlogo" class="mg-page-header__block mg-page-header__block--logo">
+            <a href="https://www.undrr.org">
+              <img
+                alt="UNDRR Logo"
+                src="https://assets.undrr.org/static/logos/undrr/undrr-logo-horizontal.svg"
+                width="324"
+                height="47"
+                title="UNDRR Logo"
+                class="mg-page-header__logo-img"
+              />
+            </a>
+          </section>
+          <div class="mg-page-header__block">
+            <a href="{{ ('/' + lang + '/') | url }}" style="text-decoration: none; color: inherit;">
+              <span class="mg-page-header__label">{{ i18n.site_title[lang] }}</span>
             </a>
           </div>
           <div class="mg-page-header__block">
-            <span class="mg-page-header__label">{{ i18n.site_title[lang] }}</span>
-          </div>
-          <div class="mg-page-header__block">
-            <form class="mg-page-header__lang-form" action="" method="get">
-              <div class="mg-page-header__form-item">
-                <label class="mg-u-sr-only" for="lang-select">Language</label>
-                <div class="mg-page-header__select-wrapper">
-                  <select id="lang-select" class="mg-page-header__select" onchange="window.location.href = '{{ '/' | url }}' + this.value + '/{{ langPath or '' }}'">
-                    {%- for l in languages %}
-                    <option value="{{ l.code }}" {% if l.code === lang %}selected{% endif %}>{{ l.name }}</option>
-                    {%- endfor %}
-                  </select>
-                </div>
-              </div>
-            </form>
+            <label class="mg-u-sr-only" for="lang-select">Language</label>
+            <select id="lang-select" class="mg-page-header__select" onchange="window.location.href = '{{ '/' | url }}' + this.value + '/{{ langPath or '' }}'">
+              {%- for l in languages %}
+              <option value="{{ l.code }}" {% if l.code === lang %}selected{% endif %}>{{ l.name }}</option>
+              {%- endfor %}
+            </select>
           </div>
         </div>
       </div>
@@ -64,6 +70,12 @@
       activedomain: 'www.undrr.org'
     });
   </script>
+
+  {# -- UNDRR standard scripts -- #}
+  <script src="https://assets.undrr.org/static/analytics/v1.0.0/google_analytics_enhancements.js" defer></script>
+  <script src="https://messaging.undrr.org/src/undrr-messaging.js" defer></script>
+  <script src="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent.umd.js" defer></script>
+  <script src="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent-undrr.js" defer></script>
 
 </body>
 </html>
