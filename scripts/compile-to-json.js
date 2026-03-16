@@ -27,6 +27,7 @@ const TRANSLATABLE_FIELDS = [
   "context",
   "part_of_speech",
   "aliases",
+  "source",
 ];
 
 function getProjectDirs() {

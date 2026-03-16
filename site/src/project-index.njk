@@ -31,9 +31,11 @@
 {%- set project = combo.project %}
 {%- set projectTerms = terms | termsForProject(project.slug) %}
 
-<nav aria-label="Breadcrumb" style="margin-bottom: 1rem;">
-  <a href="/{{ lang }}/">{{ i18n.all_projects[lang] }}</a> &rsaquo;
-  <strong>{{ project.name }}</strong>
+<nav aria-label="breadcrumbs" class="mg-breadcrumb">
+  <ul>
+    <li><a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a></li>
+    <li aria-current="page">{{ project.name }}</li>
+  </ul>
 </nav>
 
 <h1>{{ project.name }}</h1>
@@ -49,14 +51,14 @@
 <div id="term-list">
 {%- for term in projectTerms | sort(false, false, "id") %}
   <div class="term-card" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
-    <h3><a href="/{{ lang }}/{{ project.slug }}/{{ term.code }}/">{{ term | termName(lang) }}</a></h3>
+    <h3><a href="{{ ('/' + lang + '/' + project.slug + '/' + term.code + '/') | url }}">{{ term | termName(lang) }}</a></h3>
     <p>{{ term | termDef(lang) | truncate(150) }}</p>
-    <div class="term-meta">
+    <div class="term-meta mg-tag-container">
       {%- if term.translations[lang].part_of_speech %}
-        <span class="tag">{{ term.translations[lang].part_of_speech }}</span>
+        <span>{{ term.translations[lang].part_of_speech }}</span>
       {%- endif %}
       {%- if term.domain and i18n.domain[term.domain] %}
-        <span class="tag">{{ i18n.domain[term.domain][lang] or i18n.domain[term.domain].en }}</span>
+        <span>{{ i18n.domain[term.domain][lang] or i18n.domain[term.domain].en }}</span>
       {%- endif %}
     </div>
   </div>

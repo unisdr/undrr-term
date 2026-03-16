@@ -11,6 +11,6 @@ pageTitle: Home
 <h2>Choose your language</h2>
 <ul>
 {%- for l in languages %}
-  <li><a href="/{{ l.code }}/">{{ l.name }}</a></li>
+  <li><a href="{{ ('/' + l.code + '/') | url }}">{{ l.name }}</a></li>
 {%- endfor %}
 </ul>

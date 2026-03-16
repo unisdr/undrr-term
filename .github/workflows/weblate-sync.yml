@@ -28,7 +28,7 @@ jobs:
       - run: yarn install --frozen-lockfile
 
       - name: Import Weblate JSON to markdown
-        run: npm run import:weblate
+        run: yarn run import:weblate
 
       - name: Check for markdown changes
         id: md-check
@@ -50,7 +50,7 @@ jobs:
 
       - name: Verify round-trip
         run: |
-          npm run compile
+          yarn run compile
           if ! git diff --quiet weblate/; then
             echo "Round-trip check failed: compile produced a diff after import"
             git diff weblate/

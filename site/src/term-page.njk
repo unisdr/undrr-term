@@ -35,23 +35,25 @@
 {%- set term = combo.term %}
 {%- set t = term.translations[lang] or term.translations.en %}
 
-<nav aria-label="Breadcrumb" style="margin-bottom: 1rem;">
-  <a href="/{{ lang }}/">{{ i18n.all_projects[lang] }}</a> &rsaquo;
-  <a href="/{{ lang }}/{{ term.project }}/">{{ term.projectConfig.name }}</a> &rsaquo;
-  <strong>{{ t.term }}</strong>
+<nav aria-label="breadcrumbs" class="mg-breadcrumb">
+  <ul>
+    <li><a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a></li>
+    <li><a href="{{ ('/' + lang + '/' + term.project + '/') | url }}">{{ term.projectConfig.name }}</a></li>
+    <li aria-current="page">{{ t.term }}</li>
+  </ul>
 </nav>
 
 <h1>{{ t.term }}</h1>
 
 {%- if t.part_of_speech or (term.domain and i18n.domain[term.domain]) %}
-<div style="margin-bottom: 1rem;">
+<div class="mg-tag-container">
   {%- if t.part_of_speech %}
-    <span class="tag">{{ t.part_of_speech }}</span>
+    <span>{{ t.part_of_speech }}</span>
   {%- endif %}
   {%- if term.domain and i18n.domain[term.domain] %}
-    <span class="tag">{{ i18n.domain[term.domain][lang] or i18n.domain[term.domain].en }}</span>
+    <span>{{ i18n.domain[term.domain][lang] or i18n.domain[term.domain].en }}</span>
   {%- endif %}
-  <span class="tag">{{ term.code }}</span>
+  <span>{{ term.code }}</span>
 </div>
 {%- endif %}
 
@@ -93,7 +95,7 @@
         {%- endif %}
       {%- endfor %}
       {%- if relTerm %}
-        <li><a href="/{{ lang }}/{{ relTerm.project }}/{{ relTerm.code }}/">{{ relTerm | termName(lang) }}</a></li>
+        <li><a href="{{ ('/' + lang + '/' + relTerm.project + '/' + relTerm.code + '/') | url }}">{{ relTerm | termName(lang) }}</a></li>
       {%- else %}
         <li>{{ relId }}</li>
       {%- endif %}
@@ -110,7 +112,7 @@
 
 <div class="term-detail-section">
   <h3>{{ i18n.languages_label[lang] }}</h3>
-  <div class="language-grid">
+  <div class="mg-grid mg-grid__col-3">
     {%- for l in languages %}
       {%- if l.code !== lang and term.translations[l.code] %}
         {%- set lt = term.translations[l.code] %}
@@ -118,9 +120,9 @@
           <h4>{{ l.name }}</h4>
           <p><strong>{{ lt.term }}</strong></p>
           {%- if lt.definition %}
-            <p style="font-size: 0.9rem; color: #555;">{{ lt.definition | truncate(200) | mdInline | safe }}</p>
+            <p class="mg-u-font-size-150 mg-u-color--neutral-600">{{ lt.definition | truncate(200) | mdInline | safe }}</p>
           {%- endif %}
-          <a href="/{{ l.code }}/{{ term.project }}/{{ term.code }}/" style="font-size: 0.85rem;">
+          <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}">
             View in {{ l.name }} &rarr;
           </a>
         </div>
@@ -129,9 +131,9 @@
   </div>
 </div>
 
-<div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+<div class="term-edit-link">
   <a href="https://github.com/undrr/undrr-term/edit/main/terms/{{ term.project }}/{{ term.code }}.md"
-     style="font-size: 0.85rem; color: #666;">
+     class="mg-u-font-size-150 mg-u-color--neutral-600">
     {{ i18n.edit_on_github[lang] }}
   </a>
 </div>
