@@ -1,0 +1,79 @@
+---js
+{
+  pagination: {
+    data: "collections.all",
+    size: 1,
+    before: function(data, fullData) {
+      const combos = [];
+      for (const lang of fullData.languages) {
+        for (const project of fullData.projects) {
+          combos.push({ lang, project });
+        }
+      }
+      return combos;
+    },
+    alias: "combo"
+  },
+  permalink: function(data) {
+    return `/${data.combo.lang.code}/${data.combo.project.slug}/`;
+  },
+  layout: "layouts/base.njk",
+  eleventyComputed: {
+    lang: (data) => data.combo.lang.code,
+    dir: (data) => data.combo.lang.dir,
+    pageTitle: (data) => data.combo.project.name,
+    langPath: (data) => `${data.combo.project.slug}/`
+  }
+}
+---
+
+{%- set lang = combo.lang.code %}
+{%- set project = combo.project %}
+{%- set projectTerms = terms | termsForProject(project.slug) %}
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1rem;">
+  <a href="/{{ lang }}/">{{ i18n.all_projects[lang] }}</a> &rsaquo;
+  <strong>{{ project.name }}</strong>
+</nav>
+
+<h1>{{ project.name }}</h1>
+<p>{{ project.description }}</p>
+
+<input type="text"
+  class="search-input"
+  id="project-search"
+  placeholder="{{ i18n.search_placeholder[lang] }}"
+  autocomplete="off"
+  data-project="{{ project.slug }}">
+
+<div id="term-list">
+{%- for term in projectTerms | sort(false, false, "id") %}
+  <div class="term-card" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
+    <h3><a href="/{{ lang }}/{{ project.slug }}/{{ term.code }}/">{{ term | termName(lang) }}</a></h3>
+    <p>{{ term | termDef(lang) | truncate(150) }}</p>
+    <div class="term-meta">
+      {%- if term.translations[lang].part_of_speech %}
+        <span class="tag">{{ term.translations[lang].part_of_speech }}</span>
+      {%- endif %}
+      {%- if term.domain and i18n.domain[term.domain] %}
+        <span class="tag">{{ i18n.domain[term.domain][lang] or i18n.domain[term.domain].en }}</span>
+      {%- endif %}
+    </div>
+  </div>
+{%- endfor %}
+</div>
+
+<script>
+  const searchInput = document.getElementById('project-search');
+  const termList = document.getElementById('term-list');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      const cards = termList.querySelectorAll('.term-card');
+      cards.forEach(card => {
+        const match = card.dataset.term.includes(q) || card.dataset.def.includes(q);
+        card.style.display = match ? '' : 'none';
+      });
+    });
+  }
+</script>

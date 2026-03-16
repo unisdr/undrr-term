@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <pattern id="earth" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="#d4a574"/>
+      <circle cx="10" cy="10" r="1" fill="#b8956a" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Surface -->
+  <rect x="0" y="0" width="600" height="120" fill="#87CEEB"/>
+  <text x="300" y="30" text-anchor="middle" font-size="14" fill="#333">Surface</text>
+
+  <!-- Ground -->
+  <polygon points="0,120 600,120 600,400 0,400" fill="url(#earth)"/>
+
+  <!-- Fault line -->
+  <line x1="150" y1="120" x2="400" y2="350" stroke="#c0392b" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="310" y="260" font-size="12" fill="#c0392b" transform="rotate(47, 310, 260)">Fault plane</text>
+
+  <!-- Focus/Hypocenter -->
+  <circle cx="300" cy="280" r="12" fill="#e74c3c"/>
+  <circle cx="300" cy="280" r="20" fill="none" stroke="#e74c3c" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="300" cy="280" r="30" fill="none" stroke="#e74c3c" stroke-width="1" opacity="0.4"/>
+  <text x="340" y="285" font-size="12" fill="#333">Focus (hypocenter)</text>
+
+  <!-- Epicenter projection -->
+  <line x1="300" y1="280" x2="300" y2="120" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="300" cy="120" r="6" fill="#f39c12"/>
+  <text x="310" y="110" font-size="12" fill="#333">Epicenter</text>
+
+  <!-- Seismic waves -->
+  <circle cx="300" cy="280" r="50" fill="none" stroke="#3498db" stroke-width="1" opacity="0.5"/>
+  <circle cx="300" cy="280" r="80" fill="none" stroke="#3498db" stroke-width="1" opacity="0.35"/>
+  <circle cx="300" cy="280" r="110" fill="none" stroke="#3498db" stroke-width="1" opacity="0.2"/>
+  <text x="430" y="210" font-size="11" fill="#3498db">Seismic waves</text>
+</svg>

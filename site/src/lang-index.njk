@@ -1,0 +1,50 @@
+---js
+{
+  pagination: {
+    data: "languages",
+    size: 1,
+    alias: "currentLang"
+  },
+  permalink: function(data) {
+    return `/${data.currentLang.code}/`;
+  },
+  layout: "layouts/base.njk",
+  eleventyComputed: {
+    lang: (data) => data.currentLang.code,
+    dir: (data) => data.currentLang.dir,
+    pageTitle: (data) => data.i18n.all_projects[data.currentLang.code]
+  }
+}
+---
+
+{%- set lang = currentLang.code %}
+
+<h1>{{ i18n.site_title[lang] }}</h1>
+
+<input type="text"
+  class="search-input"
+  id="search"
+  placeholder="{{ i18n.search_placeholder[lang] }}"
+  autocomplete="off">
+
+<h2>{{ i18n.all_projects[lang] }}</h2>
+
+{%- for project in projects %}
+<div class="term-card">
+  <h3><a href="/{{ lang }}/{{ project.slug }}/">{{ project.name }}</a></h3>
+  <p>{{ project.description }}</p>
+  <p class="term-meta">{{ terms | termsForProject(project.slug) | length }} terms</p>
+</div>
+{%- endfor %}
+
+<div id="search-results" style="display: none;">
+  <h2 id="search-results-heading"></h2>
+  <div id="search-results-list"></div>
+</div>
+
+<script src="/assets/js/search.js"></script>
+<script>
+  if (typeof initSearch === 'function') {
+    initSearch('{{ lang }}');
+  }
+</script>

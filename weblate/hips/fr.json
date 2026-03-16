@@ -1,0 +1,23 @@
+{
+  "gh0001.aliases": "Séisme",
+  "gh0001.definition": "Mouvement soudain ou tremblement de la terre causé par la libération brusque de contraintes lentement accumulées, généralement par un mouvement le long d'une faille.",
+  "gh0001.description": "## Diagramme\n\n![Mécanique des failles sismiques](fault-mechanics.svg)\n\nDiagramme simplifié montrant la relation entre le foyer (hypocentre),\nl'épicentre et la propagation des ondes sismiques le long d'un plan de faille.\n\n## Mesure\n\nLa magnitude des séismes est mesurée à l'aide de l'échelle de magnitude de\nmoment (Mw), qui a remplacé l'échelle de Richter pour la plupart des usages\nscientifiques. L'intensité est évaluée à l'aide de l'échelle de Mercalli\nmodifiée (MMI), qui décrit les effets observés en des lieux spécifiques.",
+  "gh0001.part_of_speech": "nom",
+  "gh0001.term": "Tremblement de terre",
+  "gh0003.aliases": "Raz-de-marée",
+  "gh0003.definition": "Une série de vagues causées par un déplacement important et soudain de l'océan, résultant généralement de tremblements de terre, d'éruptions volcaniques ou de glissements de terrain sous-marins.",
+  "gh0003.part_of_speech": "nom",
+  "gh0003.term": "Tsunami",
+  "mh0301.aliases": "Crue",
+  "mh0301.context": "L'inondation de 2016 a touché plusieurs départements du centre de la France.",
+  "mh0301.definition": "Le débordement des limites normales d'un cours d'eau ou d'un autre plan d'eau, ou l'accumulation d'eau sur des zones normalement non submergées.",
+  "mh0301.part_of_speech": "nom",
+  "mh0301.term": "Inondation",
+  "mh0302.definition": "Une période prolongée de précipitations anormalement faibles qui entraîne une pénurie d'eau pour les personnes, les animaux et les plantes.",
+  "mh0302.part_of_speech": "nom",
+  "mh0302.term": "Sécheresse",
+  "mh0501.aliases": "Ouragan|Typhon",
+  "mh0501.definition": "Un système de tempête en rotation rapide avec un centre de basse pression, une circulation atmosphérique fermée à basse altitude, des vents forts et un arrangement en spirale d'orages produisant de fortes pluies.",
+  "mh0501.part_of_speech": "nom",
+  "mh0501.term": "Cyclone tropical"
+}

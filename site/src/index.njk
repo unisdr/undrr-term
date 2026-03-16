@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+permalink: /
+lang: en
+pageTitle: Home
+---
+
+<h1>UNDRR Terminology Hub</h1>
+<p>Multilingual terminology for disaster risk reduction.</p>
+
+<h2>Choose your language</h2>
+<ul>
+{%- for l in languages %}
+  <li><a href="/{{ l.code }}/">{{ l.name }}</a></li>
+{%- endfor %}
+</ul>

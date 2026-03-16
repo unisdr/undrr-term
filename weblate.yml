@@ -1,0 +1,13 @@
+projects:
+  - path: terms/hips
+    weblate_project: undrr-hips
+    weblate_component: terms
+    file_mask: weblate/hips/*.json
+    base_file: weblate/hips/en.json
+    file_format: json
+  - path: terms/sendai
+    weblate_project: undrr-sendai
+    weblate_component: terms
+    file_mask: weblate/sendai/*.json
+    base_file: weblate/sendai/en.json
+    file_format: json

@@ -1,0 +1,108 @@
+{
+  "site_title": {
+    "en": "UNDRR Terminology",
+    "ar": "مصطلحات الأمم المتحدة للحد من مخاطر الكوارث",
+    "zh": "联合国减灾术语",
+    "fr": "Terminologie UNDRR",
+    "ru": "Терминология UNDRR",
+    "es": "Terminología UNDRR"
+  },
+  "search_placeholder": {
+    "en": "Search terms...",
+    "ar": "البحث في المصطلحات...",
+    "zh": "搜索术语...",
+    "fr": "Rechercher des termes...",
+    "ru": "Поиск терминов...",
+    "es": "Buscar términos..."
+  },
+  "definition": {
+    "en": "Definition",
+    "ar": "التعريف",
+    "zh": "定义",
+    "fr": "Définition",
+    "ru": "Определение",
+    "es": "Definición"
+  },
+  "related_terms": {
+    "en": "Related terms",
+    "ar": "مصطلحات ذات صلة",
+    "zh": "相关术语",
+    "fr": "Termes associés",
+    "ru": "Связанные термины",
+    "es": "Términos relacionados"
+  },
+  "part_of_speech": {
+    "en": "Part of speech",
+    "ar": "نوع الكلمة",
+    "zh": "词性",
+    "fr": "Partie du discours",
+    "ru": "Часть речи",
+    "es": "Categoría gramatical"
+  },
+  "context": {
+    "en": "Context",
+    "ar": "السياق",
+    "zh": "语境",
+    "fr": "Contexte",
+    "ru": "Контекст",
+    "es": "Contexto"
+  },
+  "aliases": {
+    "en": "Also known as",
+    "ar": "يُعرف أيضاً بـ",
+    "zh": "又称",
+    "fr": "Aussi connu sous",
+    "ru": "Также известен как",
+    "es": "También conocido como"
+  },
+  "source": {
+    "en": "Source",
+    "ar": "المصدر",
+    "zh": "来源",
+    "fr": "Source",
+    "ru": "Источник",
+    "es": "Fuente"
+  },
+  "all_projects": {
+    "en": "All projects",
+    "ar": "جميع المشاريع",
+    "zh": "所有项目",
+    "fr": "Tous les projets",
+    "ru": "Все проекты",
+    "es": "Todos los proyectos"
+  },
+  "edit_on_github": {
+    "en": "Edit on GitHub",
+    "ar": "تحرير على GitHub",
+    "zh": "在 GitHub 上编辑",
+    "fr": "Modifier sur GitHub",
+    "ru": "Редактировать на GitHub",
+    "es": "Editar en GitHub"
+  },
+  "languages_label": {
+    "en": "Other languages",
+    "ar": "لغات أخرى",
+    "zh": "其他语言",
+    "fr": "Autres langues",
+    "ru": "Другие языки",
+    "es": "Otros idiomas"
+  },
+  "domain": {
+    "natural-hazards/meteorological": {
+      "en": "Meteorological hazards",
+      "ar": "الأخطار الجوية",
+      "zh": "气象灾害",
+      "fr": "Aléas météorologiques",
+      "ru": "Метеорологические опасности",
+      "es": "Amenazas meteorológicas"
+    },
+    "natural-hazards/geophysical": {
+      "en": "Geophysical hazards",
+      "ar": "الأخطار الجيوفيزيائية",
+      "zh": "地球物理灾害",
+      "fr": "Aléas géophysiques",
+      "ru": "Геофизические опасности",
+      "es": "Amenazas geofísicas"
+    }
+  }
+}

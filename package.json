@@ -1,0 +1,22 @@
+{
+  "name": "undrr-term",
+  "version": "0.1.0",
+  "description": "UNDRR multilingual terminology hub",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "compile": "node scripts/compile-to-json.js",
+    "import:weblate": "node scripts/import-from-weblate.js",
+    "import:csv": "node scripts/import-csv.js",
+    "import:json": "node scripts/import-json.js",
+    "build:search": "node scripts/build-search-index.js",
+    "build": "npm run compile && cd site && npx @11ty/eleventy",
+    "dev": "cd site && npx @11ty/eleventy --serve"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

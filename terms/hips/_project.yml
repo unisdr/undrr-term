@@ -1,0 +1,8 @@
+name: "Hazard Information Profiles"
+slug: hips
+description: "Hazard definitions from UNDRR's 2025 Hazard Information Profiles"
+languages: [ar, zh, en, fr, ru, es]
+source_language: en
+weblate:
+  project: undrr-hips
+  component: terms
