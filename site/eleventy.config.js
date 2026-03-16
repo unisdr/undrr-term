@@ -121,6 +121,7 @@ export default function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/undrr-term/",
     dir: {
       input: "src",
       output: "_site",

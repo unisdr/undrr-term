@@ -36,8 +36,8 @@
 {%- set t = term.translations[lang] or term.translations.en %}
 
 <nav aria-label="Breadcrumb" style="margin-bottom: 1rem;">
-  <a href="/{{ lang }}/">{{ i18n.all_projects[lang] }}</a> &rsaquo;
-  <a href="/{{ lang }}/{{ term.project }}/">{{ term.projectConfig.name }}</a> &rsaquo;
+  <a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a> &rsaquo;
+  <a href="{{ ('/' + lang + '/' + term.project + '/') | url }}">{{ term.projectConfig.name }}</a> &rsaquo;
   <strong>{{ t.term }}</strong>
 </nav>
 
@@ -93,7 +93,7 @@
         {%- endif %}
       {%- endfor %}
       {%- if relTerm %}
-        <li><a href="/{{ lang }}/{{ relTerm.project }}/{{ relTerm.code }}/">{{ relTerm | termName(lang) }}</a></li>
+        <li><a href="{{ ('/' + lang + '/' + relTerm.project + '/' + relTerm.code + '/') | url }}">{{ relTerm | termName(lang) }}</a></li>
       {%- else %}
         <li>{{ relId }}</li>
       {%- endif %}
@@ -120,7 +120,7 @@
           {%- if lt.definition %}
             <p style="font-size: 0.9rem; color: #555;">{{ lt.definition | truncate(200) | mdInline | safe }}</p>
           {%- endif %}
-          <a href="/{{ l.code }}/{{ term.project }}/{{ term.code }}/" style="font-size: 0.85rem;">
+          <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}" style="font-size: 0.85rem;">
             View in {{ l.name }} &rarr;
           </a>
         </div>
@@ -130,7 +130,7 @@
 </div>
 
 <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <a href="https://github.com/undrr/undrr-term/edit/main/terms/{{ term.project }}/{{ term.code }}.md"
+  <a href="https://github.com/unisdr/undrr-term/edit/main/terms/{{ term.project }}/{{ term.code }}.md"
      style="font-size: 0.85rem; color: #666;">
     {{ i18n.edit_on_github[lang] }}
   </a>

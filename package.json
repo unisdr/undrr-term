@@ -8,11 +8,8 @@
   "scripts": {
     "compile": "node scripts/compile-to-json.js",
     "import:weblate": "node scripts/import-from-weblate.js",
-    "import:csv": "node scripts/import-csv.js",
-    "import:json": "node scripts/import-json.js",
-    "build:search": "node scripts/build-search-index.js",
-    "build": "npm run compile && cd site && npx @11ty/eleventy",
-    "dev": "cd site && npx @11ty/eleventy --serve"
+    "build": "yarn run compile && cd site && yarn run build",
+    "dev": "cd site && yarn run dev"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
