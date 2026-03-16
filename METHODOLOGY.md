@@ -87,13 +87,40 @@ We looked at how other organizations solve similar problems before making any de
 
 **All languages in one file vs. one file per language.** We chose one file per concept with all languages in the frontmatter. This keeps the concept atomic and makes it easy for humans to review and edit. The cost is a compile step to produce the per-language JSON files Weblate needs. We think this is worth it because the editing experience matters more than build simplicity.
 
-**Source codes as filenames, slugs for URLs.** The source systems already have identifiers for their terms (like `mh0301` for flood in the HIPs). Using these as filenames preserves the link to source data. But URLs use human-readable slugs (`/en/hips/flood/`) because nobody wants to navigate to `/en/hips/mh0301/`.
+**Source codes as filenames and in URLs.** The source systems already have identifiers for their terms (like `mh0301` for flood in the HIPs). We use these as both filenames and URL paths (`/en/hips/mh0301/`). Codes are immutable -- term names can change through translation, but the code never does. A human-readable `slug` field in frontmatter is available for display purposes but isn't used in routing.
 
 **Concept-level vs. per-language metadata.** Some fields belong to the concept regardless of language: `domain`, `category`, `status`, `related`. Others vary by language: `term`, `definition`, `context`, `part_of_speech`, `aliases`, `source`. Part of speech varies because the same concept may be a noun in English but a different grammatical category in another language. Context sentences only make sense in the target language.
 
 **Inline markdown in definitions.** Definitions support `*italic*`, `**bold**`, and `[links](url)` via markdown-it's inline renderer. This is a pragmatic middle ground: enough formatting for the occasional emphasis or cross-reference without turning the YAML frontmatter into full markdown documents. Weblate shows the raw markup to translators, but translators regularly work with inline formatting in strings.
 
 **Folder-based terms for assets.** Most terms are single `.md` files. When a term needs diagrams, photos, or other assets, it becomes a folder with `index.md` plus the asset files. The build pipeline handles both cases identically.
+
+**Per-language description files.** Short definitions stay in YAML frontmatter. Extended narrative content (diagrams, measurement details, background) lives in separate `description_{lang}.md` files within folder-based terms. This keeps the structured data clean while allowing full markdown for richer content. Not every term needs descriptions, and not every language needs one -- the system handles both gracefully.
+
+## How the Weblate sync works
+
+The markdown files in `terms/` are the source of truth. Weblate never touches them directly.
+
+**Markdown to Weblate** (on push to main):
+1. `compile-to-json.js` reads all term files and description files
+2. Extracts translations into flat key-value JSON, one file per language per project
+3. Commits the JSON to `weblate/`; Weblate picks up changes via webhook
+
+**Weblate to markdown** (when a translator submits work):
+1. Weblate pushes a PR modifying the JSON files
+2. `weblate-sync.yml` runs `import-from-weblate.js`
+3. The script patches the markdown frontmatter (or description files) with the new translations
+4. A verification step recompiles to confirm the round-trip produces no diff
+
+English is read-only in Weblate. Source text is only edited in the markdown files.
+
+## Contributor roadmap
+
+**Current: "Edit on GitHub" links.** Every term page links to the markdown file in the GitHub web editor. GitHub handles fork creation for people without write access.
+
+**Planned: submit-an-edit form.** An inline form on each term page with translations pre-filled. Users edit what they want and either download a patch file or authenticate with GitHub to create a PR directly.
+
+**Future: intermediary application.** A lightweight GitHub App that accepts edit submissions from people without GitHub accounts and creates moderated PRs. This is the "application that makes feature branches" from the original whiteboard sketch.
 
 ## What we didn't do
 
