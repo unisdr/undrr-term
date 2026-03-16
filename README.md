@@ -4,6 +4,8 @@
 
 Multilingual terminology for the UN Office for Disaster Risk Reduction, managed as markdown files in git. Terms compile to JSON for Weblate translation workflows and get published as a static site.
 
+![Whiteboard sketch of the UNDRR.Term architecture](site/src/assets/images/whiteboard.jpg)
+
 ## What it does
 
 - One markdown file per concept. All six UN languages sit together in YAML frontmatter.
@@ -29,13 +31,10 @@ yarn dev              # local dev server (Eleventy)
 yarn build            # full build (compile + site)
 ```
 
-### Import scripts
+### Other scripts
 
 ```bash
-yarn import:csv       # import terms from CSV
-yarn import:json      # import terms from JSON
 yarn import:weblate   # pull translations back from Weblate JSON into markdown
-yarn build:search     # generate client-side search index
 ```
 
 ## How terms are structured
@@ -68,12 +67,14 @@ translations:
 ---
 ```
 
-When a term needs images or other assets, it becomes a folder with an `index.md`:
+When a term needs images or extended descriptions, it becomes a folder:
 
 ```
 terms/hips/gh0001/
-  index.md              # same frontmatter format
-  fault-mechanics.svg   # referenced in the markdown body
+  index.md              # frontmatter with short definitions
+  description_en.md     # extended narrative (English)
+  description_fr.md     # extended narrative (French)
+  fault-mechanics.svg   # diagram referenced in descriptions
 ```
 
 See [PRD.md](PRD.md) for the full data model and [METHODOLOGY.md](METHODOLOGY.md) for design rationale.

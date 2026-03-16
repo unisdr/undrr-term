@@ -32,7 +32,7 @@
 {%- set projectTerms = terms | termsForProject(project.slug) %}
 
 <nav aria-label="Breadcrumb" style="margin-bottom: 1rem;">
-  <a href="/{{ lang }}/">{{ i18n.all_projects[lang] }}</a> &rsaquo;
+  <a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a> &rsaquo;
   <strong>{{ project.name }}</strong>
 </nav>
 
@@ -49,7 +49,7 @@
 <div id="term-list">
 {%- for term in projectTerms | sort(false, false, "id") %}
   <div class="term-card" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
-    <h3><a href="/{{ lang }}/{{ project.slug }}/{{ term.code }}/">{{ term | termName(lang) }}</a></h3>
+    <h3><a href="{{ ('/' + lang + '/' + project.slug + '/' + term.code + '/') | url }}">{{ term | termName(lang) }}</a></h3>
     <p>{{ term | termDef(lang) | truncate(150) }}</p>
     <div class="term-meta">
       {%- if term.translations[lang].part_of_speech %}
