@@ -59,6 +59,58 @@
     </div>
   </header>
 
+  {# -- Site navigation using Mangrove megamenu pattern -- #}
+  <nav class="mg-mega-wrapper" aria-label="Main Navigation">
+    <div class="mg-mega-topbar mg-mega-topbar--branded | mg-container-full-width">
+      <a class="mg-mega-topbar__logo" href="{{ ('/' + lang + '/') | url }}" aria-label="{{ i18n.site_title[lang] }}">
+        <span class="mg-page-header__label">{{ i18n.site_title[lang] }}</span>
+      </a>
+      <button
+        class="mg-mega-topbar-mobile__icon-button"
+        aria-label="Toggle navigation menu"
+        aria-haspopup="true"
+      >
+        <span class="mg-icon mg-icon-menu" aria-hidden="true"></span>
+      </button>
+      <ul
+        class="mg-mega-topbar__nav"
+        role="menubar"
+        aria-label="Main navigation menu"
+      >
+        {%- for project in projects %}
+        <li class="mg-mega-topbar__item" role="none">
+          <a
+            class="mg-mega-topbar__item-link"
+            href="{{ ('/' + lang + '/' + project.slug + '/') | url }}"
+            role="menuitem"
+          >
+            {{ project.name }}
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div
+      class="mg-mega-mobile-sidebar"
+      role="dialog"
+      aria-label="Mobile navigation menu"
+    >
+      <ul
+        class="mg-mega-sidebar__list"
+        role="menu"
+        aria-label="Navigation options"
+      >
+        {%- for project in projects %}
+        <li class="mg-mega-sidebar-section" role="none">
+          <a class="mg-mega-sidebar-section__item" href="{{ ('/' + lang + '/' + project.slug + '/') | url }}" role="menuitem">
+            <span>{{ project.name }}</span>
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </nav>
+
   {# -- Main content area -- #}
   <main class="mg-container mg-container--padded mg-container--spacer">
     {{ content | safe }}
