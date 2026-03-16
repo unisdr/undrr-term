@@ -1,0 +1,93 @@
+---js
+{
+  pagination: {
+    data: "languages",
+    size: 1,
+    alias: "currentLang"
+  },
+  permalink: function(data) {
+    return `/${data.currentLang.code}/search/`;
+  },
+  layout: "layouts/base.njk",
+  eleventyComputed: {
+    lang: (data) => data.currentLang.code,
+    dir: (data) => data.currentLang.dir,
+    pageTitle: (data) => data.i18n.search_placeholder[data.currentLang.code],
+    langPath: "search/"
+  }
+}
+---
+
+{%- set lang = currentLang.code %}
+
+<h1>{{ i18n.search_placeholder[lang] }}</h1>
+
+<input type="text"
+  class="search-input"
+  id="global-search"
+  placeholder="{{ i18n.search_placeholder[lang] }}"
+  autocomplete="off"
+  autofocus>
+
+<div id="search-results"></div>
+<p id="no-results" style="display: none; color: #666;">{{ i18n.search_no_results[lang] }}</p>
+
+<script>
+(function() {
+  const terms = {{ terms | dump | safe }};
+  const lang = '{{ lang }}';
+  const urlPrefix = '{{ "/" | url }}';
+  const input = document.getElementById('global-search');
+  const resultsDiv = document.getElementById('search-results');
+  const noResults = document.getElementById('no-results');
+
+  function search(q) {
+    q = q.toLowerCase().trim();
+    if (!q) {
+      resultsDiv.innerHTML = '';
+      noResults.style.display = 'none';
+      return;
+    }
+
+    const matches = terms.filter(function(term) {
+      const t = term.translations[lang] || term.translations.en || {};
+      const fields = [
+        t.term || '',
+        t.definition || '',
+        t.context || '',
+        (t.aliases || []).join(' ')
+      ].join(' ').toLowerCase();
+      return fields.includes(q);
+    });
+
+    if (matches.length === 0) {
+      resultsDiv.innerHTML = '';
+      noResults.style.display = '';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    resultsDiv.innerHTML = matches.map(function(term) {
+      const t = term.translations[lang] || term.translations.en || {};
+      const def = (t.definition || '').substring(0, 150);
+      const href = urlPrefix + lang + '/' + term.project + '/' + term.code + '/';
+      return '<div class="term-card">' +
+        '<h3><a href="' + href + '">' + (t.term || term.id) + '</a></h3>' +
+        '<p>' + def + '</p>' +
+        '</div>';
+    }).join('');
+  }
+
+  input.addEventListener('input', function(e) {
+    search(e.target.value);
+  });
+
+  // Check for query param
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get('q');
+  if (q) {
+    input.value = q;
+    search(q);
+  }
+})();
+</script>

@@ -1,16 +1,16 @@
 ---
-layout: layouts/base.njk
 permalink: /
-lang: en
-pageTitle: Home
+eleventyExcludeFromCollections: true
 ---
-
-<h1>UNDRR Terminology Hub</h1>
-<p>Multilingual terminology for disaster risk reduction.</p>
-
-<h2>Choose your language</h2>
-<ul>
-{%- for l in languages %}
-  <li><a href="{{ ('/' + l.code + '/') | url }}">{{ l.name }}</a></li>
-{%- endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ '/en/' | url }}">
+  <link rel="canonical" href="{{ '/en/' | url }}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="{{ '/en/' | url }}">English</a>...</p>
+</body>
+</html>

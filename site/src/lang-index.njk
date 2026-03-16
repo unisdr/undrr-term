@@ -12,16 +12,18 @@
   eleventyComputed: {
     lang: (data) => data.currentLang.code,
     dir: (data) => data.currentLang.dir,
-    pageTitle: (data) => data.i18n.all_projects[data.currentLang.code]
+    pageTitle: (data) => data.i18n.site_subtitle[data.currentLang.code]
   }
 }
 ---
 
 {%- set lang = currentLang.code %}
 
-<p class="mg-u-font-size-600">{{ i18n.site_intro[lang] }}</p>
+<!-- <img src="https://assets.undrr.org/static/logos/pw/pw-logo.svg" alt="PreventionWeb" style="height: 40px; margin-bottom: 0.5rem;"> -->
+<h1 style="margin: 0.25rem 0;">PreventionWeb Term</h1>
+<p class="mg-u-font-size-600" style="margin-top: 0;">{{ i18n.site_subtitle[lang] }}</p>
 
-<p>{{ i18n.site_status[lang] }}</p>
+<p class="mg-u-font-size-500" style="margin: 0 auto 2rem;">{{ i18n.site_intro[lang] }}</p>
 
 <h2>{{ i18n.all_projects[lang] }}</h2>
 
@@ -32,3 +34,27 @@
   <p class="term-meta">{{ terms | termsForProject(project.slug) | length }} terms</p>
 </div>
 {%- endfor %}
+
+<p style="color: #666; font-style: italic;">{{ i18n.more_coming_soon[lang] }}</p>
+
+<div class="mg-grid mg-grid__col-3">
+  <article class="mg-card mg-card__hc">
+    <div class="mg-card__content">
+      <header class="mg-card__title">{{ i18n.card_multilingual_title[lang] }}</header>
+      <p class="mg-card__summary">{{ i18n.card_multilingual_desc[lang] }}</p>
+    </div>
+  </article>
+  <article class="mg-card mg-card__hc">
+    <div class="mg-card__content">
+      <header class="mg-card__title">{{ i18n.card_opendata_title[lang] }}</header>
+      <p class="mg-card__summary">{{ i18n.card_opendata_desc[lang] }}</p>
+    </div>
+  </article>
+  <article class="mg-card mg-card__hc">
+    <div class="mg-card__content">
+      <header class="mg-card__title">{{ i18n.card_community_title[lang] }}</header>
+      <p class="mg-card__summary">{{ i18n.card_community_desc[lang] }}</p>
+    </div>
+  </article>
+</div>
+

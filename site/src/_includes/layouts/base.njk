@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ pageTitle }} - {{ i18n.site_title[lang] }}</title>
-  <link rel="stylesheet" href="https://assets.undrr.org/static/mangrove/1.3.3/css/style.css">
+  <link rel="stylesheet" href="https://assets.undrr.org/static/mangrove/1.3.3/css/style-preventionweb.css">
   <link rel="stylesheet" href="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent.css">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}">
 </head>
@@ -34,11 +34,6 @@
             </a>
           </section>
           <div class="mg-page-header__block">
-            <a href="{{ ('/' + lang + '/') | url }}" style="text-decoration: none; color: inherit;">
-              <span class="mg-page-header__label">{{ i18n.site_title[lang] }}</span>
-            </a>
-          </div>
-          <div class="mg-page-header__block">
             <div class="mg-page-header__form-item form-item form-type-select form-no-label">
               <label for="lang-dropdown-select" class="mg-u-sr-only">Select your language</label>
               <div class="mg-page-header__select-wrapper">
@@ -62,8 +57,12 @@
   {# -- Site navigation using Mangrove megamenu pattern -- #}
   <nav class="mg-mega-wrapper" aria-label="Main Navigation">
     <div class="mg-mega-topbar mg-mega-topbar--branded | mg-container-full-width">
-      <a class="mg-mega-topbar__logo" href="{{ ('/' + lang + '/') | url }}" aria-label="{{ i18n.site_title[lang] }}">
-        <span class="mg-page-header__label">{{ i18n.site_title[lang] }}</span>
+      <a class="mg-mega-topbar__logo" href="https://www.preventionweb.net" aria-label="PreventionWeb">
+        <img
+          class="mg-mega-topbar__logo-img"
+          alt="PreventionWeb"
+          src="https://assets.undrr.org/static/logos/pw/pw-logo.svg"
+        />
       </a>
       <button
         class="mg-mega-topbar-mobile__icon-button"
@@ -77,17 +76,68 @@
         role="menubar"
         aria-label="Main navigation menu"
       >
-        {%- for project in projects %}
         <li class="mg-mega-topbar__item" role="none">
           <a
             class="mg-mega-topbar__item-link"
-            href="{{ ('/' + lang + '/' + project.slug + '/') | url }}"
+            href="{{ ('/' + lang + '/') | url }}"
             role="menuitem"
+            aria-haspopup="true"
           >
-            {{ project.name }}
+            {{ i18n.site_title[lang] }}
+          </a>
+          <article
+            class="mg-mega-content | mg-container-full-width"
+            aria-label="Menu section"
+            aria-live="polite"
+            tabindex="0"
+            role="region"
+          >
+            <aside
+              class="mg-mega-content__left"
+              aria-label="Category navigation"
+              tabindex="0"
+              role="navigation"
+            >
+              <section class="mg-mega-content__banner">
+                <header>{{ i18n.site_title[lang] }}</header>
+                <p>{{ i18n.site_intro[lang] }}</p>
+                <a href="{{ ('/' + lang + '/') | url }}" class="mg-button mg-button-primary">
+                  {{ i18n.all_projects[lang] }}
+                </a>
+              </section>
+            </aside>
+            <section
+              class="mg-mega-content__right"
+              aria-label="Submenu content"
+              tabindex="0"
+              role="navigation"
+            >
+              <ul role="menu" aria-label="Submenu items" class="mg-mega-content__menu--desktop">
+                {%- for project in projects %}
+                <li role="none">
+                  <a href="{{ ('/' + lang + '/' + project.slug + '/') | url }}" role="menuitem">
+                    {{ project.name }}
+                  </a>
+                </li>
+                {%- endfor %}
+              </ul>
+              <ul role="menu" aria-label="Submenu items" class="mg-mega-content__menu--mobile">
+                {%- for project in projects %}
+                <li role="none">
+                  <a href="{{ ('/' + lang + '/' + project.slug + '/') | url }}" role="menuitem">
+                    {{ project.name }}
+                  </a>
+                </li>
+                {%- endfor %}
+              </ul>
+            </section>
+          </article>
+        </li>
+        <li class="mg-mega-topbar__item" role="none">
+          <a class="mg-mega-topbar__item-link" href="{{ ('/' + lang + '/search/') | url }}" role="menuitem">
+            Search
           </a>
         </li>
-        {%- endfor %}
       </ul>
     </div>
     <div
@@ -100,16 +150,33 @@
         role="menu"
         aria-label="Navigation options"
       >
-        {%- for project in projects %}
         <li class="mg-mega-sidebar-section" role="none">
-          <a class="mg-mega-sidebar-section__item" href="{{ ('/' + lang + '/' + project.slug + '/') | url }}" role="menuitem">
-            <span>{{ project.name }}</span>
+          <button
+            class="mg-mega-sidebar-section__item"
+            aria-pressed="false"
+            aria-expanded="false"
+            aria-haspopup="true"
+            role="menuitem"
+          >
+            <span>{{ i18n.site_title[lang] }}</span>
+            <span class="mg-icon mg-icon-angle-circled-left" aria-hidden="true"></span>
+          </button>
+        </li>
+        <li class="mg-mega-sidebar-section" role="none">
+          <a class="mg-mega-sidebar-section__item" href="{{ ('/' + lang + '/search/') | url }}" role="menuitem">
+            <span>Search</span>
           </a>
         </li>
-        {%- endfor %}
       </ul>
     </div>
   </nav>
+
+  {# -- Status banner -- #}
+  <div class="site-status-banner" role="status">
+    <div class="mg-container">
+      {{ i18n.site_status[lang] }}
+    </div>
+  </div>
 
   {# -- Main content area -- #}
   <main class="mg-container mg-container--padded mg-container--spacer">
