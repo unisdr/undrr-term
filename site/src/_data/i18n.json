@@ -63,6 +63,22 @@
     "ru": "Источник",
     "es": "Fuente"
   },
+  "site_intro": {
+    "en": "A multilingual reference for disaster risk reduction terminology, maintained by the UN Office for Disaster Risk Reduction. Browse standardized terms and definitions across the six official UN languages.",
+    "ar": "مرجع متعدد اللغات لمصطلحات الحد من مخاطر الكوارث، يديره مكتب الأمم المتحدة للحد من مخاطر الكوارث. تصفح المصطلحات والتعريفات الموحدة بلغات الأمم المتحدة الرسمية الست.",
+    "zh": "由联合国减少灾害风险办公室维护的多语言减灾术语参考资料。浏览联合国六种官方语言的标准化术语和定义。",
+    "fr": "Une référence multilingue pour la terminologie de la réduction des risques de catastrophe, maintenue par le Bureau des Nations Unies pour la réduction des risques de catastrophe. Parcourez les termes et définitions normalisés dans les six langues officielles des Nations Unies.",
+    "ru": "Многоязычный справочник по терминологии снижения риска бедствий, поддерживаемый Управлением ООН по снижению риска бедствий. Просматривайте стандартизированные термины и определения на шести официальных языках ООН.",
+    "es": "Una referencia multilingüe para la terminología de reducción del riesgo de desastres, mantenida por la Oficina de las Naciones Unidas para la Reducción del Riesgo de Desastres. Explore términos y definiciones estandarizados en los seis idiomas oficiales de las Naciones Unidas."
+  },
+  "site_status": {
+    "en": "This site is an early proof of concept under active development. Not all terminology has been loaded yet.",
+    "ar": "هذا الموقع هو نموذج أولي قيد التطوير النشط. لم يتم تحميل جميع المصطلحات بعد.",
+    "zh": "本网站是一个正在积极开发中的早期概念验证。尚未加载所有术语。",
+    "fr": "Ce site est une preuve de concept en cours de développement actif. Toute la terminologie n'a pas encore été chargée.",
+    "ru": "Этот сайт является ранним прототипом в стадии активной разработки. Не вся терминология загружена.",
+    "es": "Este sitio es una prueba de concepto en desarrollo activo. Aún no se ha cargado toda la terminología."
+  },
   "all_projects": {
     "en": "All projects",
     "ar": "جميع المشاريع",

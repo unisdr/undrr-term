@@ -19,13 +19,9 @@
 
 {%- set lang = currentLang.code %}
 
-<h1>{{ i18n.site_title[lang] }}</h1>
+<p class="mg-u-font-size-600">{{ i18n.site_intro[lang] }}</p>
 
-<input type="text"
-  class="search-input"
-  id="search"
-  placeholder="{{ i18n.search_placeholder[lang] }}"
-  autocomplete="off">
+<p>{{ i18n.site_status[lang] }}</p>
 
 <h2>{{ i18n.all_projects[lang] }}</h2>
 
@@ -36,15 +32,3 @@
   <p class="term-meta">{{ terms | termsForProject(project.slug) | length }} terms</p>
 </div>
 {%- endfor %}
-
-<div id="search-results" style="display: none;">
-  <h2 id="search-results-heading"></h2>
-  <div id="search-results-list"></div>
-</div>
-
-<script src="{{ '/assets/js/search.js' | url }}"></script>
-<script>
-  if (typeof initSearch === 'function') {
-    initSearch('{{ lang }}');
-  }
-</script>
