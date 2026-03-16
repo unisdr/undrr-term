@@ -4,40 +4,206 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ pageTitle }} - {{ i18n.site_title[lang] }}</title>
-  <link rel="stylesheet" href="https://assets.undrr.org/static/mangrove/1.3.3/css/style.css">
+  <link rel="stylesheet" href="https://assets.undrr.org/static/mangrove/1.3.3/css/style-preventionweb.css">
+  <link rel="stylesheet" href="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent.css">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}">
 </head>
 <body>
-  <header class="ecl-site-header" role="banner">
-    <div class="ecl-container">
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
-        <a href="{{ ('/' + lang + '/') | url }}" style="text-decoration: none; color: inherit;">
-          <strong>{{ i18n.site_title[lang] }}</strong>
-        </a>
-        <nav aria-label="Language">
-          <ul style="list-style: none; display: flex; gap: 0.75rem; margin: 0; padding: 0;">
-            {%- for l in languages %}
-            <li>
-              <a href="{{ ('/' + l.code + '/' + (langPath or '')) | url }}"
-                 {% if l.code === lang %}aria-current="page" style="font-weight: bold;"{% endif %}>
-                {{ l.name }}
-              </a>
-            </li>
-            {%- endfor %}
-          </ul>
-        </nav>
+
+  {# -- UNDRR global page header -- #}
+  <header id="header" class="mg-page-header">
+    <div class="mg-page-header__decoration">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="mg-page-header__toolbar-wrapper" data-vf-google-analytics-region="undrr-black-bar">
+      <div class="mg-page-header__container | mg-container">
+        <div class="mg-page-header__region mg-page-header__region--toolbar">
+          <section id="block-undrrlogo" class="mg-page-header__block mg-page-header__block--logo">
+            <a href="https://www.undrr.org">
+              <img
+                alt="UNDRR Logo"
+                src="https://assets.undrr.org/static/logos/undrr/undrr-logo-horizontal.svg"
+                width="324"
+                height="47"
+                title="UNDRR Logo"
+                class="mg-page-header__logo-img"
+              />
+            </a>
+          </section>
+          <div class="mg-page-header__block">
+            <div class="mg-page-header__form-item form-item form-type-select form-no-label">
+              <label for="lang-dropdown-select" class="mg-u-sr-only">Select your language</label>
+              <div class="mg-page-header__select-wrapper">
+                <select style="width: 165px;"
+                  class="mg-page-header__select lang-dropdown-select-element form-select"
+                  id="lang-dropdown-select"
+                  name="lang_dropdown_select"
+                  onchange="window.location.href = '{{ '/' | url }}' + this.value + '/{{ langPath or '' }}'">
+                  {%- for l in languages %}
+                  <option value="{{ l.code }}" {% if l.code === lang %}selected{% endif %}>{{ l.name }}</option>
+                  {%- endfor %}
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main class="ecl-container" style="padding: 2rem 0;">
+  {# -- Site navigation using Mangrove megamenu pattern -- #}
+  <nav class="mg-mega-wrapper" aria-label="Main Navigation">
+    <div class="mg-mega-topbar mg-mega-topbar--branded | mg-container-full-width">
+      <a class="mg-mega-topbar__logo" href="https://www.preventionweb.net" aria-label="PreventionWeb">
+        <img
+          class="mg-mega-topbar__logo-img"
+          alt="PreventionWeb"
+          src="https://assets.undrr.org/static/logos/pw/pw-logo.svg"
+        />
+      </a>
+      <button
+        class="mg-mega-topbar-mobile__icon-button"
+        aria-label="Toggle navigation menu"
+        aria-haspopup="true"
+      >
+        <span class="mg-icon mg-icon-menu" aria-hidden="true"></span>
+      </button>
+      <ul
+        class="mg-mega-topbar__nav"
+        role="menubar"
+        aria-label="Main navigation menu"
+      >
+        <li class="mg-mega-topbar__item" role="none">
+          <a
+            class="mg-mega-topbar__item-link"
+            href="{{ ('/' + lang + '/') | url }}"
+            role="menuitem"
+            aria-haspopup="true"
+          >
+            {{ i18n.site_title[lang] }}
+          </a>
+          <article
+            class="mg-mega-content | mg-container-full-width"
+            aria-label="Menu section"
+            aria-live="polite"
+            tabindex="0"
+            role="region"
+          >
+            <aside
+              class="mg-mega-content__left"
+              aria-label="Category navigation"
+              tabindex="0"
+              role="navigation"
+            >
+              <section class="mg-mega-content__banner">
+                <header>{{ i18n.site_title[lang] }}</header>
+                <p>{{ i18n.site_intro[lang] }}</p>
+                <a href="{{ ('/' + lang + '/') | url }}" class="mg-button mg-button-primary">
+                  {{ i18n.all_projects[lang] }}
+                </a>
+              </section>
+            </aside>
+            <section
+              class="mg-mega-content__right"
+              aria-label="Submenu content"
+              tabindex="0"
+              role="navigation"
+            >
+              <ul role="menu" aria-label="Submenu items" class="mg-mega-content__menu--desktop">
+                {%- for project in projects %}
+                <li role="none">
+                  <a href="{{ ('/' + lang + '/' + project.slug + '/') | url }}" role="menuitem">
+                    {{ project.name }}
+                  </a>
+                </li>
+                {%- endfor %}
+              </ul>
+              <ul role="menu" aria-label="Submenu items" class="mg-mega-content__menu--mobile">
+                {%- for project in projects %}
+                <li role="none">
+                  <a href="{{ ('/' + lang + '/' + project.slug + '/') | url }}" role="menuitem">
+                    {{ project.name }}
+                  </a>
+                </li>
+                {%- endfor %}
+              </ul>
+            </section>
+          </article>
+        </li>
+        <li class="mg-mega-topbar__item" role="none">
+          <a class="mg-mega-topbar__item-link" href="{{ ('/' + lang + '/search/') | url }}" role="menuitem">
+            Search
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="mg-mega-mobile-sidebar"
+      role="dialog"
+      aria-label="Mobile navigation menu"
+    >
+      <ul
+        class="mg-mega-sidebar__list"
+        role="menu"
+        aria-label="Navigation options"
+      >
+        <li class="mg-mega-sidebar-section" role="none">
+          <button
+            class="mg-mega-sidebar-section__item"
+            aria-pressed="false"
+            aria-expanded="false"
+            aria-haspopup="true"
+            role="menuitem"
+          >
+            <span>{{ i18n.site_title[lang] }}</span>
+            <span class="mg-icon mg-icon-angle-circled-left" aria-hidden="true"></span>
+          </button>
+        </li>
+        <li class="mg-mega-sidebar-section" role="none">
+          <a class="mg-mega-sidebar-section__item" href="{{ ('/' + lang + '/search/') | url }}" role="menuitem">
+            <span>Search</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  {# -- Status banner -- #}
+  <div class="site-status-banner" role="status">
+    <div class="mg-container">
+      {{ i18n.site_status[lang] }}
+    </div>
+  </div>
+
+  {# -- Main content area -- #}
+  <main class="mg-container mg-container--padded mg-container--spacer">
     {{ content | safe }}
   </main>
 
-  <footer style="border-top: 1px solid #ddd; padding: 1.5rem 0; margin-top: 3rem;">
-    <div class="ecl-container">
-      <p style="color: #666; font-size: 0.875rem;">UNDRR Terminology Hub</p>
-    </div>
+  {# -- Footer with UNDRR syndicated global footer -- #}
+  <footer class="mg-footer">
+    <div class="pw-widget-footer"></div>
   </footer>
+
+  <script src="https://publish.preventionweb.net/widget.js"></script>
+  <script>
+    new PW_Widget.initialize({
+      contenttype: 'landingpage',
+      pageid: '83835',
+      includecss: false,
+      suffixID: 'footer',
+      activedomain: 'www.undrr.org'
+    });
+  </script>
+
+  {# -- UNDRR standard scripts -- #}
+  <script src="https://assets.undrr.org/static/analytics/v1.0.0/google_analytics_enhancements.js" defer></script>
+  <script src="https://messaging.undrr.org/src/undrr-messaging.js" defer></script>
+  <script src="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent.umd.js" defer></script>
+  <script src="https://assets.undrr.org/static/cookie-banner/v1/cookieconsent-undrr.js" defer></script>
+
 </body>
 </html>

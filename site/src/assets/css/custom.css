@@ -1,5 +1,17 @@
-/* Minimal overrides on top of Mangrove CSS */
+/* Overrides and extensions on top of Mangrove CSS */
 
+/* Site title label in page header */
+.mg-page-header__label {
+  font-weight: 600;
+}
+
+/* Status banner */
+.site-status-banner {
+  background: #fff3cd;
+  padding: 1rem 0;
+}
+
+/* Term listing cards */
 .term-card {
   border: 1px solid #e0e0e0;
   padding: 1rem 1.25rem;
@@ -21,29 +33,23 @@
 }
 
 .term-meta {
-  font-size: 0.875rem;
   color: #666;
   margin-top: 0.25rem;
 }
 
+/* Term detail page sections */
 .term-detail-section {
   margin-bottom: 1.5rem;
 }
 
 .term-detail-section h3 {
-  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #666;
   margin-bottom: 0.5rem;
 }
 
-.language-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
+/* Language translation cards (inside mg-grid) */
 .language-card {
   border: 1px solid #e0e0e0;
   border-radius: 4px;
@@ -55,13 +61,20 @@
   color: #0468b1;
 }
 
+/* Edit on GitHub link */
+.term-edit-link {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+/* Search input */
 .search-input {
   width: 100%;
   max-width: 400px;
   padding: 0.5rem 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -69,19 +82,4 @@
   outline: none;
   border-color: #0468b1;
   box-shadow: 0 0 0 2px rgba(4, 104, 177, 0.2);
-}
-
-.tag {
-  display: inline-block;
-  background: #f0f0f0;
-  padding: 0.15rem 0.5rem;
-  border-radius: 3px;
-  font-size: 0.8rem;
-  color: #555;
-  margin-right: 0.25rem;
-}
-
-[dir="rtl"] .tag {
-  margin-right: 0;
-  margin-left: 0.25rem;
 }

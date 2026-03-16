@@ -1,11 +1,27 @@
 {
   "site_title": {
-    "en": "UNDRR Terminology",
-    "ar": "مصطلحات الأمم المتحدة للحد من مخاطر الكوارث",
-    "zh": "联合国减灾术语",
-    "fr": "Terminologie UNDRR",
-    "ru": "Терминология UNDRR",
-    "es": "Terminología UNDRR"
+    "en": "PreventionWeb Term",
+    "ar": "PreventionWeb Term",
+    "zh": "PreventionWeb Term",
+    "fr": "PreventionWeb Term",
+    "ru": "PreventionWeb Term",
+    "es": "PreventionWeb Term"
+  },
+  "site_subtitle": {
+    "en": "Disaster Risk Reduction Terminology",
+    "ar": "مصطلحات الحد من مخاطر الكوارث",
+    "zh": "减少灾害风险术语",
+    "fr": "Terminologie de la réduction des risques de catastrophe",
+    "ru": "Терминология снижения риска бедствий",
+    "es": "Terminología de reducción del riesgo de desastres"
+  },
+  "search_no_results": {
+    "en": "No terms found.",
+    "ar": "لم يتم العثور على مصطلحات.",
+    "zh": "未找到术语。",
+    "fr": "Aucun terme trouvé.",
+    "ru": "Термины не найдены.",
+    "es": "No se encontraron términos."
   },
   "search_placeholder": {
     "en": "Search terms...",
@@ -62,6 +78,78 @@
     "fr": "Source",
     "ru": "Источник",
     "es": "Fuente"
+  },
+  "site_intro": {
+    "en": "A multilingual terminology database for disaster risk reduction, managed by UNDRR and hosted on PreventionWeb.",
+    "ar": "قاعدة بيانات مصطلحات متعددة اللغات للحد من مخاطر الكوارث، يديرها مكتب الأمم المتحدة للحد من مخاطر الكوارث وتُستضاف على PreventionWeb.",
+    "zh": "由联合国减灾办公室管理、托管于PreventionWeb的多语言减灾术语数据库。",
+    "fr": "Une base terminologique multilingue pour la réduction des risques de catastrophe, gérée par l'UNDRR et hébergée sur PreventionWeb.",
+    "ru": "Многоязычная терминологическая база по снижению риска бедствий, управляемая UNDRR и размещённая на PreventionWeb.",
+    "es": "Una base terminológica multilingüe para la reducción del riesgo de desastres, gestionada por UNDRR y alojada en PreventionWeb."
+  },
+  "card_multilingual_title": {
+    "en": "Multilingual",
+    "ar": "متعدد اللغات",
+    "zh": "多语言",
+    "fr": "Multilingue",
+    "ru": "Многоязычный",
+    "es": "Multilingüe"
+  },
+  "card_multilingual_desc": {
+    "en": "Terminology in all six official UN languages: Arabic, Chinese, English, French, Russian, and Spanish.",
+    "ar": "المصطلحات بلغات الأمم المتحدة الرسمية الست: العربية والصينية والإنجليزية والفرنسية والروسية والإسبانية.",
+    "zh": "提供联合国全部六种官方语言的术语：阿拉伯语、中文、英语、法语、俄语和西班牙语。",
+    "fr": "La terminologie dans les six langues officielles de l'ONU : arabe, chinois, anglais, français, russe et espagnol.",
+    "ru": "Терминология на всех шести официальных языках ООН: арабском, китайском, английском, французском, русском и испанском.",
+    "es": "Terminología en los seis idiomas oficiales de la ONU: árabe, chino, inglés, francés, ruso y español."
+  },
+  "card_opendata_title": {
+    "en": "Open data",
+    "ar": "بيانات مفتوحة",
+    "zh": "开放数据",
+    "fr": "Données ouvertes",
+    "ru": "Открытые данные",
+    "es": "Datos abiertos"
+  },
+  "card_opendata_desc": {
+    "en": "All terminology is stored as structured markdown in a public GitHub repository. Translations compile to JSON for use by other systems.",
+    "ar": "تُخزَّن جميع المصطلحات كملفات Markdown منظمة في مستودع GitHub عام. تُترجم إلى JSON لاستخدامها من قبل أنظمة أخرى.",
+    "zh": "所有术语以结构化Markdown格式存储在公开的GitHub仓库中，翻译编译为JSON供其他系统使用。",
+    "fr": "Toute la terminologie est stockée en Markdown structuré dans un dépôt GitHub public. Les traductions sont compilées en JSON pour d'autres systèmes.",
+    "ru": "Вся терминология хранится в структурированном Markdown в публичном репозитории GitHub. Переводы компилируются в JSON для использования другими системами.",
+    "es": "Toda la terminología se almacena como Markdown estructurado en un repositorio público de GitHub. Las traducciones se compilan a JSON para su uso por otros sistemas."
+  },
+  "card_community_title": {
+    "en": "Community-driven",
+    "ar": "بمشاركة المجتمع",
+    "zh": "社区驱动",
+    "fr": "Collaboratif",
+    "ru": "При участии сообщества",
+    "es": "Colaborativo"
+  },
+  "card_community_desc": {
+    "en": "Contribute translations and corrections through Weblate or directly on GitHub. Reviewed by UNDRR terminology specialists.",
+    "ar": "ساهم بالترجمات والتصحيحات عبر Weblate أو مباشرة على GitHub. تتم المراجعة من قبل متخصصي المصطلحات في مكتب الأمم المتحدة.",
+    "zh": "通过Weblate或直接在GitHub上贡献翻译和修正。由联合国减灾办公室术语专家审核。",
+    "fr": "Contribuez aux traductions et corrections via Weblate ou directement sur GitHub. Révisé par les terminologues de l'UNDRR.",
+    "ru": "Вносите переводы и исправления через Weblate или напрямую на GitHub. Проверяется терминологами UNDRR.",
+    "es": "Contribuya con traducciones y correcciones a través de Weblate o directamente en GitHub. Revisado por especialistas en terminología de UNDRR."
+  },
+  "site_status": {
+    "en": "This site is an early proof of concept under active development. Not yet ready for use.",
+    "ar": "هذا الموقع هو نموذج أولي قيد التطوير النشط. غير جاهز للاستخدام بعد.",
+    "zh": "本网站是一个正在积极开发中的早期概念验证。尚未准备好使用。",
+    "fr": "Ce site est une preuve de concept en cours de développement actif. Pas encore prêt à l'emploi.",
+    "ru": "Этот сайт является ранним прототипом в стадии активной разработки. Ещё не готов к использованию.",
+    "es": "Este sitio es una prueba de concepto en desarrollo activo. Aún no está listo para su uso."
+  },
+  "more_coming_soon": {
+    "en": "More terminology projects are being prepared.",
+    "ar": "يجري إعداد المزيد من مشاريع المصطلحات.",
+    "zh": "更多术语项目正在准备中。",
+    "fr": "D'autres projets terminologiques sont en préparation.",
+    "ru": "Готовятся новые терминологические проекты.",
+    "es": "Se están preparando más proyectos terminológicos."
   },
   "all_projects": {
     "en": "All projects",
