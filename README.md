@@ -23,7 +23,7 @@ Multilingual terminology for the UN Office for Disaster Risk Reduction, managed 
 | [UNISDR Terminology (2009)](https://www.preventionweb.net/publication/2009-unisdr-terminology-disaster-risk-reduction) | `terms/unisdr-2009/` | Official DRR terminology published by UNISDR in 2009 (53 terms) |
 | [OEWG Terminology (2016)](https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology) | `terms/oewg-2016/` | Terminology from the UNGA open-ended intergovernmental expert working group report (65 terms) |
 
-Languages: Arabic, Chinese, English, French, Russian, Spanish (with support for additional languages over time).
+Languages: Arabic, Chinese, English, French, Russian, Spanish.
 
 ## Prerequisites
 

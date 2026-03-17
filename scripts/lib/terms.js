@@ -112,7 +112,6 @@ export function parseAliases(value) {
 /**
  * Filter a project's language list for --lang exports.
  * Always includes the source language (default "en") plus the requested targets.
- * Returns the filtered list in the original order from the project config.
  */
 export function filterLanguages(projectLanguages, langArg, sourceLang = "en") {
   const requested = langArg
