@@ -50,11 +50,17 @@ jobs:
           git commit -m "Update Weblate JSON from markdown changes"
           git push
 
+      - name: Generate exports
+        run: yarn run export:all
+
       - name: Install site dependencies
         run: cd site && yarn install --frozen-lockfile
 
       - name: Build site
         run: cd site && yarn run build
+
+      - name: Copy exports to site output
+        run: mkdir -p site/_site/exports && cp exports/* site/_site/exports/
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
