@@ -1,8 +1,0 @@
-name: "Sendai Framework Terminology"
-slug: sendai
-description: "Terminology on disaster risk reduction from the Sendai Framework"
-languages: [ar, zh, en, fr, ru, es]
-source_language: en
-weblate:
-  project: undrr-sendai
-  component: terms
