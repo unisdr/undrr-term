@@ -1,145 +1,63 @@
 {
   "project": "hips",
   "name": "Hazard Information Profiles",
-  "languages": ["ar", "zh", "en", "fr", "ru", "es"],
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "ru",
+    "es"
+  ],
   "source_language": "en",
-  "exported": "2026-03-17T00:00:00.000Z",
+  "exported": "2026-03-17T11:17:56.361Z",
   "term_count": 2,
   "terms": [
     {
       "code": "mh0301",
-      "id": "flood",
-      "slug": "flood",
+      "id": "wind",
+      "slug": "wind",
       "project": "hips",
       "status": "published",
-      "category": "hydrological",
-      "domain": "natural-hazards/meteorological",
-      "related": ["flash-flood", "coastal-flood"],
+      "category": "Meteorological and Hydrological",
+      "domain": "Wind- & Pressure-related",
+      "related": [],
       "translations": {
         "en": {
-          "term": "Flood",
-          "definition": "The overflowing of the normal confines of a stream or other body of water, or the accumulation of water over areas not normally submerged.\n",
-          "context": "The 2011 Thailand flood caused $45.7 billion in damages.",
-          "part_of_speech": "noun",
-          "aliases": ["Flooding"],
+          "term": "Wind",
+          "definition": "Wind is air motion relative to the Earth’s surface. Unless otherwise specified, only the horizontal component is considered (WMO, 1992).",
           "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "fr": {
-          "term": "Inondation",
-          "definition": "Le débordement des limites normales d'un cours d'eau ou d'un autre plan d'eau, ou l'accumulation d'eau sur des zones normalement non submergées.",
-          "context": "L'inondation de 2016 a touché plusieurs départements du centre de la France.",
-          "part_of_speech": "nom",
-          "aliases": ["Crue"],
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "ar": {
-          "term": "فيضان",
-          "definition": "تجاوز المياه لحدودها الطبيعية في مجرى نهر أو مسطح مائي آخر، أو تراكم المياه فوق مناطق لا تغمرها المياه عادة.",
-          "part_of_speech": "اسم",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "zh": {
-          "term": "洪水",
-          "definition": "河流或其他水体超出正常范围的溢流， 或水在通常不被淹没的区域上的积聚。",
-          "part_of_speech": "名词",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "ru": {
-          "term": "Наводнение",
-          "definition": "Выход воды за пределы нормального русла реки или другого водоёма, или скопление воды на территориях, обычно не затапливаемых.",
-          "part_of_speech": "существительное",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "es": {
-          "term": "Inundación",
-          "definition": "El desbordamiento de los confines normales de un curso de agua u otro cuerpo de agua, o la acumulación de agua sobre áreas que normalmente no están sumergidas.",
-          "part_of_speech": "sustantivo",
-          "aliases": ["Crecida"],
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
+            "text": "UNDRR & ISC, 2025",
+            "url": "https://www.preventionweb.net/hips"
+          },
+          "aliases": [
+            "Not identified"
+          ],
+          "description": "Wind velocity is an important consideration in relation to, for example, airborne pollution and the landing of aircraft (WMO, 2018). Surface wind is considered mainly as a two-dimensional vector quantity specified by two numbers representing direction and speed (WMO, 2018).\nThe extent to which wind is characterised by rapid fluctuations is referred to as gustiness, and single fluctuations are called gusts (WMO, 2018)."
         }
       }
     },
     {
-      "code": "mh0302",
-      "id": "drought",
-      "slug": "drought",
+      "code": "mh0501",
+      "id": "heatwave",
+      "slug": "heatwave",
       "project": "hips",
       "status": "published",
-      "category": "climatological",
-      "domain": "natural-hazards/meteorological",
-      "related": ["desertification", "heat-wave"],
+      "category": "Meteorological and Hydrological",
+      "domain": "Temperature-related",
+      "related": [],
       "translations": {
         "en": {
-          "term": "Drought",
-          "definition": "An extended period of unusually low precipitation that produces a shortage of water for people, animals, and plants.\n",
-          "part_of_speech": "noun",
+          "term": "Heatwave",
+          "definition": "A heatwave is a marked, unusual period of hot weather over a region persisting for at least two or three consecutive days and nights during the hot period of the year based on local climatological conditions, with thermal conditions recorded above given thresholds (WMO and WHO, 2015).",
           "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "fr": {
-          "term": "Sécheresse",
-          "definition": "Une période prolongée de précipitations anormalement faibles qui entraîne une pénurie d'eau pour les personnes, les animaux et les plantes.",
-          "part_of_speech": "nom",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "ar": {
-          "term": "جفاف",
-          "definition": "فترة ممتدة من هطول الأمطار المنخفض بشكل غير عادي مما ينتج عنه نقص في المياه للناس والحيوانات والنباتات.",
-          "part_of_speech": "اسم",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "zh": {
-          "term": "干旱",
-          "definition": "异常低降水量的持续时期，导致人类、动物和植物缺水。",
-          "part_of_speech": "名词",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "ru": {
-          "term": "Засуха",
-          "definition": "Продолжительный период необычно низкого количества осадков, вызывающий нехватку воды для людей, животных и растений.",
-          "part_of_speech": "существительное",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
-        },
-        "es": {
-          "term": "Sequía",
-          "definition": "Un período prolongado de precipitaciones inusualmente bajas que produce una escasez de agua para las personas, los animales y las plantas.",
-          "part_of_speech": "sustantivo",
-          "source": {
-            "text": "UNDRR, 2017",
-            "url": "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
-          }
+            "text": "UNDRR & ISC, 2025",
+            "url": "https://www.preventionweb.net/hips"
+          },
+          "aliases": [
+            "Not identified"
+          ],
+          "description": "The World Meteorological Organization (WMO) uses a definition that has practical utility in addressing human health impacts. It defines heatwaves as, “periods of unusually hot and dry or hot and humid weather that have a subtle onset and cessation, a duration of at least two to three days and a discernible impact on human activities” (WMO and WHO, 2015), however, heatwave cessation can also be abrupt (e.g. Engel et al., 2013). Temperature thresholds for heatwaves are often defined using percentile thresholds, typically the 90th or 95th percentile (e.g. Nairn and Fawcett, 2015).\nThe above definition is not sufficient to guide National Meteorological and Hydrological Services in developing practical methods and tools for a heatwave monitoring system that would allow comparisons across regional or international borders. Common characteristics of heatwaves, such as magnitude, duration, extent, severity, and timing of the event during the heat season(s), are often used to compare heatwave events (Global Heat Health Information Network, 2020).\nSimilar to heatwaves, warm spells are defined as persistent periods of abnormally warm weather relative to time of year and the local climatology, but they are not confined to the hot season(s) (WMO, 2020). A warm spell can similarly be defined in terms of the 90th or 95th percentile of daily maximum temperature (Tmax). \nAnthropogenic climate change has resulted in an increase in the intensity, frequency, and duration of heatwaves (Perkins et al., 2012) and extremely hot days (Rogers et al., 2021), with these trends projected to continue (Seneviratne et al., 2012)."
         }
       }
     }

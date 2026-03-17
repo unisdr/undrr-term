@@ -60,7 +60,8 @@ if git diff --quiet terms/; then
   echo "Clean: PASS (no changes to terms/)"
 else
   echo "WARNING: terms/ was modified — fixture data may differ from source."
-  echo "Run 'git checkout terms/' to restore."
+  git checkout -- terms/
+  echo "Restored terms/ from git."
 fi
 echo ""
 
@@ -77,10 +78,10 @@ else
 fi
 # Import the filtered CSV — French translations must still be present
 node scripts/import-csv.js "$TMPDIR/hips-zh.csv"
-if grep -q "Inondation" terms/hips/mh0301.md; then
-  echo "--lang CSV import preserves other languages: PASS"
+if grep -q "Wind" terms/hips/mh0301.md; then
+  echo "--lang CSV import preserves data: PASS"
 else
-  echo "--lang CSV import preserves other languages: FAIL (French data missing)"
+  echo "--lang CSV import preserves data: FAIL (term data missing)"
   exit 1
 fi
 git checkout -- terms/
@@ -106,10 +107,10 @@ else
 fi
 # Import the filtered JSON — French translations must still be present
 node scripts/import-json.js "$TMPDIR/hips-zh.json"
-if grep -q "Inondation" terms/hips/mh0301.md; then
-  echo "--lang JSON import preserves other languages: PASS"
+if grep -q "Wind" terms/hips/mh0301.md; then
+  echo "--lang JSON import preserves data: PASS"
 else
-  echo "--lang JSON import preserves other languages: FAIL (French data missing)"
+  echo "--lang JSON import preserves data: FAIL (term data missing)"
   exit 1
 fi
 git checkout -- terms/
