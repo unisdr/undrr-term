@@ -379,3 +379,15 @@
   background: #0468b1;
   color: #fff;
 }
+
+.term-confidence--0 {
+  background: #e9ecef;
+  color: #6c757d;
+}
+
+.confidence-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0.25rem 0;
+}

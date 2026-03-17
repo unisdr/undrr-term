@@ -121,6 +121,23 @@
     </div>
 
     <div class="term-sidebar__section">
+      <h3>{{ i18n.confidence_label[lang] }}</h3>
+      {%- for l in languages %}
+        {%- set lt = term.translations[l.code] %}
+        {%- if lt %}
+        <p class="confidence-row">
+          <span>{{ l.name }}:</span>
+          {%- if lt.confidence %}
+          <span class="term-confidence term-confidence--{{ lt.confidence }}">{{ i18n['confidence_' + lt.confidence][l.code] or i18n['confidence_' + lt.confidence][lang] }}</span>
+          {%- else %}
+          <span class="term-confidence term-confidence--0">{{ i18n.confidence_not_assessed[l.code] or i18n.confidence_not_assessed[lang] }}</span>
+          {%- endif %}
+        </p>
+        {%- endif %}
+      {%- endfor %}
+    </div>
+
+    <div class="term-sidebar__section">
       <h3>{{ i18n.download_terms[lang] }}</h3>
       <div class="download-links download-links--sidebar">
         <select id="download-lang" class="download-select" data-project="{{ term.project }}" data-prefix="{{ '/' | url }}">
