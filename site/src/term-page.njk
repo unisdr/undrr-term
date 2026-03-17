@@ -158,7 +158,7 @@
       {%- for l in languages %}
         {%- if l.code !== lang and term.translations[l.code] %}
           {%- set lt = term.translations[l.code] %}
-          <section class="term-lang-section">
+          <section class="term-lang-section" lang="{{ l.code }}" dir="{{ l.dir or 'ltr' }}">
             <h2 class="term-lang-heading">
               <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}">{{ l.name }}</a>
             </h2>
@@ -171,10 +171,10 @@
             </p>
 
             {%- if lt.aliases and lt.aliases.length %}
-            <p class="term-aliases">{{ i18n.aliases[lang] }}: {{ lt.aliases | join(", ") }}</p>
+            <p class="term-aliases">{{ i18n.aliases[l.code] or i18n.aliases[lang] }}: {{ lt.aliases | join(", ") }}</p>
             {%- endif %}
 
-            <h3>{{ i18n.definition[lang] }}</h3>
+            <h3>{{ i18n.definition[l.code] or i18n.definition[lang] }}</h3>
             {{ lt.definition | md | safe }}
           </section>
         {%- endif %}
