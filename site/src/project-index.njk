@@ -39,7 +39,7 @@
 <h1>{{ project.name }}</h1>
 <p>{{ project.description }}</p>
 {%- if project.url %}
-<p><a href="{{ project.url }}">{{ i18n.source[lang] }}</a></p>
+<p>{{ i18n.source[lang] }}: <a href="{{ project.url }}">{{ project.citation or project.name }}</a></p>
 {%- endif %}
 
 <input type="text"
