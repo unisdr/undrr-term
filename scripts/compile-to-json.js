@@ -19,7 +19,8 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const TERMS_DIR = path.join(ROOT, "terms");
 const WEBLATE_DIR = path.join(ROOT, "weblate");
 
-// Fields within each language's translation block that go to Weblate
+// Fields within each language's translation block that go to Weblate.
+// "source" is handled specially (structured object → source_text + source_url).
 const TRANSLATABLE_FIELDS = [
   "term",
   "definition",
@@ -27,8 +28,10 @@ const TRANSLATABLE_FIELDS = [
   "context",
   "part_of_speech",
   "aliases",
-  "source",
 ];
+
+// Source is a structured field with text + url, flattened to two Weblate keys.
+const SOURCE_SUBFIELDS = ["source_text", "source_url"];
 
 function getProjectDirs() {
   return fs
@@ -144,6 +147,24 @@ function compileProject(projectSlug) {
           if (sourceHasField) {
             jsonByLang[lang][`${code}.${field}`] = "";
           }
+        }
+      }
+
+      // Handle structured source field (text + url)
+      const source = t.source;
+      if (source) {
+        if (typeof source === "object") {
+          if (source.text) jsonByLang[lang][`${code}.source_text`] = source.text.trim();
+          if (source.url) jsonByLang[lang][`${code}.source_url`] = source.url.trim();
+        } else {
+          // Backward compat: plain string treated as text-only
+          jsonByLang[lang][`${code}.source_text`] = String(source).trim();
+        }
+      } else if (lang !== config.source_language) {
+        const srcSource = translations[config.source_language]?.source;
+        if (srcSource) {
+          jsonByLang[lang][`${code}.source_text`] = "";
+          jsonByLang[lang][`${code}.source_url`] = "";
         }
       }
     }

@@ -1,6 +1,8 @@
 # UNDRR.Term
 
 > **Alpha proof of concept** as of 16 March 2026. Under active development and testing. Breaking changes will happen, and not all data is loaded yet.
+>
+> The live site is gated behind a preview PIN: **5498**. Enter it once per browser session to access the pages.
 
 Multilingual terminology for the UN Office for Disaster Risk Reduction, managed as markdown files in git. Terms compile to JSON for Weblate translation workflows and get published as a static site.
 
@@ -59,10 +61,16 @@ translations:
     context: "The 2011 Thailand flood caused $45.7 billion in damages."
     aliases:
       - Flooding
+    source:
+      text: "UNDRR, 2017"
+      url: "https://www.undrr.org/publication/..."
   fr:
     term: Inondation
     definition: Le débordement des limites normales...
     part_of_speech: nom
+    source:
+      text: "UNDRR, 2017"
+      url: "https://www.undrr.org/publication/..."
   # ... ar, zh, ru, es
 ---
 ```

@@ -1,3 +1,77 @@
+/* PIN gate overlay */
+#pin-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-gate__box {
+  text-align: center;
+  max-width: 360px;
+  padding: 2rem;
+}
+
+.pin-gate__box h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.pin-gate__box p {
+  color: #555;
+  margin: 0 0 1.25rem 0;
+}
+
+.pin-gate__input-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.pin-gate__input-row input {
+  width: 6rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.25em;
+}
+
+.pin-gate__input-row input:focus {
+  outline: 2px solid transparent;
+  border-color: #0468b1;
+  box-shadow: 0 0 0 2px rgba(4, 104, 177, 0.2);
+}
+
+.pin-gate__input-row button {
+  padding: 0.5rem 1rem;
+  background: #0468b1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pin-gate__input-row button:hover {
+  background: #035a96;
+}
+
+#pin-error {
+  color: #c00;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Site footer link (above UNDRR footer) */
+.site-footer-links {
+  padding: 1.5rem 0;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+}
+
 /* Overrides and extensions on top of Mangrove CSS */
 
 /* Site title label in page header */
@@ -19,53 +93,158 @@
   border-radius: 4px;
 }
 
-.term-card:hover {
-  border-color: #0468b1;
-}
-
-.term-card h3 {
-  margin: 0 0 0.25rem 0;
-}
-
-.term-card p {
-  margin: 0;
-  color: #555;
-}
-
 .term-meta {
   color: #666;
   margin-top: 0.25rem;
 }
 
-/* Term detail page sections */
+/* Term detail page: two-column layout (sidebar + content) */
+.term-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .term-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left sidebar */
+.term-sidebar {
+  border-right: 1px solid #e0e0e0;
+  padding-right: 1.5rem;
+}
+
+[dir="rtl"] .term-sidebar {
+  border-right: none;
+  border-left: 1px solid #e0e0e0;
+  padding-right: 0;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .term-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+  [dir="rtl"] .term-sidebar {
+    border-left: none;
+  }
+}
+
+.term-sidebar__section {
+  margin-bottom: 1.5rem;
+}
+
+.term-sidebar__section h3 {
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.term-sidebar__section p,
+.term-sidebar__section ul {
+  margin: 0;
+  color: #555;
+}
+
+.term-sidebar__contributing {
+  margin-top: 0.5rem;
+}
+
+.term-sidebar__section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.term-sidebar__section li {
+  padding: 0.25rem 0;
+  border-left: 3px solid #e0e0e0;
+  padding-left: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+[dir="rtl"] .term-sidebar__section li {
+  border-left: none;
+  border-right: 3px solid #e0e0e0;
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+
+/* Right content: language sections */
+.term-content {
+  min-width: 0;
+}
+
+.term-lang-section {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.term-lang-section:last-child {
+  border-bottom: none;
+}
+
+.term-lang-heading {
+  color: #999;
+  font-weight: 300;
+  margin: 0 0 0.5rem 0;
+}
+
+.term-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.term-pos {
+  font-weight: 400;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .term-pos {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.term-aliases {
+  color: #666;
+  font-style: italic;
+  margin: 0 0 0.5rem 0;
+}
+
+.term-lang-section h3 {
+  font-weight: 700;
+  margin: 1rem 0 0.25rem 0;
+}
+
+/* Term detail sections (used for description blocks) */
 .term-detail-section {
   margin-bottom: 1.5rem;
 }
 
-.term-detail-section h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #666;
-  margin-bottom: 0.5rem;
+/* Other-language translations wrapper */
+.term-other-languages {
+  background: #f7f8f9;
+  border-top: 3px solid #d0d5da;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 0 0 4px 4px;
 }
 
-/* Language translation cards (inside mg-grid) */
-.language-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  padding: 1rem;
+.term-other-languages .term-lang-section {
+  border-bottom-color: #d8dce0;
 }
 
-.language-card h4 {
-  margin: 0 0 0.5rem 0;
-  color: #0468b1;
-}
-
-/* Edit on GitHub link */
-.term-edit-link {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #eee;
+.term-other-languages .term-lang-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Search input */
@@ -79,7 +258,7 @@
 }
 
 .search-input:focus {
-  outline: none;
+  outline: 2px solid transparent;
   border-color: #0468b1;
   box-shadow: 0 0 0 2px rgba(4, 104, 177, 0.2);
 }

@@ -31,12 +31,10 @@
 {%- set project = combo.project %}
 {%- set projectTerms = terms | termsForProject(project.slug) %}
 
-<nav aria-label="breadcrumbs" class="mg-breadcrumb">
-  <ul>
-    <li><a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a></li>
-    <li aria-current="page">{{ project.name }}</li>
-  </ul>
-</nav>
+<ul aria-label="breadcrumbs" class="mg-breadcrumb">
+  <li><a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a></li>
+  <li aria-current="page">{{ project.name }}</li>
+</ul>
 
 <h1>{{ project.name }}</h1>
 <p>{{ project.description }}</p>
@@ -50,8 +48,8 @@
 
 <div id="term-list">
 {%- for term in projectTerms | sort(false, false, "id") %}
-  <div class="term-card" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
-    <h3><a href="{{ ('/' + lang + '/' + project.slug + '/' + term.code + '/') | url }}">{{ term | termName(lang) }}</a></h3>
+  <div class="term-card mg-card mg-card__hc" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
+    <h3 class="mg-card__title"><a href="{{ ('/' + lang + '/' + project.slug + '/' + term.code + '/') | url }}">{{ term | termName(lang) }}</a></h3>
     <p>{{ term | termDef(lang) | truncate(150) }}</p>
     <div class="term-meta mg-tag-container">
       {%- if term.translations[lang].part_of_speech %}
@@ -64,6 +62,27 @@
   </div>
 {%- endfor %}
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": {{ project.name | dump | safe }},
+  "description": {{ project.description | plaintext | dump | safe }},
+  "inLanguage": {{ lang | dump | safe }},
+  "url": {{ (site.url + '/' + lang + '/' + project.slug + '/') | dump | safe }},
+  "hasDefinedTerm": [
+    {%- for term in projectTerms %}
+    {
+      "@type": "DefinedTerm",
+      "name": {{ term | termName(lang) | dump | safe }},
+      "identifier": {{ term.code | dump | safe }},
+      "url": {{ (site.url + '/' + lang + '/' + project.slug + '/' + term.code + '/') | dump | safe }}
+    }{{ "," if not loop.last }}
+    {%- endfor %}
+  ]
+}
+</script>
 
 <script>
   const searchInput = document.getElementById('project-search');

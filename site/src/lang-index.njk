@@ -12,7 +12,8 @@
   eleventyComputed: {
     lang: (data) => data.currentLang.code,
     dir: (data) => data.currentLang.dir,
-    pageTitle: (data) => data.i18n.site_subtitle[data.currentLang.code]
+    pageTitle: (data) => data.i18n.site_subtitle[data.currentLang.code],
+    langPath: () => ""
   }
 }
 ---
@@ -28,8 +29,8 @@
 <h2>{{ i18n.all_projects[lang] }}</h2>
 
 {%- for project in projects %}
-<div class="term-card">
-  <h3><a href="{{ ('/' + lang + '/' + project.slug + '/') | url }}">{{ project.name }}</a></h3>
+<div class="term-card mg-card mg-card__hc">
+  <h3 class="mg-card__title" ><a href="{{ ('/' + lang + '/' + project.slug + '/') | url }}">{{ project.name }}</a></h3>
   <p>{{ project.description }}</p>
   <p class="term-meta">{{ terms | termsForProject(project.slug) | length }} terms</p>
 </div>
@@ -54,7 +55,25 @@
     <div class="mg-card__content">
       <header class="mg-card__title">{{ i18n.card_community_title[lang] }}</header>
       <p class="mg-card__summary">{{ i18n.card_community_desc[lang] }}</p>
+      <p class="mg-card__summary"><a class="mg-card__text-link" href="{{ ('/' + lang + '/contributing/') | url }}">{{ i18n.contributing_link[lang] or "How to contribute" }}</a></p>
     </div>
   </article>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PreventionWeb Term",
+  "description": {{ i18n.site_subtitle[lang] | dump | safe }},
+  "url": {{ (site.url + '/' + lang + '/') | dump | safe }},
+  "inLanguage": {{ lang | dump | safe }},
+  "publisher": {
+    "@type": "Organization",
+    "name": "United Nations Office for Disaster Risk Reduction",
+    "alternateName": "UNDRR",
+    "url": "https://www.undrr.org"
+  }
+}
+</script>
 

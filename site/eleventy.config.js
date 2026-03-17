@@ -58,6 +58,7 @@ export default function (eleventyConfig) {
           ...data,
           body: content,
           projectConfig,
+          sourcePath: path.relative(path.resolve(termsDir, ".."), filePath),
         });
       }
     }
@@ -90,6 +91,12 @@ export default function (eleventyConfig) {
     { code: "es", name: "Español", dir: "ltr" },
   ]);
 
+  // Load CONTRIBUTING.md as global data
+  eleventyConfig.addGlobalData("contributing", () => {
+    const filePath = path.resolve(import.meta.dirname, "..", "CONTRIBUTING.md");
+    return fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "";
+  });
+
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/assets");
 
@@ -103,6 +110,18 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("md", (str) => {
     if (!str) return "";
     return md.render(String(str));
+  });
+
+  // Filter: strip markdown to plain text (for JSON-LD descriptions)
+  eleventyConfig.addFilter("plaintext", (str) => {
+    if (!str) return "";
+    return String(str)
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) → text
+      .replace(/[*_~`#]+/g, "")                 // bold, italic, strikethrough, code, headings
+      .replace(/!\[[^\]]*\]\([^)]+\)/g, "")     // images
+      .replace(/\n{2,}/g, " ")                  // collapse paragraph breaks
+      .replace(/\n/g, " ")                      // collapse line breaks
+      .trim();
   });
 
   // Filter: get terms for a specific project and language

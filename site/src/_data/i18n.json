@@ -96,12 +96,12 @@
     "es": "Multilingüe"
   },
   "card_multilingual_desc": {
-    "en": "Terminology in all six official UN languages: Arabic, Chinese, English, French, Russian, and Spanish.",
-    "ar": "المصطلحات بلغات الأمم المتحدة الرسمية الست: العربية والصينية والإنجليزية والفرنسية والروسية والإسبانية.",
-    "zh": "提供联合国全部六种官方语言的术语：阿拉伯语、中文、英语、法语、俄语和西班牙语。",
-    "fr": "La terminologie dans les six langues officielles de l'ONU : arabe, chinois, anglais, français, russe et espagnol.",
-    "ru": "Терминология на всех шести официальных языках ООН: арабском, китайском, английском, французском, русском и испанском.",
-    "es": "Terminología en los seis idiomas oficiales de la ONU: árabe, chino, inglés, francés, ruso y español."
+    "en": "Available in the six official UN languages, with support for additional languages over time.",
+    "ar": "متوفرة بلغات الأمم المتحدة الرسمية الست، مع دعم لغات إضافية بمرور الوقت.",
+    "zh": "提供联合国六种官方语言版本，并将逐步支持更多语言。",
+    "fr": "Disponible dans les six langues officielles de l'ONU, avec la prise en charge de langues supplémentaires au fil du temps.",
+    "ru": "Доступно на шести официальных языках ООН с поддержкой дополнительных языков в перспективе.",
+    "es": "Disponible en los seis idiomas oficiales de la ONU, con soporte para idiomas adicionales con el tiempo."
   },
   "card_opendata_title": {
     "en": "Open data",
@@ -120,20 +120,28 @@
     "es": "Toda la terminología se almacena como Markdown estructurado en un repositorio público de GitHub. Las traducciones se compilan a JSON para su uso por otros sistemas."
   },
   "card_community_title": {
-    "en": "Community-driven",
-    "ar": "بمشاركة المجتمع",
-    "zh": "社区驱动",
-    "fr": "Collaboratif",
-    "ru": "При участии сообщества",
-    "es": "Colaborativo"
+    "en": "Peer-reviewed",
+    "ar": "مراجعة الأقران",
+    "zh": "同行评审",
+    "fr": "Révisé par des pairs",
+    "ru": "Рецензируемый",
+    "es": "Revisado por pares"
   },
   "card_community_desc": {
-    "en": "Contribute translations and corrections through Weblate or directly on GitHub. Reviewed by UNDRR terminology specialists.",
-    "ar": "ساهم بالترجمات والتصحيحات عبر Weblate أو مباشرة على GitHub. تتم المراجعة من قبل متخصصي المصطلحات في مكتب الأمم المتحدة.",
-    "zh": "通过Weblate或直接在GitHub上贡献翻译和修正。由联合国减灾办公室术语专家审核。",
-    "fr": "Contribuez aux traductions et corrections via Weblate ou directement sur GitHub. Révisé par les terminologues de l'UNDRR.",
-    "ru": "Вносите переводы и исправления через Weblate или напрямую на GitHub. Проверяется терминологами UNDRR.",
-    "es": "Contribuya con traducciones y correcciones a través de Weblate o directamente en GitHub. Revisado por especialistas en terminología de UNDRR."
+    "en": "Reviewed by UNDRR terminology specialists and open to feedback from the DRR community and experts.",
+    "ar": "تتم المراجعة من قبل متخصصي المصطلحات في مكتب الأمم المتحدة، مع إتاحة الملاحظات من مجتمع وخبراء الحد من مخاطر الكوارث.",
+    "zh": "由联合国减灾办公室术语专家审核，欢迎减灾社区和专家提供反馈。",
+    "fr": "Révisé par les terminologues de l'UNDRR et ouvert aux retours de la communauté et des experts en RRC.",
+    "ru": "Проверяется терминологами UNDRR и открыто для отзывов от сообщества и экспертов по снижению риска бедствий.",
+    "es": "Revisado por especialistas en terminología de UNDRR y abierto a comentarios de la comunidad y expertos en RRD."
+  },
+  "contributing_link": {
+    "en": "How to contribute",
+    "ar": "كيفية المساهمة",
+    "zh": "如何贡献",
+    "fr": "Comment contribuer",
+    "ru": "Как внести вклад",
+    "es": "Cómo contribuir"
   },
   "site_status": {
     "en": "This site is an early proof of concept under active development. Not yet ready for use.",
@@ -174,6 +182,22 @@
     "fr": "Autres langues",
     "ru": "Другие языки",
     "es": "Otros idiomas"
+  },
+  "domain_label": {
+    "en": "Domain",
+    "ar": "المجال",
+    "zh": "领域",
+    "fr": "Domaine",
+    "ru": "Область",
+    "es": "Dominio"
+  },
+  "category_label": {
+    "en": "Category",
+    "ar": "الفئة",
+    "zh": "类别",
+    "fr": "Catégorie",
+    "ru": "Категория",
+    "es": "Categoría"
   },
   "domain": {
     "natural-hazards/meteorological": {

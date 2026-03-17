@@ -71,8 +71,8 @@
       const t = term.translations[lang] || term.translations.en || {};
       const def = (t.definition || '').substring(0, 150);
       const href = urlPrefix + lang + '/' + term.project + '/' + term.code + '/';
-      return '<div class="term-card">' +
-        '<h3><a href="' + href + '">' + (t.term || term.id) + '</a></h3>' +
+      return '<div class="term-card mg-card mg-card__hc">' +
+        '<h3 class="mg-card__title"><a href="' + href + '">' + (t.term || term.id) + '</a></h3>' +
         '<p>' + def + '</p>' +
         '</div>';
     }).join('');
