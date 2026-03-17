@@ -110,6 +110,28 @@ export function parseAliases(value) {
 }
 
 /**
+ * Filter a project's language list for --lang exports.
+ * Always includes the source language (default "en") plus the requested targets.
+ * Returns the filtered list in the original order from the project config.
+ */
+export function filterLanguages(projectLanguages, langArg, sourceLang = "en") {
+  const requested = langArg
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  const include = new Set([sourceLang, ...requested]);
+  const filtered = projectLanguages.filter((l) => include.has(l));
+
+  const unknown = requested.filter((l) => !projectLanguages.includes(l));
+  if (unknown.length) {
+    console.warn(`Warning: languages not in project config: ${unknown.join(", ")}`);
+  }
+
+  return filtered;
+}
+
+/**
  * Convert text to a URL-friendly slug.
  * NFD-normalize, strip diacritics, lowercase, collapse non-alphanum to hyphens.
  * Returns null if nothing Latin/numeric remains (e.g. pure Arabic/Chinese).

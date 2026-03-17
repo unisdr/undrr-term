@@ -64,6 +64,57 @@ else
 fi
 echo ""
 
+echo "=== Testing --lang filter (CSV) ==="
+node scripts/export-csv.js hips --lang zh --output "$TMPDIR/hips-zh.csv"
+# Header should have en_* and zh_* columns but NOT fr_*, ar_*, ru_*, es_*
+HEADER=$(head -1 "$TMPDIR/hips-zh.csv")
+if echo "$HEADER" | grep -q "en_term" && echo "$HEADER" | grep -q "zh_term" && ! echo "$HEADER" | grep -q "fr_term"; then
+  echo "--lang CSV column filter: PASS"
+else
+  echo "--lang CSV column filter: FAIL"
+  echo "Header: $HEADER"
+  exit 1
+fi
+# Import the filtered CSV — French translations must still be present
+node scripts/import-csv.js "$TMPDIR/hips-zh.csv"
+if grep -q "Inondation" terms/hips/mh0301.md; then
+  echo "--lang CSV import preserves other languages: PASS"
+else
+  echo "--lang CSV import preserves other languages: FAIL (French data missing)"
+  exit 1
+fi
+git checkout -- terms/
+echo ""
+
+echo "=== Testing --lang filter (JSON) ==="
+node scripts/export-json.js hips --lang zh --output "$TMPDIR/hips-zh.json"
+# JSON should list only en and zh in languages array
+LANG_COUNT=$(jq '.languages | length' "$TMPDIR/hips-zh.json")
+if [ "$LANG_COUNT" -eq 2 ]; then
+  echo "--lang JSON language filter: PASS (2 languages)"
+else
+  echo "--lang JSON language filter: FAIL (expected 2 languages, got $LANG_COUNT)"
+  jq '.languages' "$TMPDIR/hips-zh.json"
+  exit 1
+fi
+# Verify no French translations leaked into the filtered export
+if ! jq -e '.terms[0].translations.fr' "$TMPDIR/hips-zh.json" > /dev/null 2>&1; then
+  echo "--lang JSON translation filter: PASS (no fr in export)"
+else
+  echo "--lang JSON translation filter: FAIL (fr present in filtered export)"
+  exit 1
+fi
+# Import the filtered JSON — French translations must still be present
+node scripts/import-json.js "$TMPDIR/hips-zh.json"
+if grep -q "Inondation" terms/hips/mh0301.md; then
+  echo "--lang JSON import preserves other languages: PASS"
+else
+  echo "--lang JSON import preserves other languages: FAIL (French data missing)"
+  exit 1
+fi
+git checkout -- terms/
+echo ""
+
 echo "=== Testing auto-ID generation (CSV template) ==="
 node scripts/import-csv.js tests/fixtures/template-new-terms.csv
 # Verify drr001.md got auto-generated id and slug

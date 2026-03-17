@@ -3,10 +3,14 @@
 /**
  * Exports term data to CSV format (wide layout).
  *
- * Usage: node scripts/export-csv.js [project] [--output path]
+ * Usage: node scripts/export-csv.js [project] [--output path] [--lang codes]
  *
  * One row per term, with columns for metadata and each language's fields.
  * Output goes to exports/{project}.csv by default.
+ *
+ * --lang filters to the source language (English) plus the specified target(s).
+ * Example: --lang zh  →  exports only en + zh columns
+ *          --lang zh,fr  →  exports en + zh + fr columns
  */
 
 import fs from "fs";
@@ -19,6 +23,7 @@ import {
   getTermFiles,
   parseTerm,
   formatValue,
+  filterLanguages,
 } from "./lib/terms.js";
 import { stringify } from "./lib/csv.js";
 
@@ -72,14 +77,17 @@ function termToRow(data, languages) {
   return [...meta, ...langValues];
 }
 
-function exportProject(projectSlug, outputPath) {
+function exportProject(projectSlug, outputPath, langFilter) {
   const config = readProjectConfig(projectSlug);
   if (!config) {
     console.warn(`No _project.yml found for ${projectSlug}, skipping`);
     return;
   }
 
-  const languages = config.languages || [];
+  const allLanguages = config.languages || [];
+  const languages = langFilter
+    ? filterLanguages(allLanguages, langFilter, config.source_language || "en")
+    : allLanguages;
   const termFiles = getTermFiles(projectSlug);
 
   const header = buildHeader(languages);
@@ -104,10 +112,13 @@ function exportProject(projectSlug, outputPath) {
 const args = process.argv.slice(2);
 let projectFilter = null;
 let outputPath = null;
+let langFilter = null;
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === "--output" && args[i + 1]) {
     outputPath = args[++i];
+  } else if (args[i] === "--lang" && args[i + 1]) {
+    langFilter = args[++i];
   } else if (!args[i].startsWith("-")) {
     projectFilter = args[i];
   }
@@ -119,7 +130,7 @@ console.log("Exporting terms to CSV...\n");
 
 for (const project of projects) {
   const outPath = outputPath || path.join(EXPORTS_DIR, `${project}.csv`);
-  exportProject(project, outPath);
+  exportProject(project, outPath, langFilter);
 }
 
 console.log("\nDone.");

@@ -54,11 +54,16 @@ Terms can be exported to CSV or JSON for offline editing, bulk review, or exchan
 yarn export:csv               # all projects → exports/{project}.csv
 yarn export:csv hips          # single project
 yarn export:csv hips --output terms.csv
+yarn export:csv hips --lang zh          # English + Chinese only
+yarn export:csv hips --lang zh,fr       # English + Chinese + French
 
 yarn export:json              # all projects → exports/{project}.json
 yarn export:json hips         # single project
 yarn export:json hips --output terms.json
+yarn export:json hips --lang zh         # English + Chinese only
 ```
+
+The `--lang` flag filters the export to the source language (English) plus the specified target(s). This makes the output smaller and easier to work with for translators reviewing a single language pair. The import scripts accept any subset of languages — columns or translations not in the file are left untouched.
 
 **CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`, `{lang}_confidence`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`).
 
