@@ -128,9 +128,9 @@
         <p class="confidence-row">
           <span>{{ l.name }}:</span>
           {%- if lt.confidence %}
-          <span class="term-confidence term-confidence--{{ lt.confidence }}">{{ i18n['confidence_' + lt.confidence][l.code] or i18n['confidence_' + lt.confidence][lang] }}</span>
+          <span class="term-confidence term-confidence--{{ lt.confidence }}">{{ i18n['confidence_' + lt.confidence][lang] }}</span>
           {%- else %}
-          <span class="term-confidence term-confidence--0">{{ i18n.confidence_not_assessed[l.code] or i18n.confidence_not_assessed[lang] }}</span>
+          <span class="term-confidence term-confidence--0">{{ i18n.confidence_not_assessed[lang] }}</span>
           {%- endif %}
         </p>
         {%- endif %}
