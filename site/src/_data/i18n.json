@@ -239,6 +239,14 @@
     "ru": "Участие",
     "es": "Contribuir"
   },
+  "download_terms": {
+    "en": "Download all terms",
+    "ar": "تحميل جميع المصطلحات",
+    "zh": "下载所有术语",
+    "fr": "Télécharger tous les termes",
+    "ru": "Скачать все термины",
+    "es": "Descargar todos los términos"
+  },
   "domain": {
     "natural-hazards/meteorological": {
       "en": "Meteorological hazards",

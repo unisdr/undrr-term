@@ -46,6 +46,12 @@
   autocomplete="off"
   data-project="{{ project.slug }}">
 
+<div class="download-links">
+  <span>{{ i18n.download_terms[lang] }}:</span>
+  <a href="{{ ('/exports/' + project.slug + '.csv') | url }}" download>CSV</a>
+  <a href="{{ ('/exports/' + project.slug + '.json') | url }}" download>JSON</a>
+</div>
+
 <div id="term-list">
 {%- for term in projectTerms | sort(false, false, "id") %}
   <div class="term-card mg-card mg-card__hc" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">

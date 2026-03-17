@@ -108,6 +108,15 @@
     </div>
 
     <div class="term-sidebar__section">
+      <h3>{{ i18n.download_terms[lang] }}</h3>
+      <p>
+        <a href="{{ ('/exports/' + term.project + '.csv') | url }}" download>CSV</a>
+        &middot;
+        <a href="{{ ('/exports/' + term.project + '.json') | url }}" download>JSON</a>
+      </p>
+    </div>
+
+    <div class="term-sidebar__section">
       <a href="https://github.com/unisdr/undrr-term/edit/main/{{ term.sourcePath }}"
          class="mg-button mg-button-primary">
         {{ i18n.propose_revision[lang] or "Propose a revision" }}

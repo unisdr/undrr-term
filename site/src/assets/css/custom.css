@@ -247,6 +247,17 @@
   padding-bottom: 0;
 }
 
+/* Download links on project listing page */
+.download-links {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.download-links a {
+  margin-inline-start: 0.5rem;
+  font-weight: 600;
+}
+
 /* Search input */
 .search-input {
   width: 100%;
