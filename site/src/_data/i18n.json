@@ -239,6 +239,30 @@
     "ru": "Участие",
     "es": "Contribuir"
   },
+  "methodology_title": {
+    "en": "Methodology",
+    "ar": "المنهجية",
+    "zh": "方法论",
+    "fr": "Méthodologie",
+    "ru": "Методология",
+    "es": "Metodología"
+  },
+  "methodology_link": {
+    "en": "Methodology",
+    "ar": "المنهجية",
+    "zh": "方法论",
+    "fr": "Méthodologie",
+    "ru": "Методология",
+    "es": "Metodología"
+  },
+  "methodology_draft_notice": {
+    "en": "This methodology is a working draft and will be updated as the project evolves.",
+    "ar": "هذه المنهجية مسودة عمل وسيتم تحديثها مع تطور المشروع.",
+    "zh": "本方法论为工作草案，将随项目发展而更新。",
+    "fr": "Cette méthodologie est un document de travail qui sera mis à jour au fil de l'évolution du projet.",
+    "ru": "Эта методология является рабочим проектом и будет обновляться по мере развития проекта.",
+    "es": "Esta metodología es un borrador de trabajo y se actualizará a medida que el proyecto evolucione."
+  },
   "translation_scope_notice": {
     "en": "This database covers terms and definitions for translation. The source publication has more detail. See the source document for the full text.",
     "ar": "تتضمن قاعدة البيانات هذه المصطلحات والتعريفات للاستخدام المتعدد اللغات. قد يتضمن المنشور المصدر تفاصيل إضافية مثل الأوصاف الموسعة والمراجع والمنهجية. يُرجى الرجوع إلى الوثيقة المصدر للاطلاع على المحتوى الكامل.",
