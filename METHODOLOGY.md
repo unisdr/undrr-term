@@ -136,7 +136,7 @@ English is read-only in Weblate. Source text is only edited in the markdown file
 
 Not all terms arrive at the same quality level. The validation process depends on where the term came from and what language it's in.
 
-**English source terms** are taken directly from official UNDRR or UN publications. These are not community-editable — they reflect the language of the original document. If the source document has a definition, we use it verbatim. If it only has term names (as with some older publications), the definition field is left empty until an authoritative source is identified.
+**English source terms** are taken directly from official UNDRR or UN publications. These are not community-editable — they reflect the language of the original document. If the source document has a definition, we use it verbatim. If it only has term names (as with some older publications), we leave the definition empty until we find an authoritative source.
 
 **Translations from official UN documents** (e.g., UNISDR 2009, OEWG 2016) were produced by UN language services and are treated as verified. They still go through a spot-check during import, but we don't rewrite them.
 
