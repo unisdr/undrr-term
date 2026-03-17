@@ -251,6 +251,24 @@
   margin-bottom: 1.5rem;
 }
 
+/* Other-language translations wrapper */
+.term-other-languages {
+  background: #f7f8f9;
+  border-top: 3px solid #d0d5da;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 0 0 4px 4px;
+}
+
+.term-other-languages .term-lang-section {
+  border-bottom-color: #d8dce0;
+}
+
+.term-other-languages .term-lang-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 /* Search input */
 .search-input {
   width: 100%;

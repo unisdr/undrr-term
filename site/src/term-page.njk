@@ -154,30 +154,32 @@
     {%- endif %}
 
     {# Other languages #}
-    {%- for l in languages %}
-      {%- if l.code !== lang and term.translations[l.code] %}
-        {%- set lt = term.translations[l.code] %}
-        <section class="term-lang-section">
-          <h2 class="term-lang-heading">
-            <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}">{{ l.name }}</a>
-          </h2>
+    <div class="term-other-languages">
+      {%- for l in languages %}
+        {%- if l.code !== lang and term.translations[l.code] %}
+          {%- set lt = term.translations[l.code] %}
+          <section class="term-lang-section">
+            <h2 class="term-lang-heading">
+              <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}">{{ l.name }}</a>
+            </h2>
 
-          <p class="term-name">
-            {{ lt.term }}
-            {%- if lt.part_of_speech %}
-              <span class="term-pos">{{ lt.part_of_speech }}</span>
+            <p class="term-name">
+              {{ lt.term }}
+              {%- if lt.part_of_speech %}
+                <span class="term-pos">{{ lt.part_of_speech }}</span>
+              {%- endif %}
+            </p>
+
+            {%- if lt.aliases and lt.aliases.length %}
+            <p class="term-aliases">{{ i18n.aliases[lang] }}: {{ lt.aliases | join(", ") }}</p>
             {%- endif %}
-          </p>
 
-          {%- if lt.aliases and lt.aliases.length %}
-          <p class="term-aliases">{{ i18n.aliases[lang] }}: {{ lt.aliases | join(", ") }}</p>
-          {%- endif %}
-
-          <h3>{{ i18n.definition[lang] }}</h3>
-          {{ lt.definition | md | safe }}
-        </section>
-      {%- endif %}
-    {%- endfor %}
+            <h3>{{ i18n.definition[lang] }}</h3>
+            {{ lt.definition | md | safe }}
+          </section>
+        {%- endif %}
+      {%- endfor %}
+    </div>
 
   </div>
 </div>
