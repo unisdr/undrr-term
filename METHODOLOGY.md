@@ -1,6 +1,6 @@
 # Methodology
 
-How we arrived at the design of UNDRR.Term, and what we drew on along the way.
+How we arrived at the design of PreventionWeb Term, and what we drew on along the way.
 
 ## The problem
 
@@ -35,7 +35,7 @@ We looked at how other organizations solve similar problems before making any de
 
 - https://iate.europa.eu/
 
-**UNTerm.** The UN's own terminology database, covering 85,000+ terms in 6 official languages plus German and Portuguese. Maintained jointly by the UN Secretariat and specialized agencies. Organized by collections tied to UN bodies. We couldn't find a public API, but the data model (concept-oriented, multi-agency) validated our approach.
+**UNTerm.** The UN's own terminology database, covering 85,000+ terms in 6 official languages plus German and Portuguese. Maintained jointly by the UN Secretariat and specialized agencies. Organized by collections tied to UN bodies. As of 2025, no public API was available, but the data model (concept-oriented, multi-agency) validated our approach.
 
 - https://unterm.un.org/
 
@@ -50,7 +50,7 @@ We looked at how other organizations solve similar problems before making any de
 
 - https://github.com/carpentries/glosario
 
-**MDN translated-content.** Mozilla's developer documentation translations. Each locale mirrors the English folder structure in its own directory. Community translators open PRs, and localization leads review. In 2025 they added machine translation with GPT-4o for German, with human review on top. The folder mirroring creates duplication, but the PR-based review workflow is solid.
+**MDN translated-content.** Mozilla's developer documentation translations. Each locale mirrors the English folder structure in its own directory. Community translators open PRs, and localization leads review. As of early 2025, they were using machine translation with human review for German. The folder mirroring creates duplication, but the PR-based review workflow is solid.
 
 - https://github.com/mdn/translated-content
 
@@ -85,7 +85,7 @@ We looked at how other organizations solve similar problems before making any de
 
 ## Key decisions and trade-offs
 
-**All languages in one file vs. one file per language.** We chose one file per concept with all languages in the frontmatter. This keeps the concept atomic and makes it easy for humans to review and edit. The cost is a compile step to produce the per-language JSON files Weblate needs. We think this is worth it because the editing experience matters more than build simplicity.
+**All languages in one file vs. one file per language.** We chose one file per concept with all languages in the frontmatter. This keeps the concept atomic and makes it easy for humans to review and edit. The cost is a compile step to produce the per-language JSON files Weblate needs. The editing experience is the bottleneck, not build time.
 
 **Source codes as filenames and in URLs.** The source systems already have identifiers for their terms (like `mh0301` for flood in the HIPs). We use these as both filenames and URL paths (`/en/hips/mh0301/`). Codes are immutable -- term names can change through translation, but the code never does. A human-readable `slug` field in frontmatter is available for display purposes but isn't used in routing.
 

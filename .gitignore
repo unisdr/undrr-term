@@ -1,6 +1,7 @@
 node_modules/
 site/_site/
 site/node_modules/
+exports/
 .DS_Store
 package-lock.json
 site/package-lock.json

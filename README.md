@@ -1,4 +1,4 @@
-# UNDRR.Term
+# PreventionWeb Term
 
 > **Alpha proof of concept** as of 16 March 2026. Under active development and testing. Breaking changes will happen, and not all data is loaded yet.
 >
@@ -6,11 +6,11 @@
 
 Multilingual terminology for the UN Office for Disaster Risk Reduction, managed as markdown files in git. Terms compile to JSON for Weblate translation workflows and get published as a static site.
 
-![Whiteboard sketch of the UNDRR.Term architecture](site/src/assets/images/whiteboard.jpg)
+![Whiteboard sketch of the PreventionWeb Term architecture](site/src/assets/images/whiteboard.jpg)
 
 ## What it does
 
-- One markdown file per concept. All six UN languages sit together in YAML frontmatter.
+- One markdown file per concept. All languages sit together in YAML frontmatter.
 - Compiles to flat JSON for Weblate (self-hosted)
 - Builds a static site with Eleventy and UNDRR's Mangrove design system
 - Syncs both directions between markdown and Weblate, so you can edit in either place
@@ -22,7 +22,12 @@ Multilingual terminology for the UN Office for Disaster Risk Reduction, managed 
 | Hazard Information Profiles | `terms/hips/` | Hazard definitions from the 2025 HIPs (~281 terms) |
 | Sendai Framework Terminology | `terms/sendai/` | DRR concepts and definitions (~282+ terms) |
 
-Languages: Arabic, Chinese, English, French, Russian, Spanish.
+Languages: Arabic, Chinese, English, French, Russian, Spanish (with support for additional languages over time).
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) 18 or later
+- [Yarn](https://classic.yarnpkg.com/) 1.x (`npm install -g yarn` if you don't have it)
 
 ## Getting started
 
@@ -39,6 +44,58 @@ yarn build            # full build (compile + site)
 yarn import:weblate   # pull translations back from Weblate JSON into markdown
 ```
 
+## Import / Export
+
+Terms can be exported to CSV or JSON for offline editing, bulk review, or exchange with external systems, then imported back. All scripts are idempotent — exporting and re-importing produces no changes.
+
+### Export
+
+```bash
+yarn export:csv               # all projects → exports/{project}.csv
+yarn export:csv hips          # single project
+yarn export:csv hips --output terms.csv
+
+yarn export:json              # all projects → exports/{project}.json
+yarn export:json hips         # single project
+yarn export:json hips --output terms.json
+```
+
+**CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`).
+
+**JSON format** is hierarchical with project metadata, a language list, and a `terms` array where each entry contains the full translation object as it appears in frontmatter.
+
+### Import
+
+```bash
+yarn import:csv <file.csv>    # CSV → markdown frontmatter
+yarn import:json <file.json>  # JSON → markdown frontmatter
+```
+
+Both import scripts update existing terms and create new ones. The expected formats match what the export scripts produce — export a project, edit the file, then import it back.
+
+### Excel
+
+A lightweight converter turns `.xlsx` files into CSV for import. It requires the `xlsx` package, which is installed on demand:
+
+```bash
+yarn add xlsx                         # one-time setup
+yarn xlsx-to-csv data.xlsx            # → data.csv (first sheet)
+yarn xlsx-to-csv data.xlsx out.csv    # explicit output path
+yarn xlsx-to-csv data.xlsx --sheet "Terms"  # specific sheet
+```
+
+Typical workflow: `xlsx → csv → import:csv`.
+
+### Sample fixtures
+
+`tests/fixtures/` contains sample CSV and JSON files that can be used to verify the pipeline:
+
+```bash
+bash tests/test-import-export.sh   # round-trip smoke test
+```
+
+This exports all terms, re-imports them, and verifies the output is identical. It also imports the sample fixtures and confirms no term files were changed.
+
 ## How terms are structured
 
 Each term is a markdown file in `terms/{project}/`. Filenames use the source system code (e.g., `mh0301.md` for flood). All translations live in the frontmatter. Definitions support inline markdown (bold, italic, links).
@@ -50,7 +107,11 @@ code: mh0301
 slug: flood
 project: hips
 status: published
+category: hydrological
 domain: natural-hazards/meteorological
+related:
+  - flash-flood
+  - coastal-flood
 translations:
   en:
     term: Flood
@@ -87,13 +148,43 @@ terms/hips/gh0001/
 
 See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the Weblate sync workflow.
 
+## Frontmatter reference
+
+### Concept-level fields
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `id` | yes | Unique identifier for the concept (e.g., `flood`) |
+| `code` | yes | Source system code, used as filename and in URLs (e.g., `mh0301`) |
+| `slug` | yes | Human-readable slug for display purposes |
+| `project` | yes | Which term project this belongs to (`hips`, `sendai`) |
+| `status` | yes | Publication state: `published` or `draft` |
+| `domain` | no | Hierarchical domain path (e.g., `natural-hazards/meteorological`). Must have a matching entry in `site/src/_data/i18n.json` for translated display. |
+| `category` | no | Sub-classification within the domain (e.g., `hydrological`) |
+| `related` | no | List of `id` values for related concepts |
+
+### Per-language fields (under `translations.{lang}`)
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `term` | yes | The term in this language |
+| `definition` | yes | Short definition. Supports inline markdown (`*italic*`, `**bold**`, `[links](url)`). |
+| `part_of_speech` | no | Grammatical category in the target language (e.g., `noun`, `nom`, `اسم`) |
+| `context` | no | Example sentence or usage note in the target language |
+| `aliases` | no | List of alternative names in this language |
+| `source.text` | no | Human-readable citation (e.g., `UNDRR, 2017`) |
+| `source.url` | no | URL to the source document |
+
 ## Repository layout
 
 ```
 terms/          Markdown term files, one per concept
 weblate/        CI-generated JSON for Weblate (do not edit by hand)
-scripts/        Build and import scripts
+scripts/        Build, import, and export scripts
+  lib/          Shared utilities (term loading, CSV parsing)
 site/           Eleventy static site
+exports/        Generated CSV/JSON exports (git-ignored)
+tests/          Smoke tests and sample fixtures
 ```
 
 ## License

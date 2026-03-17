@@ -12,7 +12,7 @@
   eleventyComputed: {
     lang: (data) => data.currentLang.code,
     dir: (data) => data.currentLang.dir,
-    pageTitle: () => "Contributing",
+    pageTitle: (data) => data.i18n.contributing_title[data.currentLang.code] || "Contributing",
     langPath: "contributing/"
   }
 }

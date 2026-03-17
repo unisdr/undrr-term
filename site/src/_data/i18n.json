@@ -24,7 +24,7 @@
     "es": "No se encontraron términos."
   },
   "search_placeholder": {
-    "en": "Search terms...",
+    "en": "Search for a term...",
     "ar": "البحث في المصطلحات...",
     "zh": "搜索术语...",
     "fr": "Rechercher des termes...",
@@ -96,12 +96,12 @@
     "es": "Multilingüe"
   },
   "card_multilingual_desc": {
-    "en": "Available in the six official UN languages, with support for additional languages over time.",
-    "ar": "متوفرة بلغات الأمم المتحدة الرسمية الست، مع دعم لغات إضافية بمرور الوقت.",
-    "zh": "提供联合国六种官方语言版本，并将逐步支持更多语言。",
-    "fr": "Disponible dans les six langues officielles de l'ONU, avec la prise en charge de langues supplémentaires au fil du temps.",
-    "ru": "Доступно на шести официальных языках ООН с поддержкой дополнительных языков в перспективе.",
-    "es": "Disponible en los seis idiomas oficiales de la ONU, con soporte para idiomas adicionales con el tiempo."
+    "en": "Available in multiple languages, starting with the official UN languages and expanding over time.",
+    "ar": "متوفرة بعدة لغات، بدءاً بلغات الأمم المتحدة الرسمية مع التوسع بمرور الوقت.",
+    "zh": "提供多语言版本，首先支持联合国官方语言，并将逐步扩展。",
+    "fr": "Disponible en plusieurs langues, à commencer par les langues officielles de l'ONU, avec un élargissement progressif.",
+    "ru": "Доступно на нескольких языках, начиная с официальных языков ООН, с расширением со временем.",
+    "es": "Disponible en varios idiomas, comenzando con los idiomas oficiales de la ONU y ampliándose con el tiempo."
   },
   "card_opendata_title": {
     "en": "Open data",
@@ -198,6 +198,46 @@
     "fr": "Catégorie",
     "ru": "Категория",
     "es": "Categoría"
+  },
+  "code_label": {
+    "en": "Code",
+    "ar": "الرمز",
+    "zh": "代码",
+    "fr": "Code",
+    "ru": "Код",
+    "es": "Código"
+  },
+  "status_label": {
+    "en": "Status",
+    "ar": "الحالة",
+    "zh": "状态",
+    "fr": "Statut",
+    "ru": "Статус",
+    "es": "Estado"
+  },
+  "propose_revision": {
+    "en": "Propose a revision",
+    "ar": "اقتراح تعديل",
+    "zh": "提出修订建议",
+    "fr": "Proposer une révision",
+    "ru": "Предложить правку",
+    "es": "Proponer una revisión"
+  },
+  "about_contributing": {
+    "en": "About contributing edits",
+    "ar": "حول المساهمة في التحرير",
+    "zh": "关于贡献编辑",
+    "fr": "À propos des contributions",
+    "ru": "О внесении правок",
+    "es": "Sobre cómo contribuir"
+  },
+  "contributing_title": {
+    "en": "Contributing",
+    "ar": "المساهمة",
+    "zh": "贡献指南",
+    "fr": "Contribuer",
+    "ru": "Участие",
+    "es": "Contribuir"
   },
   "domain": {
     "natural-hazards/meteorological": {
