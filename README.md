@@ -180,7 +180,7 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `id` | yes | Unique identifier for the concept (e.g., `flood`) |
 | `code` | yes | Source system code, used as filename and in URLs (e.g., `mh0301`) |
 | `slug` | yes | Human-readable slug for display purposes |
-| `project` | yes | Which term project this belongs to (`hips`, `sendai`) |
+| `project` | yes | Which term project this belongs to (`hips`, `unisdr-2009`, `oewg-2016`) |
 | `status` | yes | Publication state: `published`, `draft`, or `retired` |
 | `domain` | no | Hierarchical domain path (e.g., `natural-hazards/meteorological`). Must have a matching entry in `site/src/_data/i18n.json` for translated display. |
 | `category` | no | Sub-classification within the domain (e.g., `hydrological`) |
@@ -198,6 +198,22 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `source.text` | no | Human-readable citation (e.g., `UNDRR, 2017`) |
 | `source.url` | no | URL to the source document |
 | `confidence` | no | Translation quality tier (1–5): 1=Machine, 2=Draft, 3=Reviewed, 4=Verified, 5=Authoritative. Reviewer metadata — not sent to Weblate. |
+
+### Project config (`_project.yml`)
+
+Each project directory has a `_project.yml` with metadata:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `name` | yes | Display name for the project |
+| `slug` | yes | URL-safe identifier, matches the directory name |
+| `description` | yes | Short description shown on listing pages |
+| `url` | no | URL to the source publication |
+| `citation` | no | Full bibliographic citation (displayed as link text when `url` is set) |
+| `languages` | yes | List of language codes (e.g., `[ar, zh, en, fr, ru, es]`) |
+| `source_language` | yes | Primary language code (usually `en`) |
+| `weblate.project` | no | Weblate project slug for translation sync |
+| `weblate.component` | no | Weblate component name |
 
 ## Repository layout
 
