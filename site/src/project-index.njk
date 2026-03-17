@@ -42,6 +42,10 @@
 <p>{{ i18n.source[lang] }}: <a href="{{ project.url }}">{{ project.citation or project.name }}</a></p>
 {%- endif %}
 
+<div class="translation-scope-notice">
+  <p>{{ i18n.translation_scope_notice[lang] }}</p>
+</div>
+
 <input type="text"
   class="search-input"
   id="project-search"
