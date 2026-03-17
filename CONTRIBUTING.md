@@ -49,6 +49,23 @@ terms/hips/gh0001/
 
 The `description_{lang}.md` files contain full markdown and are editable the same way.
 
+## Work with CSV or JSON exports
+
+Every terminology project can be downloaded as CSV or JSON from the project page or any term page. You can use the language picker to download just the English source alongside a single target language — this keeps the file small and easier to review.
+
+To contribute using exports:
+
+1. Download the CSV or JSON for the project and language you want to work on (e.g., `unisdr-2009-fr.csv` for English + French)
+2. Edit the file in a spreadsheet or text editor — add or correct translations, fill in missing definitions
+3. Send the updated file back by [opening an issue](https://github.com/unisdr/undrr-term/issues) with the file attached, or import it directly if you have repository access:
+
+```bash
+yarn import:csv updated-terms.csv
+yarn import:json updated-terms.json
+```
+
+The import scripts only update what you changed. Languages and fields not in your file are left alone.
+
 ## Translate through Weblate
 
 For larger translation work, we use a self-hosted Weblate instance. Weblate provides a web interface for translating strings without needing to work with files directly. To request access, [open an issue](https://github.com/unisdr/undrr-term/issues) or contact the UNDRR web team.
@@ -56,6 +73,20 @@ For larger translation work, we use a self-hosted Weblate instance. Weblate prov
 ## File an issue
 
 If you spot an error but don't want to edit the file yourself, open an issue at [github.com/unisdr/undrr-term/issues](https://github.com/unisdr/undrr-term/issues) describing the problem and which term it affects.
+
+## Things to keep in mind
+
+**Do:**
+- Translate terms and definitions, not source citations — keep `source.text` and `source.url` pointing to the original reference
+- Use the correct grammatical category for the target language (`noun` in English might be `nom` in French, `اسم` in Arabic)
+- Include aliases if a term has common alternative names in your language
+- Add a context sentence showing how the term is used, when possible
+
+**Don't:**
+- Machine-translate definitions without review — if you use MT as a starting point, mark the confidence as 1 (Machine) or 2 (Draft) until a reviewer checks it
+- Change the `code` or `id` fields — these are permanent identifiers used in URLs and cross-references
+- Edit English source definitions unless there is a factual error — these come from official UNDRR publications
+- Remove existing translations in other languages when updating your own
 
 ## What gets reviewed
 
