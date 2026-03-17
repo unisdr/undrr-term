@@ -49,6 +49,12 @@
 
 <h1>{{ t.term }}</h1>
 
+{%- if term.projectConfig.url %}
+<div class="translation-scope-notice">
+  <p>{{ i18n.translation_scope_notice[lang] }} <a href="{{ term.projectConfig.url }}">{{ term.projectConfig.citation or term.projectConfig.name }}</a></p>
+</div>
+{%- endif %}
+
 <div class="term-layout">
 
   {# -- Left sidebar: metadata -- #}
