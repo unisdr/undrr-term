@@ -31,12 +31,10 @@
 {%- set project = combo.project %}
 {%- set projectTerms = terms | termsForProject(project.slug) %}
 
-<nav aria-label="breadcrumbs" class="mg-breadcrumb">
-  <ul>
-    <li><a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a></li>
-    <li aria-current="page">{{ project.name }}</li>
-  </ul>
-</nav>
+<ul aria-label="breadcrumbs" class="mg-breadcrumb">
+  <li><a href="{{ ('/' + lang + '/') | url }}">{{ i18n.all_projects[lang] }}</a></li>
+  <li aria-current="page">{{ project.name }}</li>
+</ul>
 
 <h1>{{ project.name }}</h1>
 <p>{{ project.description }}</p>
@@ -70,7 +68,7 @@
   "@context": "https://schema.org",
   "@type": "DefinedTermSet",
   "name": {{ project.name | dump | safe }},
-  "description": {{ project.description | dump | safe }},
+  "description": {{ project.description | plaintext | dump | safe }},
   "inLanguage": {{ lang | dump | safe }},
   "url": {{ (site.url + '/' + lang + '/' + project.slug + '/') | dump | safe }},
   "hasDefinedTerm": [
@@ -78,7 +76,7 @@
     {
       "@type": "DefinedTerm",
       "name": {{ term | termName(lang) | dump | safe }},
-      "termCode": {{ term.code | dump | safe }},
+      "identifier": {{ term.code | dump | safe }},
       "url": {{ (site.url + '/' + lang + '/' + project.slug + '/' + term.code + '/') | dump | safe }}
     }{{ "," if not loop.last }}
     {%- endfor %}

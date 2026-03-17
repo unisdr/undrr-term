@@ -111,6 +111,18 @@ export default function (eleventyConfig) {
     return md.render(String(str));
   });
 
+  // Filter: strip markdown to plain text (for JSON-LD descriptions)
+  eleventyConfig.addFilter("plaintext", (str) => {
+    if (!str) return "";
+    return String(str)
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) → text
+      .replace(/[*_~`#]+/g, "")                 // bold, italic, strikethrough, code, headings
+      .replace(/!\[[^\]]*\]\([^)]+\)/g, "")     // images
+      .replace(/\n{2,}/g, " ")                  // collapse paragraph breaks
+      .replace(/\n/g, " ")                      // collapse line breaks
+      .trim();
+  });
+
   // Filter: get terms for a specific project and language
   eleventyConfig.addFilter("termsForProject", (terms, projectSlug) => {
     return terms.filter((t) => t.project === projectSlug);

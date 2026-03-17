@@ -178,8 +178,8 @@
   "@context": "https://schema.org",
   "@type": "DefinedTerm",
   "name": {{ t.term | dump | safe }},
-  "description": {{ t.definition | dump | safe }},
-  "termCode": {{ term.code | dump | safe }},
+  "description": {{ t.definition | plaintext | dump | safe }},
+  "identifier": {{ term.code | dump | safe }},
   "inLanguage": {{ lang | dump | safe }},
   "url": {{ (site.url + '/' + lang + '/' + term.project + '/' + term.code + '/') | dump | safe }},
   "inDefinedTermSet": {
