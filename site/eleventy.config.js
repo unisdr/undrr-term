@@ -58,6 +58,7 @@ export default function (eleventyConfig) {
           ...data,
           body: content,
           projectConfig,
+          sourcePath: path.relative(path.resolve(termsDir, ".."), filePath),
         });
       }
     }

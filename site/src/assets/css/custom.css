@@ -93,19 +93,6 @@
   border-radius: 4px;
 }
 
-.term-card:hover {
-  border-color: #0468b1;
-}
-
-.term-card h3 {
-  margin: 0 0 0.25rem 0;
-}
-
-.term-card p {
-  margin: 0;
-  color: #555;
-}
-
 .term-meta {
   color: #666;
   margin-top: 0.25rem;
@@ -207,15 +194,6 @@
   color: #999;
   font-weight: 300;
   margin: 0 0 0.5rem 0;
-}
-
-.term-lang-heading a {
-  color: #999;
-  text-decoration: none;
-}
-
-.term-lang-heading a:hover {
-  color: #0468b1;
 }
 
 .term-name {

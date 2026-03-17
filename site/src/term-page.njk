@@ -108,7 +108,7 @@
     </div>
 
     <div class="term-sidebar__section">
-      <a href="https://github.com/unisdr/undrr-term/edit/main/terms/{{ term.project }}/{{ term.code }}.md"
+      <a href="https://github.com/unisdr/undrr-term/edit/main/{{ term.sourcePath }}"
          class="mg-button mg-button-primary">
         Propose a revision
       </a>
@@ -124,7 +124,7 @@
     <section class="term-lang-section">
       {%- for thisLang in languages %}
         {%- if thisLang.code === lang %}
-      <h2 class="term-lang-heading">{{ thisLang.name }}</h2>
+      <h2 class="term-lang-heading mg-card mg-card__hc">{{ thisLang.name }}</h2>
         {%- endif %}
       {%- endfor %}
 
@@ -158,8 +158,8 @@
       {%- for l in languages %}
         {%- if l.code !== lang and term.translations[l.code] %}
           {%- set lt = term.translations[l.code] %}
-          <section class="term-lang-section" lang="{{ l.code }}" dir="{{ l.dir or 'ltr' }}">
-            <h2 class="term-lang-heading">
+          <section class="term-lang-section mg-card mg-card__hc" lang="{{ l.code }}" dir="{{ l.dir or 'ltr' }}">
+            <h2 class="term-lang-heading mg-card__title">
               <a href="{{ ('/' + l.code + '/' + term.project + '/' + term.code + '/') | url }}">{{ l.name }}</a>
             </h2>
 
