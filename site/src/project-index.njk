@@ -46,12 +46,34 @@
   autocomplete="off"
   data-project="{{ project.slug }}">
 
+<div class="download-links">
+  <label for="download-lang">{{ i18n.download_terms[lang] }}:</label>
+  <select id="download-lang" class="download-select" data-project="{{ project.slug }}" data-prefix="{{ '/' | url }}">
+    <option value="">{{ i18n.download_all_languages[lang] }}</option>
+    {%- for l in languages %}
+      {%- if l.code !== "en" %}
+    <option value="-{{ l.code }}"{% if l.code === lang and lang !== "en" %} selected{% endif %}>{{ i18n.download_english_plus[lang] }} {{ l.name }}</option>
+      {%- endif %}
+    {%- endfor %}
+  </select>
+  {%- if lang !== "en" %}
+  <a href="{{ ('/exports/' + project.slug + '-' + lang + '.csv') | url }}" download class="download-csv">CSV</a>
+  <a href="{{ ('/exports/' + project.slug + '-' + lang + '.json') | url }}" download class="download-json">JSON</a>
+  {%- else %}
+  <a href="{{ ('/exports/' + project.slug + '.csv') | url }}" download class="download-csv">CSV</a>
+  <a href="{{ ('/exports/' + project.slug + '.json') | url }}" download class="download-json">JSON</a>
+  {%- endif %}
+</div>
+
 <div id="term-list">
 {%- for term in projectTerms | sort(false, false, "id") %}
-  <div class="term-card mg-card mg-card__hc" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
+  <div class="term-card mg-card mg-card__hc{% if term.status === 'retired' %} term-card--retired{% endif %}" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
     <h3 class="mg-card__title"><a href="{{ ('/' + lang + '/' + project.slug + '/' + term.code + '/') | url }}">{{ term | termName(lang) }}</a></h3>
     <p>{{ term | termDef(lang) | truncate(150) }}</p>
     <div class="term-meta mg-tag-container">
+      {%- if term.status and term.status !== "published" %}
+        <span class="term-status-badge term-status-badge--{{ term.status }}">{{ i18n['status_' + term.status][lang] or term.status }}</span>
+      {%- endif %}
       {%- if term.translations[lang].part_of_speech %}
         <span>{{ term.translations[lang].part_of_speech }}</span>
       {%- endif %}
@@ -95,6 +117,18 @@
         const match = card.dataset.term.includes(q) || card.dataset.def.includes(q);
         card.style.display = match ? '' : 'none';
       });
+    });
+  }
+
+  const langSelect = document.getElementById('download-lang');
+  if (langSelect) {
+    langSelect.addEventListener('change', () => {
+      const project = langSelect.dataset.project;
+      const prefix = langSelect.dataset.prefix;
+      const suffix = langSelect.value;
+      const container = langSelect.closest('.download-links');
+      container.querySelector('.download-csv').href = prefix + 'exports/' + project + suffix + '.csv';
+      container.querySelector('.download-json').href = prefix + 'exports/' + project + suffix + '.json';
     });
   }
 </script>

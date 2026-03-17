@@ -131,3 +131,41 @@ English is read-only in Weblate. Source text is only edited in the markdown file
 **We didn't put the definitions in the markdown body.** It would give us full markdown rendering for free, but it would make the definitions harder to extract programmatically and break the Weblate compile pipeline, which depends on structured YAML fields.
 
 **We didn't build a custom editing UI for non-technical users (yet).** The "Edit on GitHub" link and Weblate are enough for now. A dedicated submission form is planned for later.
+
+## Per-translation confidence (1–5 scale)
+
+As of March 2026, we added a `confidence` field under each language's translation block. This records how reliable a given translation is, on a 1–5 integer scale:
+
+| Level | Label | Meaning |
+|-------|-------|---------|
+| 1 | Machine | Machine-translated, no human review |
+| 2 | Draft | Human-translated or post-edited, not yet reviewed |
+| 3 | Reviewed | Reviewed by a second linguist or domain specialist |
+| 4 | Verified | Verified against a published reference or standard |
+| 5 | Authoritative | Official UN-endorsed translation (e.g., from a GA resolution) |
+
+### Why per-translation, not per-term
+
+Confidence varies by language. A term may have an authoritative English definition from a General Assembly resolution (level 5) while the Arabic translation is a first-pass machine output (level 1). Putting confidence at the concept level would lose this granularity.
+
+This mirrors how IATE handles reliability codes and how WIPO Pearl tracks term status per language variant. In both systems, the quality signal is on the language-specific entry, not the concept.
+
+### Why 1–5 integers instead of free-text labels
+
+Integer levels are machine-sortable and language-neutral. The human-readable labels ("Machine", "Draft", etc.) are stored in `i18n.json` and localized into all six UN languages. Using integers in the data keeps the YAML clean and avoids spelling variations.
+
+We considered a 3-level scale (low/medium/high) but it collapses important distinctions — "machine-translated" and "human draft" are both "low" confidence but require very different reviewer effort. The 5-level scale matches the typical terminology management pipeline: generate → draft → review → verify → endorse.
+
+### Why confidence is excluded from Weblate
+
+Confidence is reviewer metadata, not translator-editable text. Translators in Weblate should not be able to change the confidence rating of their own work — that's the reviewer's job. By excluding `confidence` from `TRANSLATABLE_FIELDS`, it never appears in the compiled Weblate JSON files. Reviewers set it by editing the YAML frontmatter directly or through CSV/JSON import.
+
+### No migration required
+
+Both `confidence` and the `retired` status value are optional and additive. Existing terms without confidence values display normally (no badge). Existing terms with `status: published` or `status: draft` are unaffected. The fields are populated incrementally during the terminological review process.
+
+## Retired status
+
+Terms can become obsolete when concepts are superseded, merged, or withdrawn. Rather than deleting these entries (which would break URLs, cross-references, and external links), we added `retired` as a third status value alongside `published` and `draft`.
+
+Retired terms remain in the database and are accessible at their original URLs. The site shows a grey banner ("This term has been retired") and dims the card in project listings. This follows the pattern used by WIPO Pearl's "obsolete" label and ISO standards' withdrawal process — the record stays, clearly marked as no longer current.

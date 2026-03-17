@@ -14,6 +14,7 @@ export const EXPORTS_DIR = path.join(ROOT, "exports");
 
 // Fields within each language's translation block.
 // "source" is handled specially (structured object -> source_text + source_url).
+// "confidence" is reviewer metadata, not translatable text — excluded from Weblate.
 export const TRANSLATABLE_FIELDS = [
   "term",
   "definition",
@@ -22,6 +23,9 @@ export const TRANSLATABLE_FIELDS = [
   "part_of_speech",
   "aliases",
 ];
+
+export const VALID_STATUSES = ["published", "draft", "retired"];
+export const CONFIDENCE_LEVELS = [1, 2, 3, 4, 5];
 
 export function getProjectDirs() {
   return fs
@@ -103,4 +107,50 @@ export function parseAliases(value) {
     .split("|")
     .map((s) => s.trim())
     .filter(Boolean);
+}
+
+/**
+ * Filter a project's language list for --lang exports.
+ * Always includes the source language (default "en") plus the requested targets.
+ * Returns the filtered list in the original order from the project config.
+ */
+export function filterLanguages(projectLanguages, langArg, sourceLang = "en") {
+  const requested = langArg
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  const include = new Set([sourceLang, ...requested]);
+  const filtered = projectLanguages.filter((l) => include.has(l));
+
+  const unknown = requested.filter((l) => !projectLanguages.includes(l));
+  if (unknown.length) {
+    console.warn(`Warning: languages not in project config: ${unknown.join(", ")}`);
+  }
+
+  return filtered;
+}
+
+/**
+ * Convert text to a URL-friendly slug.
+ * NFD-normalize, strip diacritics, lowercase, collapse non-alphanum to hyphens.
+ * Returns null if nothing Latin/numeric remains (e.g. pure Arabic/Chinese).
+ */
+export function slugify(text) {
+  if (!text || typeof text !== "string") return null;
+  const slug = text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // strip diacritics
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-") // collapse non-alphanum to hyphens
+    .replace(/^-+|-+$/g, ""); // trim leading/trailing hyphens
+  return slug || null;
+}
+
+/**
+ * Derive an id from the English term name, falling back to the code.
+ */
+export function deriveId(translations, code) {
+  const enTerm = translations?.en?.term;
+  return slugify(enTerm) || code;
 }

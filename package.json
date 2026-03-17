@@ -14,7 +14,8 @@
     "import:json": "node scripts/import-json.js",
     "xlsx-to-csv": "node scripts/xlsx-to-csv.js",
     "test": "bash tests/test-import-export.sh",
-    "build": "yarn run compile && cd site && yarn run build",
+    "export:all": "node scripts/export-all.js",
+    "build": "yarn run compile && yarn run export:all && cd site && yarn run build && mkdir -p _site/exports && cp ../exports/* _site/exports/",
     "dev": "cd site && yarn run dev"
   },
   "dependencies": {

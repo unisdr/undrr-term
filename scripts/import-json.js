@@ -16,6 +16,7 @@ import {
   TERMS_DIR,
   readProjectConfig,
   findTermFile,
+  deriveId,
 } from "./lib/terms.js";
 
 function importJson(jsonPath) {
@@ -77,6 +78,15 @@ function importJson(jsonPath) {
         for (const [field, value] of Object.entries(t)) {
           if (value === undefined || value === null) continue;
 
+          // Validate confidence as integer 1–5
+          if (field === "confidence") {
+            const num = parseInt(value, 10);
+            if (num >= 1 && num <= 5) {
+              data.translations[lang][field] = num;
+            }
+            continue;
+          }
+
           // Write description files for folder-based terms
           if (field === "description") {
             const termDir = path.dirname(filePath);
@@ -90,6 +100,13 @@ function importJson(jsonPath) {
           data.translations[lang][field] = value;
         }
       }
+    }
+
+    // Auto-generate id, slug, and status for new terms when not provided
+    if (isNew) {
+      if (!data.id) data.id = deriveId(data.translations, term.code);
+      if (!data.slug) data.slug = data.id;
+      if (!data.status) data.status = "draft";
     }
 
     const output = matter.stringify(content, data);

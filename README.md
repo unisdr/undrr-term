@@ -54,13 +54,18 @@ Terms can be exported to CSV or JSON for offline editing, bulk review, or exchan
 yarn export:csv               # all projects → exports/{project}.csv
 yarn export:csv hips          # single project
 yarn export:csv hips --output terms.csv
+yarn export:csv hips --lang zh          # English + Chinese only
+yarn export:csv hips --lang zh,fr       # English + Chinese + French
 
 yarn export:json              # all projects → exports/{project}.json
 yarn export:json hips         # single project
 yarn export:json hips --output terms.json
+yarn export:json hips --lang zh         # English + Chinese only
 ```
 
-**CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`).
+The `--lang` flag filters the export to the source language (English) plus the specified target(s). This makes the output smaller and easier to work with for translators reviewing a single language pair. The import scripts accept any subset of languages — columns or translations not in the file are left untouched.
+
+**CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`, `{lang}_confidence`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`).
 
 **JSON format** is hierarchical with project metadata, a language list, and a `terms` array where each entry contains the full translation object as it appears in frontmatter.
 
@@ -72,6 +77,20 @@ yarn import:json <file.json>  # JSON → markdown frontmatter
 ```
 
 Both import scripts update existing terms and create new ones. The expected formats match what the export scripts produce — export a project, edit the file, then import it back.
+
+#### Creating new terms
+
+When importing new terms (codes that don't already exist), the import scripts auto-generate fields you leave blank:
+
+| Field | Auto-generated from |
+|-------|---------------------|
+| `id` | English term name, slugified (e.g., "Disaster risk reduction" → `disaster-risk-reduction`) |
+| `slug` | Same as `id` |
+| `status` | Defaults to `draft` |
+
+If the English term contains only non-Latin characters (e.g., Arabic, Chinese), `id` falls back to the `code` value.
+
+The minimum you need to provide for a new term is `code`, `project`, and an English term + definition. See `tests/fixtures/template-new-terms.csv` and `tests/fixtures/template-new-terms.json` for starter templates.
 
 ### Excel
 
@@ -90,11 +109,14 @@ Typical workflow: `xlsx → csv → import:csv`.
 
 `tests/fixtures/` contains sample CSV and JSON files that can be used to verify the pipeline:
 
+- `sample-import.csv` / `sample-import.json` — round-trip test data (existing terms)
+- `template-new-terms.csv` / `template-new-terms.json` — starter templates showing the minimum fields for new terms (auto-ID generation)
+
 ```bash
-bash tests/test-import-export.sh   # round-trip smoke test
+bash tests/test-import-export.sh   # round-trip + auto-ID smoke tests
 ```
 
-This exports all terms, re-imports them, and verifies the output is identical. It also imports the sample fixtures and confirms no term files were changed.
+This exports all terms, re-imports them, and verifies the output is identical. It also imports the sample fixtures, tests auto-ID generation from the templates, and confirms no leftover files.
 
 ## How terms are structured
 
@@ -158,7 +180,7 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `code` | yes | Source system code, used as filename and in URLs (e.g., `mh0301`) |
 | `slug` | yes | Human-readable slug for display purposes |
 | `project` | yes | Which term project this belongs to (`hips`, `sendai`) |
-| `status` | yes | Publication state: `published` or `draft` |
+| `status` | yes | Publication state: `published`, `draft`, or `retired` |
 | `domain` | no | Hierarchical domain path (e.g., `natural-hazards/meteorological`). Must have a matching entry in `site/src/_data/i18n.json` for translated display. |
 | `category` | no | Sub-classification within the domain (e.g., `hydrological`) |
 | `related` | no | List of `id` values for related concepts |
@@ -174,6 +196,7 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `aliases` | no | List of alternative names in this language |
 | `source.text` | no | Human-readable citation (e.g., `UNDRR, 2017`) |
 | `source.url` | no | URL to the source document |
+| `confidence` | no | Translation quality tier (1–5): 1=Machine, 2=Draft, 3=Reviewed, 4=Verified, 5=Authoritative. Reviewer metadata — not sent to Weblate. |
 
 ## Repository layout
 
