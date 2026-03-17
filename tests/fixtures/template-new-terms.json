@@ -1,0 +1,32 @@
+{
+  "project": "sendai",
+  "terms": [
+    {
+      "code": "drr001",
+      "translations": {
+        "en": {
+          "term": "Disaster risk reduction",
+          "definition": "The concept and practice of reducing disaster risks through systematic efforts to analyse and manage the causal factors of disasters."
+        }
+      }
+    },
+    {
+      "code": "drr002",
+      "translations": {
+        "en": {
+          "term": "Resilience",
+          "definition": "The ability of a system, community or society exposed to hazards to resist, absorb, accommodate, adapt to, transform and recover from the effects of a hazard in a timely and efficient manner."
+        }
+      }
+    },
+    {
+      "code": "drr003",
+      "translations": {
+        "en": {
+          "term": "Vulnerability",
+          "definition": "The conditions determined by physical, social, economic and environmental factors or processes which increase the susceptibility of an individual, a community, assets or systems to the impacts of hazards."
+        }
+      }
+    }
+  ]
+}

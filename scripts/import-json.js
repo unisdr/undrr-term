@@ -16,6 +16,7 @@ import {
   TERMS_DIR,
   readProjectConfig,
   findTermFile,
+  deriveId,
 } from "./lib/terms.js";
 
 function importJson(jsonPath) {
@@ -90,6 +91,13 @@ function importJson(jsonPath) {
           data.translations[lang][field] = value;
         }
       }
+    }
+
+    // Auto-generate id, slug, and status for new terms when not provided
+    if (isNew) {
+      if (!data.id) data.id = deriveId(data.translations, term.code);
+      if (!data.slug) data.slug = data.id;
+      if (!data.status) data.status = "draft";
     }
 
     const output = matter.stringify(content, data);

@@ -18,6 +18,7 @@ import {
   readProjectConfig,
   findTermFile,
   parseAliases,
+  deriveId,
 } from "./lib/terms.js";
 import { parse } from "./lib/csv.js";
 
@@ -98,6 +99,8 @@ function importCsv(csvPath) {
       data.status = row[colIndex["status"]];
     if (colIndex["category"] !== undefined && row[colIndex["category"]])
       data.category = row[colIndex["category"]];
+    if (colIndex["slug"] !== undefined && row[colIndex["slug"]])
+      data.slug = row[colIndex["slug"]];
     if (colIndex["domain"] !== undefined && row[colIndex["domain"]])
       data.domain = row[colIndex["domain"]];
     if (colIndex["related"] !== undefined && row[colIndex["related"]]) {
@@ -151,6 +154,13 @@ function importCsv(csvPath) {
           data.translations[lang][field] = value;
         }
       }
+    }
+
+    // Auto-generate id, slug, and status for new terms when not provided
+    if (isNew) {
+      if (!data.id) data.id = deriveId(data.translations, code);
+      if (!data.slug) data.slug = data.id;
+      if (!data.status) data.status = "draft";
     }
 
     const output = matter.stringify(content, data);

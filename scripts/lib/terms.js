@@ -104,3 +104,27 @@ export function parseAliases(value) {
     .map((s) => s.trim())
     .filter(Boolean);
 }
+
+/**
+ * Convert text to a URL-friendly slug.
+ * NFD-normalize, strip diacritics, lowercase, collapse non-alphanum to hyphens.
+ * Returns null if nothing Latin/numeric remains (e.g. pure Arabic/Chinese).
+ */
+export function slugify(text) {
+  if (!text || typeof text !== "string") return null;
+  const slug = text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // strip diacritics
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-") // collapse non-alphanum to hyphens
+    .replace(/^-+|-+$/g, ""); // trim leading/trailing hyphens
+  return slug || null;
+}
+
+/**
+ * Derive an id from the English term name, falling back to the code.
+ */
+export function deriveId(translations, code) {
+  const enTerm = translations?.en?.term;
+  return slugify(enTerm) || code;
+}

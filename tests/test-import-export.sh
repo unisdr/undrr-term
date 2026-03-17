@@ -64,4 +64,46 @@ else
 fi
 echo ""
 
+echo "=== Testing auto-ID generation (CSV template) ==="
+node scripts/import-csv.js tests/fixtures/template-new-terms.csv
+# Verify drr001.md got auto-generated id and slug
+if grep -q 'id: disaster-risk-reduction' terms/sendai/drr001.md && \
+   grep -q 'slug: disaster-risk-reduction' terms/sendai/drr001.md && \
+   grep -q 'status: draft' terms/sendai/drr001.md; then
+  echo "Auto-ID (CSV): PASS"
+else
+  echo "Auto-ID (CSV): FAIL"
+  echo "Expected id: disaster-risk-reduction, slug: disaster-risk-reduction, status: draft in terms/sendai/drr001.md"
+  cat terms/sendai/drr001.md
+  exit 1
+fi
+# Clean up
+rm -f terms/sendai/drr001.md terms/sendai/drr002.md terms/sendai/drr003.md
+echo ""
+
+echo "=== Testing auto-ID generation (JSON template) ==="
+node scripts/import-json.js tests/fixtures/template-new-terms.json
+# Verify drr001.md got auto-generated id and slug
+if grep -q 'id: disaster-risk-reduction' terms/sendai/drr001.md && \
+   grep -q 'slug: disaster-risk-reduction' terms/sendai/drr001.md && \
+   grep -q 'status: draft' terms/sendai/drr001.md; then
+  echo "Auto-ID (JSON): PASS"
+else
+  echo "Auto-ID (JSON): FAIL"
+  echo "Expected id: disaster-risk-reduction, slug: disaster-risk-reduction, status: draft in terms/sendai/drr001.md"
+  cat terms/sendai/drr001.md
+  exit 1
+fi
+# Verify resilience and vulnerability too
+if grep -q 'id: resilience' terms/sendai/drr002.md && \
+   grep -q 'id: vulnerability' terms/sendai/drr003.md; then
+  echo "Auto-ID (other terms): PASS"
+else
+  echo "Auto-ID (other terms): FAIL"
+  exit 1
+fi
+# Clean up
+rm -f terms/sendai/drr001.md terms/sendai/drr002.md terms/sendai/drr003.md
+echo ""
+
 echo "All tests passed."
