@@ -1,0 +1,9 @@
+name: "Open-ended Intergovernmental Expert Working Group Terminology (2016)"
+slug: oewg-2016
+description: "Terminology from the Report of the open-ended intergovernmental expert working group on indicators and terminology relating to disaster risk reduction (UNGA A/71/644, 2016)."
+url: "https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology"
+languages: [ar, zh, en, fr, ru, es]
+source_language: en
+weblate:
+  project: undrr-oewg-2016
+  component: terms
