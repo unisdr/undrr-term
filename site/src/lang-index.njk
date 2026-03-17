@@ -55,6 +55,7 @@
     <div class="mg-card__content">
       <header class="mg-card__title">{{ i18n.card_community_title[lang] }}</header>
       <p class="mg-card__summary">{{ i18n.card_community_desc[lang] }}</p>
+      <p class="mg-card__summary"><a class="mg-card__text-link" href="{{ ('/' + lang + '/contributing/') | url }}">{{ i18n.contributing_link[lang] or "How to contribute" }}</a></p>
     </div>
   </article>
 </div>
