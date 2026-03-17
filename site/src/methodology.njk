@@ -1,0 +1,25 @@
+---js
+{
+  pagination: {
+    data: "languages",
+    size: 1,
+    alias: "currentLang"
+  },
+  permalink: function(data) {
+    return `/${data.currentLang.code}/methodology/`;
+  },
+  layout: "layouts/base.njk",
+  eleventyComputed: {
+    lang: (data) => data.currentLang.code,
+    dir: (data) => data.currentLang.dir,
+    pageTitle: (data) => data.i18n.methodology_title[data.currentLang.code] || "Methodology",
+    langPath: "methodology/"
+  }
+}
+---
+
+<div class="methodology-draft-notice">
+  <p>{{ i18n.methodology_draft_notice[currentLang.code] }}</p>
+</div>
+
+{{ methodology | md | safe }}

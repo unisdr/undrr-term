@@ -230,10 +230,14 @@
     {{ content | safe }}
   </main>
 
-  {# -- Site footer with GitHub link -- #}
+  {# -- Site footer links -- #}
   <div class="site-footer-links">
     <div class="mg-container">
-      <a href="https://github.com/unisdr/undrr-term">View the project on GitHub</a>
+      <a href="{{ ('/' + lang + '/contributing/') | url }}">{{ i18n.contributing_link[lang] or "How to contribute" }}</a>
+      &middot;
+      <a href="{{ ('/' + lang + '/methodology/') | url }}">{{ i18n.methodology_link[lang] or "Methodology" }}</a>
+      &middot;
+      <a href="https://github.com/unisdr/undrr-term">GitHub</a>
     </div>
   </div>
 

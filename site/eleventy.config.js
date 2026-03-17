@@ -97,6 +97,12 @@ export default function (eleventyConfig) {
     return fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "";
   });
 
+  // Load METHODOLOGY.md as global data
+  eleventyConfig.addGlobalData("methodology", () => {
+    const filePath = path.resolve(import.meta.dirname, "..", "METHODOLOGY.md");
+    return fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "";
+  });
+
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/assets");
 

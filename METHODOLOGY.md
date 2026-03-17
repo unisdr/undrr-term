@@ -132,6 +132,29 @@ English is read-only in Weblate. Source text is only edited in the markdown file
 
 **We didn't build a custom editing UI for non-technical users (yet).** The "Edit on GitHub" link and Weblate are enough for now. A dedicated submission form is planned for later.
 
+## How terms are validated
+
+Not all terms arrive at the same quality level. The validation process depends on where the term came from and what language it's in.
+
+**English source terms** are taken directly from official UNDRR or UN publications. These are not community-editable — they reflect the language of the original document. If the source document has a definition, we use it verbatim. If it only has term names (as with some older publications), we leave the definition empty until we find an authoritative source.
+
+**Translations from official UN documents** (e.g., UNISDR 2009, OEWG 2016) were produced by UN language services and are treated as verified. They still go through a spot-check during import, but we don't rewrite them.
+
+**New translations** contributed through Weblate, CSV import, or pull requests start at Draft (confidence 2) or Machine (confidence 1) depending on the method. They move up the scale through review:
+
+1. A translator submits the work
+2. A second linguist or domain specialist reviews it (confidence 3: Reviewed)
+3. A terminologist verifies it against the source publication (confidence 4: Verified)
+4. For official UN terminology, the translation may be endorsed through a formal process (confidence 5: Authoritative)
+
+Not every term needs to reach level 5. For most working translations, level 3 (Reviewed) or 4 (Verified) is the practical target.
+
+**What we check during review:**
+- Does the translation match the source concept, not just the English words?
+- Is the grammatical category correct for the target language?
+- Are aliases and context sentences accurate and natural in the target language?
+- Does the source citation point to the right document?
+
 ## Per-translation confidence (1–5 scale)
 
 As of March 2026, we added a `confidence` field under each language's translation block. This records how reliable a given translation is, on a 1–5 integer scale:
