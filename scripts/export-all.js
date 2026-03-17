@@ -16,8 +16,7 @@ import {
   readProjectConfig,
 } from "./lib/terms.js";
 
-// Import the export functions by running them as child processes
-// to reuse existing CLI scripts without refactoring.
+// Shell out to the individual export scripts.
 import { execFileSync } from "child_process";
 
 const node = process.execPath;

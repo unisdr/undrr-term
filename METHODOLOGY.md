@@ -97,7 +97,7 @@ We looked at how other organizations solve similar problems before making any de
 
 **Folder-based terms for assets.** Most terms are single `.md` files. When a term needs diagrams, photos, or other assets, it becomes a folder with `index.md` plus the asset files. The build pipeline handles both cases identically.
 
-**Per-language description files.** Short definitions stay in YAML frontmatter. Extended narrative content (diagrams, measurement details, background) lives in separate `description_{lang}.md` files within folder-based terms. This keeps the structured data clean while allowing full markdown for richer content. Not every term needs descriptions, and not every language needs one -- the system handles both gracefully.
+**Per-language description files.** Short definitions stay in YAML frontmatter. Extended narrative content (diagrams, measurement details, background) lives in separate `description_{lang}.md` files within folder-based terms. This keeps the structured data clean while allowing full markdown for richer content. Not every term needs descriptions, and not every language needs one.
 
 ## How the Weblate sync works
 
