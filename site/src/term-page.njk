@@ -41,6 +41,12 @@
   <li aria-current="page">{{ t.term }}</li>
 </ul>
 
+{%- if term.status === "retired" %}
+<div class="term-retired-banner" role="alert">
+  {{ i18n.retired_notice[lang] or i18n.retired_notice.en }}
+</div>
+{%- endif %}
+
 <h1>{{ t.term }}</h1>
 
 <div class="term-layout">
@@ -102,9 +108,10 @@
     </div>
     {%- endif %}
 
+    {%- set termStatus = term.status or "published" %}
     <div class="term-sidebar__section">
       <h3>{{ i18n.status_label[lang] or "Status" }}</h3>
-      <p>{{ term.status or "published" }}</p>
+      <p><span class="term-status-badge term-status-badge--{{ termStatus }}">{{ i18n['status_' + termStatus][lang] or termStatus }}</span></p>
     </div>
 
     <div class="term-sidebar__section">
@@ -142,6 +149,9 @@
         {%- if t.part_of_speech %}
           <span class="term-pos">{{ t.part_of_speech }}</span>
         {%- endif %}
+        {%- if t.confidence %}
+          <span class="term-confidence term-confidence--{{ t.confidence }}" title="{{ i18n.confidence_label[lang] }}">{{ i18n['confidence_' + t.confidence][lang] }}</span>
+        {%- endif %}
       </p>
 
       {%- if t.aliases and t.aliases.length %}
@@ -176,6 +186,9 @@
               {{ lt.term }}
               {%- if lt.part_of_speech %}
                 <span class="term-pos">{{ lt.part_of_speech }}</span>
+              {%- endif %}
+              {%- if lt.confidence %}
+                <span class="term-confidence term-confidence--{{ lt.confidence }}" title="{{ i18n.confidence_label[l.code] or i18n.confidence_label[lang] }}">{{ i18n['confidence_' + lt.confidence][l.code] or i18n['confidence_' + lt.confidence][lang] }}</span>
               {%- endif %}
             </p>
 

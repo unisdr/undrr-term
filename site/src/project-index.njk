@@ -54,10 +54,13 @@
 
 <div id="term-list">
 {%- for term in projectTerms | sort(false, false, "id") %}
-  <div class="term-card mg-card mg-card__hc" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
+  <div class="term-card mg-card mg-card__hc{% if term.status === 'retired' %} term-card--retired{% endif %}" data-term="{{ term | termName(lang) | lower }}" data-def="{{ term | termDef(lang) | lower }}">
     <h3 class="mg-card__title"><a href="{{ ('/' + lang + '/' + project.slug + '/' + term.code + '/') | url }}">{{ term | termName(lang) }}</a></h3>
     <p>{{ term | termDef(lang) | truncate(150) }}</p>
     <div class="term-meta mg-tag-container">
+      {%- if term.status and term.status !== "published" %}
+        <span class="term-status-badge term-status-badge--{{ term.status }}">{{ i18n['status_' + term.status][lang] or term.status }}</span>
+      {%- endif %}
       {%- if term.translations[lang].part_of_speech %}
         <span>{{ term.translations[lang].part_of_speech }}</span>
       {%- endif %}

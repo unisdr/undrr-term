@@ -1,4 +1,4 @@
-code,project,en_term,en_definition,id,slug,status,category,domain,fr_term,fr_definition,es_term,es_definition,ar_term,ar_definition
-drr001,sendai,Disaster risk reduction,"The concept and practice of reducing disaster risks through systematic efforts to analyse and manage the causal factors of disasters.",,,,,,,,,,
-drr002,sendai,Resilience,"The ability of a system, community or society exposed to hazards to resist, absorb, accommodate, adapt to, transform and recover from the effects of a hazard in a timely and efficient manner.",,,,,,,,,,
-drr003,sendai,Vulnerability,"The conditions determined by physical, social, economic and environmental factors or processes which increase the susceptibility of an individual, a community, assets or systems to the impacts of hazards.",,,,,,,,,,
+code,project,en_term,en_definition,en_confidence,id,slug,status,category,domain,fr_term,fr_definition,fr_confidence,es_term,es_definition,es_confidence,ar_term,ar_definition,ar_confidence
+drr001,sendai,Disaster risk reduction,"The concept and practice of reducing disaster risks through systematic efforts to analyse and manage the causal factors of disasters.",,,,,,,,,,,,,,
+drr002,sendai,Resilience,"The ability of a system, community or society exposed to hazards to resist, absorb, accommodate, adapt to, transform and recover from the effects of a hazard in a timely and efficient manner.",,,,,,,,,,,,,,
+drr003,sendai,Vulnerability,"The conditions determined by physical, social, economic and environmental factors or processes which increase the susceptibility of an individual, a community, assets or systems to the impacts of hazards.",,,,,,,,,,,,,,

@@ -31,6 +31,7 @@ function buildHeader(languages) {
     }
     langCols.push(`${lang}_source_text`);
     langCols.push(`${lang}_source_url`);
+    langCols.push(`${lang}_confidence`);
   }
   return [...meta, ...langCols];
 }
@@ -65,6 +66,7 @@ function termToRow(data, languages) {
       langValues.push("");
       langValues.push("");
     }
+    langValues.push(t.confidence != null ? String(t.confidence) : "");
   }
 
   return [...meta, ...langValues];

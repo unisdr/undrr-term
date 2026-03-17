@@ -6,7 +6,8 @@
       "translations": {
         "en": {
           "term": "Disaster risk reduction",
-          "definition": "The concept and practice of reducing disaster risks through systematic efforts to analyse and manage the causal factors of disasters."
+          "definition": "The concept and practice of reducing disaster risks through systematic efforts to analyse and manage the causal factors of disasters.",
+          "confidence": 2
         }
       }
     },

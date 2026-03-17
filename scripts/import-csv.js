@@ -44,7 +44,7 @@ function importCsv(csvPath) {
 
   // Detect language columns from header
   const langFieldPattern =
-    /^([a-z]{2})_(term|definition|description|context|part_of_speech|aliases|source_text|source_url)$/;
+    /^([a-z]{2})_(term|definition|description|context|part_of_speech|aliases|source_text|source_url|confidence)$/;
   const langFields = {};
   for (const col of header) {
     const match = col.match(langFieldPattern);
@@ -141,6 +141,11 @@ function importCsv(csvPath) {
           data.translations[lang].source.url = value;
         } else if (field === "aliases") {
           data.translations[lang].aliases = parseAliases(value);
+        } else if (field === "confidence") {
+          const num = parseInt(value, 10);
+          if (num >= 1 && num <= 5) {
+            data.translations[lang].confidence = num;
+          }
         } else if (field === "description") {
           // Write to description_{lang}.md for folder-based terms
           const termDir = path.dirname(filePath);

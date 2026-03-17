@@ -60,7 +60,7 @@ yarn export:json hips         # single project
 yarn export:json hips --output terms.json
 ```
 
-**CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`).
+**CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`, `{lang}_confidence`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`).
 
 **JSON format** is hierarchical with project metadata, a language list, and a `terms` array where each entry contains the full translation object as it appears in frontmatter.
 
@@ -175,7 +175,7 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `code` | yes | Source system code, used as filename and in URLs (e.g., `mh0301`) |
 | `slug` | yes | Human-readable slug for display purposes |
 | `project` | yes | Which term project this belongs to (`hips`, `sendai`) |
-| `status` | yes | Publication state: `published` or `draft` |
+| `status` | yes | Publication state: `published`, `draft`, or `retired` |
 | `domain` | no | Hierarchical domain path (e.g., `natural-hazards/meteorological`). Must have a matching entry in `site/src/_data/i18n.json` for translated display. |
 | `category` | no | Sub-classification within the domain (e.g., `hydrological`) |
 | `related` | no | List of `id` values for related concepts |
@@ -191,6 +191,7 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `aliases` | no | List of alternative names in this language |
 | `source.text` | no | Human-readable citation (e.g., `UNDRR, 2017`) |
 | `source.url` | no | URL to the source document |
+| `confidence` | no | Translation quality tier (1–5): 1=Machine, 2=Draft, 3=Reviewed, 4=Verified, 5=Authoritative. Reviewer metadata — not sent to Weblate. |
 
 ## Repository layout
 

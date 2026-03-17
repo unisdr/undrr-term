@@ -78,6 +78,15 @@ function importJson(jsonPath) {
         for (const [field, value] of Object.entries(t)) {
           if (value === undefined || value === null) continue;
 
+          // Validate confidence as integer 1–5
+          if (field === "confidence") {
+            const num = parseInt(value, 10);
+            if (num >= 1 && num <= 5) {
+              data.translations[lang][field] = num;
+            }
+            continue;
+          }
+
           // Write description files for folder-based terms
           if (field === "description") {
             const termDir = path.dirname(filePath);

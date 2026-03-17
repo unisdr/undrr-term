@@ -273,3 +273,73 @@
   border-color: #0468b1;
   box-shadow: 0 0 0 2px rgba(4, 104, 177, 0.2);
 }
+
+/* Retired term banner */
+.term-retired-banner {
+  background: #e9ecef;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Status badges */
+.term-status-badge {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.term-status-badge--draft {
+  color: #856404;
+}
+
+.term-status-badge--retired {
+  color: #6c757d;
+}
+
+/* Retired cards in project listing */
+.term-card--retired {
+  opacity: 0.6;
+}
+
+/* Confidence badges */
+.term-confidence {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+[dir="rtl"] .term-confidence {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.term-confidence--1 {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.term-confidence--2 {
+  background: #fff3cd;
+  color: #664d03;
+}
+
+.term-confidence--3 {
+  background: #cff4fc;
+  color: #055160;
+}
+
+.term-confidence--4 {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.term-confidence--5 {
+  background: #0468b1;
+  color: #fff;
+}

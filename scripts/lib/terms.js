@@ -14,6 +14,7 @@ export const EXPORTS_DIR = path.join(ROOT, "exports");
 
 // Fields within each language's translation block.
 // "source" is handled specially (structured object -> source_text + source_url).
+// "confidence" is reviewer metadata, not translatable text — excluded from Weblate.
 export const TRANSLATABLE_FIELDS = [
   "term",
   "definition",
@@ -22,6 +23,9 @@ export const TRANSLATABLE_FIELDS = [
   "part_of_speech",
   "aliases",
 ];
+
+export const VALID_STATUSES = ["published", "draft", "retired"];
+export const CONFIDENCE_LEVELS = [1, 2, 3, 4, 5];
 
 export function getProjectDirs() {
   return fs
