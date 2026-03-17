@@ -24,7 +24,6 @@ const TRANSLATABLE_FIELDS = [
   "context",
   "part_of_speech",
   "aliases",
-  "source",
 ];
 
 function readProjectConfig(projectDir) {
@@ -141,6 +140,19 @@ function importProject(projectSlug) {
 
         if (currentStr !== parsedStr) {
           data.translations[lang][field] = parsed;
+          changed = true;
+        }
+      }
+
+      // Reconstruct structured source from source_text + source_url keys
+      const sourceText = langData[lang][`${code}.source_text`];
+      const sourceUrl = langData[lang][`${code}.source_url`];
+      if (sourceText) {
+        const newSource = { text: sourceText.trim() };
+        if (sourceUrl) newSource.url = sourceUrl.trim();
+        const currentSource = data.translations[lang].source;
+        if (JSON.stringify(currentSource) !== JSON.stringify(newSource)) {
+          data.translations[lang].source = newSource;
           changed = true;
         }
       }

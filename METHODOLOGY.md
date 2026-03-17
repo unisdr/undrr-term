@@ -91,6 +91,8 @@ We looked at how other organizations solve similar problems before making any de
 
 **Concept-level vs. per-language metadata.** Some fields belong to the concept regardless of language: `domain`, `category`, `status`, `related`. Others vary by language: `term`, `definition`, `context`, `part_of_speech`, `aliases`, `source`. Part of speech varies because the same concept may be a noun in English but a different grammatical category in another language. Context sentences only make sense in the target language.
 
+**Structured source attribution.** The `source` field is a structured object with `text` (the human-readable citation) and an optional `url` (link to the source document). Both are per-language because the same concept may cite a different language edition of a document, or a completely different source for a particular language's definition. In Weblate, source is flattened to two keys: `{code}.source_text` and `{code}.source_url`.
+
 **Inline markdown in definitions.** Definitions support `*italic*`, `**bold**`, and `[links](url)` via markdown-it's inline renderer. This is a pragmatic middle ground: enough formatting for the occasional emphasis or cross-reference without turning the YAML frontmatter into full markdown documents. Weblate shows the raw markup to translators, but translators regularly work with inline formatting in strings.
 
 **Folder-based terms for assets.** Most terms are single `.md` files. When a term needs diagrams, photos, or other assets, it becomes a folder with `index.md` plus the asset files. The build pipeline handles both cases identically.

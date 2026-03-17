@@ -61,10 +61,16 @@ translations:
     context: "The 2011 Thailand flood caused $45.7 billion in damages."
     aliases:
       - Flooding
+    source:
+      text: "UNDRR, 2017"
+      url: "https://www.undrr.org/publication/..."
   fr:
     term: Inondation
     definition: Le débordement des limites normales...
     part_of_speech: nom
+    source:
+      text: "UNDRR, 2017"
+      url: "https://www.undrr.org/publication/..."
   # ... ar, zh, ru, es
 ---
 ```

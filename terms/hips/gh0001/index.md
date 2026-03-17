@@ -18,20 +18,28 @@ translations:
     part_of_speech: noun
     aliases:
       - Seismic event
-    source: 'UNDRR, 2017'
+    source:
+      text: 'UNDRR, 2017'
+      url: >-
+        https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology
   ar:
     term: زلزال
     definition: >-
-      حركة مفاجئة أو اهتزاز للأرض ناجم عن الإطلاق المفاجئ للإجهاد المتراكم
-      ببطء، عادة من خلال الحركة على طول صدع.
+      حركة مفاجئة أو اهتزاز للأرض ناجم عن الإطلاق المفاجئ للإجهاد المتراكم ببطء،
+      عادة من خلال الحركة على طول صدع.
     part_of_speech: اسم
-    source: 'UNDRR, 2017'
+    source:
+      text: 'UNDRR, 2017'
+      url: >-
+        https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology
   zh:
     term: 地震
-    definition: >-
-      由缓慢积累的应力突然释放引起的地球突然运动或震动，通常是沿断层运动造成的。
+    definition: 由缓慢积累的应力突然释放引起的地球突然运动或震动，通常是沿断层运动造成的。
     part_of_speech: 名词
-    source: 'UNDRR, 2017'
+    source:
+      text: 'UNDRR, 2017'
+      url: >-
+        https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology
   fr:
     term: Tremblement de terre
     definition: >-
@@ -41,7 +49,10 @@ translations:
     part_of_speech: nom
     aliases:
       - Séisme
-    source: 'UNDRR, 2017'
+    source:
+      text: 'UNDRR, 2017'
+      url: >-
+        https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology
   ru:
     term: Землетрясение
     definition: >-
@@ -49,7 +60,10 @@ translations:
       медленно накопленного напряжения, обычно в результате движения вдоль
       разлома.
     part_of_speech: существительное
-    source: 'UNDRR, 2017'
+    source:
+      text: 'UNDRR, 2017'
+      url: >-
+        https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology
   es:
     term: Terremoto
     definition: >-
@@ -59,5 +73,9 @@ translations:
     part_of_speech: sustantivo
     aliases:
       - Sismo
-    source: 'UNDRR, 2017'
+    source:
+      text: 'UNDRR, 2017'
+      url: >-
+        https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology
 ---
+

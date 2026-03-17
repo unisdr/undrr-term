@@ -64,7 +64,16 @@
 
     <div class="term-sidebar__section">
       <h3>{{ i18n.source[lang] }}</h3>
-      <p>{{ t.source or "—" }}</p>
+      {%- if t.source.text %}
+      <p>
+        {%- if t.source.url %}<a href="{{ t.source.url }}">{{ t.source.text }}</a>
+        {%- else %}{{ t.source.text }}{%- endif %}
+      </p>
+      {%- elif t.source %}
+      <p>{{ t.source }}</p>
+      {%- else %}
+      <p>—</p>
+      {%- endif %}
     </div>
 
     <div class="term-sidebar__section">
