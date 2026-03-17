@@ -247,15 +247,32 @@
   padding-bottom: 0;
 }
 
-/* Download links on project listing page */
+/* Download links with language picker */
 .download-links {
   margin-bottom: 1.5rem;
   color: #555;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .download-links a {
-  margin-inline-start: 0.5rem;
   font-weight: 600;
+}
+
+.download-links--sidebar {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.25rem;
+}
+
+.download-select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  background: #fff;
 }
 
 /* Search input */

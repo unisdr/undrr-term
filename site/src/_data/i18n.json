@@ -240,12 +240,28 @@
     "es": "Contribuir"
   },
   "download_terms": {
-    "en": "Download all terms",
-    "ar": "تحميل جميع المصطلحات",
-    "zh": "下载所有术语",
-    "fr": "Télécharger tous les termes",
-    "ru": "Скачать все термины",
-    "es": "Descargar todos los términos"
+    "en": "Download terms",
+    "ar": "تحميل المصطلحات",
+    "zh": "下载术语",
+    "fr": "Télécharger les termes",
+    "ru": "Скачать термины",
+    "es": "Descargar términos"
+  },
+  "download_all_languages": {
+    "en": "All languages",
+    "ar": "جميع اللغات",
+    "zh": "所有语言",
+    "fr": "Toutes les langues",
+    "ru": "Все языки",
+    "es": "Todos los idiomas"
+  },
+  "download_english_plus": {
+    "en": "English +",
+    "ar": "الإنجليزية +",
+    "zh": "英语 +",
+    "fr": "Anglais +",
+    "ru": "Английский +",
+    "es": "Inglés +"
   },
   "status_published": {
     "en": "Published",

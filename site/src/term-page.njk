@@ -116,11 +116,27 @@
 
     <div class="term-sidebar__section">
       <h3>{{ i18n.download_terms[lang] }}</h3>
-      <p>
-        <a href="{{ ('/exports/' + term.project + '.csv') | url }}" download>CSV</a>
-        &middot;
-        <a href="{{ ('/exports/' + term.project + '.json') | url }}" download>JSON</a>
-      </p>
+      <div class="download-links download-links--sidebar">
+        <select id="download-lang" class="download-select" data-project="{{ term.project }}" data-prefix="{{ '/' | url }}">
+          <option value="">{{ i18n.download_all_languages[lang] }}</option>
+          {%- for l in languages %}
+            {%- if l.code !== "en" %}
+          <option value="-{{ l.code }}"{% if l.code === lang and lang !== "en" %} selected{% endif %}>{{ i18n.download_english_plus[lang] }} {{ l.name }}</option>
+            {%- endif %}
+          {%- endfor %}
+        </select>
+        <span>
+          {%- if lang !== "en" %}
+          <a href="{{ ('/exports/' + term.project + '-' + lang + '.csv') | url }}" download class="download-csv">CSV</a>
+          &middot;
+          <a href="{{ ('/exports/' + term.project + '-' + lang + '.json') | url }}" download class="download-json">JSON</a>
+          {%- else %}
+          <a href="{{ ('/exports/' + term.project + '.csv') | url }}" download class="download-csv">CSV</a>
+          &middot;
+          <a href="{{ ('/exports/' + term.project + '.json') | url }}" download class="download-json">JSON</a>
+          {%- endif %}
+        </span>
+      </div>
     </div>
 
     <div class="term-sidebar__section">
@@ -221,4 +237,17 @@
     "url": {{ (site.url + '/' + lang + '/' + term.project + '/') | dump | safe }}
   }
 }
+</script>
+<script>
+  const langSelect = document.getElementById('download-lang');
+  if (langSelect) {
+    langSelect.addEventListener('change', () => {
+      const project = langSelect.dataset.project;
+      const prefix = langSelect.dataset.prefix;
+      const suffix = langSelect.value;
+      const container = langSelect.closest('.download-links');
+      container.querySelector('.download-csv').href = prefix + 'exports/' + project + suffix + '.csv';
+      container.querySelector('.download-json').href = prefix + 'exports/' + project + suffix + '.json';
+    });
+  }
 </script>
