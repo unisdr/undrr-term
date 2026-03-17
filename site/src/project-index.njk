@@ -38,6 +38,9 @@
 
 <h1>{{ project.name }}</h1>
 <p>{{ project.description }}</p>
+{%- if project.url %}
+<p><a href="{{ project.url }}">{{ i18n.source[lang] }}</a></p>
+{%- endif %}
 
 <input type="text"
   class="search-input"

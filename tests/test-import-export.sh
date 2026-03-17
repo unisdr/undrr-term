@@ -157,4 +157,17 @@ fi
 rm -f terms/oewg-2016/drr001.md terms/oewg-2016/drr002.md terms/oewg-2016/drr003.md
 echo ""
 
+echo "=== Testing multi-project export ==="
+node scripts/export-csv.js unisdr-2009 --output "$TMPDIR/unisdr-2009.csv"
+node scripts/export-csv.js oewg-2016 --output "$TMPDIR/oewg-2016.csv"
+UNISDR_COUNT=$(tail -n +2 "$TMPDIR/unisdr-2009.csv" | grep -c '.')
+OEWG_COUNT=$(tail -n +2 "$TMPDIR/oewg-2016.csv" | grep -c '.')
+if [ "$UNISDR_COUNT" -eq 53 ] && [ "$OEWG_COUNT" -eq 65 ]; then
+  echo "Multi-project export: PASS (unisdr-2009: $UNISDR_COUNT, oewg-2016: $OEWG_COUNT)"
+else
+  echo "Multi-project export: FAIL (unisdr-2009: $UNISDR_COUNT expected 53, oewg-2016: $OEWG_COUNT expected 65)"
+  exit 1
+fi
+echo ""
+
 echo "All tests passed."
