@@ -49,6 +49,12 @@
 
 <h1>{{ t.term }}</h1>
 
+{%- if term.projectConfig.url %}
+<div class="translation-scope-notice">
+  <p>{{ i18n.translation_scope_notice[lang] }} <a href="{{ term.projectConfig.url }}">{{ term.projectConfig.citation or term.projectConfig.name }}</a></p>
+</div>
+{%- endif %}
+
 <div class="term-layout">
 
   {# -- Left sidebar: metadata -- #}
@@ -112,6 +118,23 @@
     <div class="term-sidebar__section">
       <h3>{{ i18n.status_label[lang] or "Status" }}</h3>
       <p><span class="term-status-badge term-status-badge--{{ termStatus }}">{{ i18n['status_' + termStatus][lang] or termStatus }}</span></p>
+    </div>
+
+    <div class="term-sidebar__section">
+      <h3>{{ i18n.confidence_label[lang] }}</h3>
+      {%- for l in languages %}
+        {%- set lt = term.translations[l.code] %}
+        {%- if lt %}
+        <p class="confidence-row">
+          <span>{{ l.name }}:</span>
+          {%- if lt.confidence %}
+          <span class="term-confidence term-confidence--{{ lt.confidence }}">{{ i18n['confidence_' + lt.confidence][lang] }}</span>
+          {%- else %}
+          <span class="term-confidence term-confidence--0">{{ i18n.confidence_not_assessed[lang] }}</span>
+          {%- endif %}
+        </p>
+        {%- endif %}
+      {%- endfor %}
     </div>
 
     <div class="term-sidebar__section">

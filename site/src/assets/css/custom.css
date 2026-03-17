@@ -61,7 +61,7 @@
 
 #pin-error {
   color: #c00;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   margin: 0;
 }
 
@@ -77,6 +77,25 @@
 /* Site title label in page header */
 .mg-page-header__label {
   font-weight: 600;
+}
+
+/* Translation scope notice on project pages */
+.translation-scope-notice {
+  background: #f0f4f8;
+  border-left: 3px solid #0468b1;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+[dir="rtl"] .translation-scope-notice {
+  border-left: none;
+  border-right: 3px solid #0468b1;
+}
+
+.translation-scope-notice p {
+  margin: 0;
 }
 
 /* Status banner */
@@ -271,7 +290,7 @@
   padding: 0.25rem 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   background: #fff;
 }
 
@@ -303,7 +322,7 @@
 
 /* Status badges */
 .term-status-badge {
-  font-size: 0.8125rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -322,7 +341,7 @@
 
 /* Confidence badges */
 .term-confidence {
-  font-size: 0.75rem;
+  font-size: 1.4rem;
   font-weight: 600;
   padding: 0.125rem 0.5rem;
   border-radius: 9999px;
@@ -359,4 +378,16 @@
 .term-confidence--5 {
   background: #0468b1;
   color: #fff;
+}
+
+.term-confidence--0 {
+  background: #e9ecef;
+  color: #6c757d;
+}
+
+.confidence-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0.25rem 0;
 }

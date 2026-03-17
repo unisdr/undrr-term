@@ -46,7 +46,8 @@ function exportProject(projectSlug, outputPath, langFilter) {
     const allTranslations = data.translations || {};
     const translations = {};
     for (const lang of languages) {
-      if (allTranslations[lang]) translations[lang] = allTranslations[lang];
+      if (allTranslations[lang] && Object.keys(allTranslations[lang]).length)
+        translations[lang] = allTranslations[lang];
     }
 
     terms.push({

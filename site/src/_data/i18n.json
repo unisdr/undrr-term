@@ -239,6 +239,14 @@
     "ru": "Участие",
     "es": "Contribuir"
   },
+  "translation_scope_notice": {
+    "en": "This database contains terms and definitions for multilingual use. The source publication may include additional detail such as extended descriptions, references, and methodology. See the source document for the complete content.",
+    "ar": "تتضمن قاعدة البيانات هذه المصطلحات والتعريفات للاستخدام المتعدد اللغات. قد يتضمن المنشور المصدر تفاصيل إضافية مثل الأوصاف الموسعة والمراجع والمنهجية. يُرجى الرجوع إلى الوثيقة المصدر للاطلاع على المحتوى الكامل.",
+    "zh": "本数据库包含供多语言使用的术语和定义。来源出版物可能包含更多详细内容，如扩展描述、参考文献和方法论。请参阅原始文件获取完整内容。",
+    "fr": "Cette base de données contient des termes et définitions à usage multilingue. La publication source peut inclure des détails supplémentaires tels que des descriptions détaillées, des références et la méthodologie. Consultez le document source pour le contenu complet.",
+    "ru": "Эта база данных содержит термины и определения для многоязычного использования. Исходная публикация может включать дополнительные сведения, такие как расширенные описания, справочные материалы и методологию. Полное содержание см. в исходном документе.",
+    "es": "Esta base de datos contiene términos y definiciones para uso multilingüe. La publicación fuente puede incluir información adicional como descripciones ampliadas, referencias y metodología. Consulte el documento fuente para acceder al contenido completo."
+  },
   "download_terms": {
     "en": "Download terms",
     "ar": "تحميل المصطلحات",

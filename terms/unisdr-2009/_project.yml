@@ -1,0 +1,9 @@
+name: "UNISDR Terminology on Disaster Risk Reduction (2009)"
+slug: unisdr-2009
+description: "Official terminology on disaster risk reduction published by UNISDR in 2009."
+url: "https://www.preventionweb.net/publication/2009-unisdr-terminology-disaster-risk-reduction"
+languages: [ar, zh, en, fr, ru, es]
+source_language: en
+weblate:
+  project: undrr-unisdr-2009
+  component: terms

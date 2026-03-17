@@ -20,7 +20,8 @@ Multilingual terminology for the UN Office for Disaster Risk Reduction, managed 
 | Project | Folder | Description |
 |---------|--------|-------------|
 | Hazard Information Profiles | `terms/hips/` | Hazard definitions from the 2025 HIPs (~281 terms) |
-| Sendai Framework Terminology | `terms/sendai/` | DRR concepts and definitions (~282+ terms) |
+| [UNISDR Terminology (2009)](https://www.preventionweb.net/publication/2009-unisdr-terminology-disaster-risk-reduction) | `terms/unisdr-2009/` | Official DRR terminology published by UNISDR in 2009 (53 terms) |
+| [OEWG Terminology (2016)](https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology) | `terms/oewg-2016/` | Terminology from the UNGA open-ended intergovernmental expert working group report (65 terms) |
 
 Languages: Arabic, Chinese, English, French, Russian, Spanish (with support for additional languages over time).
 
@@ -179,7 +180,7 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `id` | yes | Unique identifier for the concept (e.g., `flood`) |
 | `code` | yes | Source system code, used as filename and in URLs (e.g., `mh0301`) |
 | `slug` | yes | Human-readable slug for display purposes |
-| `project` | yes | Which term project this belongs to (`hips`, `sendai`) |
+| `project` | yes | Which term project this belongs to (`hips`, `unisdr-2009`, `oewg-2016`) |
 | `status` | yes | Publication state: `published`, `draft`, or `retired` |
 | `domain` | no | Hierarchical domain path (e.g., `natural-hazards/meteorological`). Must have a matching entry in `site/src/_data/i18n.json` for translated display. |
 | `category` | no | Sub-classification within the domain (e.g., `hydrological`) |
@@ -197,6 +198,22 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `source.text` | no | Human-readable citation (e.g., `UNDRR, 2017`) |
 | `source.url` | no | URL to the source document |
 | `confidence` | no | Translation quality tier (1–5): 1=Machine, 2=Draft, 3=Reviewed, 4=Verified, 5=Authoritative. Reviewer metadata — not sent to Weblate. |
+
+### Project config (`_project.yml`)
+
+Each project directory has a `_project.yml` with metadata:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `name` | yes | Display name for the project |
+| `slug` | yes | URL-safe identifier, matches the directory name |
+| `description` | yes | Short description shown on listing pages |
+| `url` | no | URL to the source publication |
+| `citation` | no | Full bibliographic citation (displayed as link text when `url` is set) |
+| `languages` | yes | List of language codes (e.g., `[ar, zh, en, fr, ru, es]`) |
+| `source_language` | yes | Primary language code (usually `en`) |
+| `weblate.project` | no | Weblate project slug for translation sync |
+| `weblate.component` | no | Weblate component name |
 
 ## Repository layout
 

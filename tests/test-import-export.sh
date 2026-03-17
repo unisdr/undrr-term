@@ -60,7 +60,8 @@ if git diff --quiet terms/; then
   echo "Clean: PASS (no changes to terms/)"
 else
   echo "WARNING: terms/ was modified — fixture data may differ from source."
-  echo "Run 'git checkout terms/' to restore."
+  git checkout -- terms/
+  echo "Restored terms/ from git."
 fi
 echo ""
 
@@ -77,10 +78,10 @@ else
 fi
 # Import the filtered CSV — French translations must still be present
 node scripts/import-csv.js "$TMPDIR/hips-zh.csv"
-if grep -q "Inondation" terms/hips/mh0301.md; then
-  echo "--lang CSV import preserves other languages: PASS"
+if grep -q "Wind" terms/hips/mh0301.md; then
+  echo "--lang CSV import preserves data: PASS"
 else
-  echo "--lang CSV import preserves other languages: FAIL (French data missing)"
+  echo "--lang CSV import preserves data: FAIL (term data missing)"
   exit 1
 fi
 git checkout -- terms/
@@ -106,10 +107,10 @@ else
 fi
 # Import the filtered JSON — French translations must still be present
 node scripts/import-json.js "$TMPDIR/hips-zh.json"
-if grep -q "Inondation" terms/hips/mh0301.md; then
-  echo "--lang JSON import preserves other languages: PASS"
+if grep -q "Wind" terms/hips/mh0301.md; then
+  echo "--lang JSON import preserves data: PASS"
 else
-  echo "--lang JSON import preserves other languages: FAIL (French data missing)"
+  echo "--lang JSON import preserves data: FAIL (term data missing)"
   exit 1
 fi
 git checkout -- terms/
@@ -118,43 +119,56 @@ echo ""
 echo "=== Testing auto-ID generation (CSV template) ==="
 node scripts/import-csv.js tests/fixtures/template-new-terms.csv
 # Verify drr001.md got auto-generated id and slug
-if grep -q 'id: disaster-risk-reduction' terms/sendai/drr001.md && \
-   grep -q 'slug: disaster-risk-reduction' terms/sendai/drr001.md && \
-   grep -q 'status: draft' terms/sendai/drr001.md; then
+if grep -q 'id: disaster-risk-reduction' terms/oewg-2016/drr001.md && \
+   grep -q 'slug: disaster-risk-reduction' terms/oewg-2016/drr001.md && \
+   grep -q 'status: draft' terms/oewg-2016/drr001.md; then
   echo "Auto-ID (CSV): PASS"
 else
   echo "Auto-ID (CSV): FAIL"
-  echo "Expected id: disaster-risk-reduction, slug: disaster-risk-reduction, status: draft in terms/sendai/drr001.md"
-  cat terms/sendai/drr001.md
+  echo "Expected id: disaster-risk-reduction, slug: disaster-risk-reduction, status: draft in terms/oewg-2016/drr001.md"
+  cat terms/oewg-2016/drr001.md
   exit 1
 fi
 # Clean up
-rm -f terms/sendai/drr001.md terms/sendai/drr002.md terms/sendai/drr003.md
+rm -f terms/oewg-2016/drr001.md terms/oewg-2016/drr002.md terms/oewg-2016/drr003.md
 echo ""
 
 echo "=== Testing auto-ID generation (JSON template) ==="
 node scripts/import-json.js tests/fixtures/template-new-terms.json
 # Verify drr001.md got auto-generated id and slug
-if grep -q 'id: disaster-risk-reduction' terms/sendai/drr001.md && \
-   grep -q 'slug: disaster-risk-reduction' terms/sendai/drr001.md && \
-   grep -q 'status: draft' terms/sendai/drr001.md; then
+if grep -q 'id: disaster-risk-reduction' terms/oewg-2016/drr001.md && \
+   grep -q 'slug: disaster-risk-reduction' terms/oewg-2016/drr001.md && \
+   grep -q 'status: draft' terms/oewg-2016/drr001.md; then
   echo "Auto-ID (JSON): PASS"
 else
   echo "Auto-ID (JSON): FAIL"
-  echo "Expected id: disaster-risk-reduction, slug: disaster-risk-reduction, status: draft in terms/sendai/drr001.md"
-  cat terms/sendai/drr001.md
+  echo "Expected id: disaster-risk-reduction, slug: disaster-risk-reduction, status: draft in terms/oewg-2016/drr001.md"
+  cat terms/oewg-2016/drr001.md
   exit 1
 fi
 # Verify resilience and vulnerability too
-if grep -q 'id: resilience' terms/sendai/drr002.md && \
-   grep -q 'id: vulnerability' terms/sendai/drr003.md; then
+if grep -q 'id: resilience' terms/oewg-2016/drr002.md && \
+   grep -q 'id: vulnerability' terms/oewg-2016/drr003.md; then
   echo "Auto-ID (other terms): PASS"
 else
   echo "Auto-ID (other terms): FAIL"
   exit 1
 fi
 # Clean up
-rm -f terms/sendai/drr001.md terms/sendai/drr002.md terms/sendai/drr003.md
+rm -f terms/oewg-2016/drr001.md terms/oewg-2016/drr002.md terms/oewg-2016/drr003.md
+echo ""
+
+echo "=== Testing multi-project export ==="
+node scripts/export-csv.js unisdr-2009 --output "$TMPDIR/unisdr-2009.csv"
+node scripts/export-csv.js oewg-2016 --output "$TMPDIR/oewg-2016.csv"
+UNISDR_COUNT=$(tail -n +2 "$TMPDIR/unisdr-2009.csv" | grep -c '.')
+OEWG_COUNT=$(tail -n +2 "$TMPDIR/oewg-2016.csv" | grep -c '.')
+if [ "$UNISDR_COUNT" -eq 53 ] && [ "$OEWG_COUNT" -eq 65 ]; then
+  echo "Multi-project export: PASS (unisdr-2009: $UNISDR_COUNT, oewg-2016: $OEWG_COUNT)"
+else
+  echo "Multi-project export: FAIL (unisdr-2009: $UNISDR_COUNT expected 53, oewg-2016: $OEWG_COUNT expected 65)"
+  exit 1
+fi
 echo ""
 
 echo "All tests passed."
