@@ -1,0 +1,106 @@
+/**
+ * Shared utilities for reading and writing term files.
+ */
+
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import yaml from "js-yaml";
+
+export const ROOT = path.resolve(import.meta.dirname, "../..");
+export const TERMS_DIR = path.join(ROOT, "terms");
+export const WEBLATE_DIR = path.join(ROOT, "weblate");
+export const EXPORTS_DIR = path.join(ROOT, "exports");
+
+// Fields within each language's translation block.
+// "source" is handled specially (structured object -> source_text + source_url).
+export const TRANSLATABLE_FIELDS = [
+  "term",
+  "definition",
+  "description",
+  "context",
+  "part_of_speech",
+  "aliases",
+];
+
+export function getProjectDirs() {
+  return fs
+    .readdirSync(TERMS_DIR, { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((d) => d.name);
+}
+
+export function readProjectConfig(projectDir) {
+  const configPath = path.join(TERMS_DIR, projectDir, "_project.yml");
+  if (!fs.existsSync(configPath)) return null;
+  return yaml.load(fs.readFileSync(configPath, "utf8"));
+}
+
+export function getTermFiles(projectDir) {
+  const dir = path.join(TERMS_DIR, projectDir);
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    if (entry.name.startsWith("_")) continue;
+
+    if (entry.isFile() && entry.name.endsWith(".md")) {
+      files.push(path.join(dir, entry.name));
+    } else if (entry.isDirectory()) {
+      const indexPath = path.join(dir, entry.name, "index.md");
+      if (fs.existsSync(indexPath)) {
+        files.push(indexPath);
+      }
+    }
+  }
+
+  return files;
+}
+
+export function parseTerm(filePath) {
+  const raw = fs.readFileSync(filePath, "utf8");
+  const { data } = matter(raw);
+  const termDir = path.dirname(filePath);
+
+  if (!data.translations) data.translations = {};
+
+  // Read description_{lang}.md files in the same directory
+  const descFiles = fs
+    .readdirSync(termDir)
+    .filter((f) => f.match(/^description_[a-z]{2}\.md$/));
+
+  for (const descFile of descFiles) {
+    const lang = descFile.replace("description_", "").replace(".md", "");
+    const content = fs.readFileSync(path.join(termDir, descFile), "utf8").trim();
+    if (!data.translations[lang]) data.translations[lang] = {};
+    data.translations[lang].description = content;
+  }
+
+  return data;
+}
+
+export function findTermFile(projectDir, code) {
+  const dir = path.join(TERMS_DIR, projectDir);
+
+  const mdPath = path.join(dir, `${code}.md`);
+  if (fs.existsSync(mdPath)) return mdPath;
+
+  const indexPath = path.join(dir, code, "index.md");
+  if (fs.existsSync(indexPath)) return indexPath;
+
+  return null;
+}
+
+export function formatValue(value) {
+  if (Array.isArray(value)) return value.join("|");
+  if (typeof value === "string") return value.trim();
+  return String(value ?? "");
+}
+
+export function parseAliases(value) {
+  if (!value || typeof value !== "string") return [];
+  return value
+    .split("|")
+    .map((s) => s.trim())
+    .filter(Boolean);
+}

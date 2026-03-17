@@ -77,7 +77,7 @@
     </div>
 
     <div class="term-sidebar__section">
-      <h3>Code</h3>
+      <h3>{{ i18n.code_label[lang] or "Code" }}</h3>
       <p>{{ term.code }}</p>
     </div>
 
@@ -103,16 +103,16 @@
     {%- endif %}
 
     <div class="term-sidebar__section">
-      <h3>Status</h3>
+      <h3>{{ i18n.status_label[lang] or "Status" }}</h3>
       <p>{{ term.status or "published" }}</p>
     </div>
 
     <div class="term-sidebar__section">
       <a href="https://github.com/unisdr/undrr-term/edit/main/{{ term.sourcePath }}"
          class="mg-button mg-button-primary">
-        Propose a revision
+        {{ i18n.propose_revision[lang] or "Propose a revision" }}
       </a>
-      <p class="term-sidebar__contributing"><a href="{{ ('/' + lang + '/contributing/') | url }}">About contributing edits</a></p>
+      <p class="term-sidebar__contributing"><a href="{{ ('/' + lang + '/contributing/') | url }}">{{ i18n.about_contributing[lang] or "About contributing edits" }}</a></p>
     </div>
 
   </aside>

@@ -207,7 +207,7 @@ code, configuration, and build files.
 
 ## Creative Commons Attribution 4.0 IGO (Content)
 
-Applies to: `terms/`, `weblate/`, and `api/` directories — all terminology
+Applies to: `terms/` and `weblate/` directories — all terminology
 data, definitions, translations, and compiled output.
 
 Copyright (c) 2025 United Nations Office for Disaster Risk Reduction (UNDRR)

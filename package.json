@@ -8,6 +8,12 @@
   "scripts": {
     "compile": "node scripts/compile-to-json.js",
     "import:weblate": "node scripts/import-from-weblate.js",
+    "export:csv": "node scripts/export-csv.js",
+    "export:json": "node scripts/export-json.js",
+    "import:csv": "node scripts/import-csv.js",
+    "import:json": "node scripts/import-json.js",
+    "xlsx-to-csv": "node scripts/xlsx-to-csv.js",
+    "test": "bash tests/test-import-export.sh",
     "build": "yarn run compile && cd site && yarn run build",
     "dev": "cd site && yarn run dev"
   },
