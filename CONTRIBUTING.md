@@ -33,21 +33,20 @@ The key fields are:
 - **`aliases`** — alternative names
 - **`source.text`** and **`source.url`** — citation and link to source document
 
-See the [frontmatter reference](README.md#frontmatter-reference) in the README for the full schema.
+See the [frontmatter reference](https://github.com/unisdr/undrr-term/blob/main/README.md#frontmatter-reference) in the README for the full schema.
 
 ### Folder-based terms
 
 Most terms are single `.md` files, but some use a folder structure when they have extended descriptions or assets:
 
 ```
-terms/hips/gh0001/
-  index.md              # frontmatter with short definitions
-  description_en.md     # extended narrative (English)
-  description_fr.md     # extended narrative (French)
-  fault-mechanics.svg   # diagram referenced in descriptions
+terms/hips-2025/gh0101/
+  gh0101_index.md              # frontmatter with short definitions
+  gh0101_description_en.md     # extended narrative (English)
+  gh0101_description_fr.md     # extended narrative (French)
 ```
 
-The `description_{lang}.md` files contain full markdown and are editable the same way.
+Filenames are prefixed with the term code. The `{code}_description_{lang}.md` files contain full markdown and are editable the same way.
 
 ## Work with CSV or JSON exports
 
@@ -94,4 +93,4 @@ All contributions go through pull request review by UNDRR terminology specialist
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the project's existing terms: Apache License 2.0 for code and Creative Commons Attribution 4.0 IGO for terminology content. See [LICENSE](LICENSE) for details.
+By contributing, you agree that your contributions will be licensed under the project's existing terms: Apache License 2.0 for code and Creative Commons Attribution 4.0 IGO for terminology content. See [LICENSE](https://github.com/unisdr/undrr-term/blob/main/LICENSE) for details.

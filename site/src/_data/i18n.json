@@ -287,6 +287,30 @@
     "ru": "Все языки",
     "es": "Todos los idiomas"
   },
+  "download_csv_desc": {
+    "en": "Tabular format with terms, definitions, and metadata",
+    "ar": "صيغة جدولية تحتوي على المصطلحات والتعريفات والبيانات الوصفية",
+    "zh": "包含术语、定义和元数据的表格格式",
+    "fr": "Format tabulaire avec termes, définitions et métadonnées",
+    "ru": "Табличный формат с терминами, определениями и метаданными",
+    "es": "Formato tabular con términos, definiciones y metadatos"
+  },
+  "download_json_desc": {
+    "en": "Full data interchange format including extended descriptions",
+    "ar": "صيغة تبادل بيانات كاملة تتضمن الأوصاف الموسعة",
+    "zh": "包含扩展描述的完整数据交换格式",
+    "fr": "Format d'échange complet incluant les descriptions détaillées",
+    "ru": "Полный формат обмена данными, включая расширенные описания",
+    "es": "Formato completo de intercambio de datos con descripciones extendidas"
+  },
+  "download_zip_desc": {
+    "en": "Bundle with CSV, JSON, and description files",
+    "ar": "حزمة تحتوي على ملفات CSV وJSON والأوصاف",
+    "zh": "包含CSV、JSON和描述文件的压缩包",
+    "fr": "Archive avec fichiers CSV, JSON et descriptions",
+    "ru": "Архив с файлами CSV, JSON и описаниями",
+    "es": "Paquete con archivos CSV, JSON y descripciones"
+  },
   "download_english_plus": {
     "en": "English +",
     "ar": "الإنجليزية +",

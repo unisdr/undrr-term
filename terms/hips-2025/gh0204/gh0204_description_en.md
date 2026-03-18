@@ -1,0 +1,35 @@
+Lahars are sometimes referred to as debris flows and colloquially as volcanic mudflows. The word 'lahar' is a generic term for a complex flow phenomenon encompassing a wide range of flow types with different physical parameters. Sub-glacial eruptions can produce floods and lahars, known as 'Jökulhlaups' in Iceland (Gudmundsson, 2015).
+Lahars can be extremely mobile, flowing at high speeds on steep volcanic terrains and for long distances (tens to hundreds of kilometres) along valleys. A single lahar can be long-lasting and vary in behaviour over time due to changes in sediment and water supply (Phillips et al., 2025￼. Lahars can have a sediment concentration ranging from 5% to 80% by volume, heavily influencing the flow speed, runout distance and impacts of the hazard.
+Lahars are typically topographically confined flows, so existing channel networks often control the dominant flow routing. However, lahars can be much larger than typical streamflows (both in the depth of the flow and the flow rate) so that overbanking is possible for lahars. Lahars are generally categorised as primary (syn-eruption) and secondary (post-eruption) (Phillips et al., 2025).
+Primary lahars are caused directly by volcanic eruptions through a range of processes including the disruption of crater lakes, the melting/erosion of glacial ice and snow by volcanic flows (e.g., pyroclastic density currents), the mixing of tephra with rain and ground water, and the incorporation of ground water into debris avalanches. Primary lahars may be hot for an extended time during their motion (Phillips et al., 2025).
+Secondary lahars (generally cold flows) occur due to the remobilisation of erupted pyroclastic deposits, often during intense and/or long-lasting rainfall, as a volcano's drainage system responds to the surface deposits added during eruptions and can continue for many years after an eruption with a decreasing frequency over time (Phillips et al., 2025). However, eruptive activity and secondary lahars can occur contemporaneously during long-lived eruptions at persistently active volcanoes.
+There is little correlation between the magnitude of an eruption and the volume of primary lahars. An example is the 1985 eruption of Nevado del Ruiz, Colombia, which was a relatively small eruption in terms of erupted volume, but pyroclastic density currents flowing over an extensive summit ice and snow cap resulted in substantial glacial and snow melting (2×107 m3), initiating large (peak discharge
+
+## Drivers
+
+Lahars can be triggered by volcanic eruptions through a range of processes including the disruption of crater lakes or temporary natural dams, the melting/erosion of glacial ice and snow by volcanic flows (e.g., pyroclastic density currents; see GH0203), the mixing of tephra (see GH0202) with rain and ground water, and the incorporation of ground water into debris avalanches. Lahars can also occur long after volcanic eruptions, triggered by intense and/or long-lasting rainfall. Many of the largest secondary lahars started as landslides of wet, hydrothermally altered rock on the steep slopes of volcanoes.
+
+## Impacts
+
+The impact of lahars varies greatly depending on the flow type and magnitude, the weather conditions, the geomorphology, and the characteristics of the exposed assets (Lavigne et al. 2025). Fatalities are caused by burying, impact injury or drowning. There were 72 recorded fatal incidents as a result of lahars between 1500 AD and 2017, with a total of 49,938 fatalities that occurred between 1 and 100 km from the source volcano (Brown et al., 2017). Infrastructure (including critical facilities), personal property, agricultural lands and livestock can be destroyed, buried or damaged. Lahars can erode and remove topsoils from farmlands. Emergency response and clean-up can be difficult due to the material left behind by lahars.
+
+## Metrics
+
+Measurable and modellable parameters include flow speed, flow density, temperature, dynamic pressure, flow and deposit thickness, maximum runout, area of invasion, triggering factors (e.g., rainfall), solids volume concentration, eroded depth, friction coefficients.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between earthquake and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Lahar hazard mitigation has included evacuation before eruptions or storms, channel and dam engineering, land management and early warning systems based on visual, acoustic and/or seismic event detection (Pierson et al., 2014). Mapping the possible paths and dynamics of lahars can help to identify exposed communities and assets. The strong topographic control means that simple flow routing models (e.g., Iverson et al., 1998) can be effective, although models that incorporate flow dynamics provide additional useful information such as arrival time and dynamic pressure (Manville et al., 2013).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring lahars. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Volcano Observatories monitor precursory activity that could lead to hazards associated with volcanic unrest or eruption (including but not limited to ground shaking, ground fracturing, subsidence and uplift and volcanic gas emissions). 
+Volcano Observatories issue warnings and, in association with civil protection and emergency management organizations, recommendations. 
+ | How is the Hazard Observed/Monitored/Forecast? | Mapping the possible paths and dynamics of lahars can help to identify exposed communities and assets. The strong topographic control means that simple flow routing models (e.g., Iverson et al., 1998) can be effective, although models that incorporate flow dynamics provide additional useful information such as arrival time and dynamic pressure (Manville et al., 2013).
+Early warnings for lahars are commonly issued when heavy rains are forecast, for example the Guatemala Instituto Nacional de Sismología, Vulcanología, Meteorología e Hidrología (INSIVUMEH), which monitors the Guatemalan volcanoes, regularly issues special reports warning of heavy rains remobilizing loose volcanic material as lahars. 
+Trip wire warning systems can also be set up so once a flow is detected, it notifies the relevant agencies.

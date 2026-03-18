@@ -90,7 +90,7 @@ function importJson(jsonPath) {
           // Write description files for folder-based terms
           if (field === "description") {
             const termDir = path.dirname(filePath);
-            const descFilePath = path.join(termDir, `description_${lang}.md`);
+            const descFilePath = path.join(termDir, `${term.code}_description_${lang}.md`);
             if (fs.existsSync(descFilePath)) {
               fs.writeFileSync(descFilePath, String(value).trim() + "\n");
               continue;

@@ -51,7 +51,7 @@ export function getTermFiles(projectDir) {
     if (entry.isFile() && entry.name.endsWith(".md")) {
       files.push(path.join(dir, entry.name));
     } else if (entry.isDirectory()) {
-      const indexPath = path.join(dir, entry.name, "index.md");
+      const indexPath = path.join(dir, entry.name, `${entry.name}_index.md`);
       if (fs.existsSync(indexPath)) {
         files.push(indexPath);
       }
@@ -68,14 +68,20 @@ export function parseTerm(filePath) {
 
   if (!data.translations) data.translations = {};
 
-  // Read description_{lang}.md files in the same directory
+  // Read {code}_description_{lang}.md files in the same directory
+  const code = data.code;
+  const descPattern = code
+    ? new RegExp(`^${code}_description_([a-z]{2})\\.md$`)
+    : /^description_([a-z]{2})\.md$/;
   const descFiles = fs
     .readdirSync(termDir)
-    .filter((f) => f.match(/^description_[a-z]{2}\.md$/));
+    .filter((f) => descPattern.test(f));
 
   for (const descFile of descFiles) {
-    const lang = descFile.replace("description_", "").replace(".md", "");
-    const content = fs.readFileSync(path.join(termDir, descFile), "utf8").trim();
+    const lang = descFile.match(descPattern)[1];
+    let content = fs.readFileSync(path.join(termDir, descFile), "utf8").trim();
+    content = content.replace(/<!--[\s\S]*?-->/g, "").trim();
+    if (!content) continue;
     if (!data.translations[lang]) data.translations[lang] = {};
     data.translations[lang].description = content;
   }
@@ -89,7 +95,7 @@ export function findTermFile(projectDir, code) {
   const mdPath = path.join(dir, `${code}.md`);
   if (fs.existsSync(mdPath)) return mdPath;
 
-  const indexPath = path.join(dir, code, "index.md");
+  const indexPath = path.join(dir, code, `${code}_index.md`);
   if (fs.existsSync(indexPath)) return indexPath;
 
   return null;

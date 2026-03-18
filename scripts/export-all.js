@@ -22,6 +22,7 @@ import { execFileSync } from "child_process";
 const node = process.execPath;
 const csvScript = path.join(import.meta.dirname, "export-csv.js");
 const jsonScript = path.join(import.meta.dirname, "export-json.js");
+const zipScript = path.join(import.meta.dirname, "export-zip.js");
 
 function run(script, args) {
   execFileSync(node, [script, ...args], { stdio: "inherit" });
@@ -39,6 +40,9 @@ for (const project of projects) {
   // Full export (all languages)
   run(csvScript, [project, "--output", path.join(EXPORTS_DIR, `${project}.csv`)]);
   run(jsonScript, [project, "--output", path.join(EXPORTS_DIR, `${project}.json`)]);
+
+  // ZIP bundle (CSV + JSON + description files)
+  run(zipScript, [project]);
 
   // Per-language exports (source + one target)
   for (const lang of languages) {

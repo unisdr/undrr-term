@@ -1,0 +1,29 @@
+Animals also fall sick for various reasons. Some of these diseases can infect humans and are called zoonosis (BI0113); some are not infectious such as milk fever in cows caused by a shortage of calcium, or onion poisoning in cats, which occurs due to a specific dietary cause. Of the infectious diseases that infect various livestock species, some are called Transboundary Animal Diseases (TADs). TADs can easily spread to other countries and reach epidemic proportions, their control/management requires cooperation between several countries (FAO, 2009). Moreover, TADs pose a serious threat to world food security through their capacity to spread very rapidly in plague proportions and cause critical shortfalls in the production of milk, meat and other animal-derived human foodstuffs (FAO, 1997).
+Example of major TADs in HIPs: African swine fever (BI0302), classical swine fever (BI0303), contagious bovine pleuropneumonia (BI0304), foot-and-mouth disease (BI0306), lumpy skin disease (BI0307), peste des petits ruminants (BI0310), Rift Valley fever (BI0311), rinderpest (BI0312).
+
+## Drivers
+
+Hazard drivers of non-zoonotic infectious animal diseases include movement of animals, vectors and climate change, floods and swill feeding. For example, feeding swill (consumption phase food waste) is historically associated with disease transmission to animals (Dame-Korevaar et al., 2021).
+
+## Impacts
+
+Non-zoonotic infectious animal diseases are threats to the lives of animals and to food security and biodiversity.
+
+## Metrics
+
+Not applicable.
+
+## Multi-Hazard Context
+
+Hazard drivers of non-zoonotic infectious animal diseases include movement of animals, vectors, floods and swill feeding. For example, feeding swill (consumption phase food waste) is historically associated with disease transmission to animals (Dame-Korevaar et al., 2021).
+
+## Risk Management
+
+Vaccination, biosecurity
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for infectious animal diseases. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information?  | FAO Reference Centres, WOAH Reference Centres 
+ | How is the Hazard Observed/Monitored/Forecast?  | FAO empres-i+ https://empres-i.apps.fao.org/diseases  
+WOAH WAHIS https://wahis.woah.org/#/event-management

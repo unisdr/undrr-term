@@ -1,0 +1,33 @@
+In cybersecurity, supply chain attacks refer to exploiting security weaknesses within an organization's supply chain to infiltrate its systems and networks. Attackers target less secure elements of the supply chain - such as third-party vendors, suppliers, or service providers such as cloud providers - with the aim of compromising the end target by leveraging the interconnectedness of modern digital ecosystems. This method allows attackers to bypass traditional security measures by exploiting trusted relationships.
+The history of supply chain attacks has evolved alongside the increasing complexity of global supply networks. Notable early instances include the 2011 attack on RSA Security, where attackers compromised SecurID tokens through a supplier to breach defence contractors (Greenberg, 2021). More recently, the 2020 SolarWinds attack demonstrated the severe impact of such breaches. In this incident, sophisticated threat actors inserted malicious code into the company's software updates, affecting numerous government and private organizations worldwide and highlighting the vulnerabilities inherent in supply chains (Williams, 2020).
+Various techniques are employed in supply chain attacks. These include tampering with software updates (such as in the SolarWinds attack), compromising code repositories, infecting hardware components during manufacturing, and exploiting vulnerabilities in third-party services. Attackers may insert malicious code into legitimate software updates or leverage backdoors in hardware devices to gain unauthorized access.
+Many organizations depend on third-party service providers to manage their cloud environments, which has led attackers to focus on these providers in a unique form of supply chain attack-identity-based attacks. These attacks exploit the extensive permissions often granted to service provider accounts, which may have access to multiple customer environments. This interconnected access increases the potential impact of a compromise, making service providers an attractive target (Microsoft, 2023).
+One of the most significant supply chain attacks stems from open-source software. Open-source communities offer numerous modules and packages widely used by businesses globally, including those in supply chains. However, because open-source software often lacks clear ownership and guaranteed security, it frequently introduces vulnerabilities into security architectures. (Forbes, 2022) Another prominent technique in supply chain attacks includes hijacking updates and compromising code signing. Software vendors routinely distribute updates from centralized servers to maintain and enhance their products. Threat actors can exploit this process by infiltrating the vendor's network to insert malware into an update or modify it to gain unauthorized control over the software's functionality. Code signing, a mechanism used to verify the authenticity and integrity of software, is another critical target. Malicious actors undermine this process by using self-signed certificates, exploiting misconfigured access controls, or compromising signing systems. By impersonating trusted vendors and embedding malicious code into updates, attackers can successfully execute highly deceptive and damaging attacks (NIST, 2021). In 2023, attackers compromised 3CX's desktop app through infected installers, spreading malware through a widely used VoIP system (Fortiguard, 2023).
+Malicious actors increasingly rely on supply chain attacks due to their high impact and the difficulty of detection. The complexity of modern supply chains and reliance on third-party providers create numerous opportunities for exploitation, making supply chain attacks a significant concern in cybersecurity. At the same time, supply chain attacks are often targeted. Therefore, only actors with higher resources and capabilities can (usually) run them.
+
+## Drivers
+
+These attacks, which involve exploiting or altering third-party software, hardware, or applications, pose a significant challenge for organizations.
+
+## Impacts
+
+Fraud, theft
+
+## Metrics
+
+Not applicable.
+
+## Multi-Hazard Context
+
+Not Applicable
+
+## Risk Management
+
+Defending against supply chain attacks requires a comprehensive approach that includes rigorous vetting of suppliers, implementing strict security standards, continuous monitoring, and fostering collaboration between organizations and their partners. Since many attacks rely on external vendors with complex dependencies in their tools and services, achieving complete protection can be difficult. However, organizations can adopt proactive strategies to defend against common attack vectors (Cloudflare, no date). 
+- Running a Third-Party Risk Assessment: This involves testing third-party software before deployment, requiring vendors to comply with specific security policies, implementing a Content Security Policy (CSP) to control executable resources in the browser, and using Subresource Integrity (SRI) to detect suspicious JavaScript content.
+- Implementing Zero Trust: Zero Trust ensures that all users—employees, contractors, and vendors—are continuously verified and monitored within the organization’s network. By verifying the identity and privileges of users and devices, Zero Trust prevents attackers from exploiting stolen legitimate user credentials to infiltrate the organization.
+- DevSecOps: Supply chain security leverages DevSecOps to defend against attacks by first discovering all components, gaining visibility into the supply chain, and securing cloud-native application components. By integrating security throughout the development process, DevSecOps ensures real-time deployment of security operations while aligning seamlessly with business objectives (GitLab, No date).
+
+## Monitoring and Early Warning
+
+Not Applicable

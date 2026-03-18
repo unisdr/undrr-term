@@ -1,0 +1,32 @@
+Drain and/or sewer flooding is a condition where wastewater and/or surface water escapes from or cannot enter a drain or sewer system and either remains on the surface or enters buildings. Drains and/or sewers can also undergo surcharge, which is a condition in which wastewater and/or surface water is held under pressure within a gravity drain or sewer system but does not escape to the surface to cause flooding (European Standard, 1995).
+The United Nations Educational, Scientific and Cultural Organization (UNESCO) Intergovernmental Hydrological Programme (IHP) Urban Water Series, comprising a set of books on urban water management, addresses fundamental issues related to the role of water in cities and the effects of urbanisation on the hydrological cycle and water resources. Focusing on integrated approaches to sustainable urban water management, the Series provides valuable scientific and practical information for urban water practitioners, policymakers and educators throughout the world (UNESCO, 2011).
+Water governance is usually highly decentralised, with overall responsibility held at the level of local government. However, there are still countries where the federal level or the state plays a key role in day-to-day operations (UNESCO / ARCEAI IdF, 2016).
+In 1970, the United Nations identified three megacities. This number rose to 10 in 1990 and 28 in 2014. According to projections, there will be 41 megacities by 2030, many located in the world's least developed countries. Throughout history, these cities have often lacked both the time and the means to develop their urban services, including those relating to access to water, sanitation and rainwater drainage. This situation creates profound vulnerabilities and complex challenges. It is crucial that megacities share their experiences, to develop services capable of meeting the expectations of their inhabitants (UNESCO / ARCEAI IdF, 2016).
+The study of hydrological extremes should consider that humans are part of the hydrologic system, both as agents of change and as beneficiaries of ecosystem services. While there have been significant advances in coupling hydrological and biogeophysical models over the past decade, these advances remain inaccessible to resource management decision-makers and other water sector professionals. With most river basins being no longer 'natural' as humans live and interact with the continuously changing hydrological system, there remains a need for a better understanding of the coupled human-ecosystems (UNESCO IHP, 2019).
+
+## Drivers
+
+Urban flooding caused by severe pluvial rainstorms has been reported for an increasing number of locations throughout the world (Grüning & Grimm, 2015; Schmitt & Scheid, 2020). For many years the design of urban drainage systems had been based upon concepts of design storm frequencies. Surface runoff and sewer flow values have been computed for site‐specific rainfall intensities provided by national weather services or databases (IDF curves) and required sewer pipe slope and diameters have been selected. Little consideration had been given to the possible occurrence of sewer flooding and resulting damage, in general, and in terms of site‐specific factors of flood hazards (Schmitt & Scheid, 2020).
+In some urban areas, Sewer systems and drains often become obstructed over time due to insufficient maintenance, resulting in sewer overflows during storms and flooding events (Dang et al., 2025). This challenge is particularly acute in densely populated cities across developing Asian countries, where drainage systems are often insufficient (Acosta-Coll et al., 2018).
+
+## Impacts
+
+The severity and scale of urban flooding are influenced by factors such as rainfall intensity, duration, and frequency (Dang et al., 2025). 
+Sewage contains harmful microorganisms such as bacteria, viruses and protozoa. This contributes significantly to the spread of diseases such as typhoid and cholera and may increase the likelihood of contracting worm infections from soil contaminated by faeces. Flooding itself may displace populations and lead to further health problems (Howard et al., 2002).. People need to avoid entering a flooded basement or lighting matches until the utility companies have shut off the gas and electric service. 
+Flooding in urban drainage systems occur at different stages of hydraulic surcharge depending on the drainage system (separate or combined sewers), general drainage design characteristics, as well as specific local constraints. When private sewage drains are directly connected to the public sewer system without backwater valves, the possible effects of hydraulic surcharge depend on the levels of the lowest sewage inlet inside the house, the sewer line, and the water level during surcharge, respectively. Whenever the water level in the public sewer exceeds the level of gravity inlets in the house below street level, flooding inside the house will occur due to backwater effects. In such a case flooding is possible, as well as surface flooding. In the same way, hydraulic surcharge in the sewer system might produce flooding on private properties via storm drains, when their inlet level is below the water level of the surcharged storm or combined sewer. In both cases, the occurrence of flooding, being linked directly to the level of inlets versus water level (pressure height) in the sewer can be easily predicted by hydrodynamic sewer flow simulations, assuming the availability of physical data for the private drains and public sewer system (Schmitt et al., 2002).
+
+## Metrics
+
+Not identified.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between drain & sewer flooding and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Urban drainage systems are critical infrastructure for managing flood risks in cities. Climate change-induced intense rainfall reduces the time available for urban residents to respond during emergencies.
+
+## Monitoring and Early Warning
+
+No Information Available.

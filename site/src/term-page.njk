@@ -47,14 +47,6 @@
 </div>
 {%- endif %}
 
-<h1>{{ t.term }}</h1>
-
-{%- if term.projectConfig.url %}
-<div class="translation-scope-notice">
-  <p>{{ i18n.translation_scope_notice[lang] }} <a href="{{ term.projectConfig.url }}">{{ term.projectConfig.citation or term.projectConfig.name }}</a></p>
-</div>
-{%- endif %}
-
 <div class="term-layout">
 
   {# -- Left sidebar: metadata -- #}
@@ -150,14 +142,16 @@
         </select>
         <span>
           {%- if lang !== "en" %}
-          <a href="{{ ('/exports/' + term.project + '-' + lang + '.csv') | url }}" download class="download-csv">CSV</a>
+          <a href="{{ ('/exports/' + term.project + '-' + lang + '.csv') | url }}" download class="download-csv" title="{{ i18n.download_csv_desc[lang] }}">CSV</a>
           &middot;
-          <a href="{{ ('/exports/' + term.project + '-' + lang + '.json') | url }}" download class="download-json">JSON</a>
+          <a href="{{ ('/exports/' + term.project + '-' + lang + '.json') | url }}" download class="download-json" title="{{ i18n.download_json_desc[lang] }}">JSON</a>
           {%- else %}
-          <a href="{{ ('/exports/' + term.project + '.csv') | url }}" download class="download-csv">CSV</a>
+          <a href="{{ ('/exports/' + term.project + '.csv') | url }}" download class="download-csv" title="{{ i18n.download_csv_desc[lang] }}">CSV</a>
           &middot;
-          <a href="{{ ('/exports/' + term.project + '.json') | url }}" download class="download-json">JSON</a>
+          <a href="{{ ('/exports/' + term.project + '.json') | url }}" download class="download-json" title="{{ i18n.download_json_desc[lang] }}">JSON</a>
           {%- endif %}
+          &middot;
+          <a href="{{ ('/exports/' + term.project + '.zip') | url }}" download class="download-zip" title="{{ i18n.download_zip_desc[lang] }}">ZIP</a>
         </span>
       </div>
     </div>
@@ -174,6 +168,14 @@
 
   {# -- Right: language sections (UNTerm style: each language as a block) -- #}
   <div class="term-content">
+
+    <h1>{{ t.term }}</h1>
+
+    {%- if term.projectConfig.url %}
+    <div class="translation-scope-notice">
+      <p>{{ i18n.translation_scope_notice[lang] }} <a href="{{ term.projectConfig.url }}">{{ term.projectConfig.citation or term.projectConfig.name }}</a></p>
+    </div>
+    {%- endif %}
 
     {# Current language first #}
     <section class="term-lang-section">

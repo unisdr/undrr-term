@@ -39,8 +39,8 @@ function findTermFile(projectDir, code) {
   const mdPath = path.join(dir, `${code}.md`);
   if (fs.existsSync(mdPath)) return mdPath;
 
-  // Check for folder with index.md
-  const indexPath = path.join(dir, code, "index.md");
+  // Check for folder with {code}_index.md
+  const indexPath = path.join(dir, code, `${code}_index.md`);
   if (fs.existsSync(indexPath)) return indexPath;
 
   return null;
@@ -118,10 +118,10 @@ function importProject(projectSlug) {
 
         const parsed = parseValue(field, weblateValue);
 
-        // If a description_{lang}.md file exists, write there instead of frontmatter
+        // If a {code}_description_{lang}.md file exists, write there instead of frontmatter
         if (field === "description") {
           const termDir = path.dirname(filePath);
-          const descFilePath = path.join(termDir, `description_${lang}.md`);
+          const descFilePath = path.join(termDir, `${code}_description_${lang}.md`);
           if (fs.existsSync(descFilePath)) {
             const currentDesc = fs.readFileSync(descFilePath, "utf8").trim();
             if (currentDesc !== String(parsed).trim()) {

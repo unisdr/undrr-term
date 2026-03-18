@@ -25,13 +25,17 @@ import {
   formatValue,
   filterLanguages,
 } from "./lib/terms.js";
+
+// Exclude description from CSV — multi-KB markdown with newlines/commas breaks spreadsheets.
+// Descriptions are available in the JSON export and in the ZIP bundle.
+const CSV_FIELDS = TRANSLATABLE_FIELDS.filter((f) => f !== "description");
 import { stringify } from "./lib/csv.js";
 
 function buildHeader(languages) {
   const meta = ["code", "id", "project", "status", "category", "domain", "related"];
   const langCols = [];
   for (const lang of languages) {
-    for (const field of TRANSLATABLE_FIELDS) {
+    for (const field of CSV_FIELDS) {
       langCols.push(`${lang}_${field}`);
     }
     langCols.push(`${lang}_source_text`);
@@ -57,7 +61,7 @@ function termToRow(data, languages) {
 
   for (const lang of languages) {
     const t = translations[lang] || {};
-    for (const field of TRANSLATABLE_FIELDS) {
+    for (const field of CSV_FIELDS) {
       langValues.push(formatValue(t[field] ?? ""));
     }
     const source = t.source;

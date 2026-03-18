@@ -32,7 +32,7 @@ export default function (eleventyConfig) {
         if (entry.isFile() && entry.name.endsWith(".md")) {
           filePath = path.join(projectPath, entry.name);
         } else if (entry.isDirectory()) {
-          filePath = path.join(projectPath, entry.name, "index.md");
+          filePath = path.join(projectPath, entry.name, `${entry.name}_index.md`);
           if (!fs.existsSync(filePath)) continue;
         } else {
           continue;
@@ -41,15 +41,19 @@ export default function (eleventyConfig) {
         const raw = fs.readFileSync(filePath, "utf8");
         const { data, content } = matter(raw);
 
-        // Check for description_{lang}.md files (extended narrative content)
+        // Check for {code}_description_{lang}.md files (extended narrative content)
         if (!data.translations) data.translations = {};
         const termDir = path.dirname(filePath);
+        const code = data.code || entry.name;
+        const descPattern = new RegExp(`^${code}_description_([a-z]{2})\\.md$`);
         const descFiles = fs
           .readdirSync(termDir)
-          .filter((f) => f.match(/^description_[a-z]{2}\.md$/));
+          .filter((f) => descPattern.test(f));
         for (const descFile of descFiles) {
-          const lang = descFile.replace("description_", "").replace(".md", "");
-          const descContent = fs.readFileSync(path.join(termDir, descFile), "utf8").trim();
+          const lang = descFile.match(descPattern)[1];
+          let descContent = fs.readFileSync(path.join(termDir, descFile), "utf8").trim();
+          descContent = descContent.replace(/<!--[\s\S]*?-->/g, "").trim();
+          if (!descContent) continue;
           if (!data.translations[lang]) data.translations[lang] = {};
           data.translations[lang].description = descContent;
         }

@@ -147,9 +147,9 @@ function importCsv(csvPath) {
             data.translations[lang].confidence = num;
           }
         } else if (field === "description") {
-          // Write to description_{lang}.md for folder-based terms
+          // Write to {code}_description_{lang}.md for folder-based terms
           const termDir = path.dirname(filePath);
-          const descFilePath = path.join(termDir, `description_${lang}.md`);
+          const descFilePath = path.join(termDir, `${code}_description_${lang}.md`);
           if (fs.existsSync(descFilePath)) {
             fs.writeFileSync(descFilePath, value.trim() + "\n");
             continue;

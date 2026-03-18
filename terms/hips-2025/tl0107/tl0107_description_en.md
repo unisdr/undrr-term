@@ -1,0 +1,33 @@
+Social engineering is a manipulation technique that leverages human psychology to obtain unauthorized access to information or systems. It concentrates on the human element, frequently the weakest link in cybersecurity, rather than technical vulnerabilities. Social engineering encompasses a broad range of activities intended to exploit human error or human behaviour with the objective of gaining access to information or services. It uses various forms of manipulation to trick victims into making mistakes or handing over sensitive or secret information.
+As a term, social engineering has a history that predates cybersecurity and ICT. Historically, it was associated with the control of societies and the governance techniques used by authorities to shape them. With the advent of digital technologies, the term started to shift, and by the end of 1990, it was part of the common vocabulary of hackers, solidifying its use in the cybersecurity domain (Hatfield 2018).
+Digital deception has advanced significantly, contributing to the new frontier of social engineering attacks. These attacks pose serious threats to digital assets, often resulting in financial losses and privacy violations. They can be executed through various channels, including email, phishing websites, text messages, voice or video calls, and social media platforms (WEF, 2024).
+The techniques used in social engineering are diverse and continually adapting. Social engineering can be looked at from at least two different perspectives: the victims they target or the approach they adopt. In the first case, a common social engineering technique is Phishing. Phishing involves sending fraudulent communications that appear to come from reputable sources, aiming to steal sensitive data like login credentials or financial information. Usually, phishing targets a wide audience, leveraging the number of attempts (e.g., spam campaigns to hundreds or thousands of people) rather than the quality (phishing attacks are usually unrefined and can be easily spotted). Spear phishing, on the other hand, is a more targeted form of phishing, focusing on specific individuals or organizations. In this case, the message sent to the victim or victims is tailored. This requires preparation and background checks of the victims, making it difficult to scale up in number but more effective towards targeted individuals. Whaling is a specific type of spear phishing that targets high-profile individuals such as executives and top managers.
+From the approach perspective, social engineering can take many forms. Email messaging or other forms of online messaging (e.g., direct messages on social media) are the most common forms. Vishing (voice phishing) and smishing (SMS phishing) utilize phone calls and text messages, respectively, to deceive victims. Watering hole attacks compromise websites frequently visited by the target group, leading to malware infection. Homograph attacks exploit similarities in character sets (e.g., replacing 'o' with '0' in URLs) to trick users, and typo squatting relies on common misspellings of legitimate websites to lure unsuspecting users (e.g., registering a website such as www.indrr.org to capture traffic from users attempting to access www.undrr.org but mistyping).
+Artificial intelligence plays a significant role in enhancing social engineering attacks, including through deepfakes. AI can analyse vast amounts of data to craft highly personalized and convincing messages (for spear phishing attacks) but can also automate the delivery and management of large-scale phishing campaigns. The combination of these two characteristics is worrisome, as it might lead to a new approach capable of delivering large-scale spear-phishing campaigns (Hazell, 2023).
+Social engineering is highly used by malicious actors due to its effectiveness and low cost. It is a common cyber-attack method, often serving as the initial vector for more complex intrusions (for instance, convincing a user to click on a link or download a file containing malware).
+
+## Drivers
+
+Attackers often prefer social engineering because it requires fewer and less specialized resources than technical hacking and can yield high rewards with minimal risk. Hybrid work culture and increased reliance on email and messaging apps are modern enablers, while generative AI can be a driver for more convincing fake communications.
+Certain conditions facilitate social engineering attacks, including inadequate security awareness, widespread use of social media, and organizational cultures that do not prioritize cybersecurity. Human factors such as trust, authority, and urgency are exploited to persuade individuals and bypass security protocols.
+
+## Impacts
+
+Fraud, theft, and the rise in identity-centric attacks parallels the increase in social engineering campaigns, primarily through phishing (ENISA, 2024).
+
+## Metrics
+
+Not applicable.
+
+## Multi-Hazard Context
+
+Not applicable
+
+## Risk Management
+
+Defending against social engineering requires implementing robust security policies and conducting regular awareness training1. From a technical standpoint, it is helpful to implement solutions such as email filters and AI-based detection systems. It is crucial to encourage a culture of security, mindfulness, and scepticism toward unsolicited communications (ITU, no date). 
+Despite its role in enhancing social engineering, artificial intelligence can also become a security tool, as it can play a crucial role in identifying and mitigating social engineering threats. Machine learning models can analyse patterns and anomalies in communication to detect phishing attempts and fraudulent activities (Odufian et al., 2025).
+
+## Monitoring and Early Warning
+
+Not applicable
