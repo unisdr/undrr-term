@@ -11,3 +11,28 @@ Other types of karst hollow (EPA, 2002) with internal drainage include karst geo
 Many new sinkholes have been correlated to land-use practices, especially from groundwater pumping and construction and development practices. Sinkholes can also form when natural water-drainage patterns are changed, and new water-diversion systems are developed. Some form when the land surface is changed, such as when industrial and runoff-storage ponds are created. The substantial weight of the new material can trigger an underground collapse of supporting material, causing a sinkhole (USGS, 2018).
 The overburden sediments that cover buried cavities in some aquifer systems are delicately balanced by groundwater fluid pressure, whereby the water below ground is actually helping to keep the surface soil in place. Groundwater pumping for urban water supply and for irrigation can produce new sinkholes in sinkhole-prone areas. If pumping results in a lowering of ground- water levels, then underground structural failure, and thus, sinkholes can occur (USGS, 2018).
 Broken land drains, water mains and sewerage pipes, increased rainfall, storm events, modified drainage and diverted surface water can all help wash sediment into the underlying soluble rock, causing subsidence. There have been many well documented occurrences of sinkholes forming beneath broken water mains, unlined storm-water culverts and leaking swimming pools (BGS, 2024). In some locations dissolution is driven by the upward movement of groundwater
+
+## Drivers
+
+The formation of sinkholes can be influenced by heavy or prolonged rainfall, changing groundwater levels (natural and anthropogenic), inundation (e.g., flooding or pipe leakage), loading (e.g., flooding or construction), erosion, and weathering and ground vibration. Sinkholes can also form as a result of sub-surface activity such as mining or tunnelling. In many landscapes, sinkholes form imperceptibly slowly (USGS, 2018; BGS, 2024).
+
+## Impacts
+
+Collapse subsidence can be rapid. This is particularly significant in urban landscapes where the surface rupture can damage buildings and infrastructure, occasionally associated with loss of life (Waltham et al., 2004). For example, sinkholes in Guatemala City in 2007 and 2010 damaged roads, buildings and resulted in loss of life (Hermosilla, 2012).
+
+## Metrics
+
+Currently, there is no systematic reporting of global sinkholes and their impacts. The size and density of sinkholes reflect the distribution of recharge or flow paths, for example, surface karst with numerous small recharge points (diffuse flow) over heavily fractured, more permeable rock, or fewer large recharge points in lower permeability strata. Similarly, where groundwater flow dominates, sinkhole formation processes are focused on structural and lithological boundaries. The size of sinkholes ranges from a few centimetres to hundreds of metres in diameter, and depths of decametres to a hundred metres or more.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between earthquake and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+The best form of control is avoidance through planning: various remote sensing, geophysical and intrusive ground investigation techniques can be applied to locating sinkholes to enable the design of construction methods, for example, transferring load to more competent strata with piles, or the incorporation of span distances for rafts or geotextiles (Waltham et al., 2004). Some construction techniques focus on void filling, for example, types of grouting are used to prevent or remediate sinkholes (Waltham et al., 2004). 
+Any remediation solution should fully consider the hydrological and hydrogeological context.
+
+## Monitoring and Early Warning
+
+No Information Available

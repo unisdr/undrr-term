@@ -3,3 +3,47 @@ Ammonia is lighter than air, so the vapours from a leak will initially hug the g
 Ammonia is an extensively used industrial chemical. It is commonly used in the production of fertilisers, fibres and plastics, and explosives; as a cleaning and descaling agent, in food additives, and as industrial refrigerant (WHO, 1986).
 High gaseous ammonia concentrations may be encountered locally, both in domestic and occupational environments, as a result of gaseous emissions and/or spillages of concentrated solutions. This can cause respiratory, skin or eye injury. On a larger scale, spillage from stock or transport tanks or refrigeration plants of concentrated ammonia liquor or anhydrous ammonia would constitute severe environmental damage and would cause serious injury to people, animals, and plants in the vicinity. Owing to its low density and short bio-persistence, major spillages would be expected to disperse rapidly and not to persist in the environment (WHO, 1990).
 Ammonia can be stored and transported as a liquid at a pressure of 10 atm at 25°C. Ammonia dissolves readily in water where it forms, and is in equilibrium with ammonium ions (NH4+). The sum of ammonia and ammonium concentrations is termed 'total ammonia' and, owing to the slightly different relative molecular masses, may be expressed as 'total ammonia-nitrogen (NH3-N)'. In most waters, NH4+ predominates, but increased pH or temperature or decreased ionic strength may materially increase levels of non-ionized ammonia (WHO, 1986)
+
+## Drivers
+
+Industrial refrigeration systems that use ammonia as a refrigerant can pose risks of ammonia leaks if not properly maintained or operated. Accidental releases of ammonia gas from refrigeration systems have led to evacuations, injuries, and fatalities in workplaces such as food processing facilities, cold storage warehouses, and ice rinks. 
+Ammonia is transported in bulk quantities by rail, tanker trucks, and pipelines for various industrial applications. Accidents involving derailments, collisions, or leaks during transportation or use can result in the release of ammonia gas into the environment. These incidents pose risks to nearby communities and emergency responders, who may be exposed to the toxic gas (US DOT, 2024).
+
+## Impacts
+
+Breathing in low levels of ammonia may cause irritation to the eyes, nose and throat. High levels of ammonia may cause burns and swelling in the airways, lung damage and can be fatal. Ingestion of ammonia solutions can cause pain and burns throughout the digestive tract. In severe cases the respiratory system, stomach and heart may be damaged, and death may follow. Strong ammonia solutions may cause serious burns if splashed on the skin. At high concentrations, gases and fumes of ammonia can also cause corrosive damage to the skin. Splashes in the eye may cause damage which may be irreversible in some cases and can lead to loss of sight. The health effects of ammonia are usually immediate, and long-term effects would not be expected after exposure to small amounts (PHE, 2019). 
+Anhydrous ammonia (liquid or gas) reacts with tissue water to form the corrosive solution ammonium hydroxide. Following body surface exposure, it is advised to disrobe, and improvised wet decontamination should be considered. Spillages and decontamination run-off should be prevented from entering watercourses (PHE, 2019). 
+Atmospheric ammonia can damage plant foliage when the rate of foliar uptake exceeds the rate at which the plant can detoxify ammonia. High levels of ammonia can affect plant growth and productivity, drought/frost tolerance, and plant response to insect pests and disease (Krupa 2003).
+
+## Metrics
+
+Drinking water: There is no health-based standard proposed by the World Health Organization (WHO) for ammonia in drinking water. This is because the odour threshold (1.5 mg/L) and taste threshold (35 mg/L) are considered to be below levels of health concern (WHO, 2011). However, ammonia has the potential to reduce the effectiveness of some water treatment techniques and so some countries do prescribe a guideline value.
+Air: There are no air quality guidelines for ambient levels of ammonia and public health. However, individual countries may develop occupational exposure limits and adopt acute/emergency guidelines.
+On the other hand, guidelines do exist for ammonia and its health risks associated with larger releases of ammonia in accident scenarios. See for example: Emergency Response Planning Guidelines (ERPG) (NOAA, 2016) and Acute Exposure Guideline Levels for Airborne Chemicals (AEGLs) (US EPA, 2024).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between ammonia and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Documented accidents underscore the importance of proper handling, storage, and transportation of ammonia, as well as emergency preparedness and response measures, to prevent and mitigate the impacts of ammonia-related incidents on public health and safety. 
+- Consider evacuation where spillage or leakage has occurred.
+- Improvised wet decontamination should be considered in the case of skin contamination as ammonia reacts with tissue water to form the corrosive solution ammonium hydroxide (PHE, 2019).
+- Spillages and decontamination run-off should be prevented from entering watercourses (PHE, 2019) due to potential damage to plants and animals.
+- Encourage the avoidance of agricultural land during the use of ammonia fertilisers (ATSDR, 2004).
+- Harmonised labelling and transport approaches should be considered. An early warning system for ammonia contamination is essential for promptly detecting and mitigating the risks associated with ammonia releases. These systems typically include advanced monitoring sensors (both fixed and portable) to detect ammonia levels in real-time. They employ technologies such as electrochemical and infrared sensors to provide accurate measurements. Data from these sensors are analyzed and integrated into centralized systems that trigger audible, visual, and remote alerts when ammonia levels exceed safe thresholds. These alerts enable rapid response, ensuring the safety of personnel and minimizing environmental impact. By incorporating predefined response protocols, early warning systems for ammonia contamination help industries, agricultural operations, and wastewater treatment facilities prevent harmful exposure, comply with safety regulations, and protect public health and the environment. 
+- World Health Organization (WHO): Establishes health-based guidelines for ammonia exposure.
+- United Nations Environment Programme (UNEP): Supports global initiatives for pollution monitoring and early warning systems.
+- Environmental Protection Agency (EPA): Provides guidelines and regulations for ammonia monitoring and control. Supports the development of early warning systems through research and funding.
+- Occupational Safety and Health Administration (OSHA). Sets permissible exposure limits (PELs) for ammonia in the workplace. Enforces regulations for ammonia monitoring and safety protocols.
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring ammonia. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | 
+Which institution(s) produce(s) Disaster Risk Data/Information? | World Health Organization (WHO)
+United Nations Environment Programme (UNEP)
+Environmental Protection Agency (EPA)
+Occupational Safety and Health Administration (OSHA). 
+ | How is the Hazard Observed/Monitored/Forecast? | Advanced monitoring sensors (both fixed and portable) to detect ammonia levels

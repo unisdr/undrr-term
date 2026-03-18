@@ -15,3 +15,35 @@ Paralytic shellfish poisoning (PSP) (FAO, 2004): PSP poisoning in humans is caus
 - It was then that azaspiracid (formerly called Killary Toxin-3 or KT3) was identified and the new toxic syndrome was called azaspiracid poisoning (AZP).Ciguatoxins causing ciguatera poisoning (CP) (FAO, 2004): The name ciguatera was given by Don Antonio Parra in Cuba in 1787 to intoxication following ingestion of the 'cigua', the Spanish trivial name of a univalve mollusc, Turbo pica, reputed to cause indigestion.
 - The term cigua was somehow transferred to an intoxication caused by the ingestion of coral reef fish species.
 - The causative toxins, the ciguatoxins, accumulate through the food chain, from small herbivorous fish grazing on the coral reefs to organs of the bigger carnivorous fish that feed on them.
+
+## Drivers
+
+The substantial increase in the consumption of the fishery and aquaculture products in recent years, together with globalisation of trade, has increased the potential for human exposure to these marine biotoxins. Monitoring programmes for the toxins and their source organisms, and rapid notification of food safety issues by the authorities is essential to avoid foodborne intoxications. Toxic cyanobacteria can also occur in freshwater, affecting water supplies (He 2016). Extensive environmental monitoring and sometimes seasonal quarantine of a harvest are used to reduce risk of exposure (Sobel and Painter, 2005). 
+It is difficult to predict when a bloom will develop. Climatic and environmental conditions such as changes in salinity, rising water temperature, and increased nutrient levels and sunlight can influence population growth. Other drivers of marine toxins include climate change and ballast water discharge. Rising sea temperatures and changes in ocean circulation patterns cause warmer temperatures and altered currents can enhance algal growth and toxin production (EPA, 2024). Ships discharging ballast water into oceans and seas introduces non-native, potentially toxic algal species into waters (IMO, 2019). Excessive nutrients can also lead to the proliferation of toxin-producing algae (NOS, 2023).
+
+## Impacts
+
+Impacts of marine toxins include human health effects such as gastrointestinal, neurological, and cardiovascular issues and in severe cases, death. Marine and freshwater ecosystems are also affected, including disruption of food webs, fish kills, and loss of biodiversity. Economic impacts include loss of revenue from fisheries, tourism, and aquaculture, as well as increased public health costs (FAO, 1999).
+
+## Metrics
+
+The maximum level per kilogram of mollusc flesh for the different toxin groups are as follows:
+- Saxitoxin (STX) group: ≤ 0.8 mg of saxitoxin equivalent 
+- Okadaic acid (OA) group: < 0.16 mg of okadaic acid equivalent
+- Domoic acid (DA) group: < 20 mg of domoic acid
+- Brevetoxin (BTX) group: < 200 mouse units or equivalent
+- Azaspiracid (AZA) group: < 0.16 mg
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between marine toxins and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Risk Management includes the establishment of national monitoring programmes for marine biotoxins and their source organisms, by methods such as regular sampling and testing of water and seafood for toxins, and their continuous update to include new and emerging toxins when necessary (WHO, 2017). Implementing regulatory limits and standards, as well as informing the public about risks and safe consumption practices, are risk management protocols that should be implemented. Other mitigation strategies include reducing nutrient runoff through best management practices (BMPs) in agriculture, and improving sewage treatment; also reducing greenhouse gas emissions, protecting marine environments (EPA, 2023; UNCC, 2024).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring marine toxins. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | European Commission (EC); National Oceanic and Atmospheric Administration (NOAA); environmental agencies 
+ | How is the Hazard Observed/Monitored/Forecast? | Monitoring and remote sensing; prediction modelling; communication

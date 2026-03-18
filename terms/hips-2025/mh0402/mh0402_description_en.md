@@ -1,1 +1,53 @@
 Rain develops as a result of small, suspended cloud droplets growing into larger drops of water, which then fall to earth because of their weight (MeteoSwiss, no date a). The number, density, and size distribution of raindrops vary considerably with the intensity and nature of the precipitation (WMO, 2017). Rain becomes a hazard when its intensity, duration, or frequency causes significant adverse impacts on human life, ecosystems, and infrastructure.
+
+## Drivers
+
+Rainfall events can result from various factors, and key drivers can include: 
+- Extreme weather systems: Heavy rain events can result from various atmospheric phenomena, such as extra-tropical cyclones, tropical cyclones, thunderstorms, squalls, or derechos, often accompanied by rainfall.
+- Climate change: Human-induced climate change has been linked to an increase in the frequency and intensity of heavy rainfall events (Myhre et al., 2019). The warming climate contributes to higher atmospheric moisture levels, with scientists expecting every 1 °C air temperature rise to increase the atmosphere’s moisture holding capacity by 6–7% (Rijal et al., 2024). This heightened moisture content can lead to more intense precipitation events as well as shifts in rainfall patterns and extremes, compounding existing vulnerabilities (Rijal et al., 2024).
+- Seasonal variations: Seasonal changes, such as monsoons, significantly impact rainfall patterns. For example, the monsoons that cause the heaviest rainfall are summer monsoons near the Indian Ocean. Warm water in the ocean evaporates, rising into the air. This causes the wind to change direction, and moisture blows toward the land over South Asia (among other places). The warm, moist air then condenses and becomes rain. The result is a period of humidity and heavy rainfall that can last for months (NOAA, 2024; NASA, 2016).
+
+## Impacts
+
+While rain is essential for sustaining life and ecosystems, it becomes a significant hazard when its intensity, duration, or frequency exceeds the absorptive and adaptive capacities of natural and built environments. Extreme rainfall is a primary trigger for some of the most devastating secondary hazards—flooding, landslides, and soil erosion—which result in widespread loss of life, damage to infrastructure, disruption of livelihoods, and environmental degradation (Rijal et al., 2024; Myhre et al., 2019). 
+Rainfall-induced disasters are among the most costly and deadly worldwide. In the U.S. alone, floods—driven predominantly by heavy rain—rank as the second leading cause of weather-related deaths and cause billions in annual damages (CDC, no date; US EPA, 2024). Moreover, intense rain events overwhelm stormwater systems, contaminate water supplies, and heighten the spread of disease, especially in urban and low-income settings. Some of the impacts associated with excess rainfall include: 
+- Human and health impact: Increased flooding as a result of heavy rainfall events can result in loss of life. In the U.S., for example, flooding due to the heavy rain associated with tropical storms has resulted in a high number of deaths, with floods ranked as the second leading cause of U.S. weather-related deaths, causing 98 fatalities annually. Beyond immediate impacts, heavy rainfall events can have lasting health impacts. Waterborne disease outbreaks often rise in the weeks following heavy rainfall, as reported in the U.S., and water intrusion into buildings can lead to mold growth, worsening indoor air quality. People living in damp environments face higher risks of respiratory issues, including asthma, pneumonia, and respiratory syncytial virus (RSV) (CDC, no date; US EPA, 2024).
+- Economic impact: Flooding associated with heavy rainfall can damage buildings and infrastructure and disrupt key economic sectors, such as agriculture, transport, and energy sectors. Agriculture is significantly affected, as heavy rainfall can damage crops, erode nutrient-rich topsoil, and delay planting seasons, threatening farmers' livelihoods and food supply chains. Additionally, extreme precipitation can disrupt transportation, communication, and energy infrastructure, leading to blocked roads, damaged railways, and power outages, resulting in significant economic losses. In the U.S., for example, power disruptions associated with climate change-related events alone could cost over $8 billion annually by 2090 (US EPA, 2024).
+- Environmental impact: Heavy rainfall events can also have negative environmental consequences, resulting from increased runoff. Rainfall-runoff processes are “the main hydrological link between terrestrial pollution sources and water bodies” (Chang et al., 2023). When excess water cannot be absorbed by the soil, it flows over the surface, collecting contaminants along the way. On agricultural lands, intense rainfall can lead to significant runoff, carrying fertilisers into nearby streams and lakes. Once these nutrients enter water bodies, they can fuel harmful algal blooms and deteriorate water quality, impacting sources used for drinking water and recreational activities (US EPA, 2024).
+
+## Metrics
+
+According to the International Cloud Atlas (WMO, 2017), key indicators for rain can include:
+- Character (intermittent or continuous);
+- Intensity (slight, moderate, heavy): The measurement unit of rainfall intensity is linear depth per hour, usually in millimetres per hour (mm h-1). Rainfall intensity is normally measured or derived over one-minute time intervals due to the high variability of intensity from minute to minute (WMO, 2023).Rainfall intensity can be either derived from the measurement of precipitation amount using a recording rain gauge or measured directly. The latter can be done, for example, by using a gauge and measuring the flow of the captured water, measuring the accretion of collected water as a function of time, or using some optical principles of measurement. A number of techniques for determining precipitation amount are based on these direct intensity measurements by integrating the measured intensity over a certain time interval (WMO, 2023).
+While there is no agreed international definition regarding rainfall intensity, some use the following criteria: WMO's Severe Weather Information Centre (SWIC) defines heavy rain as rainfall greater than or equal to 50 mm in the past 24 hours (SWIC, 2024), while MeteoSwiss defines precipitation (including rain amongst others) of varying levels of intensity using the following terms and metrics:
+ | | Term | Total per 24 hours in mm | Explanation
+ | Low | 0.1 – 2 | Some rain, light rain, scattered showers. A few drops, drizzle
+ | Medium | 2 – 10 | Some precipitation, some showers (with occasional thunder)
+ | High | 10 - 30 | Heavy precipitation, heavy rain (with occasional thunder)
+ | Very high | 30 - 50 | Heavy precipitation, heavy rain (heavy thunderstorms)
+ | Profuse | >50 | Profuse precipitation/rainfall (severe thunderstorms)
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between rain and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Effective risk management strategies for heavy rainfall are essential to mitigate potential human impacts and damage to infrastructure, agriculture, and communities. 
+An example of a rain-related risk management strategy is the Integrated Heavy Rain Risk Management (RAINMAN) project, implemented by the European Union, to address the increased threats posed by heavy rainfall events. Launched in 2017 under the Interreg Central Europe program, RAINMAN aims to enhance the capacities of public authorities in Central Europe and to support local and regional administrations in mitigating heavy rain risks. The project focuses on developing innovative methods and tools to assess, map, and reduce these risks, thereby improving emergency response and reducing potential damage (European Union, 2017).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring rain. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- Meteorological service that tracks precipitation patterns, issue weather forecasts, and provide early warnings for heavy rainfall events.
+- Hydrological service assesses the impact of rainfall on river levels, watersheds, and potential flooding.
+- Geophysical agencies monitoring rainfall-induced hazards such as landslides, soil erosion, and ground instability.
+- National, subnational, and local disaster management agencies responsible for monitoring and responding to rainfall-induced hazards such as flooding and landslides.
+- Health authorities evaluating the effects of heavy rainfall on public health, including water contamination and vector-borne diseases.
+- Engineers designing stormwater drainage systems, flood control infrastructure, and erosion control measures.
+- Land use and urban planners integrating rainfall-related risk assessments into zoning laws and urban development strategies.
+- Researchers and academics, including social scientists, studying rainfall variability, climate change impacts, and community resilience to extreme precipitation.
+- Organisations and community representatives engaged in rainfall hazard preparedness, emergency response, and risk reduction initiatives.
+ | How is the Hazard Observed/Monitored/Forecast? | Rain is monitored using weather radar, satellite images, and ground-based rain gauges that measure rainfall intensity and distribution in real-time. Meteorologists use these observations, combined with atmospheric models and historical data, to forecast future rainfall, predict intensity, and if necessary, issue advisories and early warnings. Advanced technologies, such as Doppler radar, help detect storm movement and potential hazards like flash floods. Experts improve rainfall predictions using these tools and specialiszed hazard risk models, help communities and decision-makers prepare for impacts related to rainfall.

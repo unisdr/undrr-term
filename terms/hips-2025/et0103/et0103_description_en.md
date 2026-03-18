@@ -4,3 +4,51 @@ Flares are classified based on their intensity, primarily determined by the X-ra
 Under favourable observation conditions, when the corresponding active region on the Sun is facing Earth, an intense flare, typically of X-class and occasionally M-class, can lead to significant disturbances in the ionosphere on the sunlit side of Earth. These disturbances can cause signal distortions and radio fadeouts due to increased absorption of radio waves in the lower ionosphere, specifically the D region and lower E region.
 Under regular conditions, high-frequency (HF) radio waves support long-distance communication by refracting through the upper layers of the ionosphere. However, during a powerful solar flare, the ionization increases in the lower ionosphere, particularly in its D and lower E regions. This phenomenon can lead to the degradation or complete absorption of HF radio signals, resulting in a radio fadeout that predominantly affects the 3 to 30 MHz frequency band.
 Radio bursts are associated with solar flares. The delay in registration of its different radio frequencies at Earth's orbit is due to the outward movement of the source. Large bursts last 10 to 20 minutes on average. Longer radio noise storms of persistent and variable high radiation levels originate in sunspot groups, areas of large, intense magnetic fields. A Solar Radio Burst (SRB) could influence the Global Navigation Satellite System (GNSS) signals through direct radio wave interferences.
+
+## Drivers
+
+Solar activity: Solar flares are associated with the active regions and sunspots on the Sun. These are often triggered by magnetic reconnection events in the solar corona. High solar activity periods characterised by increased sunspot numbers are more likely to produce solar flares.
+
+## Impacts
+
+Radio communication disruptions: Solar flares emit intense bursts of electromagnetic radiation, including X-rays and extreme ultraviolet (EUV) radiation. These high-energy radiations can cause the increased ionization in the Earth's atmosphere, particularly in the lower ionosphere. This ionization can result in increased absorption and degradation of radio waves across the HF (3-30 MHz) frequency band, affecting long-distance communications vital for aviation, maritime operations, and emergency services., leading to disruptions in radio communication. 
+GNSS signal interference: Solar flares can generate radio frequency interference that affects the signals transmitted by global navigation satellite systems (GNSS), such as GPS, GLONASS, BEIDOU, and GALILEO. The interference can cause inaccuracies in positioning and timing or complete loss of GNSS signals, leading to potential navigation errors for various applications, including aviation and maritime navigation. 
+Radio burst interference: Radio bursts from the solar flares may interfere directly with radio communication on Earth. The radio bursts may saturate ground-based mobile phone systems, aviation monitoring radars, and other transmitter/receiver systems in suitable conditions. For example, in 2015, air traffic control centres in Sweden noticed that the radar stations of the Swedish Air Navigation Service Provider were not relaying the correct data. The disruption was attributed to solar flare activity occurring near sunset in Sweden when the angle of the Sun is directed into the radar station. While the cause was rapidly identified and measures taken, the interference resulted in a 90-minute impact to radar across Swedish airspace. 
+The intense radiation from solar flares can damage satellites' electronic systems, disrupting communications, weather monitoring, and scientific data collection services. Increased radiation levels can also interfere with sensors and instruments aboard space-based observatories. 
+Solar energetic particles may also pose health risks to astronauts during extravehicular activities (EVAs).
+
+## Metrics
+
+Solar flare intensities cover a broad range and are classified in terms of peak emission in the 0.1 – 0.8 nm spectral band (soft x-rays) of the NOAA/GOES XRS. Solar flares are classified using a five-level scale introduced by the United States National Oceanic and Atmospheric Administration (NOAA) in 1999. The scale is currently under review and presented below. The X-ray flux levels start with the 'A' level (A ≥ 10⁻⁸ W/m²). The next level, ten times higher, is the 'B' level (≥ 10-7 W/m²), followed by 'C' flares (10-6 W/m²), 'M' flares (10-5 W/m²), and finally 'X' flares (≥10⁻⁴ W/m²) (NOAA, 2023)."
+ | | Scale | Description | Effect | Physical measure | Average Frequency (1 cycle = 11 years)
+ | R 5 | Extreme | HF Radio: Complete HF (high frequency) radio blackout on the entire sunlit side of the Earth lasting for a number of hours. This results in no HF radio contact with mariners and en route aviators in this sector.
+Navigation: Low-frequency navigation signals used by maritime and general aviation systems experience outages on the sunlit side of the Earth for many hours, causing loss in positioning. Increased satellite navigation errors in positioning for several hours on the sunlit side of Earth, which may spread into the night side.
+ | X20 (2 x 10-3) | Less than 1 per cycle.
+ | R 4 | Severe | HF Radio: HF radio communication blackout on most of the sunlit side of Earth for one to two hours. HF radio contact lost during this time.
+Navigation: Outages of low-frequency navigation signals cause increased error in positioning for one to two hours. Minor disruptions of satellite navigation possible on the sunlit side of Earth.
+ | X10 (10-3) | 8 per cycle (8 days per cycle).
+ | R 3 | Strong | HF Radio: Wide area blackout of HF radio communication, loss of radio contact for about an hour on sunlit side of Earth.
+Navigation: Low-frequency navigation signals degraded for about an hour.
+ | X1 (10-4) | 175 per cycle (140 days per cycle).
+ | R 2 | Moderate | HF Radio: Limited blackout of HF radio communication on sunlit side, loss of radio contact for tens of minutes.
+Navigation: Degradation of low-frequency navigation signals for tens of minutes.
+ | M5 (5 x 10-5) | 350 per cycle (300 days per cycle).
+ | R 1 | Minor | HF Radio: Weak or minor degradation of HF radio communication on sunlit side, occasional loss of radio contact.
+Navigation: Low-frequency navigation signals degraded for brief intervals.
+ | M1 (10-5) | 2000 per cycle (950 days per cycle).
+The Space Weather centres designated by the International Civil Aviation Organization (ICAO) are expected to provide airliners with advisories about anomalous conditions in HF communication when the intensity of a solar flare exceeds 10-4W/m2 (MOD) and 10-3W/m2 (SEV) (ICAO, 2019).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between solar flares and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Space weather monitoring: Space weather services monitor solar activity and provide alerts and forecasts for potential solar flares. These monitoring systems help to detect and assess the risk of solar flares, allowing for appropriate risk management actions. 
+Radio fadeout predictions: The intensity of a solar flare can be measured using X-ray and Ultraviolet sensor data, and this information can be used to predict the potential impact on radio wave propagation. Systems like the D-Region Absorption 
+Backup communication systems: Organizations and industries can have backup communication systems in place to mitigate the impact of radio communication disruptions. This may involve alternative frequencies, communication modes, or redundant communication networks less affected by the ionospheric changes caused by solar flares. 
+GNSS integrity monitoring: GNSS users can implement integrity monitoring systems that detect and alert users to potential anomalies or interference in the GNSS signals. This allows for proactive risk management and the implementation of backup navigation methods when necessary.
+
+## Monitoring and Early Warning
+
+Space weather services members of the International Space Environment Services (ISES) offer warning systems to specific users in their countries. The Space Weather centres designated by the International Civil Aviation Organization (ICAO) advise airliners about solar flares and radio fadeouts.

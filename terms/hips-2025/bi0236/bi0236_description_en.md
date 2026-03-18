@@ -7,3 +7,42 @@ Laboratory diagnosis is key to determining the aetiology of the symptoms includi
 No vaccine or specific treatment is available for SARS but it is part of the priority list for the WHO Research and Development Blueprint for Action to Prevent Epidemics (WHO, 2016a).
 The WHO has published guidance on case classification and surveillance standards and recommendations on SARS and blood safety (WHO, 2003a; 2021).
 Bats are highly likely to be the natural host of the virus responsible for SARS (CSIRO, 2021).
+
+## Drivers
+
+SARS-CoV-1 is a transmissible new disease to emerge in the 21st century and spread along respiratory routes, causing an epidemic through international air travel of people to other countries outside of their originating country (WHO, no date).
+SARS can also be transmitted indirectly through the deposition of the virus onto surfaces via contaminated surfaces that have been touched by someone who is infected with the virus (WHO, no date).
+
+## Impacts
+
+The case fatality among persons with illness meeting the current WHO case definition for probable and suspected cases of SARS is around 3% (WHO, no date). 
+Severe acute respiratory syndrome (SARS) is a viral respiratory disease caused by a SARS-coronavirus. While SARS cases were detected as early as November 2002 as part of an outbreak that emerged in China and subsequently spread to 28 other countries, the pathogen causing the disease was identified as a coronavirus at the end of February 2003 (WHO, no date). 
+An epidemic of (WHO, no date) severe acute respiratory syndrome (SARS) has been associated with an outbreak of atypical pneumonia originating in Guangdong Province, People's Republic of China. We aimed to identify the causative agent in the Guangdong outbreak and describe the emergence and spread of the disease within the province. SARS had been circulating in other cities of Guangdong Province for about 2 months before causing a major outbreak in Guangzhou, the province's capital. A novel coronavirus, SARS coronavirus (CoV), was isolated from specimens from three patients with SARS. Viral antigens were also directly detected in nasopharyngeal aspirates from these patients. 48 of 55 (87%) patients had antibodies to SARS CoV in their convalescent sera. Genetic analysis showed that the SARS CoV isolates from Guangzhou shared the same origin with those in other countries and had a phylogenetic pathway that matched the spread of SARS to other parts of the world (Li et al., 2003). 
+SARS was the first severe and readily transmissible new disease to emerge in the 21st century and spread along respiratory routes, causing an epidemic through international air travel of people to other countries outside of their originating country. SARS can also be transmitted indirectly through deposition of the virus onto surfaces via contaminated surfaces that have been touched by someone who is infected with the virus. Most patients who contracted SARS were previously healthy adults aged 25–70 years. A few suspected cases of SARS have been reported among children under 15 years. The case fatality among persons with illness meeting the current WHO case definition for confirmed cases of SARS is around 9.6%. (WHO, no date).
+
+## Metrics
+
+The case fatality among persons with illness meeting the current WHO case definition for confirmed cases of SARS is around 9.6%. (WHO, no date).
+
+## Multi-Hazard Context
+
+SARS was the first severe and readily transmissible new disease to emerge in the 21st century and spread along respiratory routes and cause an epidemic through international air travel of people to other countries outside of its originating country. SARS can also be transmitted indirectly through deposition of the virus onto surfaces via contaminated surfaces that have been touched by someone who is infected with the virus. Most patients who contracted SARS were previously healthy adults aged 25–70 years. A few suspected cases of SARS have been reported among children under 15 years. The case fatality among persons with illness meeting the current WHO case definition for confirmed cases of SARS is around 9.6%. (WHO, no date)
+
+## Risk Management
+
+Prevention mainly is through infection control in healthcare, home and community settings. Personal preventive measures to prevent the spread of the virus include frequent hand washing using soap or alcohol-based disinfectants. For those with a high risk of contracting the disease, such as healthcare workers, the use of personal protective equipment, including a mask, goggles and an apron is mandatory. Whenever possible, household contacts should also wear a mask (WHO, no date). 
+Control of SARS relies on the rapid identification of cases and their appropriate management, including the isolation of suspect and probable cases and the management of their close contacts (WHO, no date). Individuals under investigation should be placed in respiratory isolation and precautions strictly followed (WHO, no date). 
+Controlling outbreaks relies on containment measures (WHO, no date) including: 
+- prompt detection of cases through good surveillance networks and including an early warning system;
+- isolation of suspected or probable cases;
+- tracing to identify both the source of the infection and contacts of those who are sick and may be at risk of contracting the virus;
+- quarantine of suspected contacts for 10 days;
+- exit screening for outgoing passengers from areas with recent local transmission by asking questions and temperature measurement; and
+- disinfection of aircraft and cruise vessels having SARS cases on board using WHO guidelines. Personal preventive measures to prevent the spread of the virus include frequent hand washing using soap or alcohol-based disinfectants. For those with a high risk of contracting the disease, such as health-care workers, use of personal protective equipment, including a mask, goggles and an apron is mandatory. Whenever possible, household contacts should also wear a mask (WHO, no date). 
+To further reduce the risk that travellers may carry the SARS virus to new areas, international travellers departing from areas with local transmission should be screened for possible SARS at the point of departure (WHO, no date). 
+Controlling outbreaks relies on containment measures including: prompt detection of cases through good surveillance networks and an early warning system; isolation of suspected or probable cases; tracing to identify both the source of the infection and contacts of those who are sick and may be at risk of contracting the virus; quarantine of suspected contacts for 10 days; exit screening for outgoing passengers from areas with recent local transmission by asking questions and temperature measurement; and disinfection of aircraft and cruise vessels having SARS cases on board using WHO guidelines (WHO, no date).
+
+## Monitoring and Early Warning
+
+The Global Outbreak Alert and Response Network (GOARN) was established in April 2000 as a mechanism to aid technical partners and networks around the world to coordinate and provide targeted assistance and support to national health authorities, at their request, during public health emergencies. The GOARN weekly operations call serves as a platform for the Network's partners to connect regularly and share alerts and operational information so that all are informed about novel epidemic intelligence and partners' operations. First instituted in January 2017, the goal of the weekly call is to increase information-sharing among partners, increase collaboration and coordination, and ultimately improve emergency responses at the national, regional and global levels (WHO, 2024).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a disaster from natural hazards. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, 2023).

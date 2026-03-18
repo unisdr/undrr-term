@@ -10,3 +10,51 @@ Animal
 Mammalian tuberculosis is a chronic bacterial disease of animals, and is also a major zoonotic disease, with cattle being the main source of infection for humans. M. bovis is estimated to account for up to 10% of human tuberculosis cases in some countries. Despite its impact, vaccination is not used as a preventive measure in animals, due to the lack of availability of safe and effective vaccines, and potential interference with mammalian tuberculosis surveillance and diagnostic tests, due to false positive reactions in vaccinated animals (WOAH, no date).
 Mammalian tuberculosis is a chronic bacterial disease of animals caused by members of the Mycobacterium tuberculosis complex (MTBC). Within the complex, important variants include M. bovis, M. caprae and M. tuberculosis. Pathogens associated with domesticated and wild animals include M. bovis, M. caprae, M. microti, M. orygis and M. pinnipedii. It affects cattle, sheep, goats, equines, pigs, dogs and cats, and wildlife species such as wild boars, deer, and antelopes. The usual clinical signs include weakness, loss of appetite and weight, fluctuating fever, dyspnoea and intermittent hacking cough, signs of low-grade pneumonia, diarrhoea-enlarged and prominent lymph nodes (WOAH, no date).
 Zoonotic TB is a less common form of human TB that is caused by a related member of the MTBC (M. bovis). The zoonotic form is primarily transmitted indirectly, through the consumption of contaminated milk, dairy products, or meat containing infected material. In regions where food hygiene is consistently applied, the risk to the general public has been reduced, however, zoonotic tuberculosis infection remains an occupational hazard for farmers, abattoir workers and butchers, which can impact their health and disrupt meat supply chains (WOAH, no date). M. bovis is naturally resistant to pyrazinamide, one of the four essential medications used in the current standard first-line anti-TB treatment regimen in humans (WHO, FAO, OIE, 2017).
+
+## Drivers
+
+Human
+About one-quarter of the world's population has latent tuberculosis infection (LTBI), which means people have been infected by TB bacteria but are not (yet) ill with the disease and cannot transmit the disease. Persons with compromised immune systems, such as people living with human immunodeficiency virus (HIV), malnutrition or diabetes, are at higher risk. People living with HIV are 16 (uncertainty interval 14-18) times more likely to fall ill with TB disease than people without HIV. TB is the leading cause of death among people with HIV (WHO, 2024). Risk factors for MDR-TB and XDR-TB include low adherence of patients to treatment, due to length and toxicity of regimen; poor quality or unavailable anti-TB drugs; and incorrect prescription of anti-TB medicines by health-care providers (WHO, 2019).
+Animal
+Direct contact with an infected animal.
+
+## Impacts
+
+Human
+Globally, about 50% of people treated for TB and their households face total costs (direct medical expenditures, non-medical expenditures and indirect costs such as income losses) that are catastrophic (>20% of total household income), far from the WHO End TB Strategy target of zero. Those with compromised immune systems, such as people living with HIV, undernutrition or diabetes, or people who use tobacco, have a higher risk of falling ill. Globally in 2023, there were estimated 0.96 million new TB cases that were attributable to undernutrition, 0.75 million to alcohol use disorders, 0.70 million to smoking, 0.61 million to HIV infection, and 0.38 million to diabetes (WHO, 2024a
+Animal
+Zoonotic TB infection in humans.
+
+## Metrics
+
+According to WHO (2024 a):
+- TB occurs in every part of the world. TB has probably returned to being the world's leading cause of death from a single infectious agent, following three years in which it was replaced by coronavirus disease (COVID-19).
+- A total of 1.25 million people died from tuberculosis (TB) in 2023 (including 161 000 people with HIV).
+- In 2023, an estimated 10.8 million people fell ill with TB worldwide, including 6.0 million men, 3.6 million women and 1.3 million children. TB is present in all countries and age groups. TB is curable and preventable.
+- Child and adolescent TB is often overlooked by health providers and can be difficult to diagnose and treat.
+- Around 87% of new TB cases occurred in the 30 high TB burden countries, with more than two-thirds of the global total in Bangladesh, China, The Democratic Republic of Congo, India, Indonesia, Nigeria, Pakistan and the Philippines.
+- Globally, the net reduction in the TB incidence rate between 2015 and 2023 was 8.3%, far from the WHO End TB Strategy milestone of a 50% reduction by 2025.
+
+## Multi-Hazard Context
+
+Severe weather events, like floods and extreme temperatures, can indirectly increase the risk of tuberculosis (TB) transmission and worsen existing TB cases. This happens by disrupting health-care access, causing displacement and overcrowding, and leading to malnutrition, which weakens the immune system and makes individuals more vulnerable to TB infection. 
+Climate change has a significant impact on tuberculosis through temperature-related factors. These factors influence the prevalence of, spread of, and vulnerability to TB. Addressing these challenges requires a holistic approach involving adaptation planning (Tosepu et al., 2024). 
+The impact of armed conflicts on tuberculosis notification is complex and is influenced by multiple factors. The findings of this review underscore the importance of concerted efforts to control tuberculosis in conflict settings (Gebreyohannes et al., 2024). 
+Nyasulu et al. (2025) report that TB among prisoners accounts for approximately 1% of the global incidence of TB and that TB treatment is associated with lower treatment success rates among prisoners. They consider that TB in prisons and detention centres constitutes a considerable public health challenge.
+
+## Risk Management
+
+Human
+The main health care intervention available to reduce the risk of TB infection progressing to active TB disease is TB preventive treatment. Other preventive interventions are TB infection prevention and control, and vaccination of children with the bacille Calmette-Guérin (BCG) vaccine, which can confer protection, especially from severe forms of TB in children. WHO recommends TB preventive treatment for people living with HIV, household contacts of people diagnosed with bacteriologically confirmed pulmonary TB and clinical risk groups (e.g. those receiving dialysis) (WHO, 2024 b). 
+The main challenges in the treatment of TB disease are the duration and complexity of drug regimens, both of which affect adherence; adverse drug reactions, especially for the drugs used to treat drug-resistant TB; and the absence or limited availability of paediatric drug formulations for second-line treatment (WHO, 2020). 
+TB treatment for people co-infected with HIV is further complicated by drug-drug interactions between anti-TB drugs and antiretroviral therapies and by cumulative drug toxicities (WHO, 2019). 
+There is a pressing need for anti-TB regimens that are more effective, more affordable and nontoxic, and that shorten the duration of treatment (WHO, 2020). 
+Ending TB is not just a public health problem, but a development challenge and opportunity. WHO’s post-2015 End TB Strategy, adopted by the World Health Assembly in 2014, aims to end the global TB epidemic as part of the newly adopted Sustainable Development Goals. It serves as a blueprint for countries to reduce TB incidence by 80%, and TB deaths by 90%, and to eliminate catastrophic costs for TB-affected households by 2030. The Strategy is not a “one size fits all” approach and its success depends on adaptation to diverse country settings (WHO, no date b).
+Animal
+Biosecurity, reducing inter/intra-herd and wildlife0livestock transmission, raising awareness.
+
+## Monitoring and Early Warning
+
+The WHO Global Tuberculosis Report and WHO's online global TB database provide a comprehensive and up-to-date assessment of the TB epidemic and of progress in prevention, diagnosis and treatment of the disease, at global, regional and country levels. This is done in the context of global TB commitments, strategies and targets. The report is based primarily on data gathered by WHO from national ministries of health in annual rounds of data collection. In 2024, 193 countries and areas with more than 99% of the world's population and TB cases reported data (WHO, 2024 b).
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country's risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARSs should re-integrate back into the national system (WHO, no date, a).

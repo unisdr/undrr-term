@@ -3,3 +3,34 @@ Polio virus infection is mostly asymptomatic. If there are symptoms these can in
 Polio is diagnosed clinically through symptoms and laboratory methods (WHO, 2019). Diagnostic testing can detect poliovirus in specimens from the throat, faeces (stool), and occasionally cerebrospinal fluid (CSF). Testing works by isolating the virus in cell culture or by detecting the virus by polymerase chain reaction (PCR) (CDC, 2024).
 Polio is targeted for global eradication and since 2017, only two countries (Afghanistan and Pakistan) have detected wild polio transmission. However, in recent years there has been a resurgence of vaccine-derived poliovirus (VDPV). This emerges in areas where poor vaccination coverage allows the attenuated vaccine virus to circulate and revert to a pathogenic form due to genetic mutation (GPEI, 2016; 2019).
 In 1994, the WHO Region of the Americas was certified polio-free, followed by the WHO Western Pacific Region in 2000 and the WHO European Region in June 2002. On 27 March 2014, the WHO South-East Asia Region was certified polio-free, meaning that transmission of wild poliovirus has been interrupted in this bloc of 11 countries stretching from Indonesia to India. In 2020, Africa became the fifth region to be certified wild poliovirus-free (WHO, 2025).
+
+## Drivers
+
+Polio infection is more common in socioeconomically disadvantaged areas, especially in those where conditions are crowded and in tropical areas where hygiene is poor (WHO, 2025). Polio mainly affects children under 5 years of age. However, anyone of any age who is unvaccinated can contract the disease.
+Conflict and insecurity coupled with fragile health systems are risk factors for ongoing polio transmission particularly when these factors result in children being missed by vaccination programmes due to inaccessibility (WHO, no date).
+
+## Impacts
+
+Cases due to wild poliovirus have decreased by over 99% since 1988, from an estimated 350,000 cases then, to 33 reported cases in 2018 (WHO, 2025).
+
+## Metrics
+
+Cases due to wild poliovirus have decreased by over 99% since 1988, from an estimated 350,000 cases then, to 33 reported cases in 2018 (WHO, 2024).
+
+## Multi-Hazard Context
+
+Polio remains a hazard in some countries driven by natural hazards, humanitarian emergencies, droughts, earthquakes and outbreaks of other infectious diseases (WHO, 2024).
+
+## Risk Management
+
+There is no cure for polio, it can only be prevented. The polio vaccine, given multiple times, can protect a child for life. There are two vaccines available: oral polio vaccine and inactivated polio vaccine. Both are effective and safe, and both are used in different combinations worldwide, depending on local epidemiological and programmatic circumstances, to ensure the best possible protection for populations can be provided (WHO, 2025). 
+Vaccine-derived polio viruses (VDPVs) are classified into three categories: cVDPVs (circulating), when there is evidence of transmission (more than one case), iVPVD, when the infections are confirmed in immunocompromised individuals, and aVDPV (ambiguous) that can represent the initial isolates from cVDPV outbreaks, samples isolated from individuals without documented immunodeficiencies or that are environmental samples, with no evidence of community circulation (Bricks et al., 2024). 
+In 1988, the World Health Assembly adopted a resolution for the worldwide eradication of polio, marking the launch of the Global Polio Eradication Initiative (GPEI), spearheaded by national governments, WHO, Rotary International, the US Centers for Disease Control and Prevention (CDC) and UNICEF, and later joined by the Bill & Melinda Gates Foundation and Gavi, the Vaccine Alliance. The Polio Eradication Strategy lays out the roadmap to securing a lasting and sustained world, free of all polioviruses, and transition and polio post-certification efforts are ongoing to ensure that the infrastructure built up to eradicate polio will continue to benefit broader public health efforts, long after the disease is gone (WHO, 2021b). Economic modelling has found that the eradication of polio would save at least US$ 40–50 billion, mostly in low-income countries. Most importantly, success will mean that no child will ever again suffer the terrible effects of lifelong polio-paralysis (WHO, 2025). 
+The Global Polio Eradication Initiative (GPEI), launched in 1988, has successfully reduced wild poliovirus (WPV) cases by over 99.9%, with WPV type 2 and WPV3 declared eradicated in 2015 and 2019, Since the GPEI was launched, the number of cases has fallen by over 99% (GPEI, 2019; 2023). 
+The global effort to eradicate polio has been declared a Public Health Initiative of International Concern, under the International Health Regulations, and temporary recommendations by an Emergency Committee under the International Health Regulations have been issued to countries affected by poliovirus transmission or are at high risk of re-emergence of the disease. The polio effort continues to support broader public health efforts, including helping respond to natural disasters, humanitarian emergencies, droughts, earthquakes, outbreaks of other infectious diseases and supporting disease surveillance for broader public health initiatives (WHO, 2025).
+
+## Monitoring and Early Warning
+
+To date, poliovirus surveillance permitting the reliable and timely detection of all types of poliovirus (WPV, VDPV, Sabin-like viruses) is mainly conducted using Acute Flaccid Paralysis (AFP) and environmental surveillance. AFP surveillance is a case-based syndromic surveillance system used globally to identify all cases of AFP in children under 15 years, and to confirm the presence or absence of poliovirus by testing AFP case stool specimens in WHO-accredited laboratories. AFP surveillance is complemented by environmental surveillance which systematically tests sewage samples for poliovirus in specific settings (WHO, 2023).
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a disaster from natural hazards. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, 2023d).

@@ -7,3 +7,40 @@ People with weakened immune systems who have severe cryptosporidiosis can develo
 Animal
 Cryptosporidium can infect a wide range of vertebrate hosts, including birds, reptiles, and mammals (CDC, 2024c).
 Cryptosporidium parvum infects mainly the gastrointestinal tract and is an important cause of diarrhoea in young, unweaned livestock. Mortality is generally low but severe outbreaks may occur occasionally. Weaned and adult animals do not normally exhibit signs of disease but can excrete oocysts that may contaminate the environment facilitating onward transmission. There is no commercially available vaccine for cryptosporidiosis (WOAH, 2022).
+
+## Drivers
+
+There is strong evidence linking transmission of Cryptosporidium with inadequate sanitation, unsafe drinking water, and poor hygiene. Cryptosporidium are major zoonotic waterborne pathogens with many documented drinking-water outbreaks (WHO, 2025).
+Transmission is primarily by the faecal-oral route. Cryptosporidium hominis and C. parvum are the major human pathogenic species. Livestock (predominantly cattle and sheep), particularly young animals in the pre-weaning period, are important sources of zoonotic C. parvum. (WHO, 2025).
+Cryptosporidium infection occurs worldwide; the resulting illness is characteristically prolonged, watery diarrhoea that is usually self-limiting. Malnourished young children and severely immunocompromised individuals may suffer chronic severe diarrhoea with significant loss of fluid and increased morbidity and mortality. Cryptosporidium is one of the major causes of morbidity and mortality from diarrhoeal disease in malnourished young children (WHO, 2025).
+Cryptosporidium is a small protozoan parasite that infects the microvillous region of epithelial cells in the digestive and respiratory tract of vertebrates. It is an obligate intracellular parasite of man and other mammals, birds, reptiles and fish. It requires its host to multiply. Environmentally robust oocysts are shed by infected hosts into the environment. These oocysts can survive the adverse conditions in the environment for months until ingested by a new suitable host. In the new host, the life cycle starts again, and multiplication occurs, using the resources of the host (WHO, 2009).
+
+## Impacts
+
+The reported incidence of Cryptosporidium ranges from
+
+## Metrics
+
+In 2016, Cryptosporidium infection was the fifth leading diarrhoeal aetiology in children younger than 5 years, and acute infection caused more than 48,000 deaths and more than 4.2 million disability-adjusted life-years lost (Khalil et al., 2018).
+
+## Multi-Hazard Context
+
+Cryptosporidium outbreaks have been reported in hospitals, daycare centres, within households, among people eating the same food, among people pursuing recreational water activities (in lakes and swimming pools), and in municipalities with contaminated public water supplies. Water distribution systems are particularly vulnerable to contamination with Cryptosporidium, which can survive most disinfection procedures such as chlorination (ECDC, no date).
+
+## Risk Management
+
+Cryptosporidium lives in the intestine of infected humans or animals. An infected person or animal sheds Cryptosporidium parasites in the stool. Millions of Cryptosporidium parasites can be released in a bowel movement from an infected human or animal. Shedding begins when the symptoms begin and can last for weeks after the symptoms (e.g., diarrhoea) disappear. People become infected after accidentally swallowing the parasite (CDC, 2024). 
+Cryptosporidium is transmitted via the faecal-oral route. Its low infectious dose, prolonged survival in moist environments, protracted communicability, and extreme chlorine tolerance make Cryptosporidium ideally suited for transmission through contaminated drinking or recreational water (e.g., swimming pools). Transmission also can occur through contact with faecally contaminated surfaces, by eating contaminated food, or through contact with infected animals (particularly pre-weaned bovine calves) or people (e.g., when providing direct care, during oral–anal sex). 
+Routine testing for ova and parasites does not typically include Cryptosporidium; specifically request testing for this organism when Cryptosporidium infection is suspected. New molecular enteric panel assays generally include Cryptosporidium as a target pathogenicity (CDC 2024b). Other diagnostic techniques include microscopy with direct fluorescent antibody (considered the gold standard), enzyme immunoassay kits, molecular assays, microscopy with modified acid-fast staining, and rapid immunochromatographic cartridge assays (CDC 2024b). Infections caused by different Cryptosporidium species and subtypes can differ clinically. Most Cryptosporidium species, all with multiple subtypes, are indistinguishable by traditional diagnostic tests (CDC, 2024b). 
+Travelers can reduce their risk for cryptosporidiosis by carefully adhering to food and water precautions and using proper handwashing techniques. To protect themselves, swimmers should avoid ingesting recreational water. To protect others, people infected with cryptosporidiosis should not enter recreational water while ill with diarrhoea, and for the first 2 weeks after symptoms have completely resolved, because of prolonged excretion of infectious oocysts. Practising safer sex (i.e., reducing contact with faeces) can also decrease the risk of infection (CDC, 2024b).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for anthrax. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | 1. Which institution(s) produce(s) Disaster Risk Data/Information? | WHO, Ministry of Health
+FAO Reference Centres, WOAH Reference Centres
+ | 2.a. How is the Hazard Monitored / Observed / Forecast? | WHO, Ministry of Health
+FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country's risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021). 
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, no date).

@@ -4,3 +4,39 @@ Fog is easily distinguished from haze by its higher relative humidity (near 100%
 Mist may be considered an intermediate between fog and haze; its particles are smaller (a few microns maximum), it has lower relative humidity than fog, and does not obstruct visibility to the same extent (AMS, 2012).
 There is no distinct line, however, between any of these categories. Near industrial areas, fog is often mixed with smoke, and this combination has been known as smog. However, fog droplets are usually absent in photochemical smog, which only contains inactivated haze droplets (AMS, 2012).
 In aviation weather observations, fog is encoded F, and ground fog GF (AMS, 2012).
+
+## Drivers
+
+Fog of all types originates when the temperature and dew point of the air become identical (or nearly so). This may occur through cooling of the air to a little beyond its dew point (producing advection fog, radiation fog, or upslope fog), or by adding moisture and thereby elevating the dew point (producing steam fog or frontal fog). Fog seldom forms when the dew point spread is greater than 4°F (-15.56°C) (AMS, 2012).
+
+## Impacts
+
+Fog can reduce visibility both on land and on marine surfaces. By international agreement (particularly for aviation purposes), fog is the name given to the resulting visibility of less than 1 km (0.6 mile), however, in forecasts for the public, this generally refers to visibility of less than 180 m (0.1 mile) (UK Met Office, 2019).
+
+## Metrics
+
+Not identified.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between fog and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+In terms of national alerting parameters, examples include alerting parameters for issuing a fog advisory in Canada (Government of Canada, 2019) and alerting parameters for a heavy fog warning in China (China Meteorological Administration, 2012).
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring fog. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- National, subnational, and local disaster management agencies responsible for monitoring fog-related risks, issuing warnings, and coordinating emergency response.
+- Meteorological services tracking temperature, humidity, and wind conditions that contribute to fog formation using weather stations, satellites, and models.
+- Air quality monitoring agencies assessing fog-related air pollution impacts, including interactions with industrial emissions and particulate matter.
+- Geophysical and atmospheric research institutions studying fog formation, dispersion, and long-term trends related to climate change.
+- Health authorities evaluating public health risks associated with reduced air quality, respiratory issues, and transportation accidents caused by dense fog.
+- Transportation and aviation authorities monitoring visibility conditions and issuing advisories for road, rail, and air travel to prevent accidents.
+- Energy and utility companies assessing risks to power transmission, wind farms, and solar energy efficiency due to fog-related moisture accumulation.
+- Space and remote sensing agencies using satellite and LiDAR technology to observe fog coverage and movement patterns.
+- Researchers and academics, including climatologists and atmospheric scientists, studying fog dynamics, microphysics, and predictive modelling improvements.
+- Environmental organiszations and conservation groups studying fog harvesting for water conservation and its role in local ecosystems.
+ | How is the Hazard Observed/Monitored/Forecast? | Fog is monitored using weather stations, satellites, and LiDAR technology to track temperature, humidity, and visibility conditions in real time. Meteorologists analyse these factors along with wind speed and atmospheric pressure to predict when and where fog will form. Computer models simulate fog formation and behaviour, helping forecasters issue warnings for transportation, aviation, and public safety. Early alerts help reduce accidents, improve air quality assessments, and support industries affected by low visibility.

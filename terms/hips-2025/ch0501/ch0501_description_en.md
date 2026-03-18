@@ -11,3 +11,61 @@ Once pesticides enter soil, their fate depends on the physico-chemical character
 Pesticide residue refers to the pesticides that may remain on or in food after they are applied to food crops or owing to their persistence in the environment or because of other uses such as vector control to combat endemic pests such as mosquitos transmitting malaria. Risk of pesticide residues mainly concerns occupational health of field workers, food safety (consumer health) and the environment. The maximum allowable levels of pesticide residues in foods are often stipulated by national regulatory bodies and by the Joint Food and Agriculture Organization of the United Nations (FAO) / World Health Organization (WHO) Food Standards Programme (Codex Alimentarius Commission).
 The following definitions are relevant to the Codex Alimentarius (FAO, no date):
 Pesticide: means any substance intended for preventing, destroying, attracting, repelling, or controlling any pest including unwanted species of plants or animals during the production, storage, transport, distribution and processing of food, agricultural commodities, or animal feeds or which may be administered to animals for the control of ectoparasites. The term can also include substances intended for use as a plant growth regulator, defoliant, desiccant, fruit-thinning agent, or sprouting inhibitor and substances applied to crops either before or after harvest to protect the commodity from deterioration during storage and transport. The term normally excludes fertilisers, plant and animal nutrients, food additives, and animal drugs.
+
+## Drivers
+
+Hazard Drivers of pesticide use include:
+- Agricultural Productivity: The primary driver of pesticide use is the need to increase agricultural productivity. Pesticides help control pests and diseases that can significantly reduce crop yields.
+- Economic Factors: The economic pressure to maximize crop yields and minimize losses drives farmers to use pesticides. The availability of cost-effective pesticides and their perceived benefits further incentivize their use.
+- Technological Advancements: Development and commercialization of new pesticide formulations and delivery systems encourage their widespread use. Innovations in pest management techniques also play a role.
+- Regulatory Policies: Government policies and subsidies can influence the use of pesticides. In some regions, subsidies for pesticide purchases promote their use, while regulations on permissible residues can limit it.
+- Market Demands: Consumer preferences for aesthetically perfect produce lead farmers to use pesticides to ensure their crops meet market standards.
+
+## Impacts
+
+Impacts of exposure to highly hazardous pesticides include (WHO, 2019): 
+The use of pesticides in agriculture and other sectors intersects with multiple hazards, posing complex risks to health, environment, and economies. Pesticide exposure can cause immediate health effects such as skin rashes and respiratory issues, as well as long-term health effects including cancer, endocrine disruption and neurological disorders - vulnerable populations (such as children, pregnant women and agricultural workers) are particularly susceptible. The economic burden of health care for pesticide-related illnesses and the costs associated with environmental remediation can be substantial. Environmental hazards such as water contamination and soil degradation are caused by leaching and accumulation of pesticides. Over-reliance on pesticides can lead to the development of resistant pest populations, necessitating the use of more or stronger chemicals, which increases costs for farmers - this could lead to a constant cycle of over-reliance leading to use of stronger pesticides leading to increased costs for health and environmental consequences. Pesticide residues on crops can affect market access, as international trade regulations and consumer preferences increasingly favour produce with low or no pesticide residues. (Aktar et al., 2009.; EEA, 2024; ILO, 2011). There is a possibility that excessive use of pesticides could reduce populations of insects required for plant pollination/reproduction, with consequent risks for food production. 
+Examples of impacts include: 
+- Unintentional and self-inflicted (suicide) acute poisonings by pesticides are a serious public health concern in many parts of the world.
+- The acute hazard is highly variable depending on the pesticide and includes peripheral and central neurotoxicity and reduced blood clotting capacity. The specific pesticide formulation can significantly affect both exposure and toxicity. Short-term exposure can cause harmful effects on the liver, kidneys, blood, lungs, nervous system, immune system and gastrointestinal tract.
+- Chronic exposure to highly hazardous pesticides can affect the skin, eyes, nervous system, cardiovascular system, gastro- intestinal tract, liver, kidneys, reproductive system, endocrine system, immune system and blood. Some highly hazardous pesticides may cause cancer, including childhood cancer.
+- Toddlers and children are considered more vulnerable to exposure to pesticides due to their smaller size, hand to mouth activity, different metabolism, and because they are still developing.
+
+## Metrics
+
+Available data are too limited to estimate the overall global health impacts of pesticides; however, the global impact of
+self-poisoning (suicides) from preventable pesticide ingestion was estimated to be 155,488 deaths and 7362,493 Disability Adjusted Life Years (DALYs) for 2016 (WHO, 2019).
+The WHO provides maximum residue limits (MRLs) for pesticides in food and levels in drinking-water as follows (WHO, 2019):
+- Maximum residue limits in food: The Joint Food and Agriculture Organization of the United Nations (FAO) / WHO Meeting on Pesticide Residues (JMPR) evaluates those pesticides likely to contaminate food. MRLs are published by the Codex Alimentarius Commission. Guidance for individual pesticides or pesticide components - including for a number of highly hazardous pesticides - can be accessed via the FAO, WHO, Codex Alimentarius Commission or National Framework for Chemicals Environmental Management (INCHEM) websites and in hard-copy publications.
+- Drinking-water: WHO water quality guidelines exist for some pesticides used in agriculture and public health - including for some highly hazardous pesticides - where there is a likelihood of drinking-water contamination. Many pesticides have a maximum contaminant level given by the US Environmental Protection Agency of approximately 0.2 ppb (EPA, no date).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between pesticides and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Risk mitigation measures are critical. In 2015, the Strategic Approach to International Chemicals Management (SAICM) International Conference on Chemicals Management adopted a resolution that recognised highly hazardous pesticides as an issue of concern and called for concerted action by countries to address these substances, with emphasis on promoting agro-ecologically based alternatives and strengthening national regulatory capacity to conduct risk assessment and risk management (WHO, 2019). Several initiatives undertaken by international organisations, including the WHO/FAO, support this resolution. These include the publication of guidelines to support the International Code of Conduct on Pesticide Management, including those on highly hazardous pesticides, Good Labelling Practice for Pesticides, Pesticide Legislation and other important resources and guidance documentation to assist in the implementation of best practices, which have been brought together in a toolkit (FAO, 2018). 
+The highly hazardous pesticides risk reduction process consists of three main consecutive steps: identification of highly hazardous pesticides by checking registered pesticides against the FAO/WHO criteria; assessment of highly hazardous pesticides by assessing each product for risks and needs to determine whether action is desirable; and mitigation of highly hazardous pesticides risks by determining for each product whether risk mitigation measures are required, and if so, which options would be most appropriate (WHO, 2019). 
+To reduce exposure to highly hazardous pesticides and their health impacts, the WHO summarised actions required in the following areas: handling, storage, use and disposal; elimination and replacement of pesticide use; education; and regulation, monitoring and surveillance (WHO, 2019). 
+Early Warning Systems for pesticides are multi-faceted and require a combination of technological, regulatory, and community-based approaches to be effective. 
+Pesticide Action Network (PAN): 
+- PAN works globally to monitor and reduce pesticide risks through community-based action and policy advocacy. European Union's Pesticide Monitoring Program: 
+- The EU conducts comprehensive monitoring of pesticide residues in food and the environment, informing policy decisions. Integrated Pest Management (IPM) Programs: 
+- Many countries implement IPM programs that focus on reducing pesticide use through alternative pest control methods and monitoring.
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring pesticides. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+1. World Health Organization (WHO)
+WHO is a key institution for providing information on pesticide hazards from a health perspective. The organization offers reports and data on the toxicological effects of pesticides and related chemicals, as well as the risks of exposure during disasters, including natural hazards like floods or storms.
+2. Food and Agriculture Organization (FAO)
+FAO works on disaster risk reduction related to chemicals, providing training, guidelines, and information to countries on preventing pesticide misuse in disaster contexts. 
+5. European Food Safety Authority (EFSA)
+In Europe, EFSA is responsible for assessing the risks posed by pesticides to human health and the environment.
+6. Environmental Protection Agencies (National Level)
+National environmental or agricultural agencies, like the U.S. Environmental Protection Agency (EPA) or India’s Central Insecticides Board, may also monitor and report pesticide-related hazards, especially during environmental disasters (e.g., floods, wildfires, chemical spills).
+7. International Programme on Chemical Safety (IPCS)
+The IPCS, a joint initiative between WHO, UNEP, and the International Labour Organization (ILO), conducts assessments of chemical hazards, including pesticides, and provides guidelines and data to reduce risks, especially during emergencies. 
+ | How is the Hazard Observed/Monitored/Forecast? | Pesticide hazards are monitored and forecasted using a multi-disciplinary approach that combines environmental monitoring, meteorological forecasting, remote sensing, risk assessment models, and emergency response systems. These efforts help reduce the potential for harmful pesticide exposures, particularly in the context of natural disasters, and support effective risk management strategies to protect public health and the environment.

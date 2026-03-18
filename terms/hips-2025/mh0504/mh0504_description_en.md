@@ -1,2 +1,36 @@
 Technically, the word ‘frost’ refers to the formation of ice crystals on surfaces, either by freezing of dew or a phase change from vapour to ice; however, the word is widely used by the public to describe a meteorological event when crops and other plants experience freezing injury (FAO, 2005).
 Growers often use the terms ‘frost’ and ‘freeze’ interchangeably, with the vague definition being ‘an air temperature less than or equal to 0°C’. A ‘frost’ is the occurrence of an air temperature of 0°C or lower, measured at a height of between 1.25 and 2.0 m above soil level, inside an appropriate weather shelter. Water within plants may or may not freeze during a frost event, depending on several avoidance factors (e.g., supercooling and concentration of ice nucleating bacteria). A ‘freeze’ occurs when extracellular water within the plant freezes (i.e., changes from liquid to ice) (FAO, 2005).
+
+## Drivers
+
+Freeze occurs during cold waves.
+
+## Impacts
+
+The economic losses due to a widespread freeze event can be enormous. Direct crop losses can exceed a billion dollars. According to the United States National Climatic Data Center, five of the billion-dollar weather disasters over the past 30 years have been caused by agricultural freezes (Brotak, 2014).
+
+## Metrics
+
+Not applicable.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between freeze and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+A number of different methods are available for preventing freeze damage to crops. It is important for growers to be aware of these so that they can evaluate which procedures are feasible and economical for combating freeze damage. The methods are described in terms of active and passive techniques. Active methods are those which are used when the danger of a freeze event is present and include such techniques as adding heat and covering crops. Passive methods are those used well in advance of the freeze event and include scheduling of planting and harvesting within the safe freeze-free period, and appropriate crop and field selection, among others.
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring freeze. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- National, subnational, and local disaster management agencies responsible for monitoring freeze risks, issuing alerts, and coordinating emergency response efforts.
+- Meteorological services tracking frost conditions using satellites and remote sensors to monitor land surface temperatures.
+- Hydrological services monitoring frozen water bodies, ice formation on rivers and lakes, and potential flooding risks from ice buildup.
+- Agricultural and food security agencies assessing the impact of freezes on crops, orchards, and food supply chains.
+- Energy and utility companies monitoring heating demand, power outages, and potential infrastructure failures due to extreme cold.
+- Transportation and infrastructure agencies assessing risks to roads, railways, and bridges from ice accumulation and freeze-thaw cycles.
+- Health authorities evaluating public health risks, including hypothermia, frostbite, and respiratory illnesses caused by freezing temperatures.
+- Researchers and academics, including meteorologists and climatologists, studying freeze formation and forecasting improvements.
+ | How is the Hazard Observed/Monitored/Forecast? | Freezes are monitored using weather stations, satellites, and ground sensors to track temperature drops, frost formation, and wind chill. Meteorologists use weather models to forecast freezing temperatures to issue early warnings. These warnings assist farmers, energy providers, and emergency responders in protecting crops, infrastructure, and public health from extreme cold.

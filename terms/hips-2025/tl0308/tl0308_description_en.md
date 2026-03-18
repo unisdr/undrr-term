@@ -11,3 +11,29 @@ Oil and gas extraction poses significant risks, including damage to property, en
 - Electrical and other hazardous energy: industry workers may be exposed to uncontrolled electrical, mechanical, hydraulic, or other sources of hazardous energy if equipment is not designed, installed, and maintained properly.
 - Machine hazards: oil and gas extraction workers may be exposed to a wide variety of rotating wellhead equipment including top drives and kelly drives, pumps, compressors, catheads, hoist blocks, belt wheels and conveyors, and might be injured if they are struck by or caught between unguarded machines.
 - Planning and prevention: many countries within the industry use job safety analysis (ISA) processes to identify hazards and find solutions to reduce incidents that could lead to injury or fatalities.
+
+## Drivers
+
+Installations for oil and gas extraction may be affected by different hazards, including earthquakes, landslides and floods. Some of these installations may also be targeted during conflicts.
+
+## Impacts
+
+Accidents on oil and gas extraction sites may lead to explosions, fires and the release of hazardous products such as asphyxiant gases, toxic gases, carbon monoxide and strong acids and strong bases. Environment degradation may also result from these activities.
+
+## Metrics
+
+The International Association of Oil & Gas Producers (IOGP) recent ‘Safety Data Report’ concluded that fewer fatalities and injuries occurred in 2023 compared to the year prior (IOGP, 2024) and overall, a 36% reduction in the Fatal Accident Rate. In 2023, the industry experienced 27 fatalities in 17 separate incidents across 3.3 billion work hours. The largest proportion of fatalities was attributed to ’assault or violent act’. Data reported by IOGP members also recorded a decline in the number of injuries. In 2023, there were 0.84 injuries per million hours worked, 7% lower than in 2022 (IOGP, 2024).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between safety hazards associated with oil & gas extraction activities and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+IOGP serves as a global partner for improving safety, and overall oil and gas industry performance. IOGP also acts as a global forum within which members can identify and share best practices to achieve improvements in health, safety, environment, security, social responsibility, engineering and operations within the sector. IOGP works to improve the industry and make a positive contribution to society through the publication of reports, guidelines and recommended practices. 
+Other systems for risk management include real-time safety dashboards and predictive maintenance. 
+Leading oil and gas companies have increased efforts towards adopting a risk-based approach, through enhancing risk management capability such as the management of health, safety, and environment (HSE) risks by implementing the risk management framework 130 31000:2009 to achieve sustainable development (Rodhi et al., 2018).
+
+## Monitoring and Early Warning
+
+Increasingly remote monitoring is being introduced in the oil and gas industries and offers real-time visibility and early identification of problems, facilitating response.

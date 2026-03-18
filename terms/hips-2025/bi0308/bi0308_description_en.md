@@ -8,3 +8,44 @@ The disease is exhibited in five forms; highly virulent infection with haemorrha
 Humans have a central role in the spread of NDV, mainly through the movement of live birds, fomites, personnel and poultry. It is important to note that NDV is capable of infecting humans, causing a mild transient conjunctivitis which is self-limiting with no permanent effect, however, no human-to-human transmission has been reported. Conjunctival infection usually occurs due to physical introduction into the eye by operatives manipulating vaccines prior to vaccination of birds, usually with a finger or by splashing the vaccine.
 For these reasons, control and eradication of the disease presents significant challenges to the poultry industry worldwide, and therefore the use of vaccination has been applied for many decades as an important control tool.
 The commercial vaccines can be broadly divided into live attenuated vaccines and inactivated vaccines. Live attenuated vaccines vary in their relative tropism for respiratory, enteric and nervous systems, they are controlled however to prevent adverse clinical side effects. There are many aspects of vaccine specification that should be considered in the context of the epidemiological situation where it will be used. A detailed account of all aspects of ND vaccines, including their production and use has been published (Allan, Lancaster, & Toth 1978). The fundamental considerations should be for safety, quality and efficacy.
+
+## Drivers
+
+Human
+Poultry crews and laboratory workers would be at the greatest risk for potential exposure to the virus during their work (CFSPH, 2008).
+Animal
+Introduction of virus to a susceptible flock, via poultry trade-related activities or wild birds.
+
+## Impacts
+
+Human
+Not Applicable
+Animal
+High mortality in poultry with sudden death of birds, trade ban, livelihoods and food security implications, gender (women and children are often the ones caring for poultry).
+
+## Metrics
+
+FAO considers that, in many respects, it is extremely difficult to assess the prevalence of NDV in the world at any given time. In some countries or areas disease is not reported at all or only if it occurs in commercial poultry, while its presence in village chickens or backyard flocks is ignored (FAO, no date).
+
+## Multi-Hazard Context
+
+Newcastle disease is likely to have existed in poultry and wild birds, but it was not until the beginning of the commercialization of the farmed bird industry that the disease, with its enormous economic impact, was noticed as a significant problem (FAO, 2004).
+
+## Risk Management
+
+Human
+CFSAPH (2008) provides guidance on Newcastle disease and CDC (2024) provides guidance on How to stay healthy around backyard poultry. 
+Animal
+Farm and market biosecurity, vaccination programme (prevention), movement control, depopulation, tracing back/forward.
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for Newcastle disease. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Ministry of Agriculture, Ministry of Livestock, Ministry of Health, FAO Reference Centres, WOAH Reference Centres, WHO
+ | 
+How is the Hazard Observed/Monitored/Forecast?
+ | Through its global early warning system, FAO has been supporting Members with risk monitoring, assessment and forecasting for animal health threats to enhance preparedness and response to animal health threats:
+- The Global Animal Disease Information System, EMPRES-i+, plays a crucial role in supporting countries with early warning and early detection of animal disease outbreaks. By providing a comprehensive platform for real-time disease tracking, EMPRES-i+, enables monitoring and analysis of animal health threats effectively, collaborating closely with countries and regions on disease information sharing. This supports the dissemination of risk assessments and alerts for evidence-based decision-making.
+- FAO develops and maintains decision support tools that provide risk maps of existing and predicted risks of animal disease emergence, as well as other threats to the agri-food chain.
+- Additionally, FAO collaborates closely with international organizations like WHO and WOAH to verify disease information through integrated mechanisms such as the Epidemic Intelligence from Open Sources (EIOS), the Global Early Warning System (GLEWS+), and the World Animal Health Information System (WAHIS) for WOAH-listed diseases. These collaborations allow for the dissemination of early warning alerts and risk assessments to Members, to enable timely responses to potential outbreaks.FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management

@@ -10,3 +10,35 @@ The chronic form is a natural evolution of both acute and subacute forms but in 
 Calves in the first six months of life more often show lameness from swollen, hot, painful limb joints (FAO, 1997).
 CBPP is one of the World Organisation for Animal Health (WOAH) listed diseases (WOAH, 2024b).
 Humans are not known to be susceptible to CBPP, so there is no public health risk. (WOAH, 2024a; no date).
+
+## Drivers
+
+Contamination may be caused by the introduction of the bacterium to a susceptible flock lack of biosecurity, and presence of vectors (FAO, 2017). CBPP may spread through cattle movements (e.g. transhumance or insecurity when displaced people bring their cattle when they move (or move back).
+
+## Impacts
+
+Death of infected animals, spread of infection, trade ban (FAO, 2017). Although the mortality rate is generally low, economic losses result from loss of condition, decreased milk production, abortions, infertility and damaged hides.
+
+## Metrics
+
+CBPP is one of the World Organisation for Animal Health (WOAH) listed diseases (WOAH, 2024b). Reports are available on organisations such as the World Organisation for Animal Health map of CSF official status (WOAH) website (WOAH, 2024c).
+
+## Multi-Hazard Context
+
+CBPP was known in Europe as early as the 16th century. It was spread throughout the world by increased international trade in live cattle in the second half of the 19th century. Stamping out policy eradicated the disease from many countries; however, it currently persists in sub-Saharan Africa. The main problems for control or eradication are the frequent occurrence of subacute or unapparent infections and the persistence of chronic carriers after the clinical phase.
+Because it is highly contagious with a mortality rate of up to 50%, it causes significant economic losses. CBPP is a prominent cattle disease in Africa (WOAH, no date).
+
+## Risk Management
+
+The main problems for control or eradication are the frequent occurrence of subacute or unapparent infections and the persistence of chronic carriers after the clinical phase. In most continents, control strategies are based on the early detection of outbreaks, control of animal movements and a stamping-out policy. This has successfully eliminated the disease from North America and Europe. In Africa, control of the disease is currently based mainly on vaccination campaigns. However, it remains important that effective surveillance of the disease through slaughterhouse inspection is an efficient method of detecting clinical cases. Treatment of affected animals with antibiotics can result in healthy-looking animals that are still infected and able to spread the disease, so it is not recommended. Vaccination with an attenuated strain of the bacteria is used to reduce the level of infection but access to vaccines in remote areas remains complex (WOAH, no date). 
+In summary proving vaccination programmes, vector control, movement control and farm biosecurity are all critical to risk management of CBPP cases and outbreaks (FAO, 2017).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for contagious bovine pleuropneumonia. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Ministry of Agriculture, Ministry of Livestock; FAO Reference Centres, WOAH Reference Centres.
+ | How is the Hazard Observed/Monitored/Forecast? | Through its global early warning system, FAO has been supporting Members with risk monitoring, assessment and forecasting for animal health threats to enhance preparedness and response to animal health threats:
+- The Global Animal Disease Information System, EMPRES-i+, plays a crucial role in supporting countries with early warning and early detection of animal disease outbreaks. By providing a comprehensive platform for real-time disease tracking, EMPRES-i+, enables monitoring and analysis of animal health threats effectively, collaborating closely with countries and regions on disease information sharing. This supports the dissemination of risk assessments and alerts for evidence-based decision-making.
+- FAO develops and maintains decision support tools that provide risk maps of existing and predicted risks of animal disease emergence, as well as other threats to the agri-food chain.
+- Additionally, FAO collaborates closely with international organizations like WHO and WOAH to verify disease information through integrated mechanisms such as the Epidemic Intelligence from Open Sources (EIOS), the Global Early Warning System (GLEWS+), and the World Animal Health Information System (WAHIS) for WOAH-listed diseases. These collaborations allow for the dissemination of early warning alerts and risk assessments to Members, to enable timely responses to potential outbreaks.FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management

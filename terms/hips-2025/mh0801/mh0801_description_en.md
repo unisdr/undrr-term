@@ -5,3 +5,43 @@ There are different types of avalanche (SLF, no date a):
 - Gliding avalanches, like slab avalanches, have a distinct, broad fracture line, but differ from other types of avalanches in as much as the entire snowpack is released. The slope must be sufficiently steep, but gliding can occur at a slope angle of just 15°. Gliding avalanches can occur only on a smooth substratum, typically consisting of flattened grass or slabs of rock.
 - Powder avalanches arise mostly from slab avalanches. A powder cloud forms in the presence of a large altitude difference when a sufficient quantity of snow becomes suspended in the air. Powder avalanches can reach speeds of 300 km/h and cause tremendous damage.
 - Wet-snow avalanches are usually triggered naturally, most often by a big rise in temperature. Meltwater or occasionally rainwater penetrating the snowpack weakens the bonds between the snow crystals, thereby destabilising layers in which the water accumulates. Both loose snow avalanches and slab avalanches can consist of wet snow.
+
+## Drivers
+
+Avalanche danger is enhanced in some circumstances, commonly in windy conditions on fresh snow slopes; when there is rapid, significant, warming of the snow to above 0°; and on steeper, shadier slopes (White risk, no date).
+
+## Impacts
+
+Avalanches damage buildings and infrastructure in their path and may affect road and train transportation.
+
+## Metrics
+
+Not available.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between avalanches and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Avalanche protection and control measures include early warning which is key. The European Avalanche Warning Services (EAWS) brings together 29 avalanche warning services from 16 countries (EAWS, 2020). 
+By way of controlled explosions, artificial avalanche triggering aims temporarily to safeguard possible starting zones, avalanche paths and deposition zones, and to prevent large avalanches and lengthy closures (SLF, no date b). 
+Defensive structures prevent the formation of avalanches. In other circumstances, when an avalanche is released, it can be diverted or intercepted by a dam. Other means of protection against avalanches include physical structures for buildings and snow sheds. In order to stop an avalanche completely, depending on its speed, a dam may need to be more than 20 m high. Many dams have a dual function: they protect against avalanches in winter, and against flooding and debris flows once the snow has melted. Snow sheds are known as avalanche galleries or tunnels and are the classic structures for protecting transportation routes. Among the typical measures for protecting buildings are wall reinforcement, the erection of a solid structure (Spaltkeil), which is rather like a log splitting wedge, to break the avalanche, and a building design (Ebenhöch) in which the roof seamlessly merges with the terrain or an embankment (SLF, no date c).
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring avalanches. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- National, subnational, and local disaster management agencies responsible for monitoring avalanche risks, issuing warnings, and coordinating emergency response efforts.
+- Meteorological and hydrological services tracking snowfall amounts, temperature fluctuations, and other weather conditions that influence avalanche formation.
+- Geophysical and geological research institutions studying terrain characteristics, slope stability, seismic activity, and climate effects on avalanche occurrence.
+- Mountain safety and avalanche forecasting centres (e.g., U.S. National Avalanche Center (NAC), European Avalanche Warning Services (EAWS), Canadian Avalanche Centre (CAC)) providing real-time avalanche forecasts and risk assessments.
+- Forestry and land management agencies monitoring snow accumulation, deforestation, and vegetation changes that impact avalanche risk.
+- Transportation and infrastructure agencies assessing risks to roads, railways, and mountain passes from avalanches and implementing mitigation measures like snow barriers and controlled detonations.
+- Energy and utility companies monitoring avalanche risks to power lines, hydroelectric dams, and communication infrastructure in mountainous regions.
+- Health authorities evaluating public safety risks, including injuries, fatalities, and emergency medical response capabilities in avalanche-prone areas.
+- Researchers and academics, including snow scientists, geologists, and climate experts, studying avalanche formation, forecasting improvements, and climate change impacts on snow stability.
+- Environmental organizations and conservation groups advocating for sustainable mountain ecosystem management, reforestation efforts, and avalanche hazard awareness.
+- Community organizations, ski patrols, and mountaineering associations engaged in avalanche risk communication, public education, and safety preparedness for backcountry travellers.
+ | 
+How is the Hazard Observed/Monitored/Forecast? | Avalanches are monitored using weather stations, snow sensors, and trained observer observations to track snowfall, temperature changes, and snowpack stability. Scientists analyse wind patterns, terrain conditions, and past avalanche activity to assess risk levels. Advanced models forecast the risk of snow movement, helping forecasters predict when and where avalanches may occur. Early warnings assist ski resorts, mountaineers, and emergency responders in reducing risks and protecting lives in avalanche-prone areas.

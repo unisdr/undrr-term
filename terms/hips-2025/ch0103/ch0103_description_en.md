@@ -1,3 +1,48 @@
 Lead (chemical symbol Pb, atomic number 82) is found at low levels in the Earth's crust, mainly as lead sulfide (WHO, 2024). Lead has been known since ancient times. It is sometimes found free in nature, but is usually obtained from the ores galena (PbS), anglesite (PbSO4), cerussite (PbCO3) and minum (Pb3O4) (PubChem no date). However, the widespread occurrence of lead in the environment is largely the result of human activity, such as mining, smelting, refining and informal recycling of lead; use of leaded petrol (gasoline); production of lead-acid batteries and paints; jewellery making, soldering, ceramics and leaded glass manufacture in informal and 'cottage' (home-based) industries; electronic waste; and use in water pipes and solder (WHO, 2024). Other sources of lead in the environment include natural activities, such as volcanic activity, geochemical weathering and sea spray emissions, and remobilisation of historic sources, such as lead in soil, sediment and water from mining areas. As lead is a natural element, once it is released into the environment, it persists. Owing to lead's persistence and potential for global atmospheric transport, atmospheric emissions affect even the most remote regions of the world (WHO, 2024).
 Acute exposures to lead may cause gastrointestinal disturbances (anorexia, nausea, vomiting, abdominal pain), hepatic and renal damage, hypertension and neurological effects (malaise, drowsiness, encephalopathy) that may lead to convulsions and death. Chronic exposure effects include haematological effects, such as anaemia, or neurological disturbances, including headache, irritability, lethargy, convulsions, muscle weakness, ataxia, tremors and paralysis. Pregnant women are particularly vulnerable, for example, in-utero exposure of the foetus at maternal blood lead levels of less than 5 mg/dL can lead to reduced foetal growth and lower birth rate, and the mother may experience eclampsia and decreased renal function at these blood lead levels. Developing children are particularly vulnerable to lead exposure, with learning disorders and other neurological and developmental disorders occurring at blood lead levels lower than those of adults (US Department of Health and Human Services, 2012).
 It has been estimated that lead exposure was responsible, in 2004, for 143,000 deaths and 0.6% of the global burden of disease (expressed in disability-adjusted life years, or DALYs), taking into account mild mental retardation and cardiovascular outcomes resulting from exposure to lead. Young children absorb four to five times as much lead as adults (apart from pregnant women). Infants, young children (especially those less than 5 years of age) and pregnant women are most susceptible to the adverse effects of lead. The most critical effect of lead in young children is that on the developing nervous system. Subtle effects on intelligence quotient (IQ) are expected from blood lead levels at least as low as 5 μg/dL (50 μg/L), and the effects gradually increase with increasing levels of lead in blood (WHO, 2024).
+
+## Drivers
+
+Significant sources of exposure to lead still remain, particularly in developing countries (WHO, 2024). 
+Further efforts are required to continue to reduce the use and release of lead and to reduce environmental exposures, particularly for children and women of child-bearing age (WHO, 2024). Recent reductions in the use of lead in petrol (gasoline), paint, plumbing and solder have resulted in substantial reductions in lead levels in the blood. 
+In terms of industrial processes, lead is used mainly in the production of lead-acid batteries, plumbing materials and alloys. Other uses are in cable sheathing, paints, glazes and ammunition. Mining, smelting, and informal processing and recycling of electric and electronic waste can also be significant sources of exposure. Lead has been used widely in the form of tetraethyl and tetramethyl lead as antiknock and lubricating agents in petrol, although the majority of lead is emitted from vehicles in the form of inorganic particles. This use has been phased out in most countries, which has resulted in a significant reduction of human exposure and mean blood lead levels. In the few parts of the world where leaded petrol is still in use, however, it continues to be a major source of exposure. Old industrial hotspots that have not been cleaned up can also represent a hazard.
+
+## Impacts
+
+Even years after contamination has stopped, particularly to children who might ingest contaminated soil or dust as a result of their hand-to-mouth behaviour and pica (WHO, 2024). 
+For the non-smoking general population, the largest contribution to the daily intake of lead is from the ingestion of food, dirt and dust. The amount of lead in food plants depends on soil concentrations and is highest around mines and smelters. Cereals can contain high levels of lead, and spices may be contaminated with lead. Use of lead-soldered food and beverage cans (which is now diminishing) may considerably increase the lead content of the food or beverage, especially in the case of acidic foods or drinks. As fruit juices and various alcoholic drinks tend to be acidic, the use of any lead-containing products in their manufacture, distribution or storage will raise lead levels. Migration of lead into food from lead-glazed ceramic or pottery dinnerware is also a source of exposure. Smoking tobacco increases lead intake (WHO, 2024). 
+Lead present at elevated levels in tap water is rarely the result of its dissolution from natural sources but is often due to old household plumbing systems containing lead pipes, solders and fittings. Soft acidic water dissolves the most lead (WHO, 2024). 
+Contaminated dust may be the main source of exposure for infants in countries that no longer use leaded petrol. The weathering, peeling or chipping of lead-based paints, mainly found in older houses, plays a role in children’s exposure, especially as some young children eat the fragments or lick dust-laden fingers. Lead-containing dust may be brought into the home on the clothes of those who work in industries where such dust is generated. Some toys are either made from lead or contain lead (e.g., some plastics or paints). Some traditional medicines and makeup (e.g., kohl) contain lead (WHO, 2024). 
+Primary prevention (i.e., the elimination of exposure to lead at its source) is the single most effective intervention against childhood lead poisoning (WHO, 2024).
+
+## Metrics
+
+The World Health Organization (WHO) has published lead guidelines for drinking-water and air (WHO, 2024): Drinking-water: 10 μg/L. Air: 0.5 μg/m3 (annual average).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between lead and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+The following actions for eliminating use are needed: 
+- Phase out the use of lead additives in motor fuels in countries where this has not yet been done.
+- Phase out the use of lead in paints on a worldwide basis.
+- Eliminate the use of leaded solder in food and drink cans, as well as in water pipes.
+- Eliminate the use of lead in homes, schools, school materials and children’s toys
+- Eliminate the use of lead glazing for pottery intended for cooking, eating or drinking.
+- Encourage the removal of plumbing and fittings containing lead (as this is costly, other measures, such as corrosion control and minimising the dissolving of lead in water systems, should be implemented in the meantime).
+- Identify and eliminate lead use in traditional medicines and cosmetics.
+- Establish sentinel systems that include human biomonitoring, possibly most easily facilitated via a network of recognised analytical laboratories.
+- The WHO provides recommendations (WHO, 2024) on preventing exposure to lead from electric and electronic waste (e.g., lead-acid batteries, computers), particularly for children, which include:
+- Ensure that the recycling of lead-containing waste is undertaken only in the presence of appropriate industrial hygiene measures and that informal recycling and use of lead-containing waste are discouraged.
+- Identify contaminated sites and take necessary action to prevent human exposure to lead from these areas.
+- Prevent pica of paint chips in homes previously painted with lead-based paint.
+- Follow good practices, including personal protective equipment and barriers, during rehabilitation, deconstruction, decom- missioning, and other work in and near buildings and structures that may have been painted with lead-based paint.
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring lead. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Water agencies, Environmental agencies, health agencies 
+ | How is the Hazard Observed/Monitored/Forecast? | Monitoring the level of lead in dust, soil, tap water

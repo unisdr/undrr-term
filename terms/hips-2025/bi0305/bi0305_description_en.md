@@ -4,3 +4,35 @@ The disease was first described in 1873 in Algeria. Shortly after, in 1881, the 
 In CCPP outbreaks in mixed goat and sheep herds, sheep may also be infected, as verified by isolation of Mccp or detection of antibodies from clinically affected sheep. Mccp has also been isolated from healthy sheep and the role of sheep as a reservoir for the disease has to be considered. CCPP was first confirmed in wild ruminants kept in a wildlife preservation reserve in Qatar. The disease affected wild goats, Nubian Ibex, Laristan mouflon and Gerenuk with significant morbidity and mortality in these species. It has also been reported in gazelles in the United Arab Emirates. There is growing evidence that a number of wild ruminant species are susceptible, such as the Tibetan antelope and Arabian oryx. In sand gazelles, the mortality rate reached up to 70% (WOAH, 2021).
 CCPP vaccines exist and are efficient. They include an Mccp purified and inactivated antigen adjuvanted with saponin (WOAH, 2021). CCPP can be controlled by the application of treatment during the outbreak, restricting animal movements, slaughtering infected animals and vaccination (Thiacourt et al., 1996). Most countries maintain a list of approved veterinary vaccines for use. For specific regulations, consult the country's veterinary authorities.
 There is no evidence that humans are infected by Mccp (Spickler, 2015). The disease is included in the World Organisation for Animal Health (WOAH) list of notifiable diseases (WOAH, 2024). CCPP-free countries may pose trade restrictions on domestic and wild goats from countries considered infected with CCPP (WOAH, 2024).
+
+## Drivers
+
+Contamination may be caused by the introduction of this bacterium to a susceptible flock, lack of biosecurity, and presence of vectors (FAO, 2017). CBPP may spread when displaced people bring their cattle when they move (or move back).
+
+## Impacts
+
+Death of infected animals, spread of infection, trade ban (FAO, 2017). Although the mortality rate is generally low, economic losses result from loss of condition, decreased milk production, abortions, infertility and damaged hides.  
+CCPP is considered one of the most severe and highly infectious diseases in goats. It results in heavy economic losses to countries involved in goat farming especially in Africa, Asia and the Middle East. The disease is one of the mycoplasmal infections resulting in significant losses in almost 40 countries, and morbidity and mortality can be as high as 100%, especially in exotic breeds. In naive and native herds, 100% morbidity and 80% mortality have been noted. It is estimated that the total yearly cost of CCPP is about US$507 million in endemic areas thus involving major economic losses. Economic losses are both by morbidity, mortality and decline or loss of production performance in addition to costs involved in prevention, control and treatment. Morbidity causes constraints in livestock management, overburdens with costs of treatment, and imposes restrictions on trade or transport. Mortality causes direct loss due to the death of the valuable animals. Diseased animals are usually culled in developed countries, which is not possible in under-developed and developing countries like India. Loss of production performance is severe (Yatoo et al., 2019). 
+As an example, the disease causes huge economic losses to Changpas, native inhabitants of Changthang, Ladakh, India who are traditional Pashmina farmers and are directly dependent (90–100%) on the traditional and nationally important venture-Pashmina farming and contribute 80% (45–50 tons) to national output (60 tons) of Pashmina. A loss of around 30% in Pashmina yield in CCPP-affected goats and a benefit-cost ratio of 0.79 in untreated animals against 8.76 in treated animals has been reported (Yatoo et al., 2019).
+
+## Metrics
+
+The disease is included in the World Organisation for Animal Health (WOAH) list of notifiable diseases (WOAH, 2024).
+
+## Multi-Hazard Context
+
+Not Applicable.
+
+## Risk Management
+
+CCPP risk management is via vaccination programmes, vector control, movement control and farm biosecurity (FAO, 2017; Samiullah, 2013).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for contagious caprine pleuropneumonia. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Ministry of Agriculture, Ministry of Livestock; FAO Reference Centres, WOAH Reference Centres,
+ | How is the Hazard Observed/Monitored/Forecast? | Through its global early warning system, FAO has been supporting Members with risk monitoring, assessment and forecasting for animal health threats to enhance preparedness and response to animal health threats:
+- The Global Animal Disease Information System, EMPRES-i+, plays a crucial role in supporting countries with early warning and early detection of animal disease outbreaks. By providing a comprehensive platform for real-time disease tracking, EMPRES-i+, enables monitoring and analysis of animal health threats effectively, collaborating closely with countries and regions on disease information sharing. This supports the dissemination of risk assessments and alerts for evidence-based decision-making.
+- FAO develops and maintains decision support tools that provide risk maps of existing and predicted risks of animal disease emergence, as well as other threats to the agri-food chain.
+- Additionally, FAO collaborates closely with international organizations like WHO and WOAH to verify disease information through integrated mechanisms such as the Epidemic Intelligence from Open Sources (EIOS), the Global Early Warning System (GLEWS+), and the World Animal Health Information System (WAHIS) for WOAH-listed diseases. These collaborations allow for the dissemination of early warning alerts and risk assessments to Members, to enable timely responses to potential outbreaks.FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management

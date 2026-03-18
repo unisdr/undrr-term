@@ -3,3 +3,50 @@ Lightning is a large electrical discharge caused by a thundercloud. It can occur
 Lightning strikes are classified into different types according to their own characteristics. The two most common types are cloud-to-ground lightning and cloud-to-cloud lightning (WMO, 2017).
 - Cloud-to-ground lightning is a lightning discharge between a cumulonimbus cloud and the ground. Of all types of lightning, cloud-to-ground lightning poses the greatest threat to people and facilities on the ground (WMO, 2017). The usual cloud-to-ground lightning has been studied more extensively than other lightning forms because of its practical interest (i.e., as a cause of injury and death, disturbances in power and communication systems, and ignition of forest fires) and because lightning channels below cloud level are more easily photographed and studied with optical instruments (AMS, 2012). Cloud-to-ground lightning can occur as either positively or negatively charged bolts. Positively charged bolts are considerably rare, more powerful (e.g., by an order of magnitude or more), and often can strike miles beyond the parent anvil of the thunderstorm (e.g., these positive strikes are referred to as a 'bolt out of the blue') (NOAA, 2019).
 - Cloud-to-cloud lightning and cloud-to-air discharges are less common than intracloud or cloud-to-ground lightning. All discharges other than cloud-to-ground are often lumped together and called cloud discharges (AMS, 2012; WMO, 2017). Cloud-to-cloud lightning is the discharge between areas of the cloud without the discharge channel reaching the ground. Most of the time, it occurs between oppositely charged portions of the same cloud, but sometimes, it takes place between two separate clouds. Since the discharge channel of cloud-to-cloud lightning may be obscured by the cloud, it may or may not be visible to an observer on the ground. It may, therefore, be surprising to learn that cloud-to-cloud lightning is, in fact, the most frequently occurring type of lightning. It occurs around ten times more often than cloud-to-ground lightning. Cloud-to-cloud lightning does not threaten life and property on the ground. However, this type of lightning occurs in the sky and sometimes passes through the clear air between clouds; therefore, it is of great practical interest to those concerned with the safety of aircraft (WMO, 2017).Ball lightning includes a fireball that sometimes appears after a lightning flash. Its diameter is usually between 10 and 20 cm and rarely attains 1 m. The fireball moves slowly through the air or along the ground, and may be distorted in passing through narrow places and usually vanishes suddenly with a violent explosion (WMO, 1992).
+
+## Drivers
+
+No Information Available
+
+## Impacts
+
+Lightning strikes the earth more than 8 million times per day. The risk of being struck is low, but the consequences of lightning strike injuries are serious. During 2003–2012, lightning caused an average of 35 deaths per year in the United States (CDC, no date). 
+Lightning strikes alone cause numerous fatalities and injuries each year. According to the National Weather Service (NWS), an average of 20-30 people die annually in the United States due to lightning strikes, with many more suffering severe injuries (NOAA, 2023). 
+Lightning affects various sectors including electricity generation, transmission, and distribution; forestry; agriculture; telecommunications; transportation; and tourism and recreation (Mills et al., 2009). Lightning can ignite wildfires and damage electrical grids, resulting in power outages that may last for days (Alpay et al., 2020). In Canada, for example, annual lightning-related damage and disruption costs have previously been estimated between CA$600 million to CA$1 billion, with forestry and electricity damages accounting for over 85% of the total (Mills et al., 2009). 
+More recent studies have also demonstrated the significant lightning-related risks to the forestry sector. Studies of the extratropical forests have shown increasing risks to these forests due to lightning fires. The extratropical forests have experienced high fire-related losses, which in turn also carry long-term climate-related implications due to extratropical forests being of global importance for carbon storage (Janssen et al., 2023).
+
+## Metrics
+
+Lightning is a transient, high-current electric discharge in the atmosphere, typically occurring during thunderstorms. It results from the separation of electric charges within clouds, leading to a rapid release of electrical energy.
+Key Characteristics:
+- Voltage: A typical lightning flash involves a potential difference of about 300 million volts (NOAA, 2024).
+- Current: The peak current of a lightning discharge is approximately 30,000 amperes (NOAA, 2024).
+- Temperature: The temperature within the lightning channel can reach up to 30,000 °C (54,000 °F) (Met Office, 2024).
+- Speed: The return stroke of lightning travels at about one-third the speed of light, which is approximately 100,000 km/s (62,000 miles per second) (Britannica, 2024).
+- Duration: A typical lightning flash lasts about 0.2 seconds, comprising multiple strokes, each lasting a few milliseconds (Britannica, 2024).Lightning poses significant hazards, including fires, structural damage, and risks to life. Its high temperatures can ignite materials, and the immense electrical energy can cause severe injuries or fatalities to living beings.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between lightning and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+To reduce the risk of lightning-related injuries, individuals should seek shelter indoors or in a fully enclosed vehicle during thunderstorms and avoid open fields, tall trees, and bodies of water (CDC, 2023). Governmental authorities can mitigate exposure by implementing early warning systems, closing outdoor venues during lightning threats, and educating communities on lightning safety protocols (NOAA, 2023). Structurally, buildings and critical infrastructure should be equipped with lightning protection systems, including air terminals, grounding conductors, and surge protection devices, as outlined in the NFPA 780 standard (NFPA, 2024). These combined measures significantly lower lightning-related casualties and damage. 
+The Centres for Disease Control and Prevention also provides helpful fact sheets on lightning safety tips, first aid recommendations, lightning strike victim data, information for workers, information for outdoor recreation, information for organised sporting events, information for water activities, and information for pet owners (CDC, 2020). 
+As an example of a National Alerting Parameters, the China Meteorological Administration (2012) has three alerting thresholds and related preventative measures, including: 
+- Yellow: “In 6 hours, there will be thunder & lightning and likely to cause disasters.”
+- Orange: “In 2 hours, the thunder & lightning is either occurring or will occur with a high likelihood, and it’s quite possible to cause disasters or accidents.”
+- Red: “In 2 hours, the thunder & lightning is either occurring or will occur with the highest likelihood; it’s extremely possible to cause disasters or accidents.”
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring lightning. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- Meteorological service that tracks thunderstorms, detect lightning strikes using ground-based networks and satellites, and issue early warnings.
+- Aviation authorities monitoring lightning activity to ensure flight safety and issue alerts for pilots and airports.
+- Health authorities assessing public safety risks, including lightning-related injuries, fatalities, and health system preparedness.
+- Engineers developing lightning protection systems for buildings, power grids, and critical infrastructure.
+- Energy and utility companies monitoring lightning threats to power transmission networks and mitigating outage risks.
+- Land use and urban planners incorporating lightning risk assessments into building regulations and safety standards.
+- Researchers and academics, including atmospheric scientists, studying lightning dynamics, forecasting techniques, and climate impacts on lightning frequency.
+ | How is the Hazard Observed/Monitored/Forecast? | Lightning is monitored using ground-based detection networks, weather satellites, and Doppler radar (which can observe conditions conducive to lightning forecasting). Ground-based detection networks can detect lightning strikes in real-time, providing location, intensity, and frequency data. Meteorologists use this information to include the risk of lightning strikes within their thunderstorm forecasts, advisories, and warnings. Advancements in lightning research and weather modelling help improve predictions, reducing risks for aviation, outdoor activities, and infrastructure.

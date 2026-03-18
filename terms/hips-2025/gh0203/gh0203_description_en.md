@@ -1,2 +1,32 @@
 The following terms may be considered sub-types of pyroclastic density currents (PDCs): pyroclastic flow, block-and-ash flow, pumice flow, lateral blast, pyroclastic surge, pyroclastic current. The pyroclastic flow and surge are two end members (dense and dilute end, respectively). The term 'ignimbrite' is commonly used as a general term describing pumice- and ash-rich PDC deposits of very varied volumes (Charbonnier et al. 2025), but has also been used to refer, predominantly, to the large-volume end of this spectrum.
 PDCs are produced from volcanic eruptions across many orders of magnitude, from small-volume events (
+
+## Drivers
+
+Pyroclastic density currents are gravity-driven resulting from lava dome collapse (see GH0201) or collapse of an explosive eruption column.
+
+## Impacts
+
+PDCs can kill all living things and destroy structures by abrasion, impact, burial and heat. Between 1500 and 2017 AD, PDCs were the most deadly of all volcanic hazards: there were 102 fatal incidents and 59,958 fatalities caused directly by PDCs. 50% of PDC fatalities were recorded up to 10 km from a volcano and 90% up to 20 km (Brown et al., 2017). The 1883 eruption of Krakatau volcano (Indonesia) resulted in PDC fatalities up to 80 km from the volcano, aided by the passage of PDCs over the sea (Carey et al., 1996). 
+Impacts on built structures rely on few empirical damage data (Cole et al., 2025 and references therein) but high-energy PDCs can sweep away buildings, with building debris then acting as missiles within the current. Dense PDCs can bury buildings and destroy their openings (windows, doors) and, dilute low-energy PDCs, with dynamic pressures of a few kilopascals or less, can cause moderate to heavy damage to buildings and initiate fires due to embers carried within the current. 
+Deaths commonly result from thermal injury (including laryngeal and pulmonary oedema), asphyxiation and impact or blast trauma. Survivors of PDC inundation are more likely for short duration, slow-moving, lower temperature dilute PDCs , or those on the periphery of the flow, and for people afforded some degree of protection from the heat of the moving surge through clothing or shelter. Survivors can suffer from severe burn injuries requiring specialist treatment. 
+Indirect casualties can include accidents, for example, related to evacuation or unsafe driving conditions, heart attacks and cascading hazards such as fires, famine and disease. Indirect deaths can dwarf the number of direct deaths (Brown et al., 2017).
+
+## Metrics
+
+Modelling pyroclastic density currents (PDCs) is complex due to their heterogeneous composition, three-dimensional flow over complex terrain, and the unpredictable nature of their generation and evolution. Extensive numerical modelling of PDCs has been conducted over recent decades, to better understand PDCs and quantify their hazard (Sulpizio et al., 2014). Most past efforts have focused on simulating either the dense basal (e.g., Patra et al., 2005) or the dilute upper part of PDCs (e.g., Bursik and Woods, 1996), but several multiphase flow models have also been presented (e.g., Suzuki et al., 2005).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between pyroclastic density currents and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+As with other volcanic hazards, a combination of probabilistic volcanic hazard assessment and risk assessment combined with effective communication among scientists, emergency managers, local communities and other stakeholders can lead to effective management of risk. For example, In Japan, large SABO dams have been built to try and remove the heavier debris, hence energy of the flow as it moves down the volcano. Where SABO dams exist, it is possible to observe and monitor the PDC using expensive surveillance. 
+High resolution (spatial and temporal) monitoring of lava-dome extrusion rates, and topography, can enable dome collapse PDCs to be anticipated, resulting in timely evacuation. Probabilistic volcanic hazard assessments of PDCs are increasing in number and methods are improving.
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring pyroclastic density currents. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Volcano Observatories monitor precursory activity that could lead to PDC hazards associated with lava domes or explosive eruptions (including but not limited to ground shaking, ground fracturing, deformation, and volcanic gas emissions). Volcano Observatories issue warnings and, in association with civil protection and emergency management organizations, recommendations. 
+ | How is the Hazard Observed/Monitored/Forecast? | PDCs are hard to forecast, however, monitoring of lava-dome extrusion rates, and topography, can enable dome collapse PDCs to be anticipated. Hazard maps for PDCs are generated based on deposits from previous eruptions and numerical modeling which can inform likely pathways for PDCs.

@@ -1,2 +1,36 @@
 Similar in motion to a seesaw, a seiche is a standing wave in which the largest vertical oscillations are at each end of a body of water with very small oscillation at the ‘node’, or centre point, of the wave. Standing waves can form in any enclosed or semienclosed body of water, from a massive lake to a small coffee cup (NOAA, 2018).
 The graphic shows a standing wave (black) depicted as the sum of two propagating waves travelling in opposite directions (blue and red) (NOAA, 2018).
+
+## Drivers
+
+Seiches are typically caused when strong winds and rapid changes in atmospheric pressure push water from one end of a body of water to the other. When the wind stops, the water rebounds to the other side of the enclosed area. The water then continues to oscillate back and forth for hours or even days. Earthquakes, tsunamis, or severe storm fronts may cause seiches along ocean shelves and ocean harbours (NOAA, 2018).
+
+## Impacts
+
+Lake Erie is known for seiches, especially when strong winds blow from southwest to northeast. These have caused a number of notable events: in 1844, a 22-foot seiche breached a 14-foot-high sea wall killing 78 people and damming the ice to the extent that Niagara Falls temporarily stopped flowing; and as recently as 2008, strong winds created waves 12 to 16 feet high, leading to flooding near Buffalo, New York (NOAA, 2018). 
+Another example is Lake Pontchartrain, Louisiana, which is known to routinely form small seiches after the passage of afternoon squall lines during summer (NOAA, 2018).
+
+## Metrics
+
+Not applicable.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between seiches and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+No Information Available
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring seiches. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- National, subnational, and local disaster management agencies responsible for monitoring seiche risks, issuing alerts, and coordinating emergency response efforts.
+- Meteorological services and oceanographic organizations tracking wind patterns, atmospheric pressure changes, and weather conditions that influence seiche formation.
+- Hydrological services monitoring lake and reservoir water levels, wave oscillations, and sudden changes in water movement.
+- Maritime and naval safety authorities monitoring water body stability and issuing advisories for shipping, port operations, and coastal communities.
+- Energy and utility companies assessing risks to hydropower plants, dam safety, and water intake systems from seiche-related flooding.
+- Researchers and academics, including hydrodynamic and climate scientists, studying seiche formation, forecasting models, and climate change impacts.
+- Environmental organizations and conservation groups advocating for sustainable water resource management and shoreline protection to mitigate seiche effects.
+ | How is the Hazard Observed/Monitored/Forecast? | Seiches are monitored using water level sensors and remote sensing tools to detect sudden oscillations in lakes, reservoirs, and coastal waters. Scientists analyse wind speed, atmospheric pressure shifts, and seismic activity to predict seiche formation. Hydrodynamic models simulate water movement, helping forecasters issue warnings for potential flooding and infrastructure damage. Early alerts support maritime safety, dam management, and shoreline protection efforts.

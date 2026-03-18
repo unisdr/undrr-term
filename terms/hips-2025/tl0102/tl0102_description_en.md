@@ -2,3 +2,32 @@ A data breach in cybersecurity refers to an incident where sensitive, protected,
 Data breaches manifest in various forms, such as unauthorized access to databases, interception of data in transit, or insider threats. Personal data breaches compromise personally identifiable information (PII), such as names, addresses, social security numbers, and financial details, leading to identity theft and privacy violations. Non-personal data breaches pertain to the exposure of proprietary business information, intellectual property, or other sensitive organizational data, potentially causing financial losses and competitive disadvantages.
 Data breaches can escalate to national hazards when they target critical infrastructure, government agencies, or large-scale data repositories. A precedent is the 2015 data breach of the U.S. Office of Personnel Management, where sensitive information of over 21 million federal employees was compromised, posing significant risks to national security and intelligence operations (Koerner, 2016). In 2022, 1,774 data breaches affected more than 392 million individuals worldwide, exposing legally protected information that identified people accessing services across sectors like finance, healthcare, and social services. These data breaches also have a significant economic impact, with their costs increasing by over 20% annually, now accounting for 4-6% of the global GDP (WEF, 2023).
 The human factor is the most prevalent vulnerability, accounting for 68% of breaches linked to unintentional human actions. Social engineering tactics often deceive individuals into clicking malicious links or sharing sensitive information, which can then be exploited (Verizon, 2024).
+
+## Drivers
+
+Lack of cybersecurity investment, Human error, Third-party risk, Increasing attack surface via APIs. Future breaches are likely to focus on major tech companies that handle large customer bases and significant amounts of sensitive data. This increased targeting stems from factors such as the widespread use of APIs, the growth of data digitization, and undetected zero-day vulnerabilities.
+
+## Impacts
+
+In 2023, the landscape of global data breaches significantly intensified from previous years, including a 72% increase in the number of data compromises over the previous high in 2022 (WEF, 2024). 
+Despite the rise in breaches, breach notifications are becoming more unclear. In 2022, 66% of public notices in the United States did not provide information on the affected victims or the specifics of the attack, mainly due to the lack of national privacy laws. Additionally, post-breach services, such as credit monitoring, often fail to align with the recommended steps to reduce the risk of future exposures and breaches (WEF, 2023).
+
+## Metrics
+
+Not available.
+
+## Multi-Hazard Context
+
+The consequences of data breaches can be severe, leading to financial losses, reputational damage, legal and regulatory implications, operational disruption, and harm to individuals (identity theft, privacy violations etc) or organisations. Data breaches can expose organisations and individuals to further hazards such as increased cybersecurity threats e.g. malware, data manipulation (disrupting operations/triggering misinformation etc.), and supply chain disruption (to third-party vendors and partners resulting from a cascade of security issues across interconnected systems).
+
+## Risk Management
+
+To effectively address and mitigate these risks, organizations should take proactive steps to protect consumer information and define clear, actionable key performance indicators. Companies should be encouraged to implement customer multi-factor authentication services and collaborate to establish industry standards. Insurers and regulators can promote awareness and reduction of data breaches by offering incentives to organizations that prioritize consumer data protection and enterprise security. Cyber insurance can support this approach by providing lower premiums, free pre-breach services, and ongoing underwriting that adapts to changing threats and evolving cyber risk management practices. 
+The most appropriate strategy to mitigate the risk of a data breach depends on how the attack is carried out. 
+- Credential Theft Attacks: Implementing strong password policies and multi-factor authentication (MFA), alongside using password managers and regularly updating credentials (Kost, 2024). 
+- Phishing Attacks: Conducting regular employee training and awareness programs and Implementing email security measures like anti-spoofing and encryption. 
+- Vulnerability Exploitation: Maintaining a robust patch management system, conducting regular vulnerability assessments and penetration testing, and Implementing network segmentation to isolate critical systems.
+
+## Monitoring and Early Warning
+
+Not available

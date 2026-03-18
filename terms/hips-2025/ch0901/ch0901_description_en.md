@@ -3,3 +3,35 @@ Bases are chemical species that have an available pair of electrons capable of f
 Lewis acids are electron-pair acceptors that are able to react with a Lewis acid base to form a Lewis adduct, by sharing the electron pair donated by the Lewis base. (IUPAC, 2014)
 𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 𝐴𝐴𝐴𝐴𝐿𝐿𝐴𝐴 + 𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 𝐵𝐵𝐵𝐵𝐿𝐿𝐿𝐿 → 𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴
 Acids and bases can form conjugate acid-base pairs, where the acid formed on protonation of a base is called the conjugate acid, and the base is the conjugate base. The conjugate acid always carries one unit of positive charge more than the base, but the absolute charges of the species are immaterial to the definition. (IUPAC, 2014h) Strong acid-base reactions are typically exothermic - the new bond formed between the proton and the base is stronger than the bond that was broken to release the proton, therefore the released energy raises the temperature of the surroundings. The strength of an acid is inversely proportional to the strength of its conjugate base - i.e. the conjugate base of a strong acid must be a weak base; and the conjugate base of a weak acid must be a strong base. In the reaction of an acid with a base, the equilibrium generally favours the weather acid and base. (Wade and Simek, 2022)
+
+## Drivers
+
+Hazard Drivers of corrosive substances, such as strong acids and bases, largely result from their widespread use in industry, as well as in laboratories, for chemical manufacture and synthesis. Industrial processes often use large amounts of acids or bases, such as sulfuric acid, sodium hydroxide and potassium hydroxide, which can lead to hazardous situations. Strong bases are also used in water treatment processes to adjust pH levels and neutralise acidic wastes.
+
+## Impacts
+
+Impacts of strong acids include improper disposal or accidental release, which can lead to soil and water contamination, harming aquatic life and ecosystems, as well as acid rain (HIP MH0033), which is primarily caused by sulfuric and nitric acids - release of sulphur and nitrogen oxides can also lead to air pollution (HIP MH0018; HIP EN0001; HIP EN0002). (EPA, 2024) Acid rain (HIP MH0033) can lead to the corrosion of metals and infrastructure, resulting in leaks, structural failures, and costly repairs. Other impacts include human health risks - coming into contact with strong acids and bases can cause severe chemical burns, skin irritation, eye damage, and respiratory issues. Inhalation of strong acid or strong base vapours can lead to respiratory problems. (NIH, 2022)
+
+## Metrics
+
+Metrics are used to quantify the strength of acids, including their pH, pOH, pKa, and pKb; acidity/ionisation constants (Ka, Kb and Kw); degree of dissociations; and concentrations. pH (equation 1) is a measure of how acidic or alkaline a substance is, ranging (for aqueous solutions) from 0 (strongly acidic) to 14 (strongly basic).
+Equation 1: 𝑝𝑝𝑝𝑝 + 𝑝𝑝𝑝𝑝𝑝𝑝 = 14
+Strong acids have high concentrations of hydronium ions, typically giving low pH values close to zero when fully dissociated in water. The pKa (equation 2) is a measure of the concentration of hydrogen ions when there are equal concentrations of both the ionised and unionised form of a substance. Strong acids also tend to have pKa values below zero due to their equilibrium lying to the far right, resulting in negligible concentrations of undissociated acid. Whereas strong bases have high concentrations of hydroxide ions, typically giving high pH values close to 14 when fully dissociated in water. The pOH is a measure of the concentration of hydroxide ions in a solution. Strong bases also tend to have pOH values close to zero.
+Equation 2: 𝑝𝑝𝐾𝐾𝑎𝑎+ 𝑝𝑝𝐾𝐾𝑏𝑏 = 𝑝𝑝𝐾𝐾𝑤𝑤
+The acidity constant (Ka equation 3) is another equilibrium constant for splitting off a proton from a charged or uncharged acid. This metric is usually very high for a strong acid, indicating complete dissociation. (IUPAC, 2014) Due to this dissociation, the concentrations are also typically very high.
+Equation 3: 𝐾𝐾𝑎𝑎𝐾𝐾𝑏𝑏 = 𝐾𝐾𝑤𝑤
+The ionisation constant is another equilibrium constant for quantifying the extent to which a base ionises in solution. This metric is usually very large for a strong base, indicating complete ionisation. The degree of dissociation is how much the strong base completely dissociates into ions when dissolved in water, producing hydroxide ions. Acids can be neutralised by strong bases, producing water and salt during the vigorous reaction. This is due to the high concentration of hydroxide ions, giving an overall high concentration for a strong base.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between strong acids & strong bases and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Strategies include implementing strict safety protocols, providing adequate personal protective equipment (PPE), and conducting thorough employee training on the safe handling and storage of strong acids. (OSHA, 2024) Examples of safety implementations include installing fume hoods, ventilation systems, and acid-resistant materials that can minimise exposure and prevent accidental releases. Ensuring the proper disposal of chemicals through the treatment and disposal methods that minimise environmental impact. Adhering to regulatory requirements and industry standards can also mitigate risks. Further risk management strategies include developing comprehensive emergency response plans, including procedures for spill containment, evacuation, and medical treatment. (NFPA, 2020) In the case of a disaster, using spill kits and flushing the strong acids with plenty of water is advised.
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring strong acids & strong bases. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Regulatory agencies; health and safety agencies; fire services; manufacturers of chemicals provide material safety data sheets
+ | How is the Hazard Observed/Monitored/Forecast? | Sensors; monitoring and alarm systems; preventative maintenance and inspection

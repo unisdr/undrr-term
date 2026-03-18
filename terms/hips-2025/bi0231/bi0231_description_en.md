@@ -8,3 +8,48 @@ The incubation period for acute Q fever ranges from two days to six weeks, with 
 Animal
 Q fever is a widespread disease caused by the bacteria Coxiella burnetii, which can infect mammals e.g. cattle, sheep, goats, donkeys, camels, fowl, dogs, cats, birds, reptiles and arthropods. Animal vaccination has been used in areas where infections are common. Most countries maintain a list of approved veterinary vaccines for use. For specific regulations, consult the country's veterinary authorities.
 Q fever is mostly associated with sporadic abortions or outbreaks of abortions and dead or weak offspring in cattle, sheep, and goats. Infection persists for several years. Sheep, goats and cows are mainly subclinical carriers but can shed bacteria in various secretions and excreta. Q fever is also transmitted by inhalation or dust contaminated with infected animal secreta or excreta. Q fever can also be spread by ticks which pass the bacteria from an infected to a susceptible animal, whose faeces contain the bacteria thus also contaminating the environment. Humans generally acquire infection through air-borne transmission from animal reservoirs, especially from domestic ruminants, but other domestic and wildlife animals (pets, rabbits, birds, etc.) can be involved. C. brunetii displays different morphological forms in its developmental cycle, and some of the forms can survive extracellularly and even accumulate in the environment (FAO, 1994; WOAH, 2024a).
+
+## Drivers
+
+Human
+Introduction of infected animals, contaminated environment, dust, consumption of contaminated products
+Animal
+introduction of infected animal, contaminated environment, dust, consumption of contaminated products
+
+## Impacts
+
+Human
+Abortions late in the pregnancy, infect humans 
+Anybody who works with cattle, sheep or products produced from them is at an increased risk of catching Q fever, including the following occupations: farm workers, slaughterhouse workers, workers in meat-packing plants, veterinarians and wool workers. Severe disease has been reported in the foetus; therefore, pregnant women are at risk of passing the infection on to their babies. The disease can also be particularly severe in newborn babies. People who have problems with their heart valves are at increased risk of contracting endocarditis (inflammation of the inner lining of the heart) (ECDC, no date). 
+Animal
+Abortions late in the pregnancy, infect humans
+
+## Metrics
+
+Q fever was made a nationally notifiable disease in the United States in 1999. CDC compiles the number of cases reported by state and local health departments and reports national trends. The number of Q fever cases reported to CDC increased, from 19 cases reported in 2000 to 173 cases reported in 2007. In 2008, the Q fever case definition was changed to allow for the reporting of chronic and acute Q fever separately. During 2008-2013 the number of reported cases decreased slightly, relative to 2007, returning to high levels in 2014. In 2019, 178 acute Q fever cases were reported, as well as 34 chronic Q fever cases (CDC, 2024b).
+For 2019, 1 069 cases of Q fever were reported in the European Union/European Economic Area (EU/EEA), 958 (90%) of which were confirmed (ECDC, 2021).
+
+## Multi-Hazard Context
+
+Many factors influence Q fever outbreaks which can manifest in a variety of settings and with differing epidemic patterns. Q fever is commonly perceived as a hazard to persons working with livestock, but an absence of animal contact does not preclude infection due to the marked capacity for indirect transmission, leading to the likely underestimation of risk for outbreaks in urban communities. Lack of suspicion for Q fever in these populations can lead to difficulties in outbreak recognition and consequently delay a response (Tan et al., 2023).
+
+## Risk Management
+
+Human
+ECDC recommends good hygiene practices on premises dealing with animals—particularly with sheep, cattle and goats—will help prevent transmission of the bacteria that causes Q fever. As the disease can be transmitted to humans through contaminated milk, pasteurisation of milk and milk products will help prevent infection (ECDC, no date). 
+Additionally, other risk management can in summary include movement control, treatment with antimicrobials, tracing back/forward and vaccination.
+Animal
+Animal vaccination has been used in areas where infections are common. More generally, sanitary measures to remove after-birth and birth fluids, and to clean and disinfect areas where animals have given birth can prevent the disease from spreading (WOAH, 2024a; 2024b; no date). 
+Other actions include movement control, treatment with antimicrobials, tracing back/forward, and vaccination (prevention).
+
+## Monitoring and Early Warning
+
+The table below offers an overview of monitoring for Q fever in animals. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | WHO, Ministry of Health, Ministry of Agriculture, Ministry of Livestock, FAO Reference Centres, WOAH Reference Centres
+ | How is the Hazard Observed/Monitored/Forecast? | Through its global early warning system, FAO has been supporting Members with risk monitoring, assessment and forecasting for animal health threats to enhance preparedness and response to animal health threats:
+- The Global Animal Disease Information System, EMPRES-i+, plays a crucial role in supporting countries with early warning and early detection of animal disease outbreaks. By providing a comprehensive platform for real-time disease tracking, EMPRES-i+, enables monitoring and analysis of animal health threats effectively, collaborating closely with countries and regions on disease information sharing. This supports the dissemination of risk assessments and alerts for evidence-based decision-making.
+- FAO develops and maintains decision support tools that provide risk maps of existing and predicted risks of animal disease emergence, as well as other threats to the agri-food chain.
+- Additionally, FAO collaborates closely with international organizations like WHO and WOAH to verify disease information through integrated mechanisms such as the Epidemic Intelligence from Open Sources (EIOS), the Global Early Warning System (GLEWS+), and the World Animal Health Information System (WAHIS) for WOAH-listed diseases. These collaborations allow for the dissemination of early warning alerts and risk assessments to Members, to enable timely responses to potential outbreaks.FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country's risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, no date).

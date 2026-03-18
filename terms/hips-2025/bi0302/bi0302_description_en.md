@@ -7,3 +7,33 @@ ASF is present in wild and/or domestic pigs in regions of Asia, Europe and Afric
 There are no commercial vaccines available for ASF. Some vaccine trials have been implemented in the Philippines and Vietnam. Most countries maintain a list of approved veterinary vaccines for use. For specific regulations, consult the country's veterinary authorities.
 ASF is one of the World Organisation for Animal Health (WOAH) listed diseases (WOAH, 2024b).
 The disease is not a zoonosis, i.e. it does not infect humans.
+
+## Drivers
+
+Lack of biosecurity, swill feeding and transport of live pigs and uncooked port products, presence of the competent vector ticks of the genus Ornithodoros.
+ASF easily spreads in areas experiencing storms, flooding, civil conflict, insecurity, displacement of people, or a greater need to remain mobile, due to difficulties in maintaining high biosecurity. Pork products for food aid may introduce ASF to ASF-free areas when uncooked food waste is fed to raise pigs
+
+## Impacts
+
+Death of infected animals, spread of infection and trade ban. The disease is the cause of major economic losses, threatens food security and safe trade, and challenges sustained swine production in affected countries.
+
+## Metrics
+
+An estimated quarter of the global domestic pig population has been decimated by the disease, causing food insecurity and economic losses on an unprecedented global scale (Dixon et al., 2019).
+
+## Multi-Hazard Context
+
+Pork meat is one of the primary sources of animal proteins, accounting for more than 35% of the global meat intake. Hence, this disease poses a serious problem for food security worldwide (WOAH, no date). 
+ASF continues to spread worldwide, threatening pig health and welfare. The disease has reached multiple countries across Asia, the Caribbean, Europe, and the Pacific, affecting both domestic and wild pigs (WOAH, no date). 
+This disease is also a concern for biodiversity and the balance of ecosystems, as it affects not only domestic farmed pigs but also wild boars, including native breeds (WOAH, no date).
+
+## Risk Management
+
+Measures include depopulate infected herds, movement control, improving biosecurity at farms. A One Health approach to risk management will help address interconnected factors contributing to risk and promoting collaboration across sectors while enhancing surveillance and early warning through integrating human, animal, and environmental health.
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for African swine fever. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | FAO Reference Centres, WOAH Reference Centres,
+ | How is the Hazard Observed/Monitored/Forecast? | FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management

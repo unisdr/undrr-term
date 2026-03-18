@@ -21,3 +21,51 @@ There are no effective vaccines commercially available against Trypanosomes.
 • Cyclical transmission, during which the trypanosomes actively multiply in the vectors, occurs in sub-Saharan Africa through the intermediary of tsetse flies (Glossina spp.) (Cecchi et al., 2024). Mechanical transmission can be caused by various blood-sucking insects such as flies of the family Tabanidae (horse flies) and Stomoxys spp. (Diall et al., 2017).
 • Animals can host the human pathogen parasites, especially T. brucei rhodesiense, of which domestic and wild animals are the most important reservoirs. Animals can also be infected with T. brucei gambiense and possibly act as a reservoir to some extent. However, the precise epidemiological role of the animal reservoir in the gambiense form of the disease is not yet well known (WHO, 2023).
 • Trypanosomosis (tsetse-transmitted) is one of the World Organisation for Animal Health (WOAH) Listed diseases (WOAH, 2024)
+
+## Drivers
+
+Human
+The disease is mostly transmitted through the bite of an infected tsetse fly but there are other ways in which people are infected. These include mother-to-child infection (the trypanosome can cross the placenta and infect the foetus); mechanical transmission through other blood-sucking insects, however, it is difficult to assess its epidemiological impact; accidental infections in laboratories due to pricks with contaminated needles; and transmission of the parasite through sexual contact has been reported once (WHO, 2023).
+Animal
+Presence/introduction of Trypanosoma infected tsetse fly.
+
+## Impacts
+
+Human
+Sleeping sickness threatens millions of people in 36 countries in sub-Saharan Africa. Many of the affected populations live in remote rural areas with limited access to adequate health services, which complicates the surveillance and therefore the diagnosis and treatment of cases. In addition, displacement of populations, war and poverty are important factors that facilitate transmission (WHO, 2023). 
+Symptoms of the disease in the first stage start when the trypanosomes multiply in subcutaneous tissues, blood and lymph. This is also called the haemo-lymphatic stage, which entails bouts of fever, headaches, enlarged lymph nodes, joint pains and itching. In the second stage the parasites cross the blood-brain barrier to infect the central nervous system. This is knownas the neurological or meningo-encephalic stage. In general, this is when more obvious signs and symptoms of the disease appear: changes in behaviour, confusion, sensory disturbances and poor coordination. Disturbance of the sleep cycle, which gives the disease its name, is an important feature. Without treatment, sleeping sickness is considered fatal although rare cases of self-cure have been reported (WHO, 2023).
+Animal
+Mortality and morbidity of animals and humans, spread of infection.
+
+## Metrics
+
+In 1998, almost 40,000 cases of trypanosomiasis were reported, but estimates were that 300,000 cases were undiagnosed and therefore untreated. During the last epidemic, the prevalence reached 50% in several villages in Angola, the Democratic Republic of Congo, and South Sudan. Sleeping sickness was the first or second greatest cause of mortality in those communities. After continued control efforts, HAT occurrence reached a historic low under 2,000 cases in 2017 and under 1,000 cases in 2018, remaining below that threshold as of 2022. The population at risk estimated for the period 2016–2020 was 55 million people, with only 3 million at moderate-high risk (WHO, 2023).
+
+## Multi-Hazard Context
+
+: Sleeping sickness affects people in rural areas of African countries (CDC, 2025). People at higher risk include:
+- Hunters
+- Villagers with infected cattle herds
+- Tourists visiting and others working in game parksTsetse flies that spread sleeping sickness live only in some African countries. Most flies in these rural areas are not carrying the parasite that causes sleeping sickness. However, the more often that you are bitten, the more you are at risk of infection (CDC, 2025).
+
+## Risk Management
+
+Human
+New WHO treatment guidelines for gambiense-HAT were issued in 2019 (WHO, 2023). The WHO neglected tropical diseases road map targeted its elimination as a public health problem by 2020 and interruption of transmission (zero cases) for 2030 (WHO, 2023). 
+The WHO and its partners provide support and technical assistance to national control programmes and provide the anti- trypanosome medicines free of charge to endemic countries through public-private partnerships with Sanofi (pentamidine, melarsoprol, eflornithine, fexinidazole) and Bayer HealthCare (suramin, nifurtimox) (WHO, 2021 a). 
+In 2008, the WHO launched the Atlas of human African Trypanosomiasis initiative to map at village-level all reported cases (WHO, no date b). This initiative is jointly implemented with the Food and Agriculture Organization of the United Nations (FAO) within the PAAT framework (FAO, 2021). The PAAT was officially established in November 1997 by the 29th Session of the FAO Conference (Resolution 5/97). The PAAT secretariat includes representatives of the Food and Agriculture Organization of the United Nations (FAO), the International Atomic Energy Agency (IAEA), the World Health Organization (WHO) and the African Union-Interafrican Bureau for Animal Resources (AU-IBAR) (FAO, 2025). Progressive Control Pathways (PCPs) and the related roadmaps are staged, stepwise approaches increasingly used to structure the road to disease reduction and freedom for a range of human and animal diseases, including foot-and-mouth disease (BI0306), peste des petits ruminants (BI0310), brucellosis (BI0202) and rabies (BI0232). The PCP for African Animal Trypanosomosis is developed and promoted by FAO within the framework of PAAT, and in collaboration with IAEA, AU-PATTEC and CIRAD. 
+The Atlas is a dynamic database including geographical and epidemiological data, compiled by the WHO through the contribution of SSNCPs, NGOs and research institutes (WHO, no date b). 
+In 2014, a coordination network for human African trypanosomiasis was established under WHO leadership to ensure strengthened and sustained efforts to eliminate the disease. The stakeholders include national sleeping sickness control programmes, groups developing new tools to fight the disease, international and NGOs, and donors (WHO, 2023). 
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021b). 
+WHO’s Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, 2023).
+Animal
+Disease control for animal trypanosomosis includes treatment with trypanocides, vector control and strengthened surveillance (Diall et al., 2017).
+
+## Monitoring and Early Warning
+
+The table below offers an overview of monitoring for trypanosomiasis and trypanosomosis. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | WHO, Ministry of Health, FAO Reference Centres, WHO Collaborating Centres, WOAH Reference Centres,
+ | How is the Hazard Observed/Monitored/Forecast? | FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021b).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARSs should re-integrate back into the national system (WHO, no date, a).

@@ -8,3 +8,34 @@ A PPR outbreak is an emergency due to its rapid spread and high animal mortality
 Eradicating PPR will increase sustainability, alleviate poverty, improve the resilience of poor pastoralists and their communities, enable them to better cope with other shocks and threats, prevent forced migration and mitigate extremist trends (FAO, no date).
 As an example, Mongolia reported its first-ever PPR outbreaks in sheep and goat populations in September 2016. In the absence of an adequate response by local veterinary services, the disease rapidly spread, devastating rural livelihoods, and disrupting exports and value chains. In December 2016, PPR spilled over to wild antelope species killing up to 60% of the Saiga antelope population, a critically endangered species according to the International Union for Conservation of Nature (IUCN) (FAO, no date).
 PPR is not a zoonotic infection. There is no known risk of human infection with PPR virus (FAO, no date).
+
+## Drivers
+
+PPR easily spreads in areas experiencing civil conflict, resulting in insecurity, displacement of people, loss of assets, and greater need to remain mobile. In such areas, vaccination to raise herd immunity is difficult, and movement (displacement) of susceptible animals spread the disease. The introduction of infected animals to a naive population is another driver (WOAH, 2020)
+
+## Impacts
+
+Death of infected animals, spread of infection, trade ban (WOAH, 2020; 2024b).
+
+## Metrics
+
+Peste des petits ruminants (PPR) is on the list of notifiable diseases. Members are obliged to report cases and outbreaks to the Organisation, according to the Terrestrial Animal Health Code (WOAH, no date).
+
+## Multi-Hazard Context
+
+Peste des petits ruminants (PPR) is a contagious transboundary disease which has severe negative socio-economic impacts on the income of livestock farmers and, in particular, the livelihoods and food security of the most vulnerable rural communities, notably of women. WOAH and the FAO, in their joint strategy for control and eradication of PPR, have set the goal of eradicating the disease by 2030 (WOAH, no date). 
+Peste des petits ruminants (PPR) poses a major threat to food security and livelihoods in around 70 countries. Up to 90 percent of herds are infected, and mortality rates can reach 70 percent. Effective and affordable vaccines that provide lifelong immunity make eradication achievable through targeted vaccination and improved surveillance. The Global Eradication Programme for PPR aims to eliminate the disease by 2030 with an investment of USD 1.9 billion. It promises significant economic benefits and improved food security for millions dependent on small ruminants (FAO, 2025).
+
+## Risk Management
+
+Vaccination program, movement control, improve biosecurity (WOAH, 2020; 2024b). Eradicating PPR is a major advance towards achieving the Sustainable Development Goals (UNDESA, no date). A one-time vaccination can immunise ruminants for life against PPR.
+
+## Monitoring and Early Warning
+
+he section and the table below offer an overview of monitoring for peste des petits ruminants. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Ministry of Agriculture, Ministry of Livestock, FAO Reference Centres, WOAH Reference Centres,
+ | How is the Hazard Observed/Monitored/Forecast? | Through its global early warning system, FAO has been supporting Members with risk monitoring, assessment and forecasting for animal health threats to enhance preparedness and response to animal health threats:
+- The Global Animal Disease Information System, EMPRES-i+, plays a crucial role in supporting countries with early warning and early detection of animal disease outbreaks. By providing a comprehensive platform for real-time disease tracking, EMPRES-i+, enables monitoring and analysis of animal health threats effectively, collaborating closely with countries and regions on disease information sharing. This supports the dissemination of risk assessments and alerts for evidence-based decision-making.
+- FAO develops and maintains decision support tools that provide risk maps of existing and predicted risks of animal disease emergence, as well as other threats to the agri-food chain.
+- Additionally, FAO collaborates closely with international organizations like WHO and WOAH to verify disease information through integrated mechanisms such as the Epidemic Intelligence from Open Sources (EIOS), the Global Early Warning System (GLEWS+), and the World Animal Health Information System (WAHIS) for WOAH-listed diseases. These collaborations allow for the dissemination of early warning alerts and risk assessments to Members, to enable timely responses to potential outbreaks.FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management

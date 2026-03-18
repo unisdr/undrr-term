@@ -1,3 +1,40 @@
 Additional definitions of thaw include:
 To melt a substance, ice for example, by warming it to a temperature greater than the melting point of the substance, or to have frozen contents melted (AMS, 2012).
 To free something from the binding action of ice by warming it to a temperature above the melting point of ice (AMS, 2012). A warm spell when ice and snow melt, for example, 'January thaw' (AMS, 2012).
+
+## Drivers
+
+A spring thaw is when warmer temperatures and resulting snow melt can produce large amounts of runoff in a short period of time, as each cubic foot of compacted snow contains gallons of water. During early spring, frozen land prevents melting snow or rainfall from seeping into the ground. The water then runs off the surface and flows into lakes, streams, and rivers, causing excess water to spill over their banks. The addition of seasonal storms can result in severe spring flooding (US FEMA, no date).
+
+## Impacts
+
+Repetition of freeze/thaw episodes may result in landslides, rockfalls and topples.
+
+## Metrics
+
+Not applicable.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between thaw and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+No information Available
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring thaw. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- National, subnational, and local disaster management agencies responsible for monitoring thaw risks, issuing warnings, and coordinating emergency response efforts.
+- Meteorological services tracking temperature fluctuations, snowmelt rates, and atmospheric pressure changes leading to thaw events.
+- Hydrological services monitoring ice and snowmelt, river discharge, and potential flooding caused by rapid thawing.
+- Geophysical and atmospheric research institutions studying permafrost thawing, seasonal temperature variations, and climate change effects on frozen ground stability.
+- Space and remote sensing agencies to observe snow cover, ice extent, and land surface temperature changes.
+- Agricultural and food security agencies assessing the impact of thawing on soil stability, crop growth, and irrigation.
+- Transportation and infrastructure agencies evaluating risks to roads, railways, and bridges from freeze-thaw cycles that weaken structures and cause damage.
+- Energy and utility companies monitoring power lines, pipelines, and hydropower reservoirs for risks associated with thaw-related instability.
+- Urban planning and environmental agencies integrating thaw risk assessments into land use planning, drainage system designs, and climate adaptation measures.
+- Health authorities evaluating public health risks related to thaw-induced flooding, and waterborne diseases.
+- Researchers and academics, including climatologists, hydrologists, and geologists, studying thawing processes, permafrost degradation, and climate adaptation strategies.
+ | How is the Hazard Observed/Monitored/Forecast? | Thaws are monitored using satellites, weather stations, and ground sensors to track rising temperatures, snowmelt, and soil moisture changes. Meteorologists analyse temperature trends using weather models to predict thawing events. Hydrologists use models to assess snow and ice melt rates, helping forecasters issue early warnings if required. These warnings assist farmers, infrastructure managers, and emergency responders in preparing for potential flooding, landslides, and road damage caused by rapid thawing.

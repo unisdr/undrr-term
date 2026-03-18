@@ -7,3 +7,58 @@ WHO (2024) identifies waste and by-products as covering a diverse range of mater
 - pharmaceutical and cytotoxic waste: pharmaceuticals that are expired or no longer needed; items contaminated by, or containing, pharmaceuticals. Cytotoxic waste containing substances with genotoxic properties, e.g. waste containing cytostatic drugs (often used in cancer therapy); genotoxic chemicals;
 - radioactive waste: such as products contaminated by radionuclides including radioactive diagnostic material or radiotherapeutic materials; and
 - non-hazardous or general waste: waste that does not pose any particular biological, chemical, radioactive or physical hazard (WHO, 2024).High-income countries generate on average up to 0.5 kg of hazardous waste per hospital bed per day, while low-income countries generate on average 0.2 kg. However, health-care waste is often not separated into hazardous or non-hazardous wastes in low-income countries making the real quantity of hazardous waste much higher (WHO, 2024).
+
+## Drivers
+
+Health-care waste contains potentially harmful microorganisms that can infect hospital patients, health workers and the public. Other potential hazards may include drug-resistant microorganisms which spread from health facilities into the environment and bioaccumulation of toxins.
+
+## Impacts
+
+Adverse health outcomes associated with health care waste and by-products also include: 
+- sharps-inflicted injuries;
+- toxic exposure to pharmaceutical products, in particular, antibiotics and cytotoxic drugs released into the surrounding environment, and to substances such as mercury or dioxins, during the handling or incineration of health-care wastes.
+- chemical burns arising in the context of disinfection, sterilization or waste treatment activities;
+- air pollution arising as a result of the release of particulate matter during medical waste incineration;
+- thermal injuries occurring in conjunction with open burning and the operation of medical waste incinerators;
+- radiation burns; and
+- spread of antimicrobial resistance through unsafe storage, treatment and disposal of pharmaceutical waste. Worldwide, an estimated 16 billion injections are administered every year. Not all needles and syringes are disposed of safely, creating a risk of injury and infection and opportunities for reuse. Injections with contaminated needles and syringes in low- and middle-income countries have reduced substantially in recent years, partly due to efforts to reduce reuse of injection devices (WHO, 2024). Despite this progress, in 2010, unsafe injections were still responsible for as many as 33 800 new HIV infections, 1.7 million hepatitis B infections and 315 000 hepatitis C infections (Peplin et al, 20141). A person who experiences one needle stick injury from a needle used on an infected source patient has risks of 30%, 1.8%, and 0.3% respectively of becoming infected with HBV, HCV and HIV. 
+Additional hazards occur from scavenging at waste disposal sites and during the handling and manual sorting of hazardous waste from health-care facilities. These practices are common in many regions of the world, especially in low- and middle-income countries. The waste handlers are at immediate risk of needle-stick injuries and exposure to toxic or infectious materials.
+
+## Metrics
+
+Classification of healthcare waste (HCW) that can inform the metrics is shown in the Basel Convention (Basel Convention and WHO, 2005):
+Healthcare waste for the purpose of transboundary movements under the Basel Convention can be classified with the codes Y1 (Clinical wastes from medical care in hospitals, medical centres and clinics) or Y2 (Wastes from the production and preparation of pharmaceutical products, or Y3 (Wastes pharmaceuticals, drugs and medicines), among others.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between health-care waste and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+According to WHO/UNICEF, in 2021, only 61% of hospitals had basic health-care waste services. The situation is far worse in fragile contexts, where based on 2023 data, only 25% of health facilities had basic health care waste management services (WHO/UNICEF, 2024). 
+Treatment and disposal of health-care waste may pose health risks indirectly through the release of pathogens and toxic pollutants into the environment (WHO, 2024). Issues identified include: 
+- The disposal of untreated health-care wastes in landfills can lead to the contamination of drinking, surface, and ground waters if those landfills are not properly constructed.
+- Minimization of health-care waste should be a priority. This will significantly reduce the amount of waste that needs to be handled and treated. Waste minimization actions include green procurement and selecting products where shipping is minimized and with less and ecological packaging, switching to re-usables when safe and viable, only ordering/receiving pharmaceuticals based on documented need, and recycling common items including plastic, paper and cardboard.
+- The treatment of health-care wastes with chemical disinfectants can result in the release of chemical substances into the environment if those substances are not handled, stored and disposed in an environmentally sound manner.
+- Incineration of waste is widely practiced, but inadequate incineration or the incineration of unsuitable materials results in the release of pollutants into the air and in the generation of ash residue. Incinerated materials containing or treated with chlorine can generate dioxins and furans, which are human carcinogens and have been associated with a range of adverse health effects. Incineration of heavy metals or materials with high metal content (in particular lead, mercury and cadmium) can lead to the spread of toxic metals in the environment.
+- Only modern incinerators operating at 850–1100 °C and fitted with special gas-cleaning equipment are able to comply with the international emission standards for dioxins and furans.
+- Alternatives to incineration such as autoclaving, microwaving, steam treatment integrated with internal mixing, which minimize the formation and release of chemicals or hazardous emissions should be given consideration in settings where there are sufficient resources to operate and maintain such systems and dispose of the treated waste (WHO, 2024). Several reasons exist for inadequate health-care waste services. These include limited legal frameworks (e.g. policies, regulation, guidelines), lack of awareness about the health hazards related to health-care waste, inadequate training in proper waste management, absence of waste management and disposal systems, insufficient financial and human resources and the low priority. Many countries either do not have appropriate regulations, or do not monitor and enforce them (WHO, 2024). 
+The management of health-care waste requires increased attention and diligence to avoid adverse health outcomes associated with poor practice, including exposure to infectious agents and toxic substances (WHO, 2024). Safe management of health care waste involves three key principles: reduction of unnecessary wastes, separation of general waste from hazardous wastes, and waste treatment that reduces risks to health workers and community. Safe waste management is a cross-cutting issue and while it is being addressed as part of the global activities on WASH in health care facilities, there are a number of ongoing collaborations with teams working on infection prevention and control, injection safety, immunizations, chemicals, energy, and emergencies (WHO, no date). 
+WHO activities in this area include: 
+- developing technical guidance materials for assessing the quantities and types of waste produced in different facilities;
+- creating national policies and action plans, and developing national health-care waste management guidelines; and
+- building capacity at national level to enhance the way health-care waste is dealt with in low-income countries (WHO, no date). WHO (2024) consider that the key elements in improving health-care waste management are: 
+- promoting practices that reduce the volume of wastes generated and ensure proposer waste segregation;
+- developing strategies and systems along with strong oversight and regulation to incrementally improve waste segregation, destruction and disposal practices with the ultimate aim of meeting national and international standards;
+- where feasible, favouring the safe and environmentally sound treatment of hazardous health-care wastes (e.g. by autoclaving, microwaving, steam treatment integrated with internal mixing, and chemical treatment) over medical waste incineration;
+- building a comprehensive system, addressing responsibilities, resource allocation, handling and disposal. This is a long-term process, sustained by gradual improvements;
+- raising awareness of the risks related to health-care waste, and of safe practices; and
+- selecting safe and environmentally friendly management options, to protect people from hazards when collecting, handling, storing, transporting, treating or disposing of waste.
+- Government commitment and support is needed for universal, long-term improvement, although immediate action can be taken locally. WHO developed the first global and comprehensive guidance document, Safe management of wastes from health-care activities, now in its second edition and more recently a short guide that summarizes the key elements as well as guidance on selecting technologies (WHO, 2020) The guide addresses the regulatory framework, planning, waste minimization and recycling, handling, storage and transportation, treatment and disposal options, and training. The document is aimed at health-care facility managers, policy makers, public health professionals and waste experts. 
+In addition, as part of monitoring Sustainable Development Goal 6 on safely managed water and sanitation, the WHO/UNICEF Joint Monitoring Programme regularly publishes data and reports on safe management of health care waste in health-care facilities (WHO/UNICEF, 2024).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring health-care waste. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management. 
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | Regulatory agencies; health and safety agencies; fire services; health services; and manufacturers of chemicals provide material safety data sheets
+ | How is the Hazard Observed/Monitored/Forecast? | Includes waste site sensors; monitoring and alarm systems; preventative maintenance and inspection, surveillance of health care staff and waste handlers

@@ -5,3 +5,38 @@ The United Nations Environment Programme report on Sand and Sustainability (UNEP
 - Primary aggregates consist of crushed rock extracted in hard rock quarries by blasting and crushing, and sand and gravel extracted from pits by excavation and crushing, from lakes, rivers, coastal beaches, or dredged from the sea.
 - Recycled aggregates: crushed rock, sand, and gravel produced by sorting, crushing, and screening of construction and demolition materials.
 - Manufactured aggregates: substitutes for crushed rock, sand, and gravel that are produced from waste from other industries.The environmental and social impacts of sand extraction are issues of global significance. Eroded materials from hard rock sources, sands, and gravels are the unrecognised foundational materials of national economies. They are mined globally, with aggregates accounting for the largest volume of solid material extracted worldwide (UNEP, 2014; 2019).
+
+## Drivers
+
+Lack of monitoring systems, regulatory policies, and environmental impact assessments have led to indiscriminate mining, triggering severe damage to the environment and related ecosystem services (UNEP, 2014). The absence of global monitoring of aggregate extraction contributes to a knowledge gap that translates into a lack of action. As this is a major emerging issue, there is a need for in-depth research (UNEP, 2014).
+
+## Impacts
+
+Sand mining may lead to environmental degradation, including: 
+- Loss of biodiversity: via pollution and direct impacts on the biophysical integrity of ecosystems (UNEP, 2014). Removing significant amounts of material from dynamic environments such as rivers and coasts, or static environments such as quarries, results in widespread environmental change. Marine sand mining via benthic dredging causes changes in water turbidity and leads to a net decline in faunal biomass and abundance (Desprez et al., 2010), or a shift in species composition (UNEP, 2014).
+- Land losses: inland through aggregate extraction and river erosion, and coastal through extraction and erosion. Agricultural production can be affected by the loss of agricultural land from river erosion (UNEP, 2014).
+- Hydrological function: changes in water flows, flood regulation, and marine currents. Removing sediment from rivers causes the river to cut its channel through the bed of the valley floor upstream and downstream of the extraction site. This leads to coarsening of bed material and lateral channel instability (UNEP, 2014).
+- Water supply: mainly through lowering of the water table and pollution. Marine aggregates need to be thoroughly washed to remove salt. For example, the removal of over 12 million tonnes of sand per year from the Vembanad Lake catchment in India has led to the lowering of the riverbed by 7–15 cm/year (Padmalal et al., 2008). Sand mining can lead to a loss of aquifer storage (Kondolf, 1997). The lowering of the water table can affect agricultural production.
+- Climate: direct emissions from transport and indirect emissions from cement production (UNEP, 2014). Landscape: coastal erosion, changes in deltaic structures, quarries, and river pollution. Erosion occurs from direct sand removal from beaches, near-shore marine dredging, or river sand mining (Tripathi et al., 2025). Damming and mining have reduced sediment delivery from rivers to many coastal areas, accelerating beach erosion. Many sand extraction operations in low- and middle-income countries are not in line with relevant environmental regulations. Often, mining and dredging regulations are introduced without a scientific understanding of their consequences. For instance, in-stream mining might be environmentally sustainable if restricted to the value of the annual bed load. 
+Illegal activities, such as those conducted by ‘sand mafias’, are widespread (UNEP, 2014; 2019). Most sand from deserts cannot be used for concrete or land reclamation, as wind erosion forms round grains that do not bind well (Zhang et al., 2006). 
+Direct safety risks: include industrial accidents (e.g. drowning of workers removing sand from riverbeds), health effects from dust and hydrocarbon pollution, forced child labour, transport accidents, subsidence, and landslides (Maya et al., 2012; UNEP, 2014; 2019). 
+Sand mining may reduce protection against extreme events such as floods, droughts, and storm surges (UNEP, 2014).
+
+## Metrics
+
+There is a lack of adequate information on sand mining, limiting the regulation of extraction in many low- and middle-income countries (Sreebha & Padmalal, 2011). Access to data is difficult, and data are not standardised. This absence of global data makes environmental assessment very difficult (UNEP, 2014).
+An estimated 40 to 50 billion metric tonnes of crushed rock, sand, and gravel are extracted every year (Steinberger et al., 2010; UNEP, 2014; 2019).
+One way to estimate the global use of aggregates indirectly is through the production of cement for concrete (concrete is made with cement, water, sand, and gravel) (UNEP, 2014; 2019).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between sand mining and other hazards. This information should be used with caution and not be solely relied upon in disaster risk management, particularly as some interactions may not have been included. Note that hazardous events occurring together or in proximity in space or time may not necessarily cause, amplify, or be otherwise related to one another. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Training of architects and engineers, new laws and regulations, taxation, and positive incentives are needed to reduce dependency on sand. The use of renewable and recycled materials in construction should be prioritised (UNEP, 2014; 2019). 
+There is a need to regulate sand extraction in both national and international waters (UNEP, 2014; 2019).
+
+## Monitoring and Early Warning
+
+No Information Available

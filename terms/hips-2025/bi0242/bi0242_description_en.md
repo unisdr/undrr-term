@@ -6,3 +6,38 @@ Cases of Zika virus disease globally declined from 2017 onwards; however, Zika v
 Symptoms are generally mild and include fever, rash, conjunctivitis, muscle and joint pain, malaise or headache. Symptoms typically last for 2 to 7 days. Most people with Zika virus infection do not develop symptoms (WHO, 2022a).
 A diagnosis of Zika virus infection can only be confirmed by laboratory tests of blood or other body fluids, such as urine or semen (WHO, 2022a).
 The World Health Organization (WHO) has published guidance on case classification and surveillance standards (WHO, 2016a).
+
+## Drivers
+
+Aedes mosquitoes breed in small collections of water around homes, schools, and work sites. It is important to eliminate these mosquito breeding sites (WHO, 2022a).
+Zika virus is also transmitted from mother to foetus during pregnancy, through sexual contact, transfusion of blood and blood products, and organ transplantation (WHO, no date).
+
+## Impacts
+
+Zika virus infection during pregnancy is a cause of microcephaly and other congenital malformations in the infant, including limb contractures, high muscle tone, eye abnormalities and hearing loss. These clinical features are collectively referred to as congenital Zika syndrome. The risk of congenital malformations following infection in pregnancy remains unknown; an estimated 5–15% of infants born to women infected with Zika virus during pregnancy have evidence of Zika-related complications (3). Congenital malformations occur following both symptomatic and asymptomatic infection. Zika infection in pregnancy can also cause complications such as foetal loss, stillbirth and preterm birth (WHO, 2022a).
+
+## Metrics
+
+WHO declared a public health emergency of international concern regarding microcephaly, other neurological disorders and Zika virus from February to November 2016. Cases of Zika virus disease declined from 2017 onwards globally; however, Zika virus transmission persists at low levels in several countries in the Americas and in other endemic regions. To date, a total of 89 countries and territories have reported evidence of mosquito-transmitted Zika virus infection, however, surveillance remains limited globally (WHO, no date).
+
+## Multi-Hazard Context
+
+: Zika virus is also transmitted from mother to foetus during pregnancy, through sexual contact, transfusion of blood and blood products, and organ transplantation (WHO, no date).
+Zika virus infection during pregnancy is a cause of microcephaly and other congenital malformations in the infant, including limb contractures, high muscle tone, eye abnormalities and hearing loss. These clinical features are collectively referred to as congenital Zika syndrome. The risk of congenital malformations following infection in pregnancy remains unknown; an estimated 5–15% of infants born to women infected with Zika virus during pregnancy have evidence of Zika-related complications (3). Congenital malformations occur following both symptomatic and asymptomatic infection. Zika infection in pregnancy can also cause complications such as foetal loss, stillbirth and preterm birth (WHO, 2022a).
+Zika virus infection can also cause Guillain-Barré syndrome, neuropathy and myelitis, particularly in adults and older children (WHO, 2022a).
+Research is ongoing to investigate the risk and effects of Zika virus infection on pregnancy outcomes, strategies for prevention and control, and effects of infection on other neurological disorders in children and adults (WHO, 2022a).
+
+## Risk Management
+
+Protection against mosquito bites during the day and early evening is a key measure to prevent Zika virus infection. Aedes mosquitoes breed in small collections of water around homes, schools, and work sites. It is important to eliminate these mosquito breeding sites, including covering water storage containers, removing standing water in flowerpots, and cleaning up trash and used tyres. Community initiatives are essential to support local government and public health programs to reduce mosquito breeding sites. Health authorities may also advise the use of larvicides and insecticides to reduce mosquito populations and disease spread (WHO, 2016 a). Special attention should be given to the prevention of mosquito bites among pregnant women, women of reproductive age, and young children (WHO, 2022a). 
+Personal protection measures include wearing clothing (preferably light-coloured) that covers as much of the body as possible; using physical barriers such as window screens and closed doors and windows; and applying insect repellent to skin or clothing (WHO, 2022a). 
+Young children and pregnant women should sleep under mosquito nets if sleeping during the day or early evening. Travellers and those living in affected areas should take the same basic precautions (WHO, 2022a). 
+For regions with active transmission of Zika virus, all people with Zika virus infection and their sexual partners (particularly pregnant women) should receive information about the risks of sexual transmission of Zika virus. WHO recommends that sexually active men and women be counselled and offered a full range of contraceptive methods to be able to make an informed choice about whether and when to become pregnant in order to prevent possible adverse pregnancy and foetal outcomes (WHO, 2022a). 
+No vaccine is yet available for the prevention or treatment of Zika virus infection. Development of a Zika vaccine remains an active area of research (WHO, no date). To date, mitigation strategies continue to rely on vector control (Achee et al., 2019). 
+WHO supports countries to conduct surveillance and control of arboviruses through the implementation of the Global Arbovirus Initiative, which is aligned with and expands upon recommendations laid out in the Zika Strategic Response Plan (WHO, 2016c; 2022a).
+
+## Monitoring and Early Warning
+
+WHO supports countries to conduct surveillance and control of arboviruses through the implementation of the Global Arbovirus Initiative. Launched in 2022, the Global Arbovirus Initiative is an integrated strategic plan to tackle emerging and re-emerging arboviruses with epidemic and pandemic potential focusing on monitoring risk, pandemic prevention, preparedness, detection and response, and building a coalition of partners (WHO, 2022b).
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a disaster from natural hazards. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, 2023).

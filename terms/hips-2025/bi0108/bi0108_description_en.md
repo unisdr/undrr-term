@@ -68,3 +68,49 @@ Vector-borne animal diseases include:
 - Rift Valley Fever (BI0311)
 - West Nile Fever (BI0240)
 - Trypanosomiasis / African Trypanosomosis (BI0238)Many VBDs in animals are preventable through control measures, including vaccination. Most countries maintain a list of approved veterinary vaccines for use. For specific regulations, consult the country's veterinary authorities (FAO, 2021).
+
+## Drivers
+
+Human
+Previously relatively stable geographical distributions are now changing owing to a range of factors, including climate change, intensive farming, dams, irrigation, deforestation, population movements, rapid unplanned urbanisation, and phenomenal increases in international travel and trade (WHO, 2014).
+The distribution of vector-borne diseases in humans is determined by a complex set of demographics, and environmental and social factors. Global travel and trade, unplanned urbanization, climate change and silent spread and adaptation of the vectors have all contributed to the spread of vector-borne diseases.
+Climate change substantially affects pathogens (parasites, viruses and bacteria), vectors, and reservoir hosts, with implications for the transmission of many vector-borne diseases. Several vectors have expanded their latitude and altitude ranges, and the length of the season during which they are active is increasing. These trends are expected to continue as the climate continues to get warmer (WHO, 2024). Climate-driven fluctuations in environmental conditions, such as drought, flood, rainfall, wind and unpredictable weather have a direct influence on the disease burden from bacteria, parasites and their vectors. Work is being carried out to improve prevention, preparedness, early detection and early response to animal health threats and emergencies that could be triggered by climate change (FAO, 2020).
+Animal
+Vector-borne diseases infected mosquitoes (OIE, 2015a)
+
+## Impacts
+
+Human
+Vector-borne disease generates disease in humans after consuming unheated dairy products (e.g., raw milk); and trade implications. These may involve substantial economic losses, including loss of income and manpower, medical care costs, and loss of food due to inadequacy of processing or spoilage.
+Animal
+High fever, abortion, and depending on the pathogen, death of infected animals and humans, spread of infection, trade/travel ban (OIE, 2015b).
+
+## Metrics
+
+Vector-borne diseases account for more than 17% of all infectious diseases, causing more than 700,000 deaths annually. They can be caused by either parasites, bacteria or viruses (WHO, 2024).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between vector-borne diseases and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Human
+Many vector-borne diseases are preventable, through protective measures, and community mobilisation (WHO, 2020). 
+The World Health Organization (WHO) has taken forward the Global Vector Control Response (GVCR) 2017–2030 (WHO, 2017) which was approved by the World Health Assembly in 2017. It provides strategic guidance to countries and development partners for the urgent strengthening of vector control as a fundamental approach to preventing disease and responding to outbreaks. To achieve this a re-alignment of vector control programmes is required, supported by increased technical capacity, improved infrastructure, strengthened monitoring and surveillance systems, and greater community mobilisation. Ultimately, this will support the implementation of a comprehensive approach to vector control that will enable the achievement of disease-specific national and global goals and contribute to the achievement of the Sustainable Development Goals (UN, 2015) and Universal Health Coverage (WHO, 2020). Specifically, the WHO responds to vector-borne diseases by: providing evidence-based guidance for controlling vectors and protecting people against infection; providing technical support to countries so that they can effectively manage cases and outbreaks; supporting countries to improve their reporting systems and capture the true burden of the disease; providing training (capacity building) on clinical management, diagnosis and vector control with support from some of its collaborating centres; and supporting the development and evaluation of new tools, technologies and approaches for vector-borne diseases, including vector control and disease management technologies (WHO, 2020). 
+A crucial element in reducing the burden of vector-borne diseases is behavioural change. The WHO works with partners to provide education and improve public awareness, so that people know how to protect themselves and their communities from mosquitoes, ticks, bugs, flies and other vectors (WHO, 2020). 
+Access to water and sanitation is a very important factor in disease control and elimination. The WHO works together with many different government sectors to improve water storage and sanitation, thereby helping to control these diseases at the community level (WHO, 2020). 
+Rapid progress has been made in recent years in developing policy mandates, operational frameworks and pilot initiatives on health adaptation to climate change, including vector-borne disease as a particular priority. These present an excellent opportunity for a stronger and more coherent connection between applied research and public health policy (Campbell-Lendrum et al., 2015). 
+Applied research is nevertheless essential to ensure continued progress in reducing the burden of vector-borne diseases in the face of the additional challenges caused by anthropogenic climate change, along with rapid changes in other environmental and social determinants. To increase relevance to current health programming, there is a need to complement current work on the detection and attribution of health effects to climate change, and the modelling of future scenarios, with a more directly applied approach to assessing and managing climate-related risks in the present (Campbell-Lendrum et al., 2015). 
+Progress has been made in recent years in developing policies, operational frameworks and pilot initiatives on animal health-based adaptation to climate change, with vector-borne diseases as a priority. These represent excellent opportunities for stronger and more coherent linkages between applied research and public health policy (Campbell-Lendrum et al., 2015).
+Animal
+Vaccination programme, movement control, improve biosecurity (OIE, 2015b). Climate-driven fluctuations in environmental conditions, such as drought, flood, rainfall, wind and unpredictable weather have a direct influence on the disease burden from bacteria, parasites and their vectors. Work is being carried out to improve prevention, preparedness, early detection and early response to animal health threats and emergencies that could be triggered by climate change (FAO, 2020). Progress has been made in recent years in developing policies, operational frameworks and pilot initiatives on animal health-based adaptation to climate change, with vector-borne diseases as a priority. These represent excellent opportunities for stronger and more coherent linkages between applied research and public health policy (Campbell-Lendrum et al., 2015).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for vector-borne diseases. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, 2023).
+ | Which institution(s) produce(s) Disaster Risk Data/Information?  | WHO, Ministry of Health, FAO Reference Centres, WOAH Reference Centres 
+ | How is the Hazard Observed/Monitored/Forecast?  | WHO, Ministry of Health, FAO empres-i+ https://empres-i.apps.fao.org/diseases  
+WOAH WAHIS https://wahis.woah.org/#/event-management

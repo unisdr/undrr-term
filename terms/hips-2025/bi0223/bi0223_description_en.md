@@ -4,3 +4,37 @@ Diagnosis is made with clinical, radiological, or histopathological evidence of 
 No vaccine or specific treatment is currently available, however, several MERS-CoV specific vaccines and treatments are in development. Treatment is supportive and based on the patient's clinical condition (WHO, 2022).
 The World Health Organization (WHO) has published guidance on case classification and surveillance standards (WHO, 2017).
 Dromedary camels (Camelus dromedarius) have been confirmed by several studies to be the natural host. MERS-CoV has been reported to cause little to no disease in camels (WOAH, 2024a). Since 2012, the following countries reported serological and/or virological evidences of MERS-CoV circulation in camels (including old retrospective samples collected before 2012): Algeria, Bangladesh, Burkina Faso, Djibouti, Egypt, Ethiopia, Iran, Iraq, Israel, Jordan, Kazakhstan, Kenya, Kuwait, Mali, Mongolia, Morocco, Nigeria, Oman, Pakistan, Qatar, Saudi Arabia (KSA), Senegal, Somalia, Spain (Canary Islands), Sudan, Tunisia, Uganda, United Arab Emirates (FAO, 2024).
+
+## Drivers
+
+Middle East respiratory syndrome (MERS) is a zoonotic disease that can be transmitted between animals and people mostly in countries in the Middle East (WHO, 2022).
+Studies have shown that humans are infected through direct or indirect contact with infected dromedary camels, although the exact route of transmission remains unclear. MERS-CoV has been identified in dromedary camels in several Member States in the Middle East, Africa and South Asia (WHO, 2022). The virus is endemic in dromedary camels in Africa and Middle East and the movement of pastoralist and nomadic people with their camels increases the risk of transmission of the virus (Gardner et al., 2019).
+
+## Impacts
+
+The clinical spectrum of MERS-CoV infection ranges from no symptoms (asymptomatic) or mild respiratory symptoms to severe acute respiratory disease and death. A typical presentation of MERS is fever, cough and shortness of breath. Pneumonia is a common finding, but MERS patients may not always develop this condition. Gastrointestinal symptoms, including diarrhoea, have also been reported. Severe illness can cause respiratory failure that requires mechanical ventilation or support in an intensive care unit. Older people, people with weakened immune systems, and those with chronic diseases such as renal disease, cancer, chronic lung disease, hypertension, cardiovascular disease and diabetes appear to be at greater risk of developing severe disease. Approximately 35% of cases reported to WHO have died, but this may be an overestimate of the true mortality rate, as mild cases of MERS may be missed by existing surveillance systems. (WHO, 2024).
+
+## Metrics
+
+Since April 2012, and as of 12 May 2025, a total of 2,638 cases of MERS, including 957 deaths, have been reported by health authorities worldwide (ECDC, 2025).
+
+## Multi-Hazard Context
+
+MERS-CoV appears to cause more severe disease in people with underlying health conditions such as diabetes, renal failure, chronic lung disease, and immunocompromised persons. Those with underlying medical conditions are at increased vulnerability and should avoid close contact with animals, particularly dromedaries, when visiting farms, markets, or barn areas where the virus may be circulating. General hygiene measures should be followed, such as regular hand washing with soap and water or hand hygiene with alcohol-based hand rub, before and after touching animals. Contact with sick animals should be avoided. Food hygiene practices should be observed. People should avoid drinking raw camel milk or camel urine or eating meat that has not been properly cooked (WHO, 2024). 
+Trade barriers may be put in place, affecting the livelihoods of communities.
+
+## Risk Management
+
+Appropriately processing animal products through cooking, pasteurisation, or handling, to avoid cross-contamination is also essential (WHO, 2022). 
+Humans acquire MERS-CoV through either direct or indirect interaction with dromedary camels, which serve as the virus's natural host and zoonotic reservoir. MERS-CoV has demonstrated the ability to transmit between humans. To date, instances of non-sustained human-to-human transmission have been observed primarily among close contacts and within health-care environments. Outside of health-care settings there has been limited human-to-human transmission to date (WHO, 2024). Health-care-associated outbreaks have occurred in several countries, with the largest outbreaks seen in Saudi Arabia, the United Arab Emirates, and the Republic of Korea (WHO, 2022). 
+Together with affected Member States and international technical partners and networks, WHO is coordinating the global health response to MERS, including: the provision of updated information on the epidemiological situation; conducting risk assessments and joint investigations with national authorities; convening scientific meetings; and developing technical guidance and training materials for health authorities and technical health agencies. WHO is also working with the Food and Agriculture Organization of the United Nations (FAO) and the World Organization for Animal Health (WOAH) and national governments to develop public health prevention strategies to limit zoonotic transmission and amplification in humans, including the development of human and dromedary camel vaccine candidates (WHO, 2022).
+
+## Monitoring and Early Warning
+
+The section and the table below offer an overview of monitoring for MERS. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | WHO, Ministry of Health, FAO Reference Centres, WOAH Reference Centres
+ | How is the Hazard Observed/Monitored/Forecast? | EuFMD FMD quarterly reports https://www.fao.org/eufmd/resources/reports/quarterlyreport/en/
+FAO empres-i+ https://empres-i.apps.fao.org/diseases
+WOAH WAHIS https://wahis.woah.org/#/event-management
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, 2023).

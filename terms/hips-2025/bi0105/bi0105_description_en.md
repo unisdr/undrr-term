@@ -29,3 +29,31 @@ At present, the World Health Organization (WHO) categorizes the following group 
 - Trachoma
 - Tungiasis
 - Yaws
+
+## Drivers
+
+Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences. NTDs are mainly prevalent among impoverished communities in tropical areas, although some have a much larger geographical distribution. It is estimated that NTDs affect more than 1 billion people, while the number of people requiring NTD interventions (both preventive and curative) is 1.6 billion (WHO, no date a).
+
+## Impacts
+
+NTDs cause significant mortality and morbidity cost developing communities the equivalent of billions of United States dollars each year in direct health costs, loss of productivity and reduced socioeconomic and educational attainment. They are also responsible for other consequences such as disability, stigmatization, social exclusion and discrimination and place considerable financial strain on patients and their families (WHO, no date b).
+
+## Metrics
+
+WHO estimates that over 1.6 billion of the world’s population should be targeted by prevention and treatment activities for at least one of these diseases, every year. In addition to significant mortality and morbidity - approximately 200,000 deaths and 19 million disability-adjusted life years (DALYs) are lost annually (WHO, no date b).
+
+## Multi-Hazard Context
+
+The epidemiology of NTDs is complex and often related to environmental conditions. Many of them are vector-borne, have animal reservoirs and are associated with complex life cycles. All these factors make their public-health control challenging (WHO, no date a).
+
+## Risk Management
+
+WHO’s action to control, prevent, eliminate and eradicate NTDs is guided by the NTD road map for 2021-2030, which moves away from vertical disease programmes to integrated cross-cutting approaches. The aim is to facilitate the coordinated scale-up of key interventions through public health approaches such as preventive chemotherapy, individual case management, vector control, veterinary public health and water, sanitation and hygiene (WASH) (WHO, no date c). 
+The overarching 2030 global targets include a 90% reduction in the number of people requiring treatment for NTDs; a 75% reduction in DALYs related to NTDs; at least 100 countries eliminating at least one NTD; and the eradication of two diseases (dracunculiasis and yaws) (WHO, no date c). 
+Additional cross-cutting targets focus on integrated approaches, multisectoral coordination, universal health coverage and country ownership, while a further set of targets has been devised to measure progress against each disease (WHO no date c). 
+The WHO Roadmap on neglected tropical diseases, underpinned by successive World Health Assembly resolutions, sets out a comprehensive plan for the control, elimination and eradication of neglected tropical diseases by 2030 (WHO, 2021). The road map sets global targets and milestones to prevent, control, eliminate or eradicate 20 diseases and disease groups as well as cross-cutting targets aligned with the Sustainable Development Goals. Three foundational pillars will support global efforts to achieve the targets: accelerate programmatic action (pillar 1), intensify cross-cutting approaches (pillar 2) and change operating models and culture to facilitate country ownership (pillar 3) (WHO, 2021). The disease summaries annexed to the road map detail the current epidemiological status and burden of disease, core strategic interventions and progress towards the 2020 targets of the previous road map (WHO, 2021). The targets, sub-targets and milestones for 2030, and the critical actions required to achieve them, were used to generate the evidence in the road map document endorsed by the World Health Assembly (WHO, 2021).
+
+## Monitoring and Early Warning
+
+WHO supports countries to conduct all-hazards strategic risk assessment in the contexts of health emergencies and disasters, which results in the development of a country risk profile. Empowered with the country risk profile, inclusive of a seasonal risk calendar, countries can anticipate potential emergencies before they occur to trigger early alerts and inform early actions (WHO, 2021).
+WHO's Early Warning, Alert and Response System (EWARS) has been designed to improve disease outbreak detection in emergency settings, such as in countries in conflict or following a natural disaster. It is a simple and cost-effective way to rapidly set up a disease surveillance system. EWARS is deployed during an emergency as an adjunct to the national disease surveillance system. WHO works with Ministries of Health and health sector partners to train local health workers to use the system. After the emergency, EWARS should re-integrate back into the national system (WHO, no date d).

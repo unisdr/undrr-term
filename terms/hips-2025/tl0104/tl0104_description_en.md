@@ -6,3 +6,25 @@ A denial-of-service (DoS) attack occurs when legitimate users are unable to acce
 DoS attacks can be further categorized based on method: volume-based attacks overwhelm the bandwidth of a network (e.g., flooding a website with excessive traffic), whereas attacks exploiting computational limitations involve sending malformed requests or initiating infinite loops to exhaust computational resources. 
 DoS attacks can escalate to national hazards when they target critical infrastructure. A precedent is the 2007 cyber-attacks on Estonia, where coordinated DDoS attacks crippled government, banking, and media websites, leading to widespread disruption and highlighting vulnerabilities at the national level (Ottis, 2008). 
 DoS attacks are commonly employed by malicious actors due to their relative ease of execution and potential for significant disruption. Every year, data registers large numbers of DoS and DDoS incidents, making them one of the most prevalent forms of cyber-attack (Bergamini de Neira et al, 2023). In 2024, NETSCOUT reported over 13 million DDoS attacks globally, with rising trends in multi-vector attacks (NETSCOUT, 2024).
+
+## Drivers
+
+One of the most critical factors leading to the increase in DDoS is the proliferation of unsecured IoT devices. The extensive connectivity and insufficient security protocols in modern networks provide fertile ground for attackers to exploit vulnerabilities and launch successful DoS attacks.
+
+## Impacts
+
+A denial-of-service (DoS) attack occurs when legitimate users are unable to access information systems, devices, or other network resources due to the actions of a malicious cyber threat actor. Services affected may include email, websites, online accounts (e.g., banking), or other services that rely on the affected computer or network. (CISA, 2021). DDoS attacks can exacerbate healthcare or financial system failures during natural disasters or pandemics." (ENISA, 2023).
+
+## Multi-Hazard Context
+
+Not Available
+
+## Risk Management
+
+Minimizing the risk of DoS involves a combination of technological and strategic measures. Implementing robust network security protocols, utilizing intrusion detection and prevention systems, and adopting AI-driven security solutions enhances an organization's resilience. Additionally, strategies, like rate limiting, traffic filtering, and employing content delivery networks, help mitigate the impact of attacks. 
+Artificial intelligence can also play a critical role in protecting against DoS. Artificial intelligence systems can analyse network traffic to identify anomalies, enabling real-time detection and response, enhance the capability to filter malicious traffic, allocate resources dynamically, and predict potential threats based on patterns and behaviours. 
+The ITU improves cybersecurity readiness, protection, and incident response capabilities of Member States by conducting CyberDrills at the regional and international level (ITU, no date). A CyberDrill is an annual event during which cyber-attacks, information security incidents, or other types of disruption are simulated to test an organization’s cyber capabilities, from being able to detect a security incident to the ability to respond appropriately and minimize any related impact. Through CyberDrills, participants can validate policies, plans, procedures, processes, and capabilities that enable the preparation, prevention, response, recovery, and continuity of operations.
+
+## Monitoring and Early Warning
+
+Not Available

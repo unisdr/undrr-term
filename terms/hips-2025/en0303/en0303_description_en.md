@@ -5,3 +5,56 @@ Natural saline environments possess specific plants called halophytes and contri
 Salt-affected soils have serious impacts on soil functions, leading to consequences including reduced agricultural productivity, degradation of groundwater quality, loss of soil biodiversity and increased soil erosion. Salt-affected soils differ in micronutrient composition (Mohiuddin et al., 2022), and may have a reduced capacity to buffer or filter pollutants. Degradation of soil structure and disruption of ecological functions such as hydrological, nutrient and biogeochemical cycles impair the provision of ecosystem services critical for supporting human life and biodiversity.
 Salt-affected soils reduce both the ability of crops to take up water and the availability of micronutrients. They also concentrate ions toxic to plants and may degrade the soil structure (FAO, 2020a).
 Soluble salts most commonly present are chlorides and sulphates of sodium, calcium and magnesium. Nitrates are rarely present in appreciable quantities. Sodium and chloride are the dominant ions in highly saline soils, although calcium and magnesium are usually present in sufficient quantities to meet crop nutritional needs. Many saline soils also contain appreciable quantities of gypsum (CaSO4·2H2O) in the profile (FAO, 1988).
+
+## Drivers
+
+Salt that accumulates in soil can come from a number of sources (NSW Department of Planning, Industry and Environment, 2019):
+- Rainfall: airborne salts from ocean spray and pollution are dissolved in atmospheric moisture and deposited on the land in precipitation.
+- Weathering: minerals that make up rocks break down and release ions that are able to form salts
+- Aeolian deposits: wind picks up and transports dust and salt from soil and lake surfaces and redistributes it across the landscape.
+- Connate salt: during deposition, salt has been incorporated into marine sediments, or in areas of internal drainage, salt has accumulated over geological time due to transport and evaporative processes. These areas may later become sources of salt.
+- Irrigation water: marine storms, aquifers marine intrusion.At present, increased primary (natural) soil salinization and sodification may be observed as the result of the following environmental factors: climate change and related phenomena (increasing aridity and freshwater scarcity, growing salinization of surface and groundwater, or permafrost thawing), increasing sea level rise, and tsunamis.
+Increased secondary (human-induced) soil salinization and sodification may result from the following factors:
+- Irrigation with poor quality water;
+- Inadequate drainage or irrigation methods;
+- Deforestation and removal of deep-rooted vegetation (dryland salinization);
+- Excessive water pumping in coastal and inland areas;
+- Overuse of fertilizers;
+- Use of de-icing agents; and
+- Mining activity.
+
+## Impacts
+
+Salinity has different impacts (NSW Department of Planning, Industry and Environment 2019): 
+- Farms: salinity can decrease plant growth and water quality resulting in lower crop yields and degraded stock water supplies. Excess salt affects overall soil health, reducing productivity. It kills plants that are not adapted to salinity, leaving bare soil that is prone to erosion. Sodicity affects soil structure leading to decreased permeability of soils and waterlogging.
+- Wetlands: as salinity increases over time, wetlands become degraded, endangering wetland species and decreasing biodiversity. Where sulphate salts are present, there is an increased risk of acid sulphate soil formation if reducing conditions prevail and no calcium carbonate (CaCO3) is present within the soil matrix.
+- Rivers: increased volume (load) and/or concentration (electrical conductivity) of salinity in creeks and streams degrades urban water supplies, affects irrigated agriculture and horticulture, and adversely impacts on riverine ecosystems.
+- Drinking water: when a source of drinking water becomes more saline, extensive and expensive treatment may be needed to keep salinity at levels suitable for human use.
+- Buildings, roads and pipes: salinity damages infrastructure, shortening its life and increasing maintenance costs.
+- Sport grounds: salty ground may lose all grass cover, making playing fields unusable. The increasing use of wastewaters for irrigation of agricultural fields lead to the occurrence of “emerging pollutants” (microplastics, pharmaceuticals, drugs, and organic pollutants) in waters, soils and crops (Sayed et al., 2024). This contributes to a multi-hazard situation affecting soil health, biodiversity and human nutrition that should be considered when planning the water use (Estévez et al., 2012).
+
+## Metrics
+
+The technical criteria used to distinguish saline soil from other soils is the electrical conductivity of a soil paste saturation extract: ECe > 2 dS/m (slightly saline) or ECe > 4 dS/m (saline) at 25 C. The content of soluble salts should be higher than 0.1-0.2% (FAO, 2018).
+Sodic soils have elevated exchangeable Na⁺ compared to Ca²⁺ and Mg²⁺, measured as SAR > 13 or ESP > 15, but with relatively lower salinity (ECe 16 | Only a few very tolerant crops yield 
+satisfactorily
+ | Sodicity hazard | ESP %
+ | None | 70
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between salinity & sodicity and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+Both mitigation and adaptation strategies can be applied to sustainably manage salt‑affected soils for agricultural production. Mitigation strategies are aimed at the reduction of salinity levels in the root zone and include physical, chemical and biological measures. 
+ Physical mitigation measures include mulches, interlayers from loose materials, leaching, drainage, surface scraping, compost and plant residue incorporation, biochar, low rank coal, deep tillage, land shaping and land levelling. 
+Biological mitigation measures include adjustment of planting time and place; crop system management (improved crop rotation, agrobiodiversity, crop system diversification); agroforestry; and bioremediation. 
+Chemical remediation measures include adding gypsum and other calcium containing amendments to affected soils. 
+Adaptation strategies aim at coping with existing salinity levels. They include breeding of salt-tolerant crops; domestication of halophytes and other non-conventional crops.
+
+## Monitoring and Early Warning
+
+Soil and water salinity/sodicity monitoring at the inland areas at risk and the whole coastal area is a way to take actions when the salinity and sodicity levels start to increase.
+Comprehensive data on the extent of salt‑affected soils and soils at risk of salinization are lacking worldwide, with many countries lacking official data or experiencing conflicting results from existing data. Improving mapping techniques and transitioning to digital tools are essential steps to enhance monitoring and management efforts. Moreover, harmonizing data collection methods and developing conversion equations (pedotransfer functions) are crucial for the accurate assessment of soil salinity and sodicity.
+Given the already high levels of saline groundwater and the widespread use of brackish water for irrigation, urgent measures are needed to prevent further salinization caused by droughts and excessive aquifer exploitation. Establishing robust irrigation water monitoring systems is essential to ensure the sustainable utilization of water resources and mitigate salinity‑related challenges. Additionally, efforts to enhance water quality monitoring must be intensified, considering the significant proportion of poor-quality water bodies globally. Prioritizing the improvement of irrigation water quality - especially in arid regions where salinity and sodicity pose significant threats to agricultural productivity - is crucial for sustainable water management.

@@ -5,3 +5,38 @@ There is a conventional classification of dzud types based on direct factors con
 - Storm and cold dzuds: both tend to result from strong winds and blizzard, and cold surge conditions. These weather patterns reduce the intake of pasture by livestock, which is determined by the availability of phytomass (i.e., not covered by snow and ice) and grazing time.
 - Hoof dzud: is primarily associated with lack of pasture, often caused by overgrazing. This may occur when an excessive number of animals are concentrated in relatively good but limited pasturelands. A Dzud can occur as a cascading hazard to succeeding climatic hazards such as summer drought.A combined (or multiple) dzud occurs when two or more of the above types of dzud occur together.
 Note: human-induced vulnerability, including inadequate pasture management, lack of herder experience, poverty, and insufficient winter preparedness can increase the risks of dzud impacts.
+
+## Drivers
+
+A dzud is a compound hazard occurring in a cold dry climate, and encompassing drought, heavy snowfall, extreme cold, and windstorms. Severe dzuds (high mortality) result from a combination of growing-season drought and severe weather (Natsagdorj and Dulamsuren, 2001; Nandintsetseg et al., 2017, 2018a,b).
+
+## Impacts
+
+Dzud can last all year round and can cause mass livestock mortality and dramatic socioeconomic impacts – including unemployment, poverty, and mass migration from rural to urban areas, giving rise to heavy pressure on infrastructure and social and ecosystem services (Murray et al., 2012). Dzuds occurred in Mongolia in 1944–1945, 1954–1955, 1956–1957, 1967–1968, 1976–1977, 1986–1987, 1993–1994, and 1996–1997. The dzud of 1944–1945 was a record for the 20th century with mortality of one-third of Mongolia’s total livestock, with the 2009–2010 dzud causing similarly high animal mortality (Murray et al., 2012).
+
+## Metrics
+
+Not available.
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between dzuds and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring dzuds. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the appropriate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- National, subnational, and local disaster management agencies responsible for monitoring Dzud risks, issuing warnings, and coordinating emergency response efforts.
+- Meteorological services tracking temperature drops, snowfall levels, and extreme weather patterns leading to Dzud conditions.
+- Hydrological services monitoring snowpack accumulation, frozen water bodies, and potential drought conditions impacting livestock and agriculture.
+- Geophysical and atmospheric research institutions studying climate variability, Arctic air mass movements, and long-term temperature trends contributing to Dzud events.
+- Space and remote sensing agencies using satellite technology to monitor snow depth, vegetation health, and land surface temperatures.
+- Agricultural and livestock management agencies (e.g., Ministry of Food, Agriculture, and Light Industry of Mongolia) assessing the impact of extreme cold and food shortages on livestock survival.
+- Health authorities evaluating public health risks, including hypothermia, malnutrition, and disease outbreaks due to harsh winter conditions.
+- Energy and utility companies preparing for increased heating demand, fuel shortages, and infrastructure strain during extreme cold events.
+- Land use and rural development planners integrating Dzud risk assessments into sustainable pasture management, livestock policies, and climate adaptation strategies.
+- Researchers and academics, including climatologists, ecologists, and agronomists, studying Dzud formation, climate change impacts, and resilience strategies.
+- Environmental organizations and conservation groups advocating for rangeland management, disaster risk reduction, and climate adaptation in nomadic and rural communities.
+- International aid organizations (e.g., United Nations Development Programme (UNDP), World Food Programme (WFP), International Federation of Red Cross and Red Crescent Societies (IFRC)) providing support for early warning, humanitarian aid, and recovery efforts.
+- Local herder associations and community organizations engaged in early warning dissemination, livestock protection, and emergency preparedness for extreme winter conditions.
+ | How is the Hazard Observed/Monitored/Forecast? | Dzud is monitored using satellites, weather stations, and ground sensors to track extreme cold, heavy snowfall, and vegetation conditions that impact livestock survival. Meteorologists analyse polar air movements, jet stream shifts, and moisture levels and advanced weather models to predict extreme cold events, enabling forecasters to issue early warnings. These warnings help herders, policymakers, and emergency responders prepare for livestock losses, food shortages, and energy demands in affected regions.

@@ -5,3 +5,50 @@ A wide range of processes give rise to marine heatwaves, with ocean currents bei
 Marine heatwaves can manifest in various forms, influenced by their underlying drivers:
 - Localized events: These heatwaves are often restricted to coastal zones, driven by regional processes such as weakened upwelling systems or localised atmospheric high-pressure systems (Oliver et al., 2018). An example includes periodic marine heatwaves off the coast of California that disrupt fisheries and kelp forest ecosystems.
 - Basin-wide events: Natural El Niño-Southern Oscillation (ENSO) in the tropical Pacific and Indian oceans can substantially impact decadal-scale ocean warming and cooling trends, with cascading effects on patterns of precipitation and marine ecosystems (Bindoff et al., 2019).
+
+## Drivers
+
+Marine heatwaves usually occur when several factors interact:
+Solar radiation: If there are no clouds over the ocean for a period ranging from several days to weeks, the uppermost layers of water in the ocean are warmed by the atmosphere and direct incoming solar radiation. The process in the ocean is the reverse of that in the atmosphere: the atmosphere is primarily warmed from the ground upwards, i.e. from below. Warm air rises and mixes with the colder layers of air above it. The ocean, on the other hand, is warmed from above. The warm water does not rise upwards, it is already at the top. This means that heat collects in the upper layers of water, and there is little mixing with the colder layers of water below.
+Wind: In general, ocean water is stably stratified. Colder water is found at the bottom or in lower layers, and warmer water is found at the top. The differences in temperature would only be equalised very slowly if it were not for the wind. Wind at the surface moves the water and thus also mixes it into deeper layers. However, if it is particularly calm, the heat can accumulate in the uppermost layers of water.
+Aerosols: Aerosols are tiny particles in the atmosphere. The more aerosols there are in the air above the ocean, the less sunlight reaches the surface. As a result, the sea surface cools down. One source of aerosols is, for example, Saharan dust over the North Atlantic or air pollution from cities and ships. These aerosols are often transported across the ocean by the wind. Calm conditions therefore also contribute to the warming of the oceans through the lack of aerosol input.
+Natural fluctuations in the climate system: Phenomena such as El Niño or the North Atlantic Oscillation (NAO) also regularly contribute to increased ocean temperatures" (MeteoSwiss, no date).
+Climate change: If the air is warmer than the underlying water, the atmosphere releases its heat into the ocean. The global ocean absorbs 90% of the additional heat caused by climate change. Climate change therefore increases the risk of marine heatwaves.
+
+## Impacts
+
+Marine heatwaves can have profound effects on marine ecosystems, stressing marine life and causing “species migration, mass die-offs of fish, marine mammals, and seabirds, and coral bleaching. They can also trigger harmful algal blooms and intensified hurricanes. The severity of these impacts varies by region and depends on factors such as the duration, timing, and depth of temperature anomalies” (NOAA, 2024). 
+However, the impacts of marine heatwaves are not confined to the ocean itself. Marine heatwaves can also impact weather patterns. They can trigger tropical cyclones and can increase the likelihood of strong rainfall events over land due to their association with heavy precipitation, a result of warm ocean temperatures giving rise to strong evaporation (NOC, 2025). 
+Marine heatwaves also have significant effects on economic activities, particularly in coastal communities, adversely affecting the fisheries, aquaculture, and tourism industries. For example, aquaculture is reliant on water temperatures conducive for farmed species and fisheries depend on the availability of certain fish species, such as tuna, that often migrate as a result of changing environmental conditions. In the northwest Atlantic and off Western Australia, marine heatwaves have negatively impacted the availability and “productivity of economically important species” (IUCN, 2021).
+
+## Metrics
+
+Marine heatwaves are characterised based on their intensity, duration, spatial extent, and timing. Metrics such as absolute SST anomaly and heatwave category (moderate, strong, severe, or extreme) are used to describe the severity of events. These parameters are crucial for assessing and understanding their severity and impacts.
+- Intensity: The strength of a marine heatwave is measured by how much SST anomalies exceed the climatological threshold. Events can be categorised into four levels of intensity-moderate, strong, severe, and extreme-based on the magnitude of these deviations (Hobday et al., 2016).
+- Duration: Marine heatwaves can persist for varying timeframes, from days to months or even years. Long-duration events, such as the 2014-2016 North Pacific heatwave known as "The Blob," have profound and prolonged ecological effects (Oliver et al., 2018).
+- Spatial Extent: Marine heatwaves range from localised events affecting small coastal areas to basin-wide anomalies spanning entire oceanic regions. For example, the "Blob" spanned millions of square kilometres and disrupted marine ecosystems across the North Pacific (Frölicher et al., 2018).
+- Timing and Seasonality: While marine heatwaves can occur at any time, their timing relative to biological cycles can exacerbate impacts. For instance, heatwaves coinciding with breeding or migration periods can severely disrupt marine populations (Smale et al., 2019).
+
+## Multi-Hazard Context
+
+The figure below summarises common interactions between marine heatwaves and other hazards. This information should be used with caution and not be solely relied upon in Disaster Risk Management, particularly as some interactions may not have been included. Note that hazardous events occurring together or locally in space or time may not necessarily cause, amplify, or be otherwise related to each other. Specific examples of multi-hazard context can be found in the ‘Hazard drivers’ and ‘Impacts’ sections above.
+
+## Risk Management
+
+No Information Available.
+
+## Monitoring and Early Warning
+
+The section above and the table below offer an overview of monitoring marine heatwaves. This information can be used for forecasting within a national early warning system (EWS). Since EWS capacities and processes differ across countries, the most current and specific information regarding EWS should be obtained from the approprivate national or regional agency/authority responsible for disaster management.
+ | Which institution(s) produce(s) Disaster Risk Data/Information? | 
+- Oceanographic and marine agencies monitoring ocean temperatures, currents, and heat distribution using buoys, satellites, and underwater sensors.
+- Meteorological services tracking sea surface temperature anomalies, atmospheric conditions, and climate patterns influencing marine heatwaves.
+- Geophysical agencies studying ocean-atmosphere interactions, climate variability, and long-term temperature trends affecting marine heatwaves.
+- National, subnational, and local disaster management agencies monitoring the impacts of marine heatwaves on coastal communities, fisheries, and ecosystems.
+- Health authorities assessing public health risks from harmful algal blooms, degraded water quality, and seafood safety concerns linked to marine heatwaves.
+- Fisheries and marine resource management agencies evaluating the effects of marine heatwaves on fish stocks, coral reefs, and marine biodiversity.
+- Energy and utility companies monitoring risks to offshore infrastructure, such as thermal power plants and desalination facilities, from elevated ocean temperatures.
+- Researchers and academics, including climate scientists and oceanographers, studying marine heatwave trends, drivers, and ecological impacts.
+- Coastal and maritime industries, including tourism, shipping, and aquaculture, assessing risks from rising sea temperatures and developing adaptation strategies. 
+- Environmental organisations and conservation groups engaged in marine ecosystem protection, coral reef restoration.
+ | How is the Hazard Observed/Monitored/Forecast? | Marine heatwaves are monitored using satellites, ocean buoys, and underwater sensors that track sea surface temperatures, ocean currents, and heat anomalies. Scientists analyse atmospheric conditions, climate patterns like El Niño, and long-term temperature trends to understand their causes. Forecasting marine heatwaves involves computer models that predict ocean warming based on real-time data and historical patterns. Early warnings help fisheries, marine ecosystems, and coastal communities prepare for impacts such as coral bleaching, fish migration shifts, and harmful algal blooms.
