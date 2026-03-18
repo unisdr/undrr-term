@@ -33,7 +33,7 @@ The key fields are:
 - **`aliases`** — alternative names
 - **`source.text`** and **`source.url`** — citation and link to source document
 
-See the [frontmatter reference](README.md#frontmatter-reference) in the README for the full schema.
+See the [frontmatter reference](https://github.com/unisdr/undrr-term/blob/main/README.md#frontmatter-reference) in the README for the full schema.
 
 ### Folder-based terms
 
@@ -93,4 +93,4 @@ All contributions go through pull request review by UNDRR terminology specialist
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the project's existing terms: Apache License 2.0 for code and Creative Commons Attribution 4.0 IGO for terminology content. See [LICENSE](LICENSE) for details.
+By contributing, you agree that your contributions will be licensed under the project's existing terms: Apache License 2.0 for code and Creative Commons Attribution 4.0 IGO for terminology content. See [LICENSE](https://github.com/unisdr/undrr-term/blob/main/LICENSE) for details.
