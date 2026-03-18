@@ -135,8 +135,7 @@ async function convertTerm(projectSlug, code, config) {
 
   // Fetch scopeNote data from API
   console.log(`  ${code}: fetching scopeNote data from API...`);
-  const apiSlug = config.api_slug || projectSlug;
-  const scopeNotes = await fetchScopeNotes(apiSlug, code);
+  const scopeNotes = await fetchScopeNotes(projectSlug, code);
   console.log(`  ${code}: got ${scopeNotes.length} scopeNote sections`);
 
   // Build description content

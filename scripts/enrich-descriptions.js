@@ -31,8 +31,8 @@ const SCOPE_NOTE_SECTIONS = [
 
 const API_BASE = "https://www.preventionweb.net/api/terms";
 
-async function fetchScopeNotes(apiSlug, code) {
-  const url = `${API_BASE}/${apiSlug}/${code}`;
+async function fetchScopeNotes(project, code) {
+  const url = `${API_BASE}/${project}/${code}`;
   try {
     const res = await fetch(url);
     if (!res.ok) {
@@ -75,7 +75,7 @@ function buildDescriptionContent(existingDescription, scopeNotes) {
   return parts.join("\n\n") + "\n";
 }
 
-async function enrichTerm(projectSlug, apiSlug, code, sourceLang) {
+async function enrichTerm(projectSlug, code, sourceLang) {
   const termDir = path.join(TERMS_DIR, projectSlug, code);
   const descPath = path.join(termDir, `${code}_description_${sourceLang}.md`);
 
@@ -95,7 +95,7 @@ async function enrichTerm(projectSlug, apiSlug, code, sourceLang) {
   }
 
   // Fetch scopeNote data
-  const scopeNotes = await fetchScopeNotes(apiSlug, code);
+  const scopeNotes = await fetchScopeNotes(projectSlug, code);
   if (scopeNotes.length === 0) {
     return false;
   }
@@ -126,11 +126,9 @@ async function main() {
     process.exit(1);
   }
 
-  const apiSlug = config.api_slug || projectSlug;
   const sourceLang = config.source_language || "en";
 
   console.log(`Project: ${config.name} (${projectSlug})`);
-  console.log(`API slug: ${apiSlug}`);
 
   // Determine which codes to enrich
   let targetCodes = codes;
@@ -150,7 +148,7 @@ async function main() {
   let skipped = 0;
 
   for (const code of targetCodes) {
-    const ok = await enrichTerm(projectSlug, apiSlug, code, sourceLang);
+    const ok = await enrichTerm(projectSlug, code, sourceLang);
     if (ok) enriched++;
     else skipped++;
   }
