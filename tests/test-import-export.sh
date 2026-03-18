@@ -111,7 +111,7 @@ else
 fi
 # Import the filtered CSV — French translations must still be present
 node scripts/import-csv.js "$TMPDIR/hips-2025-zh.csv"
-if grep -q "Wind" terms/hips-2025/mh0301.md; then
+if grep -q "Wind" terms/hips-2025/mh0301/mh0301_index.md; then
   echo "--lang CSV import preserves data: PASS"
 else
   echo "--lang CSV import preserves data: FAIL (term data missing)"
@@ -140,7 +140,7 @@ else
 fi
 # Import the filtered JSON — French translations must still be present
 node scripts/import-json.js "$TMPDIR/hips-2025-zh.json"
-if grep -q "Wind" terms/hips-2025/mh0301.md; then
+if grep -q "Wind" terms/hips-2025/mh0301/mh0301_index.md; then
   echo "--lang JSON import preserves data: PASS"
 else
   echo "--lang JSON import preserves data: FAIL (term data missing)"
