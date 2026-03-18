@@ -1,0 +1,1 @@
+hunderstorms are associated with cumulonimbus clouds (WMO, 2017) and are most often accompanied by precipitation that, when it reaches the ground, is in the form of a shower of rain, snow, snow pellets, small hail, or hail. Thunderstorms can cause tornadoes, strong winds, and flash flooding (Habitat for Humanity, 2021).

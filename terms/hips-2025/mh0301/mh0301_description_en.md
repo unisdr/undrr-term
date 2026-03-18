@@ -1,0 +1,2 @@
+Wind velocity is an important consideration in relation to, for example, airborne pollution and the landing of aircraft (WMO, 2018). Surface wind is considered mainly as a two-dimensional vector quantity specified by two numbers representing direction and speed (WMO, 2018).
+The extent to which wind is characterised by rapid fluctuations is referred to as gustiness, and single fluctuations are called gusts (WMO, 2018).

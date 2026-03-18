@@ -1,0 +1,5 @@
+For liquefaction to occur, the shear strength of the soil volume (e.g., the strength due to contact between individual soil grains) must be reduced to near-zero. Soil compression increases the pore-water pressure, causing the water to move toward the Earth's surface where pressure is lower. Under typical loading (e.g., from temperature changes, increased groundwater), the water then drains and contact between grains retains their strength. However, when loading cycles occur rapidly, such as during ground shaking, intermittent drainage is prohibited, and liquefaction may initiate (Kramer, 1996). During heavy precipitation, rapid snowmelt, and earthquakes, sensitive glaciomarine clays can lose strength and liquefy. The salts holding the clay-sized particles are leached triggering liquefaction (e.g. Crawford, 1968).
+The following characteristics are common to deposits most susceptible to liquefaction (Kramer, 1996):
+- Loose, sandy soils; however, liquefaction has been observed in gravels and coarse silts (Seed et al., 2003)
+- Rounded, well-sorted grains (e.g., uniform grain size); these compact most easily
+- Recently deposited, especially of Holocene age (

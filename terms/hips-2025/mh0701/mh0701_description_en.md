@@ -1,0 +1,1 @@
+Rogue waves, called ‘extreme storm waves’ by scientists, are those waves which are greater than twice the size of surrounding waves. They are very unpredictable, and often come unexpectedly from directions other than those of the prevailing wind and waves. Since these waves are uncommon, measurements and analysis of this phenomenon are extremely rare (NOAA, 2019).

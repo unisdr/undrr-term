@@ -1,0 +1,2 @@
+Similar in motion to a seesaw, a seiche is a standing wave in which the largest vertical oscillations are at each end of a body of water with very small oscillation at the ‘node’, or centre point, of the wave. Standing waves can form in any enclosed or semienclosed body of water, from a massive lake to a small coffee cup (NOAA, 2018).
+The graphic shows a standing wave (black) depicted as the sum of two propagating waves travelling in opposite directions (blue and red) (NOAA, 2018).

@@ -1,0 +1,8 @@
+The form, size and concentration of ice crystals differ considerably according to the temperature and supersaturation at which they develop. A fall of snow usually includes various types of snow crystals, and almost all types of crystals may be observed during a single fall of snow. Small droplets of frozen water are often attached to snow crystals. If present in great numbers, these can obscure the crystalline structure of the snow. At temperatures above about -5°C, the crystals generally clump to form snowflakes (WMO, 2017).
+The National Oceanic and Atmospheric Administration (NOAA) National Severe Storms Laboratory reports the occurrence of various types of snow hazard (NOAA, 2019):
+- Snow flurries: Light snow falling for short durations. No accumulation or light dusting is all that is expected.
+- Snow showers: Snow falling at varying intensities for brief periods. Some accumulation is possible.
+- Snow squalls: Brief, intense snow showers accompanied by strong, gusty winds. Accumulation may be significant. In North America, snow squalls are best known in the Great Lakes Region of Canada.
+- Blowing snow: Wind-driven snow that reduces visibility and causes significant drifting. Blowing snow may be snow that is falling and/or loose snow on the ground picked up by the wind.
+- Blizzards: Winds over 35 mph with snow and blowing snow, reducing visibility to 1/4 mile or less for at least 3 hours.
+- Wet snow: Wet snow and ice rapidly accumulate on trees with leaves, causing the branches to snap under the load.

@@ -1,0 +1,15 @@
+Ultraviolet radiation (UVR) can neither be seen nor felt. Ultraviolet (UV) radiation covers the wavelength range of 100-400 nm, which is a higher frequency and lower wavelength than visible light. UV radiation comes naturally from the sun, but it can also be created by artificial sources used in industry, commerce and recreation (WHO no date).
+The UV region covers the wavelength range of 100-400 nm and is divided into three bands:
+- UVA (315-400 nm)
+- UVB (280-315 nm)
+- UVC (100-280 nm) (WHO no date).As sunlight passes through the atmosphere, all UVC and approximately 90% of UVB radiation is absorbed by ozone, water vapour, oxygen and carbon dioxide. UVA radiation is less affected by the atmosphere. Therefore, the UV radiation reaching the Earth's surface is largely composed of UVA with a small UVB component (WHO no date).
+The amount of UV radiation from the sun that hits the Earth's surface depends on several factors, including the sun's height in the sky, latitude, cloud cover, altitude, the thickness of the ozone layer and ground reflection. Reductions in the ozone layer due to human-created pollution increase the amount of UVA and UVB that reaches the surface. This can impact human health, animals, marine organisms and plant life. In humans, increased UV exposure can cause skin cancers, cataracts and immune system damage (WHO no date).
+While some people are exposed to artificial UVR sources (e.g. in medicine, industry and for disinfection and cosmetic purposes), everyone is exposed to solar UVR. Solar UVR levels are influenced by several factors:
+- Sun elevation: the higher the sun in the sky, the higher the UVR level. UVR levels vary with time of day and time of year.
+- Latitude: the closer to the equator, the higher the UVR levels.
+- Altitude: UVR levels increase with altitude as the air is thinner and less UVR is absorbed.
+- Cloud cover: UVR levels are highest under cloudless skies but can be high even with cloud cover.
+- Ozone: ozone absorbs part of the UVR from the sun. Less ozone means more UVR reaches the Earth's surface.
+- Reflection: reflective surfaces, such as water, sand and fresh snow, increase the UVR level.
+- Climate change, including through variations in ozone and cloud cover, is expected to impact UVR levels at the Earth's surface (WHO, 2022a).Globally in 2020, over 1.5 million cases of skin cancers were diagnosed and over 120 000 skin cancer-associated deaths were reported (WHO 2022a).
+Worldwide, it is estimated that 15 million people are blind due to cataracts; of these, some 10% may be due to exposure to UVR. (WHO 2022a).

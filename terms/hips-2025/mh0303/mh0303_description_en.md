@@ -1,0 +1,1 @@
+The numerical limits of a gale are defined by the Beaufort Scale, which is an empirical measure that relates wind speed to observed conditions at sea or on land (Royal Meteorological Society, 2018). Its full name is the Beaufort wind force scale.

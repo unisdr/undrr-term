@@ -1,0 +1,34 @@
+---
+code: mh0608
+id: ice-jam-flooding-including-debris
+slug: ice-jam-flooding-including-debris
+project: hips-2025
+status: published
+translations:
+  en:
+    term: Ice-Jam Flooding Including Debris
+    definition: >-
+      An ice-jam flood including debris is defined as an accumulation of shuga
+      including ice cakes, below ice cover. It is broken ice in a river which
+      causes a narrowing of the river channel, a rise in water level and local
+      floods (WMO, 2012).
+
+      Shuga is defined as the accumulation of spongy white ice lumps, a few
+      centimetres across, formed from grease ice or slush, and sometimes from
+      anchor ice rising to the surface (WMO, 2012).
+    source:
+      text: 'UNDRR & ISC, 2025'
+      url: 'https://www.preventionweb.net/hips'
+    aliases:
+      - Flash Flood
+      - Flooding
+    confidence: 5
+  ar: {}
+  zh: {}
+  fr: {}
+  ru: {}
+  es: {}
+category: Meteorological and Hydrological
+domain: Water-related
+---
+

@@ -1,0 +1,1 @@
+Ice-jam flooding is caused by an accumulation of ice in a river, stream or other flooding source that reduces the cross-sectional area available to carry the flow and forces an increase in water-surface elevation (WMO, 2012).

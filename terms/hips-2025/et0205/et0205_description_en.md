@@ -1,0 +1,5 @@
+The definition above includes objects that will come close to Earth at some point in their future orbital evolution. Near-Earth objects (NEOs) generally result from objects that have experienced gravitational perturbations from nearby planets, moving them into orbits that allow them to come near to Earth.
+IAWN has proposed the following definition of an NEO: An asteroid, meteoroid, or a comet as it passes near Earth, enters the Earth's atmosphere, and/or strikes the Earth, or provokes changes in inter-planetary conditions that affect the Earth's magneto- sphere, ionosphere, and thermosphere. The criteria and thresholds related to this definition are as follows (UN OOSA, no date):
+- The probability that an NEO will impact Earth (either 1% for warning or 10% for terrestrial preparedness planning).
+- The probable size, or at least its luminosity in the night sky (greater than 10 meters or at least absolute magnitude 28).
+- How far in the future the NEO will impact Earth (20 years).

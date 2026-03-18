@@ -1,0 +1,28 @@
+---
+code: mh0306
+id: depression-or-cyclone-low-pressure-area
+slug: depression-or-cyclone-low-pressure-area
+project: hips-2025
+status: published
+translations:
+  en:
+    term: Depression or Cyclone (Low Pressure Area)
+    definition: >-
+      A depression or cyclone is a region of the atmosphere in which the
+      pressure is lower than that of the surrounding region at the same level
+      (WMO, 1992).
+    source:
+      text: 'UNDRR & ISC, 2025'
+      url: 'https://www.preventionweb.net/hips'
+    aliases:
+      - Low-pressure area
+    confidence: 5
+  ar: {}
+  zh: {}
+  fr: {}
+  ru: {}
+  es: {}
+category: Meteorological and Hydrological
+domain: Wind- & Pressure-related
+---
+

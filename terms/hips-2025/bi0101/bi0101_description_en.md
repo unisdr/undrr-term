@@ -1,0 +1,21 @@
+The descriptor 'through the air' can be used in an overarching way to characterize an infectious disease where transmission involves the pathogen travelling through or being suspended in the air (WHO, 2024a). Acute respiratory infections (ARIs) are the leading cause of morbidity and mortality from infectious diseases worldwide, particularly affecting the youngest and oldest people in low and middle-income nations (WHO, 2014). These infections, typically caused by viruses, bacteria, fungi, parasites or mixed viral-bacterial infections, can be contagious and spread rapidly. Three main types of organism can cause infectious-related airborne diseases: viruses, bacteria, and fungi. The pathogens that cause respiratory infections include COVID-19, influenza, measles, Middle East respiratory syndrome (MERS), severe acute respiratory syndrome (SARS), and tuberculosis, among others (WHO, 2024a). Some of the common pathogens that may spread via airborne transmission include:
+- Anthrax
+- Aspergillosis
+- Blastomycosis
+- Chickenpox
+- Adenovirus
+- Enteroviruses
+- Rotavirus
+- Influenza
+- Rhinovirus
+- Neisseria meningitidis
+- Streptococcus pneumoniae
+- Legionellosis
+- Measles
+- Mumps
+- Cryptococcosis
+- Tuberculosis
+- Bordetella pertussis
+- Severe acute respiratory syndrome (SARS)
+- Middle East respiratory syndrome
+- Coronavirus disease 2019 (COVID-19)

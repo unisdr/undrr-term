@@ -1,0 +1,1 @@
+A depression or cyclone is represented on a synoptic chart by a system of isobars at a specified altitude level (or a system of contours at a specified pressure level) which enclose relatively low values of pressure (or altitude) (WMO, 1992).

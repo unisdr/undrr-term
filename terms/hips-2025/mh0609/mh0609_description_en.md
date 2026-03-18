@@ -1,0 +1,1 @@
+The Federal Emergency Management Agency (FEMA) refers to the term “ponding hazard”, defined as “a flood hazard that occurs in flat areas when there are depressions in the ground that collect "ponds" of water” (FEMA, 2020).

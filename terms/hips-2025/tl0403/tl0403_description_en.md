@@ -1,0 +1,11 @@
+Statistically agreed definitions for Marine Accident (United Nations, European Union and the International Transport Forum at the OECD, 2019) are as follows: 
+- Fatal accident: any injury resulting in a person killed. 
+- Non-fatal accident: any injury incident other than a fatal accident. 
+- Person killed: Any person killed immediately or dying within 30 days as a result of an injury accident. For countries that do not apply the threshold of 30 days, conversion coefficients are estimated so that comparisons on the basis of the 30 day-definition can be made. 
+- Person lost at sea: A person missing at sea, being presumed to have gone overboard. 
+- Person Injured: Any person who as result of an injury accident was not killed but sustained an injury. 
+- Serious injury: An injury which is sustained by a person in a casualty resulting in incapacitation for more than 72 hours commencing within seven days from the date of injury. 
+- Person seriously injured: Any person who as result of an injury accident was seriously injured. 
+- Person slightly injured: Any person who as result on an injury accident was not seriously injured. Very serious marine casualty: A casualty to a marine vessel which involves the total loss of the marine vessel, loss of life or severe damage to the environment. 
+- Serious marine casualty: A casualty which does not qualify as a very serious casualty and which involves a fire, explosion, grounding, contact, heavy weather damage, ice damage, hull cracking or suspected hull defect, etc., resulting in: structural damage rendering the marine vessel not navigable, such as penetration of the hull underwater, immobilisation of the main engines, extensive accommodation damage etc.; or pollution (regardless of quantity); and/or a breakdown necessitating towage or shore assistance. 
+- Marine incident: An occurrence or event being caused by, or in connection with, the operations of a marine vessel in motion at sea, other than a marine casualty that endangered, or, if not corrected, would endanger the safety of the vessel, its occupants or any other person or the environment.

@@ -1,0 +1,3 @@
+A downburst is a strong downdraft that induces an outburst of damaging winds at or near the ground. Downbursts are classified based on the horizontal extent of their outflow:
+- Microburst: Affecting areas less than 4 kilometres in diameter.
+- Macroburst: Covering areas greater than 4 kilometres in diameter.Wind speeds within downbursts can reach up to 67 meteres per second (approximately 240 kilometres per hour). These events typically last between 5 to 30 minutes and can cause significant damage comparable to that of tornadoes. Downbursts pose particular hazards to aviation due to the rapid changes in wind speed and direction they can induce (National Oceanic and Atmospheric Administration [NOAA], 2023).
