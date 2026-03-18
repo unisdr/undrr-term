@@ -1,0 +1,10 @@
+name: "Hazard Information Profiles (2025 Update)"
+slug: hips-2025
+description: "Hazard definitions from the UNDRR–ISC Hazard Information Profiles – 2025 Update"
+citation: "United Nations Office for Disaster Risk Reduction (UNDRR), & International Science Council (ISC). (2025). UNDRR–ISC Hazard Information Profiles – 2025 Update"
+url: "https://www.preventionweb.net/hips"
+languages: [ar, zh, en, fr, ru, es]
+source_language: en
+weblate:
+  project: undrr-hips
+  component: terms

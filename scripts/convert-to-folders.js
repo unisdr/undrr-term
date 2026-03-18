@@ -91,21 +91,21 @@ function writeTermFolder(filePath, data, descriptionEn, languages, sourceLang) {
     }
   }
 
-  // Write index.md
+  // Write {code}_index.md
   const indexContent = matter.stringify("", indexData);
-  fs.writeFileSync(path.join(folderPath, "index.md"), indexContent);
+  fs.writeFileSync(path.join(folderPath, `${code}_index.md`), indexContent);
 
-  // Write description_en.md (populated)
+  // Write {code}_description_{sourceLang}.md (populated)
   fs.writeFileSync(
-    path.join(folderPath, `description_${sourceLang}.md`),
+    path.join(folderPath, `${code}_description_${sourceLang}.md`),
     descriptionEn,
   );
 
-  // Write empty description_{lang}.md for other languages
+  // Write placeholder {code}_description_{lang}.md for other languages
   for (const lang of languages) {
     if (lang === sourceLang) continue;
-    const descPath = path.join(folderPath, `description_${lang}.md`);
-    fs.writeFileSync(descPath, "");
+    const descPath = path.join(folderPath, `${code}_description_${lang}.md`);
+    fs.writeFileSync(descPath, "<!-- Translation pending / Traduction en attente -->\n");
   }
 
   return folderPath;
@@ -123,7 +123,7 @@ async function convertTerm(projectSlug, code, config) {
   }
 
   // Skip if already folder-based
-  if (filePath.endsWith("index.md")) {
+  if (filePath.endsWith("_index.md")) {
     console.log(`  ${code}: already folder-based, skipping`);
     return true;
   }
@@ -160,7 +160,7 @@ async function convertTerm(projectSlug, code, config) {
   console.log(`  ${code}: deleted flat file`);
 
   // Validate: re-read via parseTerm and check description round-trips
-  const newIndexPath = path.join(folderPath, "index.md");
+  const newIndexPath = path.join(folderPath, `${code}_index.md`);
   const reparsed = parseTerm(newIndexPath);
 
   const reparsedDesc = reparsed.translations?.[sourceLang]?.description || "";

@@ -64,12 +64,13 @@
     {%- endfor %}
   </select>
   {%- if lang !== "en" %}
-  <a href="{{ ('/exports/' + project.slug + '-' + lang + '.csv') | url }}" download class="download-csv">CSV</a>
-  <a href="{{ ('/exports/' + project.slug + '-' + lang + '.json') | url }}" download class="download-json">JSON</a>
+  <a href="{{ ('/exports/' + project.slug + '-' + lang + '.csv') | url }}" download class="download-csv" title="{{ i18n.download_csv_desc[lang] }}">CSV</a>
+  <a href="{{ ('/exports/' + project.slug + '-' + lang + '.json') | url }}" download class="download-json" title="{{ i18n.download_json_desc[lang] }}">JSON</a>
   {%- else %}
-  <a href="{{ ('/exports/' + project.slug + '.csv') | url }}" download class="download-csv">CSV</a>
-  <a href="{{ ('/exports/' + project.slug + '.json') | url }}" download class="download-json">JSON</a>
+  <a href="{{ ('/exports/' + project.slug + '.csv') | url }}" download class="download-csv" title="{{ i18n.download_csv_desc[lang] }}">CSV</a>
+  <a href="{{ ('/exports/' + project.slug + '.json') | url }}" download class="download-json" title="{{ i18n.download_json_desc[lang] }}">JSON</a>
   {%- endif %}
+  <a href="{{ ('/exports/' + project.slug + '.zip') | url }}" download class="download-zip" title="{{ i18n.download_zip_desc[lang] }}">ZIP</a>
 </div>
 
 <div id="term-list">

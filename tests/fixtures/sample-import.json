@@ -1,5 +1,5 @@
 {
-  "project": "hips",
+  "project": "hips-2025",
   "name": "Hazard Information Profiles",
   "languages": [
     "ar",
@@ -17,7 +17,7 @@
       "code": "mh0301",
       "id": "wind",
       "slug": "wind",
-      "project": "hips",
+      "project": "hips-2025",
       "status": "published",
       "category": "Meteorological and Hydrological",
       "domain": "Wind- & Pressure-related",
@@ -41,7 +41,7 @@
       "code": "mh0501",
       "id": "heatwave",
       "slug": "heatwave",
-      "project": "hips",
+      "project": "hips-2025",
       "status": "published",
       "category": "Meteorological and Hydrological",
       "domain": "Temperature-related",

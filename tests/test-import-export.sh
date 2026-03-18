@@ -13,36 +13,69 @@ TMPDIR=$(mktemp -d)
 trap 'rm -rf "$TMPDIR"' EXIT
 
 echo "=== Testing CSV export ==="
-node scripts/export-csv.js hips --output "$TMPDIR/hips.csv"
+node scripts/export-csv.js hips-2025 --output "$TMPDIR/hips-2025.csv"
 echo ""
 
 echo "=== Testing JSON export ==="
-node scripts/export-json.js hips --output "$TMPDIR/hips.json"
+node scripts/export-json.js hips-2025 --output "$TMPDIR/hips-2025.json"
+echo ""
+
+echo "=== Testing CSV has no description column ==="
+HEADER=$(head -1 "$TMPDIR/hips-2025.csv")
+if ! echo "$HEADER" | grep -q "description"; then
+  echo "CSV no-description: PASS"
+else
+  echo "CSV no-description: FAIL (description column found in CSV)"
+  exit 1
+fi
+echo ""
+
+echo "=== Testing ZIP export ==="
+# Generate exports to exports/ dir, then zip
+node scripts/export-csv.js hips-2025 --output exports/hips-2025.csv
+node scripts/export-json.js hips-2025 --output exports/hips-2025.json
+node scripts/export-zip.js hips-2025
+if [ -f "exports/hips-2025.zip" ]; then
+  ZIP_LIST=$(unzip -l exports/hips-2025.zip 2>&1 || true)
+  if echo "$ZIP_LIST" | grep -q "hips-2025.csv" && \
+     echo "$ZIP_LIST" | grep -q "hips-2025.json" && \
+     echo "$ZIP_LIST" | grep -q "descriptions/"; then
+    echo "ZIP export: PASS"
+  else
+    echo "ZIP export: FAIL (missing expected files)"
+    echo "$ZIP_LIST"
+    exit 1
+  fi
+else
+  echo "ZIP export: FAIL (zip file not created)"
+  exit 1
+fi
+rm -f exports/hips-2025.csv exports/hips-2025.json exports/hips-2025.zip
 echo ""
 
 echo "=== Testing CSV round-trip (import then re-export) ==="
-node scripts/import-csv.js "$TMPDIR/hips.csv"
-node scripts/export-csv.js hips --output "$TMPDIR/hips-roundtrip.csv"
-if diff -q "$TMPDIR/hips.csv" "$TMPDIR/hips-roundtrip.csv" > /dev/null; then
+node scripts/import-csv.js "$TMPDIR/hips-2025.csv"
+node scripts/export-csv.js hips-2025 --output "$TMPDIR/hips-2025-roundtrip.csv"
+if diff -q "$TMPDIR/hips-2025.csv" "$TMPDIR/hips-2025-roundtrip.csv" > /dev/null; then
   echo "CSV round-trip: PASS (no diff)"
 else
   echo "CSV round-trip: FAIL"
-  diff "$TMPDIR/hips.csv" "$TMPDIR/hips-roundtrip.csv" || true
+  diff "$TMPDIR/hips-2025.csv" "$TMPDIR/hips-2025-roundtrip.csv" || true
   exit 1
 fi
 echo ""
 
 echo "=== Testing JSON round-trip (import then re-export) ==="
-node scripts/import-json.js "$TMPDIR/hips.json"
-node scripts/export-json.js hips --output "$TMPDIR/hips-roundtrip.json"
+node scripts/import-json.js "$TMPDIR/hips-2025.json"
+node scripts/export-json.js hips-2025 --output "$TMPDIR/hips-2025-roundtrip.json"
 # Strip the "exported" timestamp before comparing (it changes each run)
-jq 'del(.exported)' "$TMPDIR/hips.json" > "$TMPDIR/hips-stripped.json"
-jq 'del(.exported)' "$TMPDIR/hips-roundtrip.json" > "$TMPDIR/hips-roundtrip-stripped.json"
-if diff -q "$TMPDIR/hips-stripped.json" "$TMPDIR/hips-roundtrip-stripped.json" > /dev/null; then
+jq 'del(.exported)' "$TMPDIR/hips-2025.json" > "$TMPDIR/hips-2025-stripped.json"
+jq 'del(.exported)' "$TMPDIR/hips-2025-roundtrip.json" > "$TMPDIR/hips-2025-roundtrip-stripped.json"
+if diff -q "$TMPDIR/hips-2025-stripped.json" "$TMPDIR/hips-2025-roundtrip-stripped.json" > /dev/null; then
   echo "JSON round-trip: PASS (no diff)"
 else
   echo "JSON round-trip: FAIL"
-  diff "$TMPDIR/hips-stripped.json" "$TMPDIR/hips-roundtrip-stripped.json" || true
+  diff "$TMPDIR/hips-2025-stripped.json" "$TMPDIR/hips-2025-roundtrip-stripped.json" || true
   exit 1
 fi
 echo ""
@@ -66,9 +99,9 @@ fi
 echo ""
 
 echo "=== Testing --lang filter (CSV) ==="
-node scripts/export-csv.js hips --lang zh --output "$TMPDIR/hips-zh.csv"
+node scripts/export-csv.js hips-2025 --lang zh --output "$TMPDIR/hips-2025-zh.csv"
 # Header should have en_* and zh_* columns but NOT fr_*, ar_*, ru_*, es_*
-HEADER=$(head -1 "$TMPDIR/hips-zh.csv")
+HEADER=$(head -1 "$TMPDIR/hips-2025-zh.csv")
 if echo "$HEADER" | grep -q "en_term" && echo "$HEADER" | grep -q "zh_term" && ! echo "$HEADER" | grep -q "fr_term"; then
   echo "--lang CSV column filter: PASS"
 else
@@ -77,8 +110,8 @@ else
   exit 1
 fi
 # Import the filtered CSV — French translations must still be present
-node scripts/import-csv.js "$TMPDIR/hips-zh.csv"
-if grep -q "Wind" terms/hips/mh0301.md; then
+node scripts/import-csv.js "$TMPDIR/hips-2025-zh.csv"
+if grep -q "Wind" terms/hips-2025/mh0301.md; then
   echo "--lang CSV import preserves data: PASS"
 else
   echo "--lang CSV import preserves data: FAIL (term data missing)"
@@ -88,26 +121,26 @@ git checkout -- terms/
 echo ""
 
 echo "=== Testing --lang filter (JSON) ==="
-node scripts/export-json.js hips --lang zh --output "$TMPDIR/hips-zh.json"
+node scripts/export-json.js hips-2025 --lang zh --output "$TMPDIR/hips-2025-zh.json"
 # JSON should list only en and zh in languages array
-LANG_COUNT=$(jq '.languages | length' "$TMPDIR/hips-zh.json")
+LANG_COUNT=$(jq '.languages | length' "$TMPDIR/hips-2025-zh.json")
 if [ "$LANG_COUNT" -eq 2 ]; then
   echo "--lang JSON language filter: PASS (2 languages)"
 else
   echo "--lang JSON language filter: FAIL (expected 2 languages, got $LANG_COUNT)"
-  jq '.languages' "$TMPDIR/hips-zh.json"
+  jq '.languages' "$TMPDIR/hips-2025-zh.json"
   exit 1
 fi
 # Verify no French translations leaked into the filtered export
-if ! jq -e '.terms[0].translations.fr' "$TMPDIR/hips-zh.json" > /dev/null 2>&1; then
+if ! jq -e '.terms[0].translations.fr' "$TMPDIR/hips-2025-zh.json" > /dev/null 2>&1; then
   echo "--lang JSON translation filter: PASS (no fr in export)"
 else
   echo "--lang JSON translation filter: FAIL (fr present in filtered export)"
   exit 1
 fi
 # Import the filtered JSON — French translations must still be present
-node scripts/import-json.js "$TMPDIR/hips-zh.json"
-if grep -q "Wind" terms/hips/mh0301.md; then
+node scripts/import-json.js "$TMPDIR/hips-2025-zh.json"
+if grep -q "Wind" terms/hips-2025/mh0301.md; then
   echo "--lang JSON import preserves data: PASS"
 else
   echo "--lang JSON import preserves data: FAIL (term data missing)"
