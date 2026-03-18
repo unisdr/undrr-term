@@ -40,14 +40,13 @@ See the [frontmatter reference](README.md#frontmatter-reference) in the README f
 Most terms are single `.md` files, but some use a folder structure when they have extended descriptions or assets:
 
 ```
-terms/hips/gh0001/
-  index.md              # frontmatter with short definitions
-  description_en.md     # extended narrative (English)
-  description_fr.md     # extended narrative (French)
-  fault-mechanics.svg   # diagram referenced in descriptions
+terms/hips-2025/gh0101/
+  gh0101_index.md              # frontmatter with short definitions
+  gh0101_description_en.md     # extended narrative (English)
+  gh0101_description_fr.md     # extended narrative (French)
 ```
 
-The `description_{lang}.md` files contain full markdown and are editable the same way.
+Filenames are prefixed with the term code. The `{code}_description_{lang}.md` files contain full markdown and are editable the same way.
 
 ## Work with CSV or JSON exports
 

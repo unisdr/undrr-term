@@ -7,8 +7,8 @@
  *   node scripts/convert-to-folders.js <project> [code1 code2 ...]
  *
  * Examples:
- *   node scripts/convert-to-folders.js hips gh0101 bi0104   # two terms
- *   node scripts/convert-to-folders.js hips                  # all terms
+ *   node scripts/convert-to-folders.js hips-2025 gh0101 bi0104   # two terms
+ *   node scripts/convert-to-folders.js hips-2025                  # all terms
  */
 
 import fs from "fs";

@@ -7,8 +7,8 @@
  * Usage:
  *   node scripts/enrich-descriptions.js <project> [code1 code2 ...]
  *
- * Uses the api_slug field from _project.yml to resolve the correct API endpoint
- * (e.g. api_slug: hips → /api/terms/hips/{code}).
+ * Uses the project slug to resolve the API endpoint
+ * (e.g. hips-2025 → /api/terms/hips-2025/{code}).
  */
 
 import fs from "fs";

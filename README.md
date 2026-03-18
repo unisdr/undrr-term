@@ -19,7 +19,7 @@ Multilingual terminology for the UN Office for Disaster Risk Reduction, managed 
 
 | Project | Folder | Description |
 |---------|--------|-------------|
-| Hazard Information Profiles | `terms/hips/` | Hazard definitions from the 2025 HIPs (~281 terms) |
+| Hazard Information Profiles (2025 Update) | `terms/hips-2025/` | Hazard definitions from the 2025 HIPs (281 terms) |
 | [UNISDR Terminology (2009)](https://www.preventionweb.net/publication/2009-unisdr-terminology-disaster-risk-reduction) | `terms/unisdr-2009/` | Official DRR terminology published by UNISDR in 2009 (53 terms) |
 | [OEWG Terminology (2016)](https://www.undrr.org/publication/report-open-ended-intergovernmental-expert-working-group-indicators-and-terminology) | `terms/oewg-2016/` | Terminology from the UNGA open-ended intergovernmental expert working group report (65 terms) |
 
@@ -53,22 +53,24 @@ Terms can be exported to CSV or JSON for offline editing, bulk review, or exchan
 
 ```bash
 yarn export:csv               # all projects → exports/{project}.csv
-yarn export:csv hips          # single project
-yarn export:csv hips --output terms.csv
-yarn export:csv hips --lang zh          # English + Chinese only
-yarn export:csv hips --lang zh,fr       # English + Chinese + French
+yarn export:csv hips-2025          # single project
+yarn export:csv hips-2025 --output terms.csv
+yarn export:csv hips-2025 --lang zh          # English + Chinese only
+yarn export:csv hips-2025 --lang zh,fr       # English + Chinese + French
 
 yarn export:json              # all projects → exports/{project}.json
-yarn export:json hips         # single project
-yarn export:json hips --output terms.json
-yarn export:json hips --lang zh         # English + Chinese only
+yarn export:json hips-2025         # single project
+yarn export:json hips-2025 --output terms.json
+yarn export:json hips-2025 --lang zh         # English + Chinese only
 ```
 
 The `--lang` flag filters the export to the source language (English) plus the specified target(s). This makes the output smaller and easier to work with for translators reviewing a single language pair. The import scripts accept any subset of languages — columns or translations not in the file are left untouched.
 
-**CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`, `{lang}_confidence`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`).
+**CSV format** is wide: one row per term with columns for metadata (`code`, `id`, `project`, `status`, `category`, `domain`, `related`) followed by each language's fields (`{lang}_term`, `{lang}_definition`, `{lang}_context`, `{lang}_part_of_speech`, `{lang}_aliases`, `{lang}_source_text`, `{lang}_source_url`, `{lang}_confidence`). Aliases and related terms are pipe-separated (e.g., `Hurricane|Typhoon`). Description fields are excluded from CSV because multi-KB markdown breaks spreadsheets — use JSON or ZIP for descriptions.
 
-**JSON format** is hierarchical with project metadata, a language list, and a `terms` array where each entry contains the full translation object as it appears in frontmatter.
+**JSON format** is hierarchical with project metadata, a language list, and a `terms` array where each entry contains the full translation object including descriptions.
+
+**ZIP format** bundles the CSV, JSON, and all description markdown files into a single archive.
 
 ### Import
 
@@ -121,14 +123,24 @@ This exports all terms, re-imports them, and verifies the output is identical. I
 
 ## How terms are structured
 
-Each term is a markdown file in `terms/{project}/`. Filenames use the source system code (e.g., `mh0301.md` for flood). All translations live in the frontmatter. Definitions support inline markdown (bold, italic, links).
+Each term lives in a folder under `terms/{project}/{code}/`. The folder contains a frontmatter index file and separate description files per language. All translations sit in the YAML frontmatter. Definitions support inline markdown (bold, italic, links).
+
+```
+terms/hips-2025/mh0301/
+  mh0301_index.md                # frontmatter with metadata + short definitions
+  mh0301_description_en.md       # extended narrative (English)
+  mh0301_description_fr.md       # extended narrative (French)
+  mh0301_description_ar.md       # placeholder for untranslated languages
+```
+
+Filenames are prefixed with the term code to prevent orphaned fragments. Untranslated description files contain an HTML comment placeholder (`<!-- Translation pending / Traduction en attente -->`).
 
 ```yaml
 ---
 id: flood
 code: mh0301
 slug: flood
-project: hips
+project: hips-2025
 status: published
 category: hydrological
 domain: natural-hazards/meteorological
@@ -159,16 +171,6 @@ translations:
 ---
 ```
 
-When a term needs images or extended descriptions, it becomes a folder:
-
-```
-terms/hips/gh0001/
-  index.md              # frontmatter with short definitions
-  description_en.md     # extended narrative (English)
-  description_fr.md     # extended narrative (French)
-  fault-mechanics.svg   # diagram referenced in descriptions
-```
-
 See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the Weblate sync workflow.
 
 ## Frontmatter reference
@@ -180,7 +182,7 @@ See [METHODOLOGY.md](METHODOLOGY.md) for design rationale, prior art, and the We
 | `id` | yes | Unique identifier for the concept (e.g., `flood`) |
 | `code` | yes | Source system code, used as filename and in URLs (e.g., `mh0301`) |
 | `slug` | yes | Human-readable slug for display purposes |
-| `project` | yes | Which term project this belongs to (`hips`, `unisdr-2009`, `oewg-2016`) |
+| `project` | yes | Which term project this belongs to — must match the directory name (e.g., `hips-2025`, `unisdr-2009`, `oewg-2016`) |
 | `status` | yes | Publication state: `published`, `draft`, or `retired` |
 | `domain` | no | Hierarchical domain path (e.g., `natural-hazards/meteorological`). Must have a matching entry in `site/src/_data/i18n.json` for translated display. |
 | `category` | no | Sub-classification within the domain (e.g., `hydrological`) |
@@ -206,7 +208,7 @@ Each project directory has a `_project.yml` with metadata:
 | Field | Required | Description |
 |-------|----------|-------------|
 | `name` | yes | Display name for the project |
-| `slug` | yes | URL-safe identifier, matches the directory name |
+| `slug` | yes | URL-safe identifier — **must match** the directory name, each term's `project` field, the `weblate/` subdirectory, and any external API endpoint |
 | `description` | yes | Short description shown on listing pages |
 | `url` | no | URL to the source publication |
 | `citation` | no | Full bibliographic citation (displayed as link text when `url` is set) |

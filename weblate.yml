@@ -1,9 +1,9 @@
 projects:
-  - path: terms/hips
+  - path: terms/hips-2025
     weblate_project: undrr-hips
     weblate_component: terms
-    file_mask: weblate/hips/*.json
-    base_file: weblate/hips/en.json
+    file_mask: weblate/hips-2025/*.json
+    base_file: weblate/hips-2025/en.json
     file_format: json
   - path: terms/sendai
     weblate_project: undrr-sendai
