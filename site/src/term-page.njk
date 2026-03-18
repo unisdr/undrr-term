@@ -47,14 +47,6 @@
 </div>
 {%- endif %}
 
-<h1>{{ t.term }}</h1>
-
-{%- if term.projectConfig.url %}
-<div class="translation-scope-notice">
-  <p>{{ i18n.translation_scope_notice[lang] }} <a href="{{ term.projectConfig.url }}">{{ term.projectConfig.citation or term.projectConfig.name }}</a></p>
-</div>
-{%- endif %}
-
 <div class="term-layout">
 
   {# -- Left sidebar: metadata -- #}
@@ -176,6 +168,14 @@
 
   {# -- Right: language sections (UNTerm style: each language as a block) -- #}
   <div class="term-content">
+
+    <h1>{{ t.term }}</h1>
+
+    {%- if term.projectConfig.url %}
+    <div class="translation-scope-notice">
+      <p>{{ i18n.translation_scope_notice[lang] }} <a href="{{ term.projectConfig.url }}">{{ term.projectConfig.citation or term.projectConfig.name }}</a></p>
+    </div>
+    {%- endif %}
 
     {# Current language first #}
     <section class="term-lang-section">

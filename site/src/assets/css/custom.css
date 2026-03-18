@@ -146,6 +146,12 @@
   .term-layout {
     grid-template-columns: 1fr;
   }
+  .term-sidebar {
+    order: 1;
+  }
+  .term-content {
+    order: 0;
+  }
 }
 
 /* Left sidebar */
